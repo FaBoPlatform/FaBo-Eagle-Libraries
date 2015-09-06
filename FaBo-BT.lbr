@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -558,6 +558,46 @@ BL600-ST 204-320048 Trace Pad&lt;br&gt;
 <smd name="31" x="1.95" y="0.325" dx="0.3" dy="0.3" layer="1"/>
 <smd name="30" x="1.95" y="-0.325" dx="0.3" dy="0.3" layer="1"/>
 </package>
+<package name="SILICONLABS-BGM111">
+<smd name="1" x="-5.65" y="6.65" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="31" x="5.65" y="6.65" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="16" x="0" y="-6.55" dx="2.4" dy="0.8" layer="1" roundness="60" rot="R90"/>
+<wire x1="-6.45" y1="-7.5" x2="6.45" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="6.45" y1="-7.5" x2="6.45" y2="7.5" width="0.127" layer="21"/>
+<wire x1="6.45" y1="7.5" x2="-6.45" y2="7.5" width="0.127" layer="21"/>
+<wire x1="-6.45" y1="7.5" x2="-6.45" y2="-7.5" width="0.127" layer="21"/>
+<smd name="2" x="-5.65" y="5.45" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="3" x="-5.65" y="4.25" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="4" x="-5.65" y="3.05" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="5" x="-5.65" y="1.85" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="6" x="-5.65" y="0.65" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="7" x="-5.65" y="-0.55" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="8" x="-5.65" y="-1.75" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="9" x="-5.65" y="-2.95" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="10" x="-5.65" y="-4.15" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="11" x="-5.65" y="-5.35" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="12" x="-5.65" y="-6.55" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="30" x="5.65" y="5.45" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="29" x="5.65" y="4.25" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="28" x="5.65" y="3.05" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="27" x="5.65" y="1.85" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="26" x="5.65" y="0.65" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="25" x="5.65" y="-0.55" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="24" x="5.65" y="-1.75" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="23" x="5.65" y="-2.95" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="22" x="5.65" y="-4.15" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="21" x="5.65" y="-5.35" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="20" x="5.65" y="-6.55" dx="2.4" dy="0.8" layer="1" roundness="60"/>
+<smd name="15" x="-1.2" y="-6.55" dx="2.4" dy="0.8" layer="1" roundness="60" rot="R90"/>
+<smd name="17" x="1.2" y="-6.55" dx="2.4" dy="0.8" layer="1" roundness="60" rot="R90"/>
+<smd name="18" x="2.4" y="-6.55" dx="2.4" dy="0.8" layer="1" roundness="60" rot="R90"/>
+<smd name="19" x="3.6" y="-6.55" dx="2.4" dy="0.8" layer="1" roundness="60" rot="R90"/>
+<smd name="14" x="-2.4" y="-6.55" dx="2.4" dy="0.8" layer="1" roundness="60" rot="R90"/>
+<smd name="13" x="-3.6" y="-6.55" dx="2.4" dy="0.8" layer="1" roundness="60" rot="R90"/>
+<rectangle x1="-3.8" y1="4" x2="3.8" y2="7.5" layer="41"/>
+<rectangle x1="-3.8" y1="4" x2="3.8" y2="7.5" layer="42"/>
+<text x="-3.2" y="-0.7" size="1.27" layer="21">BGM111</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BLUEGIGA-BLE113">
@@ -987,6 +1027,44 @@ BL600-ST 204-320048 Trace Pad&lt;br&gt;
 <wire x1="17.78" y1="-10.16" x2="-20.32" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="-10.16" x2="-20.32" y2="25.4" width="0.254" layer="94"/>
 <text x="-2.54" y="7.62" size="1.27" layer="94">typeZY</text>
+</symbol>
+<symbol name="SILICONLABS-BGM111">
+<pin name="GND1" x="-17.78" y="17.78" length="middle"/>
+<pin name="PD13" x="-17.78" y="15.24" length="middle"/>
+<pin name="PD14" x="-17.78" y="12.7" length="middle"/>
+<pin name="PD15" x="-17.78" y="10.16" length="middle"/>
+<pin name="PA0" x="-17.78" y="7.62" length="middle"/>
+<pin name="PA1" x="-17.78" y="5.08" length="middle"/>
+<pin name="PA2" x="-17.78" y="2.54" length="middle"/>
+<pin name="PA3" x="-17.78" y="0" length="middle"/>
+<pin name="PA4" x="-17.78" y="-2.54" length="middle"/>
+<pin name="PA5" x="-17.78" y="-5.08" length="middle"/>
+<pin name="PB11" x="-17.78" y="-7.62" length="middle"/>
+<pin name="GND2" x="-17.78" y="-10.16" length="middle"/>
+<pin name="PB13" x="-7.62" y="-25.4" length="middle" rot="R90"/>
+<pin name="PC6" x="-5.08" y="-25.4" length="middle" rot="R90"/>
+<pin name="PC7" x="-2.54" y="-25.4" length="middle" rot="R90"/>
+<pin name="PC8" x="0" y="-25.4" length="middle" rot="R90"/>
+<pin name="PC9" x="2.54" y="-25.4" length="middle" rot="R90"/>
+<pin name="PC10" x="5.08" y="-25.4" length="middle" rot="R90"/>
+<pin name="PC11" x="7.62" y="-25.4" length="middle" rot="R90"/>
+<pin name="GND3" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="PF0" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="PF1" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="PF2" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="PF3" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="PF4" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="PF5" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="PF6" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="PF7" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="VDD" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="RESET" x="17.78" y="15.24" length="middle" rot="R180"/>
+<pin name="GND4" x="17.78" y="17.78" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.27" layer="94">BGM111</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1470,6 +1548,51 @@ BL600-ST 204-320048 Trace Pad&lt;br&gt;
 <connect gate="G$1" pin="VPP" pad="31"/>
 <connect gate="G$1" pin="XTAL32KM" pad="10"/>
 <connect gate="G$1" pin="XTAL32KP" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SILICONLABS-BGM111">
+<gates>
+<gate name="G$1" symbol="SILICONLABS-BGM111" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SILICONLABS-BGM111">
+<connects>
+<connect gate="G$1" pin="GND1" pad="1"/>
+<connect gate="G$1" pin="GND2" pad="12"/>
+<connect gate="G$1" pin="GND3" pad="20"/>
+<connect gate="G$1" pin="GND4" pad="31"/>
+<connect gate="G$1" pin="PA0" pad="5"/>
+<connect gate="G$1" pin="PA1" pad="6"/>
+<connect gate="G$1" pin="PA2" pad="7"/>
+<connect gate="G$1" pin="PA3" pad="8"/>
+<connect gate="G$1" pin="PA4" pad="9"/>
+<connect gate="G$1" pin="PA5" pad="10"/>
+<connect gate="G$1" pin="PB11" pad="11"/>
+<connect gate="G$1" pin="PB13" pad="13"/>
+<connect gate="G$1" pin="PC10" pad="18"/>
+<connect gate="G$1" pin="PC11" pad="19"/>
+<connect gate="G$1" pin="PC6" pad="14"/>
+<connect gate="G$1" pin="PC7" pad="15"/>
+<connect gate="G$1" pin="PC8" pad="16"/>
+<connect gate="G$1" pin="PC9" pad="17"/>
+<connect gate="G$1" pin="PD13" pad="2"/>
+<connect gate="G$1" pin="PD14" pad="3"/>
+<connect gate="G$1" pin="PD15" pad="4"/>
+<connect gate="G$1" pin="PF0" pad="21"/>
+<connect gate="G$1" pin="PF1" pad="22"/>
+<connect gate="G$1" pin="PF2" pad="23"/>
+<connect gate="G$1" pin="PF3" pad="24"/>
+<connect gate="G$1" pin="PF4" pad="25"/>
+<connect gate="G$1" pin="PF5" pad="26"/>
+<connect gate="G$1" pin="PF6" pad="27"/>
+<connect gate="G$1" pin="PF7" pad="28"/>
+<connect gate="G$1" pin="RESET" pad="30"/>
+<connect gate="G$1" pin="VDD" pad="29"/>
 </connects>
 <technologies>
 <technology name=""/>
