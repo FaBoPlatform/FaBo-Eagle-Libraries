@@ -96,6 +96,7 @@
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="160" name="O_Dim" color="12" fill="11" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -194,6 +195,12 @@
 <smd name="P$_GND" x="0" y="-15.29" dx="4.572" dy="3.2512" layer="1" rot="R270"/>
 <text x="-1.11" y="8.38" size="2.54" layer="22">+</text>
 <circle x="0" y="0" radius="12.5" width="0.127" layer="21"/>
+</package>
+<package name="BRX1-2477">
+<smd name="PLUS1" x="-16" y="0" dx="5" dy="10.5" layer="16"/>
+<smd name="PLUS2" x="16" y="0" dx="5" dy="10.5" layer="16"/>
+<smd name="GND" x="0" y="0" dx="10.5" dy="10.5" layer="16"/>
+<circle x="0" y="0" radius="12" width="0.127" layer="22"/>
 </package>
 </packages>
 <symbols>
@@ -376,6 +383,22 @@
 <connects>
 <connect gate="G$1" pin="+" pad="P$_VCC"/>
 <connect gate="G$1" pin="-" pad="P$_GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BRX1-2477">
+<gates>
+<gate name="G$1" symbol="SMTU2450" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BRX1-2477">
+<connects>
+<connect gate="G$1" pin="+" pad="PLUS1 PLUS2"/>
+<connect gate="G$1" pin="-" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>
