@@ -128,9 +128,9 @@
 <library>
 <packages>
 <package name="FABO-PIN-HEADER-2X3-SMD">
-<smd name="VCC" x="1.27" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
+<smd name="GND" x="1.27" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
 <smd name="1" x="1.27" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="GND" x="0.07" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
+<smd name="VCC" x="0.07" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
 <smd name="2" x="0.07" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
 <smd name="0" x="-1.08" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
 <smd name="3" x="-1.13" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
@@ -138,8 +138,8 @@
 </packages>
 <symbols>
 <symbol name="FABO-PIN-HEADER-2X3-SMD">
-<pin name="VCC" x="-10.16" y="5.08" length="middle"/>
-<pin name="GND" x="-10.16" y="2.54" length="middle"/>
+<pin name="VCC" x="-10.16" y="2.54" length="middle"/>
+<pin name="GND" x="-10.16" y="5.08" length="middle"/>
 <pin name="0" x="-10.16" y="0" length="middle"/>
 <pin name="1" x="-10.16" y="-2.54" length="middle"/>
 <pin name="2" x="-10.16" y="-5.08" length="middle"/>
