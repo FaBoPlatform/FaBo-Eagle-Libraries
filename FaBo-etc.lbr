@@ -39564,6 +39564,18 @@ akizuki
 </device>
 </devices>
 </deviceset>
+<deviceset name="LOGO_FABO_SCH">
+<gates>
+<gate name="G$1" symbol="LOGO_FABO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

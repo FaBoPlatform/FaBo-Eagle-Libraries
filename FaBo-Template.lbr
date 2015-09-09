@@ -12502,8 +12502,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </devices>
 </deviceset>
 <deviceset name="FABO_BRICK_3PIN" prefix="J" uservalue="yes">
-<description>&lt;h3&gt;FaBo&lt;/h3&gt;
-Brick 3pin</description>
+<description>FaBo Brick 3pin</description>
 <gates>
 <gate name="G$1" symbol="FABO_BRICK_3PIN" x="0" y="0"/>
 </gates>
@@ -12581,8 +12580,7 @@ Brick 3pin</description>
 </devices>
 </deviceset>
 <deviceset name="FABO_BRICK_I2C" prefix="J" uservalue="yes">
-<description>&lt;h3&gt;FaBo&lt;/h3&gt;
-Brick I2C</description>
+<description>FaBo Brick I2C</description>
 <gates>
 <gate name="G$1" symbol="FABO_BRICK_I2C" x="0" y="0"/>
 </gates>
@@ -12634,6 +12632,7 @@ Brick I2C</description>
 </devices>
 </deviceset>
 <deviceset name="FABO_BRICK_SERIAL" prefix="J" uservalue="yes">
+<description>FaBo Brick Serial</description>
 <gates>
 <gate name="G$1" symbol="FABO_BRICK_SERIAL" x="0" y="0"/>
 </gates>
