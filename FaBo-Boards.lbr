@@ -127,6 +127,8 @@
 </layers>
 <library>
 <description>&lt;h3&gt;FaBo Boards&lt;/h3&gt;
+Arduino/Raspberry Pi/etc. boards&lt;br&gt;
+&lt;br&gt;
 Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
