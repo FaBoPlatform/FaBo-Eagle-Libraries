@@ -22606,42 +22606,21 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="0" x="7.12" y="2.54" visible="off" length="point" direction="pas"/>
 </symbol>
 <symbol name="PIN-HEAER-SMT(1.27MM)2X5">
-<text x="-7.54" y="-2.58" size="1.27" layer="94">1</text>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="6.35" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="6.35" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="0" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="8.89" y1="5.08" x2="8.89" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="3.556" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-1.27" x2="8.89" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="6.35" width="0.254" layer="94"/>
-<wire x1="0" y1="6.35" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="6.35" width="0.254" layer="94"/>
-<pin name="2" x="-2.54" y="11.43" length="middle" rot="R270"/>
-<pin name="4" x="0" y="11.43" length="middle" rot="R270"/>
-<pin name="6" x="2.54" y="11.43" length="middle" rot="R270"/>
-<pin name="8" x="5.08" y="11.43" length="middle" rot="R270"/>
-<pin name="10" x="7.62" y="11.43" length="middle" rot="R270"/>
-<pin name="1" x="-2.54" y="-7.62" length="middle" rot="R90"/>
-<pin name="3" x="0" y="-7.62" length="middle" rot="R90"/>
-<pin name="5" x="2.54" y="-7.62" length="middle" rot="R90"/>
-<pin name="7" x="5.08" y="-7.62" length="middle" rot="R90"/>
-<pin name="9" x="7.62" y="-7.62" length="middle" rot="R90"/>
-<wire x1="-3.81" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="8.89" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="3.81" x2="-3.81" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="3.81" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="3.81" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="3.81" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="3.81" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<pin name="2" x="10.16" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="4" x="10.16" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="6" x="10.16" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="8" x="10.16" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="10" x="10.16" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="1" x="-10.16" y="5.08" visible="pin" length="middle"/>
+<pin name="3" x="-10.16" y="2.54" visible="pin" length="middle"/>
+<pin name="5" x="-10.16" y="0" visible="pin" length="middle"/>
+<pin name="7" x="-10.16" y="-2.54" visible="pin" length="middle"/>
+<pin name="9" x="-10.16" y="-5.08" visible="pin" length="middle"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="8.382" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="VIBRATOR-LA3R5-480AH1">
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
@@ -37557,7 +37536,7 @@ FTDI USB to Serial UART interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PIN-HEADER-SMT(1.27MM)2X5">
+<deviceset name="PIN-HEADER-SMT(1.27MM)2X5" prefix="CN" uservalue="yes">
 <description>PIN-HEADER-SMT (1.27MM) 2x5</description>
 <gates>
 <gate name="G$1" symbol="PIN-HEAER-SMT(1.27MM)2X5" x="0" y="0"/>
