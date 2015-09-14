@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -70,11 +70,20 @@
 <wire x1="1.27" y1="1.016" x2="-1.27" y2="1.016" width="0.127" layer="39"/>
 <wire x1="-1.27" y1="1.016" x2="-1.27" y2="-1.016" width="0.127" layer="39"/>
 </package>
+<package name="0402">
+<wire x1="0.7" y1="0.25" x2="-0.7" y2="0.25" width="0.05" layer="21"/>
+<wire x1="-0.7" y1="0.25" x2="-0.7" y2="-0.25" width="0.05" layer="21"/>
+<wire x1="-0.7" y1="-0.25" x2="0.7" y2="-0.25" width="0.05" layer="21"/>
+<wire x1="0.7" y1="-0.25" x2="0.7" y2="0.25" width="0.05" layer="21"/>
+<smd name="P$1" x="-0.46" y="0" dx="0.5" dy="0.5" layer="1"/>
+<smd name="P$2" x="0.46" y="0" dx="0.5" dy="0.5" layer="1"/>
+<text x="-0.77" y="0.31" size="0.5" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
-<pin name="1" x="-2.54" y="0" visible="pad" length="point" direction="pas"/>
-<pin name="2" x="5.08" y="0" visible="pad" length="point" direction="pas" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <text x="3.302" y="3.048" size="1.4224" layer="95" rot="R180">&gt;NAME</text>
 <text x="3.81" y="-1.778" size="1.4224" layer="96" rot="R180">&gt;VALUE</text>
 <wire x1="0.508" y1="1.524" x2="0.508" y2="0" width="0.254" layer="94"/>
@@ -86,11 +95,21 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CAPACITOR">
+<deviceset name="CAPACITOR" prefix="C" uservalue="yes">
+<description>CAPACITOR</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="0402" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 <device name="0603" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
