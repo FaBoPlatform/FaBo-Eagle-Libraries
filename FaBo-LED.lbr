@@ -92,7 +92,7 @@
 <smd name="4" x="2.5" y="1.7" dx="1.5" dy="0.9" layer="1"/>
 <smd name="2" x="-2.5" y="-1.7" dx="1.5" dy="0.9" layer="1"/>
 <smd name="3" x="2.5" y="-1.7" dx="1.5" dy="0.9" layer="1"/>
-<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="2.794" size="0.4826" layer="25">&gt;NAME</text>
 </package>
 <package name="NSSW157T">
 <smd name="CATHODE2" x="-1.71" y="0.01" dx="0.6" dy="1.55" layer="1"/>
@@ -169,7 +169,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="WS2818B">
+<deviceset name="WS2818B" prefix="WS2818" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="WS2818B" x="0" y="0"/>
 </gates>
