@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -70,6 +70,15 @@
 <wire x1="1.27" y1="1.016" x2="-1.27" y2="1.016" width="0.127" layer="39"/>
 <wire x1="-1.27" y1="1.016" x2="-1.27" y2="-1.016" width="0.127" layer="39"/>
 </package>
+<package name="0402">
+<wire x1="0.7" y1="0.25" x2="-0.7" y2="0.25" width="0.05" layer="21"/>
+<wire x1="-0.7" y1="0.25" x2="-0.7" y2="-0.25" width="0.05" layer="21"/>
+<wire x1="-0.7" y1="-0.25" x2="0.7" y2="-0.25" width="0.05" layer="21"/>
+<wire x1="0.7" y1="-0.25" x2="0.7" y2="0.25" width="0.05" layer="21"/>
+<smd name="P$1" x="-0.46" y="0" dx="0.5" dy="0.5" layer="1"/>
+<smd name="P$2" x="0.46" y="0" dx="0.5" dy="0.5" layer="1"/>
+<text x="-0.77" y="0.31" size="0.5" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -86,7 +95,8 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CAPACITOR">
+<deviceset name="0603" prefix="R" uservalue="yes">
+<description>CAPACITOR 0603</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
@@ -95,6 +105,23 @@
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="0402">
+<description>CAPACITOR 0402</description>
+<gates>
+<gate name="G$1" symbol="CAPACITOR" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
