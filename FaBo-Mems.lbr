@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -547,6 +547,15 @@
 <text x="-2.54" y="-2.54" size="1.016" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
 <text x="3.81" y="-2.54" size="1.016" layer="27" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
 </package>
+<package name="ANALOGDEVICES-ADMP510">
+<wire x1="1.7125" y1="-1.2875" x2="-1.7125" y2="-1.2875" width="0.127" layer="21"/>
+<wire x1="-1.7125" y1="-1.2875" x2="-1.7125" y2="1.2875" width="0.127" layer="21"/>
+<wire x1="-1.7125" y1="1.2875" x2="1.7125" y2="1.2875" width="0.127" layer="21"/>
+<wire x1="1.7125" y1="1.2875" x2="1.7125" y2="-1.2875" width="0.127" layer="21"/>
+<smd name="1" x="1" y="-0.61" dx="0.9" dy="0.68" layer="1" rot="R180"/>
+<smd name="2" x="1" y="0.59" dx="0.9" dy="0.68" layer="1" rot="R180"/>
+<pad name="3" x="-0.635" y="0" drill="0.8" diameter="1.524" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FREESCALE-MMA8451Q">
@@ -854,6 +863,16 @@
 <text x="-7.62" y="8.382" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-7.366" size="1.6764" layer="94" align="bottom-center">MPL115A2</text>
 <text x="0" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ANALOGDEVICES-ADMP510">
+<pin name="VDD" x="0" y="12.7" length="middle" rot="R270"/>
+<pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
+<pin name="OUTPUT" x="20.32" y="0" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="5.08" y="2.54" size="1.27" layer="94">ADMP510</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1248,6 +1267,23 @@
 <connect gate="G$1" pin="SCL" pad="8"/>
 <connect gate="G$1" pin="SDA" pad="7"/>
 <connect gate="G$1" pin="SHDN" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ANALOGDEVICES-ADMP510">
+<gates>
+<gate name="G$1" symbol="ANALOGDEVICES-ADMP510" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="ANALOGDEVICES-ADMP510">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="OUTPUT" pad="2"/>
 <connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
