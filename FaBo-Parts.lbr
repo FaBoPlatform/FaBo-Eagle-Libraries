@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -147,24 +147,24 @@
 <wire x1="-1.5" y1="-4.5" x2="-1.5" y2="4.5" width="0.127" layer="21"/>
 </package>
 <package name="EASTRISING-ER-OLED0.49-1">
-<smd name="1" x="-4.54" y="0" dx="0.35" dy="2" layer="1"/>
-<smd name="2" x="-3.84" y="0" dx="0.35" dy="2" layer="1"/>
-<smd name="3" x="-3.14" y="0" dx="0.35" dy="2" layer="1"/>
-<smd name="4" x="-2.44" y="0" dx="0.35" dy="2" layer="1"/>
-<smd name="5" x="-1.74" y="0" dx="0.35" dy="2" layer="1"/>
-<smd name="6" x="-1.04" y="0" dx="0.35" dy="2" layer="1"/>
-<smd name="7" x="-0.34" y="0" dx="0.35" dy="2" layer="1"/>
-<smd name="8" x="0.36" y="0" dx="0.35" dy="2" layer="1"/>
-<smd name="9" x="1.06" y="0" dx="0.35" dy="2" layer="1"/>
-<smd name="10" x="1.76" y="0" dx="0.35" dy="2" layer="1"/>
-<smd name="11" x="2.46" y="0" dx="0.35" dy="2" layer="1"/>
-<smd name="12" x="3.16" y="0" dx="0.35" dy="2" layer="1"/>
-<smd name="13" x="3.86" y="0" dx="0.35" dy="2" layer="1"/>
-<smd name="14" x="4.56" y="0" dx="0.35" dy="2" layer="1"/>
-<wire x1="-4.75" y1="-1" x2="-4.75" y2="1" width="0.127" layer="21"/>
-<wire x1="-4.75" y1="1" x2="4.75" y2="1" width="0.127" layer="21"/>
-<wire x1="4.75" y1="1" x2="4.75" y2="-1" width="0.127" layer="21"/>
-<wire x1="4.75" y1="-1" x2="-4.75" y2="-1" width="0.127" layer="21"/>
+<smd name="1" x="-4.54" y="0" dx="0.35" dy="2.2" layer="1"/>
+<smd name="2" x="-3.84" y="0" dx="0.35" dy="2.2" layer="1"/>
+<smd name="3" x="-3.14" y="0" dx="0.35" dy="2.2" layer="1"/>
+<smd name="4" x="-2.44" y="0" dx="0.35" dy="2.2" layer="1"/>
+<smd name="5" x="-1.74" y="0" dx="0.35" dy="2.2" layer="1"/>
+<smd name="6" x="-1.04" y="0" dx="0.35" dy="2.2" layer="1"/>
+<smd name="7" x="-0.34" y="0" dx="0.35" dy="2.2" layer="1"/>
+<smd name="8" x="0.36" y="0" dx="0.35" dy="2.2" layer="1"/>
+<smd name="9" x="1.06" y="0" dx="0.35" dy="2.2" layer="1"/>
+<smd name="10" x="1.76" y="0" dx="0.35" dy="2.2" layer="1"/>
+<smd name="11" x="2.46" y="0" dx="0.35" dy="2.2" layer="1"/>
+<smd name="12" x="3.16" y="0" dx="0.35" dy="2.2" layer="1"/>
+<smd name="13" x="3.86" y="0" dx="0.35" dy="2.2" layer="1"/>
+<smd name="14" x="4.56" y="0" dx="0.35" dy="2.2" layer="1"/>
+<wire x1="-4.8" y1="-1.1" x2="-4.8" y2="1.1" width="0.1" layer="21"/>
+<wire x1="-4.8" y1="1.1" x2="4.8" y2="1.1" width="0.1" layer="21"/>
+<wire x1="4.8" y1="1.1" x2="4.8" y2="-1.1" width="0.1" layer="21"/>
+<wire x1="4.8" y1="-1.1" x2="-4.8" y2="-1.1" width="0.1" layer="21"/>
 </package>
 <package name="SOT23">
 <smd name="3" x="0.03" y="1.1" dx="0.8" dy="0.9" layer="1"/>
@@ -438,10 +438,10 @@ http://akizukidenshi.com/download/ds/avvicon/MJ-4PP-9.pdf</description>
 <pin name="IREF" x="-10.16" y="-12.7" length="middle"/>
 <pin name="VCOMH" x="-10.16" y="-15.24" length="middle"/>
 <pin name="VCC" x="-10.16" y="-17.78" length="middle"/>
-<wire x1="5.08" y1="17.78" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="17.78" x2="-5.08" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-20.32" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-20.32" x2="5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-20.32" x2="7.62" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-20.32" x2="7.62" y2="17.78" width="0.254" layer="94"/>
 </symbol>
 <symbol name="FAIRCHILD-FDN335">
 <pin name="G" x="-11.5" y="0" length="middle" direction="in"/>
@@ -814,7 +814,7 @@ http://akizukidenshi.com/download/ds/avvicon/MJ-4PP-9.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="EASTRISING-ER-OLED0.49-1">
+<deviceset name="EASTRISING-ER-OLED0.49-1" prefix="U" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="EASTRISING-ER-OLED0.49-1" x="0" y="0"/>
 </gates>
