@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -132,7 +132,7 @@ Arduino/Raspberry Pi/etc. boards&lt;br&gt;
 Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
-<package name="ZUNDA_HOLE_DIM">
+<package name="ICHIGOJAM_SHIELD_HOLE_DIM">
 <pad name="VIDEO1" x="-10.795" y="16.51" drill="1" diameter="1.778" shape="octagon"/>
 <pad name="KBD1" x="10.795" y="16.51" drill="1" diameter="1.778" shape="octagon"/>
 <pad name="VIDEO2" x="-10.795" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
@@ -220,34 +220,32 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="15.875" y1="17.78" x2="15.875" y2="-17.78" width="0.127" layer="21"/>
 <wire x1="15.875" y1="-17.78" x2="13.335" y2="-17.78" width="0.127" layer="21"/>
 <wire x1="13.335" y1="-17.78" x2="13.335" y2="17.78" width="0.127" layer="21"/>
-<wire x1="-32.46" y1="-22.78" x2="42.54" y2="-22.78" width="0" layer="160"/>
-<wire x1="-32.46" y1="27.22" x2="42.54" y2="27.22" width="0" layer="160"/>
-<wire x1="42.54" y1="-22.78" x2="42.54" y2="27.22" width="0" layer="160"/>
-<wire x1="-32.46" y1="-22.78" x2="-32.46" y2="27.22" width="0" layer="160"/>
-<wire x1="-32.065" y1="14.13" x2="-22.065" y2="14.13" width="0" layer="51"/>
-<wire x1="-32.065" y1="4.13" x2="-22.065" y2="4.13" width="0" layer="51"/>
-<wire x1="-22.065" y1="4.13" x2="-22.065" y2="14.13" width="0" layer="51"/>
-<wire x1="-32.065" y1="4.13" x2="-32.065" y2="14.13" width="0" layer="51"/>
-<wire x1="28.875" y1="3.22" x2="28.875" y2="3.25" width="0.127" layer="51"/>
-<wire x1="28.875" y1="3.25" x2="28.875" y2="17.22" width="0" layer="51"/>
-<wire x1="41.375" y1="17.22" x2="28.875" y2="17.22" width="0" layer="51"/>
-<wire x1="41.375" y1="3.22" x2="41.375" y2="3.25" width="0.127" layer="51"/>
-<wire x1="41.375" y1="3.25" x2="41.375" y2="17.22" width="0" layer="51"/>
-<wire x1="41.375" y1="3.25" x2="28.875" y2="3.25" width="0" layer="51"/>
-<text x="0" y="18.415" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">IC2</text>
+<wire x1="-33.565" y1="-22.78" x2="41.435" y2="-22.78" width="0" layer="160"/>
+<wire x1="-33.565" y1="27.22" x2="41.435" y2="27.22" width="0" layer="160"/>
+<wire x1="41.435" y1="-22.78" x2="41.435" y2="27.22" width="0" layer="160"/>
+<wire x1="-33.565" y1="-22.78" x2="-33.565" y2="27.22" width="0" layer="160"/>
+<text x="0" y="18.415" size="1.016" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 <text x="14.605" y="-18.415" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">U</text>
-<pad name="P$1" x="-28.565" y="22.72" drill="3.5"/>
-<pad name="P$2" x="37.375" y="22.72" drill="3.5"/>
-<pad name="P$3" x="37.375" y="-18.28" drill="3.5"/>
-<pad name="P$4" x="-28.565" y="-18.28" drill="3.5"/>
-<wire x1="-31.46" y1="39.72" x2="41.54" y2="39.72" width="0" layer="20"/>
-<wire x1="-31.46" y1="-35.28" x2="41.54" y2="-35.28" width="0" layer="20"/>
-<wire x1="42.54" y1="-34.28" x2="42.54" y2="38.72" width="0" layer="20"/>
-<wire x1="-32.46" y1="-34.28" x2="-32.46" y2="38.72" width="0" layer="20"/>
-<wire x1="-32.46" y1="-34.28" x2="-31.46" y2="-35.28" width="0" layer="20" curve="90"/>
-<wire x1="41.54" y1="-35.28" x2="42.54" y2="-34.28" width="0" layer="20" curve="90"/>
-<wire x1="42.54" y1="38.72" x2="41.54" y2="39.72" width="0" layer="20" curve="90"/>
-<wire x1="-31.46" y1="39.72" x2="-32.46" y2="38.72" width="0" layer="20" curve="90"/>
+<pad name="P$1" x="-29.065" y="22.72" drill="3.5"/>
+<pad name="P$2" x="36.935" y="22.72" drill="3.5"/>
+<pad name="P$3" x="36.935" y="-18.28" drill="3.5"/>
+<pad name="P$4" x="-29.065" y="-18.28" drill="3.5"/>
+<wire x1="-32.565" y1="39.72" x2="40.435" y2="39.72" width="0" layer="20"/>
+<wire x1="-32.565" y1="-35.28" x2="40.435" y2="-35.28" width="0" layer="20"/>
+<wire x1="41.435" y1="-34.28" x2="41.435" y2="38.72" width="0" layer="20"/>
+<wire x1="-33.565" y1="-34.28" x2="-33.565" y2="38.72" width="0" layer="20"/>
+<wire x1="-33.565" y1="-34.28" x2="-32.565" y2="-35.28" width="0" layer="20" curve="90"/>
+<wire x1="40.435" y1="-35.28" x2="41.435" y2="-34.28" width="0" layer="20" curve="90"/>
+<wire x1="41.435" y1="38.72" x2="40.435" y2="39.72" width="0" layer="20" curve="90"/>
+<wire x1="-32.565" y1="39.72" x2="-33.565" y2="38.72" width="0" layer="20" curve="90"/>
+<pad name="P$5" x="-28.565" y="34.72" drill="3.2"/>
+<circle x="-28.565" y="34.72" radius="3.5" width="0.001" layer="51"/>
+<pad name="P$6" x="36.435" y="34.72" drill="3.2"/>
+<circle x="36.435" y="34.72" radius="3.5" width="0.001" layer="51"/>
+<pad name="P$7" x="-28.565" y="-30.28" drill="3.2"/>
+<pad name="P$8" x="36.435" y="-30.28" drill="3.2"/>
+<circle x="-28.565" y="-30.28" radius="3.5" width="0.001" layer="51"/>
+<circle x="36.435" y="-30.28" radius="3.5" width="0.001" layer="51"/>
 </package>
 <package name="ARDUINO_UNO_R3">
 <wire x1="64.516" y1="53.34" x2="66.04" y2="51.816" width="0" layer="20"/>
@@ -762,68 +760,69 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="GPIO20" x="17.78" y="-20.32" visible="pin" length="middle" rot="R180"/>
 <pin name="GPIO21" x="17.78" y="-22.86" visible="pin" length="middle" rot="R180"/>
 </symbol>
-<symbol name="ZUNDA">
-<pin name="VIDEO1" x="-15.24" y="17.78" visible="pin" length="middle"/>
-<pin name="VIDEO2" x="-15.24" y="15.24" visible="pin" length="middle"/>
-<pin name="IN1" x="-15.24" y="12.7" visible="pin" length="middle"/>
-<pin name="IN2" x="-15.24" y="10.16" visible="pin" length="middle"/>
-<pin name="IN3" x="-15.24" y="7.62" visible="pin" length="middle"/>
-<pin name="IN4" x="-15.24" y="5.08" visible="pin" length="middle"/>
-<pin name="VCC7" x="-15.24" y="2.54" visible="pin" length="middle"/>
-<pin name="GND8" x="-15.24" y="0" visible="pin" length="middle"/>
-<pin name="OUT1" x="-15.24" y="-2.54" visible="pin" length="middle"/>
-<pin name="OUT2" x="-15.24" y="-5.08" visible="pin" length="middle"/>
-<pin name="OUT3" x="-15.24" y="-7.62" visible="pin" length="middle"/>
-<pin name="OUT4" x="-15.24" y="-10.16" visible="pin" length="middle"/>
-<pin name="BTN" x="-15.24" y="-12.7" visible="pin" length="middle"/>
-<pin name="LED" x="-15.24" y="-15.24" visible="pin" length="middle"/>
-<pin name="RXD" x="15.24" y="-15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="TXD" x="15.24" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="OUT5" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="OUT6" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="XTAL1" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="XTAL2" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="VCC21" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="GND22" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="RESET" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="ISP" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="SOUND" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="KBD2" x="15.24" y="12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="EX1" x="15.24" y="15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="KBD1" x="15.24" y="17.78" visible="pin" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="20.32" x2="10.16" y2="20.32" width="0.254" layer="94"/>
-<wire x1="10.16" y1="20.32" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="20.32" width="0.254" layer="94"/>
-<pin name="KBD1-2" x="20.32" y="17.78" visible="off" length="point" rot="R180"/>
-<pin name="EX1-2" x="20.32" y="15.24" visible="off" length="point" rot="R180"/>
-<pin name="KBD2-2" x="20.32" y="12.7" visible="off" length="point" rot="R180"/>
-<pin name="SOUND-2" x="20.32" y="10.16" visible="off" length="point" rot="R180"/>
-<pin name="ISP-2" x="20.32" y="7.62" visible="off" length="point" rot="R180"/>
-<pin name="RESET-2" x="20.32" y="5.08" visible="off" length="point" rot="R180"/>
-<pin name="GND22-2" x="20.32" y="2.54" visible="off" length="point" rot="R180"/>
-<pin name="VCC21-2" x="20.32" y="0" visible="off" length="point" rot="R180"/>
-<pin name="XTAL2-2" x="20.32" y="-2.54" visible="off" length="point" rot="R180"/>
-<pin name="XTAL1-2" x="20.32" y="-5.08" visible="off" length="point" rot="R180"/>
-<pin name="OUT5-2" x="20.32" y="-7.62" visible="off" length="point" rot="R180"/>
-<pin name="OUT6-2" x="20.32" y="-10.16" visible="off" length="point" rot="R180"/>
-<pin name="TXD-2" x="20.32" y="-12.7" visible="off" length="point" rot="R180"/>
-<pin name="RXD-2" x="20.32" y="-15.24" visible="off" length="point" rot="R180"/>
-<wire x1="15.24" y1="17.78" x2="20.32" y2="17.78" width="0.254" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="15.24" x2="20.32" y2="15.24" width="0.254" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="12.7" x2="20.32" y2="12.7" width="0.254" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="10.16" x2="20.32" y2="10.16" width="0.254" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="7.62" x2="20.32" y2="7.62" width="0.254" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="5.08" x2="20.32" y2="5.08" width="0.254" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="0" x2="20.32" y2="0" width="0.254" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="-2.54" x2="20.32" y2="-2.54" width="0.254" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="-5.08" x2="20.32" y2="-5.08" width="0.254" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="-7.62" x2="20.32" y2="-7.62" width="0.254" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="-10.16" x2="20.32" y2="-10.16" width="0.254" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="-12.7" x2="20.32" y2="-12.7" width="0.254" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="-15.24" x2="20.32" y2="-15.24" width="0.254" layer="97" style="shortdash"/>
-<text x="-7.62" y="20.574" size="1.778" layer="95" ratio="12">IC2</text>
+<symbol name="ICHIGOJAM_SHIELD">
+<pin name="VIDEO1" x="-17.78" y="17.78" visible="pin" length="middle"/>
+<pin name="VIDEO2" x="-17.78" y="15.24" visible="pin" length="middle"/>
+<pin name="IN1" x="-17.78" y="12.7" visible="pin" length="middle"/>
+<pin name="IN2" x="-17.78" y="10.16" visible="pin" length="middle"/>
+<pin name="IN3" x="-17.78" y="7.62" visible="pin" length="middle"/>
+<pin name="IN4" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="VCC7" x="-17.78" y="2.54" visible="pin" length="middle"/>
+<pin name="GND8" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="OUT1" x="-17.78" y="-2.54" visible="pin" length="middle"/>
+<pin name="OUT2" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="OUT3" x="-17.78" y="-7.62" visible="pin" length="middle"/>
+<pin name="OUT4" x="-17.78" y="-10.16" visible="pin" length="middle"/>
+<pin name="BTN" x="-17.78" y="-12.7" visible="pin" length="middle"/>
+<pin name="LED" x="-17.78" y="-15.24" visible="pin" length="middle"/>
+<pin name="RXD" x="17.78" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="TXD" x="17.78" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT5" x="17.78" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT6" x="17.78" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="XTAL1" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="XTAL2" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VCC21" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GND22" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="RESET" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="ISP" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="SOUND" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="KBD2" x="17.78" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="EX1" x="17.78" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="KBD1" x="17.78" y="17.78" visible="pin" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="22.86" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<pin name="KBD1-2" x="22.86" y="17.78" visible="off" length="point" rot="R180"/>
+<pin name="EX1-2" x="22.86" y="15.24" visible="off" length="point" rot="R180"/>
+<pin name="KBD2-2" x="22.86" y="12.7" visible="off" length="point" rot="R180"/>
+<pin name="SOUND-2" x="22.86" y="10.16" visible="off" length="point" rot="R180"/>
+<pin name="ISP-2" x="22.86" y="7.62" visible="off" length="point" rot="R180"/>
+<pin name="RESET-2" x="22.86" y="5.08" visible="off" length="point" rot="R180"/>
+<pin name="GND22-2" x="22.86" y="0" visible="off" length="point" rot="R180"/>
+<pin name="VCC21-2" x="22.86" y="2.54" visible="off" length="point" rot="R180"/>
+<pin name="XTAL2-2" x="22.86" y="-2.54" visible="off" length="point" rot="R180"/>
+<pin name="XTAL1-2" x="22.86" y="-5.08" visible="off" length="point" rot="R180"/>
+<pin name="OUT5-2" x="22.86" y="-7.62" visible="off" length="point" rot="R180"/>
+<pin name="OUT6-2" x="22.86" y="-10.16" visible="off" length="point" rot="R180"/>
+<pin name="TXD-2" x="22.86" y="-12.7" visible="off" length="point" rot="R180"/>
+<pin name="RXD-2" x="22.86" y="-15.24" visible="off" length="point" rot="R180"/>
+<wire x1="17.78" y1="17.78" x2="22.86" y2="17.78" width="0.254" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="15.24" x2="22.86" y2="15.24" width="0.254" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="12.7" x2="22.86" y2="12.7" width="0.254" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="10.16" x2="22.86" y2="10.16" width="0.254" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="7.62" x2="22.86" y2="7.62" width="0.254" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="5.08" x2="22.86" y2="5.08" width="0.254" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="2.54" x2="22.86" y2="2.54" width="0.254" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="0" x2="22.86" y2="0" width="0.254" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="-2.54" x2="22.86" y2="-2.54" width="0.254" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="-5.08" x2="22.86" y2="-5.08" width="0.254" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="-7.62" x2="22.86" y2="-7.62" width="0.254" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="-10.16" x2="22.86" y2="-10.16" width="0.254" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="-12.7" x2="22.86" y2="-12.7" width="0.254" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="-15.24" x2="22.86" y2="-15.24" width="0.254" layer="97" style="shortdash"/>
+<text x="-7.62" y="23.114" size="1.778" layer="95" ratio="12">&gt;NAME</text>
+<text x="-5.08" y="20.32" size="1.27" layer="94" ratio="12">ICHIGOJAM</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -905,62 +904,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ZUNDA" prefix="U" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="ZUNDA" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="-DIM" package="ZUNDA_HOLE_DIM">
-<connects>
-<connect gate="G$1" pin="BTN" pad="BTN"/>
-<connect gate="G$1" pin="EX1" pad="EX1"/>
-<connect gate="G$1" pin="EX1-2" pad="EX1-2"/>
-<connect gate="G$1" pin="GND22" pad="GND22"/>
-<connect gate="G$1" pin="GND22-2" pad="GND22-2"/>
-<connect gate="G$1" pin="GND8" pad="GND8"/>
-<connect gate="G$1" pin="IN1" pad="IN1"/>
-<connect gate="G$1" pin="IN2" pad="IN2"/>
-<connect gate="G$1" pin="IN3" pad="IN3"/>
-<connect gate="G$1" pin="IN4" pad="IN4"/>
-<connect gate="G$1" pin="ISP" pad="ISP"/>
-<connect gate="G$1" pin="ISP-2" pad="ISP-2"/>
-<connect gate="G$1" pin="KBD1" pad="KBD1"/>
-<connect gate="G$1" pin="KBD1-2" pad="KBD1-2"/>
-<connect gate="G$1" pin="KBD2" pad="KBD2"/>
-<connect gate="G$1" pin="KBD2-2" pad="KBD2-2"/>
-<connect gate="G$1" pin="LED" pad="LED"/>
-<connect gate="G$1" pin="OUT1" pad="OUT1"/>
-<connect gate="G$1" pin="OUT2" pad="OUT2"/>
-<connect gate="G$1" pin="OUT3" pad="OUT3"/>
-<connect gate="G$1" pin="OUT4" pad="OUT4"/>
-<connect gate="G$1" pin="OUT5" pad="OUT5"/>
-<connect gate="G$1" pin="OUT5-2" pad="OUT5-2"/>
-<connect gate="G$1" pin="OUT6" pad="OUT6"/>
-<connect gate="G$1" pin="OUT6-2" pad="OUT6-2"/>
-<connect gate="G$1" pin="RESET" pad="RESET"/>
-<connect gate="G$1" pin="RESET-2" pad="RESET-2"/>
-<connect gate="G$1" pin="RXD" pad="RXD"/>
-<connect gate="G$1" pin="RXD-2" pad="RXD-2"/>
-<connect gate="G$1" pin="SOUND" pad="SOUND"/>
-<connect gate="G$1" pin="SOUND-2" pad="SOUND-2"/>
-<connect gate="G$1" pin="TXD" pad="TXD"/>
-<connect gate="G$1" pin="TXD-2" pad="TXD-2"/>
-<connect gate="G$1" pin="VCC21" pad="VCC21"/>
-<connect gate="G$1" pin="VCC21-2" pad="VCC21-2"/>
-<connect gate="G$1" pin="VCC7" pad="VCC7"/>
-<connect gate="G$1" pin="VIDEO1" pad="VIDEO1"/>
-<connect gate="G$1" pin="VIDEO2" pad="VIDEO2"/>
-<connect gate="G$1" pin="XTAL1" pad="XTAL1"/>
-<connect gate="G$1" pin="XTAL1-2" pad="XTAL1-2"/>
-<connect gate="G$1" pin="XTAL2" pad="XTAL2"/>
-<connect gate="G$1" pin="XTAL2-2" pad="XTAL2-2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1055,6 +998,62 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="SCLK" pad="23"/>
 <connect gate="G$1" pin="SDA" pad="3"/>
 <connect gate="G$1" pin="TX" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ICHIGOJAM_SHIELD" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="ICHIGOJAM_SHIELD" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="ICHIGOJAM_SHIELD_HOLE_DIM">
+<connects>
+<connect gate="G$1" pin="BTN" pad="BTN"/>
+<connect gate="G$1" pin="EX1" pad="EX1"/>
+<connect gate="G$1" pin="EX1-2" pad="EX1-2"/>
+<connect gate="G$1" pin="GND22" pad="GND22"/>
+<connect gate="G$1" pin="GND22-2" pad="GND22-2"/>
+<connect gate="G$1" pin="GND8" pad="GND8"/>
+<connect gate="G$1" pin="IN1" pad="IN1"/>
+<connect gate="G$1" pin="IN2" pad="IN2"/>
+<connect gate="G$1" pin="IN3" pad="IN3"/>
+<connect gate="G$1" pin="IN4" pad="IN4"/>
+<connect gate="G$1" pin="ISP" pad="ISP"/>
+<connect gate="G$1" pin="ISP-2" pad="ISP-2"/>
+<connect gate="G$1" pin="KBD1" pad="KBD1"/>
+<connect gate="G$1" pin="KBD1-2" pad="KBD1-2"/>
+<connect gate="G$1" pin="KBD2" pad="KBD2"/>
+<connect gate="G$1" pin="KBD2-2" pad="KBD2-2"/>
+<connect gate="G$1" pin="LED" pad="LED"/>
+<connect gate="G$1" pin="OUT1" pad="OUT1"/>
+<connect gate="G$1" pin="OUT2" pad="OUT2"/>
+<connect gate="G$1" pin="OUT3" pad="OUT3"/>
+<connect gate="G$1" pin="OUT4" pad="OUT4"/>
+<connect gate="G$1" pin="OUT5" pad="OUT5"/>
+<connect gate="G$1" pin="OUT5-2" pad="OUT5-2"/>
+<connect gate="G$1" pin="OUT6" pad="OUT6"/>
+<connect gate="G$1" pin="OUT6-2" pad="OUT6-2"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="RESET-2" pad="RESET-2"/>
+<connect gate="G$1" pin="RXD" pad="RXD"/>
+<connect gate="G$1" pin="RXD-2" pad="RXD-2"/>
+<connect gate="G$1" pin="SOUND" pad="SOUND"/>
+<connect gate="G$1" pin="SOUND-2" pad="SOUND-2"/>
+<connect gate="G$1" pin="TXD" pad="TXD"/>
+<connect gate="G$1" pin="TXD-2" pad="TXD-2"/>
+<connect gate="G$1" pin="VCC21" pad="VCC21"/>
+<connect gate="G$1" pin="VCC21-2" pad="VCC21-2"/>
+<connect gate="G$1" pin="VCC7" pad="VCC7"/>
+<connect gate="G$1" pin="VIDEO1" pad="VIDEO1"/>
+<connect gate="G$1" pin="VIDEO2" pad="VIDEO2"/>
+<connect gate="G$1" pin="XTAL1" pad="XTAL1"/>
+<connect gate="G$1" pin="XTAL1-2" pad="XTAL1-2"/>
+<connect gate="G$1" pin="XTAL2" pad="XTAL2"/>
+<connect gate="G$1" pin="XTAL2-2" pad="XTAL2-2"/>
 </connects>
 <technologies>
 <technology name=""/>
