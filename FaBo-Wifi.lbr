@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -53,7 +53,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -187,6 +187,33 @@
 <smd name="54" x="-4.5" y="4.51" dx="2" dy="0.9" layer="1" roundness="50"/>
 <smd name="55" x="-4.5" y="3.24" dx="2" dy="0.9" layer="1" roundness="50"/>
 </package>
+<package name="ES-ESPWROOM02">
+<wire x1="-9" y1="10" x2="9" y2="10" width="0.127" layer="21"/>
+<wire x1="9" y1="10" x2="9" y2="-10" width="0.127" layer="21"/>
+<wire x1="9" y1="-10" x2="-9" y2="-10" width="0.127" layer="21"/>
+<wire x1="-9" y1="-10" x2="-9" y2="10" width="0.127" layer="21"/>
+<rectangle x1="-9" y1="4.2" x2="9" y2="10" layer="41"/>
+<rectangle x1="-9" y1="4.2" x2="9" y2="10" layer="42"/>
+<smd name="3" x="-9" y="0" dx="1.27" dy="0.9" layer="1"/>
+<smd name="2" x="-9" y="1.5" dx="1.27" dy="0.9" layer="1"/>
+<smd name="1" x="-9" y="3" dx="1.27" dy="0.9" layer="1"/>
+<smd name="4" x="-9" y="-1.5" dx="1.27" dy="0.9" layer="1"/>
+<smd name="5" x="-9" y="-3" dx="1.27" dy="0.9" layer="1"/>
+<smd name="6" x="-9" y="-4.5" dx="1.27" dy="0.9" layer="1"/>
+<smd name="7" x="-9" y="-6" dx="1.27" dy="0.9" layer="1"/>
+<smd name="8" x="-9" y="-7.5" dx="1.27" dy="0.9" layer="1"/>
+<smd name="9" x="-9" y="-9" dx="1.27" dy="0.9" layer="1"/>
+<smd name="16" x="9" y="0" dx="1.27" dy="0.9" layer="1"/>
+<smd name="17" x="9" y="1.5" dx="1.27" dy="0.9" layer="1"/>
+<smd name="18" x="9" y="3" dx="1.27" dy="0.9" layer="1"/>
+<smd name="15" x="9" y="-1.5" dx="1.27" dy="0.9" layer="1"/>
+<smd name="14" x="9" y="-3" dx="1.27" dy="0.9" layer="1"/>
+<smd name="13" x="9" y="-4.5" dx="1.27" dy="0.9" layer="1"/>
+<smd name="12" x="9" y="-6" dx="1.27" dy="0.9" layer="1"/>
+<smd name="11" x="9" y="-7.5" dx="1.27" dy="0.9" layer="1"/>
+<smd name="10" x="9" y="-9" dx="1.27" dy="0.9" layer="1"/>
+<text x="-6.54" y="-2" size="1.27" layer="21">ESP-WROOM-02</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BLUEGIGA-WF121">
@@ -249,6 +276,30 @@
 <wire x1="20.32" y1="30.48" x2="20.32" y2="-38.1" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-38.1" x2="-20.32" y2="-38.1" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="-38.1" x2="-20.32" y2="30.48" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ES-ESPWROOM02">
+<pin name="3V3" x="-15.24" y="10.16" length="middle"/>
+<pin name="EN" x="-15.24" y="7.62" length="middle"/>
+<pin name="IO14" x="-15.24" y="5.08" length="middle"/>
+<pin name="IO12" x="-15.24" y="2.54" length="middle"/>
+<pin name="IO13" x="-15.24" y="0" length="middle"/>
+<pin name="IO15" x="-15.24" y="-2.54" length="middle"/>
+<pin name="IO2" x="-15.24" y="-5.08" length="middle"/>
+<pin name="IO0" x="-15.24" y="-7.62" length="middle"/>
+<pin name="GND1" x="-15.24" y="-10.16" length="middle"/>
+<pin name="IO4" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="RXD" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="TXD" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND2" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="IO5" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="RST" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="TOUT" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="IO16" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="GND3" x="15.24" y="10.16" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -314,6 +365,38 @@
 <connect gate="G$1" pin="VBUS" pad="25"/>
 <connect gate="G$1" pin="VDD_3.3V" pad="9"/>
 <connect gate="G$1" pin="VDD_PA" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ES-ESPWROOM02">
+<gates>
+<gate name="G$1" symbol="ES-ESPWROOM02" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ES-ESPWROOM02">
+<connects>
+<connect gate="G$1" pin="3V3" pad="1"/>
+<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="GND1" pad="9"/>
+<connect gate="G$1" pin="GND2" pad="13"/>
+<connect gate="G$1" pin="GND3" pad="18"/>
+<connect gate="G$1" pin="IO0" pad="8"/>
+<connect gate="G$1" pin="IO12" pad="4"/>
+<connect gate="G$1" pin="IO13" pad="5"/>
+<connect gate="G$1" pin="IO14" pad="3"/>
+<connect gate="G$1" pin="IO15" pad="6"/>
+<connect gate="G$1" pin="IO16" pad="17"/>
+<connect gate="G$1" pin="IO2" pad="7"/>
+<connect gate="G$1" pin="IO4" pad="10"/>
+<connect gate="G$1" pin="IO5" pad="14"/>
+<connect gate="G$1" pin="RST" pad="15"/>
+<connect gate="G$1" pin="RXD" pad="11"/>
+<connect gate="G$1" pin="TOUT" pad="16"/>
+<connect gate="G$1" pin="TXD" pad="12"/>
 </connects>
 <technologies>
 <technology name=""/>
