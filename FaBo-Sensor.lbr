@@ -155,20 +155,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <rectangle x1="-1.54" y1="0.27" x2="-0.265" y2="1.545" layer="21"/>
 </package>
 <package name="HAMAMATSU-S11059">
-<smd name="5" x="-2.04" y="-1.58" dx="1" dy="0.5" layer="1"/>
-<smd name="4" x="-2.04" y="-0.78" dx="1" dy="0.5" layer="1"/>
-<smd name="3" x="-2.04" y="0.02" dx="1" dy="0.5" layer="1"/>
-<smd name="2" x="-2.04" y="0.82" dx="1" dy="0.5" layer="1"/>
-<smd name="1" x="-2.04" y="1.62" dx="1" dy="0.5" layer="1"/>
-<smd name="9" x="2.03" y="1.62" dx="1" dy="0.5" layer="1"/>
-<smd name="8" x="2.03" y="0.82" dx="1" dy="0.5" layer="1"/>
-<smd name="7" x="2.03" y="-0.78" dx="1" dy="0.5" layer="1"/>
-<smd name="6" x="2.03" y="-1.58" dx="1" dy="0.5" layer="1"/>
-<wire x1="-1.6" y1="-2.1" x2="1.6" y2="-2.1" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-2.1" x2="1.6" y2="2.1" width="0.127" layer="21"/>
-<wire x1="1.6" y1="2.1" x2="-1.6" y2="2.1" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="2.1" x2="-1.6" y2="-2.1" width="0.127" layer="21"/>
-<text x="-3.14" y="2.52" size="1.27" layer="25">&gt;NAME</text>
+<smd name="5" x="-2" y="-1.6" dx="1.2" dy="0.5" layer="1"/>
+<smd name="4" x="-2" y="-0.8" dx="1.2" dy="0.5" layer="1"/>
+<smd name="3" x="-2" y="0" dx="1.2" dy="0.5" layer="1"/>
+<smd name="2" x="-2" y="0.8" dx="1.2" dy="0.5" layer="1"/>
+<smd name="1" x="-2" y="1.6" dx="1.2" dy="0.5" layer="1"/>
+<smd name="9" x="2" y="1.6" dx="1.2" dy="0.5" layer="1"/>
+<smd name="8" x="2" y="0.8" dx="1.2" dy="0.5" layer="1"/>
+<smd name="7" x="2" y="-0.8" dx="1.2" dy="0.5" layer="1"/>
+<smd name="6" x="2" y="-1.6" dx="1.2" dy="0.5" layer="1"/>
+<wire x1="-1.5" y1="-2.1" x2="1.5" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2.1" x2="1.5" y2="2.1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2.1" x2="-1.5" y2="2.1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2.1" x2="-1.5" y2="-2.1" width="0.127" layer="21"/>
+<text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="TI-INA226">
 <wire x1="-1.55" y1="1.55" x2="-1.55" y2="-1.55" width="0.127" layer="21"/>
@@ -642,19 +642,19 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </symbol>
 <symbol name="HAMAMATSU-S11059">
 <pin name="VDD" x="-15.24" y="5.08" length="middle"/>
-<pin name="GND1" x="-15.24" y="2.54" length="middle"/>
-<pin name="GND2" x="-15.24" y="0" length="middle"/>
-<pin name="GND3" x="-15.24" y="-2.54" length="middle"/>
-<pin name="GND4" x="-15.24" y="-5.08" length="middle"/>
-<pin name="SCL" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="GND5" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND6" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="SDA" x="15.24" y="5.08" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-2.54" y="10.16" size="1.27" layer="94">S11059</text>
+<pin name="GND1" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="GND2" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="GND3" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="GND4" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="-15.24" y="-5.08" length="middle"/>
+<pin name="GND5" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND6" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="SDA" x="-15.24" y="-7.62" length="middle"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">S11059</text>
 </symbol>
 <symbol name="TI-INA226">
 <pin name="A1" x="-12.7" y="5.08" length="middle"/>
@@ -991,7 +991,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="HAMAMATSU-S11059" prefix="S11059">
+<deviceset name="HAMAMATSU-S11059" prefix="IC" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="HAMAMATSU-S11059" x="0" y="0"/>
 </gates>
