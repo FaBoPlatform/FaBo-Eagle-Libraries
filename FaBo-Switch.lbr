@@ -43,7 +43,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -58,13 +58,13 @@
 <library>
 <packages>
 <package name="LIMIT-SWITCH">
-<pad name="VCC" x="-5" y="0" drill="0.8"/>
-<pad name="NO" x="0" y="0" drill="0.8"/>
-<pad name="NC" x="5" y="0" drill="0.8"/>
-<wire x1="-6" y1="-1" x2="-6" y2="-6" width="0.127" layer="21"/>
-<wire x1="-6" y1="-6" x2="6" y2="-6" width="0.127" layer="21"/>
-<wire x1="6" y1="-6" x2="6" y2="-1" width="0.127" layer="21"/>
-<wire x1="6" y1="-1" x2="-6" y2="-1" width="0.127" layer="21"/>
+<pad name="COM" x="-5" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="NO" x="0" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="NC" x="5" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<wire x1="-6" y1="-1" x2="-6" y2="-6" width="0.127" layer="51"/>
+<wire x1="-6" y1="-6" x2="6" y2="-6" width="0.127" layer="51"/>
+<wire x1="6" y1="-6" x2="6" y2="-1" width="0.127" layer="51"/>
+<wire x1="6" y1="-1" x2="-6" y2="-1" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -78,10 +78,11 @@
 <circle x="-3.556" y="0" radius="0.254" width="0.254" layer="94"/>
 <circle x="3.556" y="0" radius="0.254" width="0.254" layer="94"/>
 <pin name="NO" x="0" y="5.08" visible="pad" length="middle" rot="R270"/>
+<text x="-2.54" y="-2.54" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LIMIT-SWITCH">
+<deviceset name="LIMIT-SWITCH" prefix="SW" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="LIMIT-SWITCH" x="0" y="0"/>
 </gates>
@@ -90,7 +91,7 @@
 <connects>
 <connect gate="G$1" pin="NC" pad="NC"/>
 <connect gate="G$1" pin="NO" pad="NO"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="VCC" pad="COM"/>
 </connects>
 <technologies>
 <technology name=""/>
