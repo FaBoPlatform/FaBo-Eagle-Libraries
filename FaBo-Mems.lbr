@@ -605,27 +605,28 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-1.056" y="1.483" size="0.4064" layer="25">&gt;NAME</text>
 </package>
 <package name="NXP-PCAL6408A">
-<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="21"/>
-<wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.127" layer="21"/>
-<wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.127" layer="21"/>
-<wire x1="-1.55" y1="-1.55" x2="-1.55" y2="1.55" width="0.127" layer="21"/>
-<smd name="1" x="-1.5" y="0.75" dx="1" dy="0.3" layer="1" roundness="50"/>
-<smd name="2" x="-1.5" y="0.25" dx="1" dy="0.3" layer="1" roundness="50"/>
-<smd name="3" x="-1.5" y="-0.25" dx="1" dy="0.3" layer="1" roundness="50"/>
-<smd name="4" x="-1.5" y="-0.75" dx="1" dy="0.3" layer="1" roundness="50"/>
-<smd name="12" x="1.5" y="0.75" dx="1" dy="0.3" layer="1" roundness="50"/>
-<smd name="11" x="1.5" y="0.25" dx="1" dy="0.3" layer="1" roundness="50"/>
-<smd name="10" x="1.5" y="-0.25" dx="1" dy="0.3" layer="1" roundness="50"/>
-<smd name="9" x="1.5" y="-0.75" dx="1" dy="0.3" layer="1" roundness="50"/>
-<smd name="17" x="0" y="0" dx="1.7" dy="1.7" layer="1"/>
-<smd name="16" x="-0.75" y="1.5" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
-<smd name="15" x="-0.25" y="1.5" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
-<smd name="14" x="0.25" y="1.5" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
-<smd name="13" x="0.75" y="1.5" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
-<smd name="5" x="-0.75" y="-1.5" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
-<smd name="6" x="-0.25" y="-1.5" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
-<smd name="7" x="0.25" y="-1.5" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
-<smd name="8" x="0.75" y="-1.5" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.1" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.1" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.1" layer="21"/>
+<smd name="1" x="-1.6" y="0.75" dx="1" dy="0.3" layer="1" roundness="50"/>
+<smd name="2" x="-1.6" y="0.25" dx="1" dy="0.3" layer="1" roundness="50"/>
+<smd name="3" x="-1.6" y="-0.25" dx="1" dy="0.3" layer="1" roundness="50"/>
+<smd name="4" x="-1.6" y="-0.75" dx="1" dy="0.3" layer="1" roundness="50"/>
+<smd name="12" x="1.6" y="0.75" dx="1" dy="0.3" layer="1" roundness="50"/>
+<smd name="11" x="1.6" y="0.25" dx="1" dy="0.3" layer="1" roundness="50"/>
+<smd name="10" x="1.6" y="-0.25" dx="1" dy="0.3" layer="1" roundness="50"/>
+<smd name="9" x="1.6" y="-0.75" dx="1" dy="0.3" layer="1" roundness="50"/>
+<smd name="17" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="10"/>
+<smd name="16" x="-0.75" y="1.6" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="15" x="-0.25" y="1.6" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="14" x="0.25" y="1.6" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="13" x="0.75" y="1.6" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="5" x="-0.75" y="-1.6" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="6" x="-0.25" y="-1.6" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="7" x="0.25" y="-1.6" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="8" x="0.75" y="-1.6" dx="1" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<rectangle x1="-1.5" y1="0.3" x2="-0.3" y2="1.5" layer="21"/>
 </package>
 <package name="INVENSENSE-MPU9250">
 <smd name="1" x="-1.6" y="1" dx="0.8" dy="0.2" layer="1" roundness="15"/>
@@ -1559,7 +1560,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NX-PCAL6408A">
+<deviceset name="NX-PCAL6408A" prefix="IC" uservalue="yes">
 <description>NXP PCAL6408A</description>
 <gates>
 <gate name="G$1" symbol="NXP-PCAL6408A" x="0" y="0"/>
