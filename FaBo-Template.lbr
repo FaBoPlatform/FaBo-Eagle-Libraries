@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -12499,6 +12499,124 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="RX" x="3" y="0" drill="0.8" diameter="1.4224" shape="square"/>
 <text x="3" y="1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
 </package>
+<package name="FABO-CHIRIMEN">
+<wire x1="-24" y1="40" x2="24" y2="40" width="0.127" layer="20"/>
+<wire x1="24" y1="40" x2="24" y2="-40" width="0.127" layer="20"/>
+<wire x1="24" y1="-40" x2="-24" y2="-40" width="0.127" layer="20"/>
+<wire x1="-24" y1="-40" x2="-24" y2="40" width="0.127" layer="20"/>
+<pad name="CN1_1" x="22.35" y="-35" drill="0.8" shape="octagon"/>
+<pad name="CN1_2" x="22.35" y="-32.46" drill="0.8" shape="octagon"/>
+<pad name="CN1_3" x="22.35" y="-29.92" drill="0.8" shape="octagon"/>
+<pad name="CN1_4" x="22.35" y="-27.38" drill="0.8" shape="octagon"/>
+<pad name="CN1_5" x="22.35" y="-24.84" drill="0.8" shape="octagon"/>
+<pad name="CN1_6" x="22.35" y="-22.3" drill="0.8" shape="octagon"/>
+<pad name="CN1_7" x="22.35" y="-19.76" drill="0.8" shape="octagon"/>
+<pad name="CN1_8" x="22.35" y="-17.22" drill="0.8" shape="octagon"/>
+<pad name="CN1_9" x="22.35" y="-14.68" drill="0.8" shape="octagon"/>
+<pad name="CN1_10" x="22.35" y="-12.14" drill="0.8" shape="octagon"/>
+<pad name="CN1_11" x="22.35" y="-9.6" drill="0.8" shape="octagon"/>
+<pad name="CN1_12" x="22.35" y="-7.06" drill="0.8" shape="octagon"/>
+<pad name="CN1_13" x="22.35" y="-4.52" drill="0.8" shape="octagon"/>
+<pad name="CN1_14" x="22.35" y="-1.98" drill="0.8" shape="octagon"/>
+<pad name="CN1_15" x="22.35" y="0.56" drill="0.8" shape="octagon"/>
+<pad name="CN1_16" x="22.35" y="3.1" drill="0.8" shape="octagon"/>
+<pad name="CN1_17" x="22.35" y="5.64" drill="0.8" shape="octagon"/>
+<pad name="CN1_18" x="22.35" y="8.18" drill="0.8" shape="octagon"/>
+<pad name="CN2_18" x="-22.1" y="-35" drill="0.8" shape="octagon"/>
+<pad name="CN2_17" x="-22.1" y="-32.46" drill="0.8" shape="octagon"/>
+<pad name="CN2_16" x="-22.1" y="-29.92" drill="0.8" shape="octagon"/>
+<pad name="CN2_15" x="-22.1" y="-27.38" drill="0.8" shape="octagon"/>
+<pad name="CN2_14" x="-22.1" y="-24.84" drill="0.8" shape="octagon"/>
+<pad name="CN2_13" x="-22.1" y="-22.3" drill="0.8" shape="octagon"/>
+<pad name="CN2_12" x="-22.1" y="-19.76" drill="0.8" shape="octagon"/>
+<pad name="CN2_11" x="-22.1" y="-17.22" drill="0.8" shape="octagon"/>
+<pad name="CN2_10" x="-22.1" y="-14.68" drill="0.8" shape="octagon"/>
+<pad name="CN2_9" x="-22.1" y="-12.14" drill="0.8" shape="octagon"/>
+<pad name="CN2_8" x="-22.1" y="-9.6" drill="0.8" shape="octagon"/>
+<pad name="CN2_7" x="-22.1" y="-7.06" drill="0.8" shape="octagon"/>
+<pad name="CN2_6" x="-22.1" y="-4.52" drill="0.8" shape="octagon"/>
+<pad name="CN2_5" x="-22.1" y="-1.98" drill="0.8" shape="octagon"/>
+<pad name="CN2_4" x="-22.1" y="0.56" drill="0.8" shape="octagon"/>
+<pad name="CN2_3" x="-22.1" y="3.1" drill="0.8" shape="octagon"/>
+<pad name="CN2_2" x="-22.1" y="5.64" drill="0.8" shape="octagon"/>
+<pad name="CN2_1" x="-22.1" y="8.18" drill="0.8" shape="octagon"/>
+<text x="19.32" y="-35.56" size="1.27" layer="21">1</text>
+<text x="19.32" y="-33.06" size="1.27" layer="21">2</text>
+<text x="19.32" y="-30.56" size="1.27" layer="21">3</text>
+<text x="19.32" y="-28.06" size="1.27" layer="21">4</text>
+<text x="19.32" y="-25.31" size="1.27" layer="21">5</text>
+<text x="19.32" y="-22.81" size="1.27" layer="21">6</text>
+<text x="19.32" y="-20.31" size="1.27" layer="21">7</text>
+<text x="19.32" y="-17.81" size="1.27" layer="21">8</text>
+<text x="19.32" y="-15.31" size="1.27" layer="21">9</text>
+<text x="18.32" y="-12.81" size="1.27" layer="21">10</text>
+<text x="18.32" y="-10.31" size="1.27" layer="21">11</text>
+<text x="18.32" y="-7.56" size="1.27" layer="21">12</text>
+<text x="18.32" y="-5.06" size="1.27" layer="21">13</text>
+<text x="18.32" y="-2.56" size="1.27" layer="21">14</text>
+<text x="18.32" y="-0.06" size="1.27" layer="21">15</text>
+<text x="18.32" y="2.44" size="1.27" layer="21">16</text>
+<text x="18.32" y="4.94" size="1.27" layer="21">17</text>
+<text x="18.32" y="7.44" size="1.27" layer="21">18</text>
+<text x="14.57" y="-35.56" size="1.27" layer="21">GND</text>
+<text x="11.07" y="-33.06" size="1.27" layer="21">I2C_SDA</text>
+<text x="11.07" y="-30.56" size="1.27" layer="21">I2C_SCL</text>
+<text x="8.82" y="-28.06" size="1.27" layer="21">UART3_RX</text>
+<text x="8.82" y="-25.31" size="1.27" layer="21">UART3_TX</text>
+<text x="10.32" y="-22.81" size="1.27" layer="21">ADC0_IN</text>
+<text x="9.57" y="-20.31" size="1.27" layer="21">SPI0_CS</text>
+<text x="9.57" y="-17.81" size="1.27" layer="21">SPI0_CLK</text>
+<text x="9.57" y="-15.31" size="1.27" layer="21">SPI0_RX</text>
+<text x="9.57" y="-12.81" size="1.27" layer="21">SPI0_TX</text>
+<text x="9.57" y="-10.31" size="1.27" layer="21">SPI1_CS</text>
+<text x="9.57" y="-7.81" size="1.27" layer="21">SPI1_CLK</text>
+<text x="9.57" y="-5.31" size="1.27" layer="21">SPI1_RX</text>
+<text x="9.57" y="-2.81" size="1.27" layer="21">SPI1_TX</text>
+<text x="13.57" y="-0.06" size="1.27" layer="21">GND</text>
+<text x="9.57" y="2.44" size="1.27" layer="21">VCC_3V3</text>
+<text x="9.57" y="4.94" size="1.27" layer="21">VCC_3V3</text>
+<text x="9.32" y="7.44" size="1.27" layer="21">VCC_5V</text>
+<text x="-20.43" y="-35.56" size="1.27" layer="21">18</text>
+<text x="-20.43" y="-32.81" size="1.27" layer="21">17</text>
+<text x="-20.43" y="-30.56" size="1.27" layer="21">16</text>
+<text x="-20.43" y="-28.06" size="1.27" layer="21">15</text>
+<text x="-20.43" y="-25.31" size="1.27" layer="21">14</text>
+<text x="-20.43" y="-22.81" size="1.27" layer="21">13</text>
+<text x="-20.43" y="-20.06" size="1.27" layer="21">12</text>
+<text x="-20.43" y="-17.81" size="1.27" layer="21">11</text>
+<text x="-20.43" y="-15.31" size="1.27" layer="21">10</text>
+<text x="-20.18" y="-12.81" size="1.27" layer="21">9</text>
+<text x="-20.18" y="-10.31" size="1.27" layer="21">8</text>
+<text x="-20.18" y="-7.56" size="1.27" layer="21">7</text>
+<text x="-20.18" y="-5.06" size="1.27" layer="21">6</text>
+<text x="-20.18" y="-2.56" size="1.27" layer="21">5</text>
+<text x="-20.18" y="-0.06" size="1.27" layer="21">4</text>
+<text x="-20.18" y="2.44" size="1.27" layer="21">3</text>
+<text x="-20.18" y="4.94" size="1.27" layer="21">2</text>
+<text x="-20.18" y="7.44" size="1.27" layer="21">1</text>
+<text x="-17.93" y="-35.56" size="1.27" layer="21">VSYS(5V)</text>
+<text x="-17.68" y="-32.81" size="1.27" layer="21">GND</text>
+<text x="-17.68" y="-30.56" size="1.27" layer="21">PWRON</text>
+<text x="-17.68" y="-28.06" size="1.27" layer="21">GPIO6_A1</text>
+<text x="-17.68" y="-25.31" size="1.27" layer="21">UART0_RX</text>
+<text x="-17.68" y="-22.56" size="1.27" layer="21">URAT0_TX</text>
+<text x="-17.68" y="-20.06" size="1.27" layer="21">I2C0_SDA</text>
+<text x="-17.68" y="-17.81" size="1.27" layer="21">I2C0_SCL</text>
+<text x="-17.68" y="-15.31" size="1.27" layer="21">PWM0</text>
+<text x="-17.68" y="-12.56" size="1.27" layer="21">AGND</text>
+<text x="-17.68" y="-7.56" size="1.27" layer="21">ALIN</text>
+<text x="-17.68" y="-5.06" size="1.27" layer="21">AROUT</text>
+<text x="-17.68" y="-2.56" size="1.27" layer="21">ALOUT</text>
+<text x="-17.68" y="-0.06" size="1.27" layer="21">GND</text>
+<text x="16.07" y="10.19" size="1.6764" layer="21">CN1</text>
+<text x="-20.68" y="10.19" size="1.6764" layer="21">CN2</text>
+<text x="-17.68" y="7.44" size="1.27" layer="21">GND</text>
+<text x="-17.68" y="4.94" size="1.27" layer="21">GND</text>
+<text x="-17.68" y="2.44" size="1.27" layer="21">GND</text>
+<text x="-17.68" y="-10.31" size="1.27" layer="21">ARIN</text>
+<pad name="P$1" x="21.75" y="-38" drill="2"/>
+<pad name="P$2" x="-21.75" y="38" drill="2"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SN3-2CP-P">
@@ -12686,6 +12804,48 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="7.62" y1="-25.4" x2="7.62" y2="22.86" width="0.254" layer="94"/>
 <wire x1="7.62" y1="22.86" x2="-7.62" y2="22.86" width="0.254" layer="94"/>
 <text x="-5.08" y="25.4" size="1.27" layer="94">KINOMA CREATE</text>
+</symbol>
+<symbol name="FABO-CHIRIMEN">
+<pin name="GND2" x="-20.32" y="17.78" length="middle"/>
+<pin name="GND3" x="-20.32" y="15.24" length="middle"/>
+<pin name="GND4" x="-20.32" y="12.7" length="middle"/>
+<pin name="GND5" x="-20.32" y="10.16" length="middle"/>
+<pin name="AOUT" x="-20.32" y="7.62" length="middle"/>
+<pin name="AROUT" x="-20.32" y="5.08" length="middle"/>
+<pin name="ALIN" x="-20.32" y="2.54" length="middle"/>
+<pin name="ARIN" x="-20.32" y="0" length="middle"/>
+<pin name="AGND" x="-20.32" y="-2.54" length="middle"/>
+<pin name="PWM0" x="-20.32" y="-5.08" length="middle"/>
+<pin name="I2C0_SCL" x="-20.32" y="-7.62" length="middle"/>
+<pin name="I2C0_SDA" x="-20.32" y="-10.16" length="middle"/>
+<pin name="UART0_TX" x="-20.32" y="-12.7" length="middle"/>
+<pin name="UART0_RX" x="-20.32" y="-15.24" length="middle"/>
+<pin name="GPIO6_A1" x="-20.32" y="-17.78" length="middle"/>
+<pin name="PWRON" x="-20.32" y="-20.32" length="middle"/>
+<pin name="GND6" x="-20.32" y="-22.86" length="middle"/>
+<pin name="VSYS(5V)" x="-20.32" y="-25.4" length="middle"/>
+<pin name="GND0" x="17.78" y="-25.4" length="middle" rot="R180"/>
+<pin name="I2C2_SDA" x="17.78" y="-22.86" length="middle" rot="R180"/>
+<pin name="I2C2_SCL" x="17.78" y="-20.32" length="middle" rot="R180"/>
+<pin name="UART3_RX" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<pin name="UART3_TX" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="ADC0_IN" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="SPI0_CS" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="SPI0_CLK" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="SPI0_RX" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="SPI0_TX" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="SPI1_CS" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="SPI1_CLK" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="SPI1_RX" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="SPI1_TX" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="GND1" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="VCC_3V3_1" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="VCC_3V3_2" x="17.78" y="15.24" length="middle" rot="R180"/>
+<pin name="VCC_5V" x="17.78" y="17.78" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="20.32" x2="-15.24" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-27.94" x2="12.7" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-27.94" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13099,6 +13259,56 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="RX" pad="RX"/>
 <connect gate="G$1" pin="TX" pad="TX"/>
 <connect gate="G$1" pin="V+" pad="V+"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FABO-CHIRIMEN">
+<gates>
+<gate name="G$1" symbol="FABO-CHIRIMEN" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="FABO-CHIRIMEN">
+<connects>
+<connect gate="G$1" pin="ADC0_IN" pad="CN1_6"/>
+<connect gate="G$1" pin="AGND" pad="CN2_9"/>
+<connect gate="G$1" pin="ALIN" pad="CN2_7"/>
+<connect gate="G$1" pin="AOUT" pad="CN2_5"/>
+<connect gate="G$1" pin="ARIN" pad="CN2_8"/>
+<connect gate="G$1" pin="AROUT" pad="CN2_6"/>
+<connect gate="G$1" pin="GND0" pad="CN1_1"/>
+<connect gate="G$1" pin="GND1" pad="CN1_15"/>
+<connect gate="G$1" pin="GND2" pad="CN2_1"/>
+<connect gate="G$1" pin="GND3" pad="CN2_2"/>
+<connect gate="G$1" pin="GND4" pad="CN2_3"/>
+<connect gate="G$1" pin="GND5" pad="CN2_4"/>
+<connect gate="G$1" pin="GND6" pad="CN2_17"/>
+<connect gate="G$1" pin="GPIO6_A1" pad="CN2_15"/>
+<connect gate="G$1" pin="I2C0_SCL" pad="CN2_11"/>
+<connect gate="G$1" pin="I2C0_SDA" pad="CN2_12"/>
+<connect gate="G$1" pin="I2C2_SCL" pad="CN1_3"/>
+<connect gate="G$1" pin="I2C2_SDA" pad="CN1_2"/>
+<connect gate="G$1" pin="PWM0" pad="CN2_10"/>
+<connect gate="G$1" pin="PWRON" pad="CN2_16"/>
+<connect gate="G$1" pin="SPI0_CLK" pad="CN1_8"/>
+<connect gate="G$1" pin="SPI0_CS" pad="CN1_7"/>
+<connect gate="G$1" pin="SPI0_RX" pad="CN1_9"/>
+<connect gate="G$1" pin="SPI0_TX" pad="CN1_10"/>
+<connect gate="G$1" pin="SPI1_CLK" pad="CN1_12"/>
+<connect gate="G$1" pin="SPI1_CS" pad="CN1_11"/>
+<connect gate="G$1" pin="SPI1_RX" pad="CN1_13"/>
+<connect gate="G$1" pin="SPI1_TX" pad="CN1_14"/>
+<connect gate="G$1" pin="UART0_RX" pad="CN2_14"/>
+<connect gate="G$1" pin="UART0_TX" pad="CN2_13"/>
+<connect gate="G$1" pin="UART3_RX" pad="CN1_4"/>
+<connect gate="G$1" pin="UART3_TX" pad="CN1_5"/>
+<connect gate="G$1" pin="VCC_3V3_1" pad="CN1_16"/>
+<connect gate="G$1" pin="VCC_3V3_2" pad="CN1_17"/>
+<connect gate="G$1" pin="VCC_5V" pad="CN1_18"/>
+<connect gate="G$1" pin="VSYS(5V)" pad="CN2_18"/>
 </connects>
 <technologies>
 <technology name=""/>
