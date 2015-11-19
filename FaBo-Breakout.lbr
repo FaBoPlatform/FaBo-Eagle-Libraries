@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -133,6 +133,48 @@
 <pad name="3" x="-4.92" y="-2.54" drill="0.8"/>
 <pad name="4" x="5.24" y="-2.54" drill="0.8"/>
 </package>
+<package name="8PIN">
+<pad name="1" x="-4.92" y="3.81" drill="0.8"/>
+<pad name="6" x="5.18" y="-1.27" drill="0.8"/>
+<pad name="2" x="-4.92" y="1.27" drill="0.8"/>
+<pad name="5" x="5.24" y="-3.81" drill="0.8"/>
+<wire x1="6.35" y1="4.215121875" x2="6.35" y2="-4.215121875" width="0.127" layer="20"/>
+<wire x1="6.35" y1="-4.215121875" x2="4.985121875" y2="-5.58" width="0.127" layer="20" curve="-90"/>
+<wire x1="4.985121875" y1="-5.58" x2="-4.985121875" y2="-5.58" width="0.127" layer="20"/>
+<wire x1="-4.985121875" y1="-5.58" x2="-6.35" y2="-4.215121875" width="0.127" layer="20" curve="-90"/>
+<wire x1="-6.35" y1="-4.215121875" x2="-6.35" y2="3.81" width="0.127" layer="20"/>
+<wire x1="-6.35" y1="3.81" x2="-4.58" y2="5.58" width="0.127" layer="20" curve="-90"/>
+<wire x1="-4.58" y1="5.58" x2="4.985121875" y2="5.58" width="0.127" layer="20"/>
+<wire x1="4.985121875" y1="5.58" x2="6.35" y2="4.215121875" width="0.127" layer="20" curve="-90"/>
+<pad name="3" x="-4.92" y="-1.27" drill="0.8"/>
+<pad name="4" x="-4.92" y="-3.81" drill="0.8"/>
+<pad name="7" x="5.18" y="1.27" drill="0.8"/>
+<pad name="8" x="5.18" y="3.81" drill="0.8"/>
+</package>
+<package name="14PIN-WIDE">
+<pad name="1" x="-7.46" y="7.62" drill="0.8"/>
+<pad name="12" x="7.72" y="2.54" drill="0.8"/>
+<pad name="2" x="-7.46" y="5.08" drill="0.8"/>
+<pad name="11" x="7.78" y="0" drill="0.8"/>
+<wire x1="-7.12" y1="9.39" x2="7.525121875" y2="9.39" width="0.127" layer="20"/>
+<wire x1="7.525121875" y1="9.39" x2="8.89" y2="8.025121875" width="0.127" layer="20" curve="-90"/>
+<wire x1="8.89" y1="8.025121875" x2="8.89" y2="-8.025121875" width="0.127" layer="20"/>
+<wire x1="8.89" y1="-8.025121875" x2="7.525121875" y2="-9.39" width="0.127" layer="20" curve="-90"/>
+<wire x1="7.525121875" y1="-9.39" x2="-7.525121875" y2="-9.39" width="0.127" layer="20"/>
+<wire x1="-7.525121875" y1="-9.39" x2="-8.89" y2="-8.025121875" width="0.127" layer="20" curve="-90"/>
+<wire x1="-8.89" y1="-8.025121875" x2="-8.89" y2="7.62" width="0.127" layer="20"/>
+<wire x1="-8.89" y1="7.62" x2="-7.12" y2="9.39" width="0.127" layer="20" curve="-90"/>
+<pad name="3" x="-7.46" y="2.54" drill="0.8"/>
+<pad name="4" x="-7.46" y="0" drill="0.8"/>
+<pad name="5" x="-7.46" y="-2.54" drill="0.8"/>
+<pad name="10" x="7.78" y="-2.54" drill="0.8"/>
+<pad name="9" x="7.78" y="-5.08" drill="0.8"/>
+<pad name="8" x="7.78" y="-7.62" drill="0.8"/>
+<pad name="6" x="-7.46" y="-5.08" drill="0.8"/>
+<pad name="7" x="-7.46" y="-7.62" drill="0.8"/>
+<pad name="13" x="7.72" y="5.08" drill="0.8"/>
+<pad name="14" x="7.72" y="7.62" drill="0.8"/>
+</package>
 </packages>
 <symbols>
 <symbol name="4PIN">
@@ -193,6 +235,20 @@
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 </symbol>
+<symbol name="8PIN">
+<pin name="1" x="-12.7" y="2.54" length="middle"/>
+<pin name="2" x="-12.7" y="0" length="middle"/>
+<pin name="3" x="-12.7" y="-2.54" length="middle"/>
+<pin name="4" x="-12.7" y="-5.08" length="middle"/>
+<pin name="5" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="6" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="7" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="8" x="12.7" y="2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="4PIN">
@@ -242,7 +298,28 @@
 <gate name="G$1" symbol="14PIN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="14PIN">
+<device name="NORMAL" package="14PIN">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$10" pad="10"/>
+<connect gate="G$1" pin="P$11" pad="11"/>
+<connect gate="G$1" pin="P$12" pad="12"/>
+<connect gate="G$1" pin="P$13" pad="13"/>
+<connect gate="G$1" pin="P$14" pad="14"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="5"/>
+<connect gate="G$1" pin="P$6" pad="6"/>
+<connect gate="G$1" pin="P$7" pad="7"/>
+<connect gate="G$1" pin="P$8" pad="8"/>
+<connect gate="G$1" pin="P$9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WIDE" package="14PIN-WIDE">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$10" pad="10"/>
@@ -278,6 +355,28 @@
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="8PIN">
+<gates>
+<gate name="G$1" symbol="8PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="8PIN">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
