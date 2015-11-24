@@ -1071,9 +1071,9 @@ ARDUINO UNO R3</text>
 <pin name="MISO" x="-17.78" y="-2.54" length="middle"/>
 <pin name="GPIO25" x="17.78" y="-2.54" length="middle" rot="R180"/>
 <pin name="SCLK" x="-17.78" y="-5.08" length="middle"/>
-<pin name="GPIO8" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="CE0" x="17.78" y="-5.08" length="middle" rot="R180"/>
 <pin name="GND@25" x="-17.78" y="-7.62" length="middle"/>
-<pin name="GPIO7" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="CE1" x="17.78" y="-7.62" length="middle" rot="R180"/>
 <text x="0" y="25.4" size="1.778" layer="94" align="bottom-center">Raspberry Pi B+</text>
 <pin name="ID_SD" x="-17.78" y="-10.16" length="middle"/>
 <pin name="GPIO5" x="-17.78" y="-12.7" length="middle"/>
@@ -1407,6 +1407,8 @@ ARDUINO UNO R3</text>
 <connect gate="G$1" pin="3V3@17" pad="17"/>
 <connect gate="G$1" pin="5V@2" pad="2"/>
 <connect gate="G$1" pin="5V@4" pad="4"/>
+<connect gate="G$1" pin="CE0" pad="24"/>
+<connect gate="G$1" pin="CE1" pad="26"/>
 <connect gate="G$1" pin="GND@14" pad="14"/>
 <connect gate="G$1" pin="GND@20" pad="20"/>
 <connect gate="G$1" pin="GND@25" pad="25"/>
@@ -1432,8 +1434,6 @@ ARDUINO UNO R3</text>
 <connect gate="G$1" pin="GPIO4" pad="7"/>
 <connect gate="G$1" pin="GPIO5" pad="29"/>
 <connect gate="G$1" pin="GPIO6" pad="31"/>
-<connect gate="G$1" pin="GPIO7" pad="26"/>
-<connect gate="G$1" pin="GPIO8" pad="24"/>
 <connect gate="G$1" pin="ID_SC" pad="28"/>
 <connect gate="G$1" pin="ID_SD" pad="27"/>
 <connect gate="G$1" pin="MISO" pad="21"/>
