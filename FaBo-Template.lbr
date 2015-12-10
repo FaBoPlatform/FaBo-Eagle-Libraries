@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -12313,62 +12313,70 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-2.8" y1="-19.89" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
 </package>
 <package name="FABO-KINOMA">
-<wire x1="-50" y1="-12.659959375" x2="-50" y2="11.952090625" width="0.127" layer="20"/>
-<wire x1="-50" y1="11.952090625" x2="-44.452090625" y2="17.5" width="0.127" layer="20" curve="-90"/>
-<wire x1="-44.452090625" y1="17.5" x2="44.33430625" y2="17.5" width="0.127" layer="20"/>
-<wire x1="44.33430625" y1="17.5" x2="50" y2="11.83430625" width="0.127" layer="20" curve="-90"/>
-<wire x1="50" y1="11.83430625" x2="50" y2="-12.860928125" width="0.127" layer="20"/>
-<wire x1="50" y1="-12.860928125" x2="45.360928125" y2="-17.5" width="0.127" layer="20" curve="-90"/>
-<wire x1="45.360928125" y1="-17.5" x2="-45.159959375" y2="-17.5" width="0.127" layer="20"/>
-<wire x1="-45.159959375" y1="-17.5" x2="-50" y2="-12.659959375" width="0.127" layer="20" curve="-90"/>
-<pad name="OUT2" x="19.05" y="-10.5" drill="0.8"/>
-<pad name="OUT1" x="-19.05" y="-10.5" drill="0.8"/>
-<pad name="IN5" x="-21.59" y="-10.5" drill="0.8"/>
-<pad name="IN4" x="-24.13" y="-10.5" drill="0.8"/>
-<pad name="IN3" x="-26.67" y="-10.5" drill="0.8"/>
-<pad name="IN2" x="-29.21" y="-10.5" drill="0.8"/>
-<pad name="IN1" x="-31.75" y="-10.5" drill="0.8"/>
-<pad name="GND" x="-34.29" y="-10.5" drill="0.8"/>
-<pad name="V+" x="-36.83" y="-10.5" drill="0.8"/>
-<pad name="OUT3" x="21.59" y="-10.5" drill="0.8"/>
-<pad name="OUT4" x="24.13" y="-10.5" drill="0.8"/>
-<pad name="OUT5" x="26.67" y="-10.5" drill="0.8"/>
-<pad name="RX" x="29.21" y="-10.5" drill="0.8"/>
-<pad name="TX" x="31.75" y="-10.5" drill="0.8"/>
-<pad name="I2C-CLOCK" x="34.29" y="-10.5" drill="0.8"/>
-<pad name="I2C-DATA" x="36.83" y="-10.5" drill="0.8"/>
-<text x="-37.6" y="-13.89" size="1.27" layer="21">51</text>
-<text x="-35.1" y="-13.89" size="1.27" layer="21">52</text>
-<text x="-32.6" y="-13.89" size="1.27" layer="21">53</text>
-<text x="-30.1" y="-13.89" size="1.27" layer="21">54</text>
-<text x="-27.35" y="-13.89" size="1.27" layer="21">55</text>
-<text x="-24.85" y="-13.89" size="1.27" layer="21">56</text>
-<text x="-22.35" y="-13.89" size="1.27" layer="21">57</text>
-<text x="-19.85" y="-13.89" size="1.27" layer="21">58</text>
-<text x="18.4" y="-13.89" size="1.27" layer="21">59</text>
-<text x="20.9" y="-13.89" size="1.27" layer="21">60</text>
-<text x="23.4" y="-13.89" size="1.27" layer="21">61</text>
-<text x="25.9" y="-13.89" size="1.27" layer="21">62</text>
-<text x="28.4" y="-13.89" size="1.27" layer="21">63</text>
-<text x="30.9" y="-13.89" size="1.27" layer="21">64</text>
-<text x="33.4" y="-13.89" size="1.27" layer="21">65</text>
-<text x="35.9" y="-13.89" size="1.27" layer="21">66</text>
-<text x="-36.5" y="-8" size="1.27" layer="21" rot="R90">V+</text>
-<text x="-34" y="-8" size="1.27" layer="21" rot="R90">GND</text>
-<text x="-31.25" y="-8" size="1.27" layer="21" rot="R90">IN1</text>
-<text x="-28.5" y="-8" size="1.27" layer="21" rot="R90">IN2</text>
-<text x="-26" y="-8" size="1.27" layer="21" rot="R90">IN3</text>
-<text x="-23.5" y="-8" size="1.27" layer="21" rot="R90">IN4</text>
-<text x="-21" y="-8" size="1.27" layer="21" rot="R90">IN5</text>
-<text x="-18.5" y="-8" size="1.27" layer="21" rot="R90">OUT1</text>
-<text x="37.5" y="-8.25" size="1.27" layer="21" rot="R90">I2C Data</text>
-<text x="35" y="-8.25" size="1.27" layer="21" rot="R90">I2C Clock</text>
-<text x="32.5" y="-8.25" size="1.27" layer="21" rot="R90">TX</text>
-<text x="30" y="-8.25" size="1.27" layer="21" rot="R90">RX</text>
-<text x="19.5" y="-8.25" size="1.27" layer="21" rot="R90">OUT2</text>
-<text x="22.25" y="-8.25" size="1.27" layer="21" rot="R90">OUT3</text>
-<text x="24.75" y="-8.25" size="1.27" layer="21" rot="R90">OUT4</text>
-<text x="27.5" y="-8.25" size="1.27" layer="21" rot="R90">OUT5</text>
+<wire x1="-45" y1="-12.5" x2="-45" y2="12.5" width="0" layer="20"/>
+<wire x1="-45" y1="12.5" x2="-40" y2="17.5" width="0" layer="20" curve="-90"/>
+<wire x1="-40" y1="17.5" x2="40" y2="17.5" width="0" layer="20"/>
+<wire x1="40" y1="17.5" x2="45" y2="12.5" width="0" layer="20" curve="-90"/>
+<wire x1="45" y1="12.5" x2="45" y2="-12.5" width="0" layer="20"/>
+<wire x1="45" y1="-12.5" x2="40" y2="-17.5" width="0" layer="20" curve="-90"/>
+<wire x1="40" y1="-17.5" x2="-40" y2="-17.5" width="0" layer="20"/>
+<wire x1="-40" y1="-17.5" x2="-45" y2="-12.5" width="0" layer="20" curve="-90"/>
+<pad name="OUT2" x="13.97" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="OUT1" x="-13.97" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="IN5" x="-16.51" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="IN4" x="-19.05" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="IN3" x="-21.59" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="IN2" x="-24.13" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="IN1" x="-26.67" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="GND" x="-29.21" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="V+" x="-31.75" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="OUT3" x="16.51" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="OUT4" x="19.05" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="OUT5" x="21.59" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="RX" x="24.13" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="TX" x="26.67" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="I2C-CLOCK" x="29.21" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="I2C-DATA" x="31.75" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<text x="-31.75" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">51</text>
+<text x="-29.21" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">52</text>
+<text x="-26.67" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">53</text>
+<text x="-24.13" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">54</text>
+<text x="-21.59" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">55</text>
+<text x="-19.05" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">56</text>
+<text x="-16.51" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">57</text>
+<text x="-13.97" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">58</text>
+<text x="13.97" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">59</text>
+<text x="16.51" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">60</text>
+<text x="19.05" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">61</text>
+<text x="21.59" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">62</text>
+<text x="24.13" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">63</text>
+<text x="26.67" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">64</text>
+<text x="29.21" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">65</text>
+<text x="31.75" y="-12.7" size="1.27" layer="21" font="vector" rot="R270" align="center-left">66</text>
+<text x="-31.75" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">V+</text>
+<text x="-29.21" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">GND</text>
+<text x="-26.67" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">IN1</text>
+<text x="-24.13" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">IN2</text>
+<text x="-21.59" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">IN3</text>
+<text x="-19.05" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">IN4</text>
+<text x="-16.51" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">IN5</text>
+<text x="-13.97" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">OUT1</text>
+<text x="31.75" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">I2C Data</text>
+<text x="29.21" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">I2C Clock</text>
+<text x="26.67" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">TX</text>
+<text x="24.13" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">RX</text>
+<text x="13.97" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">OUT2</text>
+<text x="16.51" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">OUT3</text>
+<text x="19.05" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">OUT4</text>
+<text x="21.59" y="-7.62" size="1.27" layer="21" font="vector" rot="R90" align="center-left">OUT5</text>
+<wire x1="-12.7" y1="-11.43" x2="-12.7" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-11.43" x2="12.7" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-33.02" y1="-11.43" x2="-33.02" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-8.89" x2="-33.02" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-11.43" x2="-33.02" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="33.02" y1="-11.43" x2="33.02" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="33.02" y1="-8.89" x2="12.7" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="33.02" y1="-11.43" x2="12.7" y2="-11.43" width="0.127" layer="21"/>
 </package>
 <package name="FABO_BRICK_3PIN_CONNECTOR_I">
 <pad name="GND" x="-2.54" y="0.127" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
