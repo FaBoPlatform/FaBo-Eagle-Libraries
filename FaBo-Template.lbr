@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -12870,6 +12870,37 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="13" y1="-27" x2="-13" y2="-27" width="0.127" layer="20"/>
 <wire x1="-13" y1="-27" x2="-13" y2="27" width="0.127" layer="20"/>
 </package>
+<package name="SQUARE-TYPE3">
+<pad name="VCC@3" x="12.54" y="-17.78" drill="1.85" shape="square" rot="R180"/>
+<pad name="GND@3" x="-7.46" y="-17.78" drill="1.85" shape="square" rot="R180"/>
+<circle x="-2.54" y="-17.78" radius="13.5" width="0.127" layer="22"/>
+<wire x1="10.16" y1="-21.59" x2="13.97" y2="-21.59" width="0.127" layer="22"/>
+<wire x1="13.97" y1="-21.59" x2="13.97" y2="-13.97" width="0.127" layer="22"/>
+<wire x1="13.97" y1="-13.97" x2="10.16" y2="-13.97" width="0.127" layer="22"/>
+<text x="13.97" y="-27.94" size="1.778" layer="22" rot="R90">VCC</text>
+<pad name="VCC@1" x="12.54" y="10.16" drill="1.85" shape="square" rot="R180"/>
+<pad name="GND@1" x="-7.46" y="10.16" drill="1.85" shape="square" rot="R180"/>
+<circle x="-2.54" y="10.16" radius="13.5" width="0.127" layer="22"/>
+<wire x1="10.16" y1="6.35" x2="13.97" y2="6.35" width="0.127" layer="22"/>
+<wire x1="13.97" y1="6.35" x2="13.97" y2="13.97" width="0.127" layer="22"/>
+<wire x1="13.97" y1="13.97" x2="10.16" y2="13.97" width="0.127" layer="22"/>
+<text x="12.7" y="15.24" size="1.778" layer="22" rot="R90">VCC</text>
+<pad name="VCC@2" x="10.32" y="-3.81" drill="1.85" shape="square"/>
+<pad name="GND@2" x="30.32" y="-3.81" drill="1.85" shape="square"/>
+<circle x="25.4" y="-3.81" radius="13.5" width="0.127" layer="22"/>
+<wire x1="12.7" y1="0" x2="8.89" y2="0" width="0.127" layer="22"/>
+<wire x1="8.89" y1="0" x2="8.89" y2="-7.62" width="0.127" layer="22"/>
+<wire x1="8.89" y1="-7.62" x2="12.7" y2="-7.62" width="0.127" layer="22"/>
+<text x="6.35" y="-1.27" size="1.778" layer="22" rot="R270">VCC</text>
+<wire x1="-19.81" y1="31.5369625" x2="-19.81" y2="-28.0401375" width="0.127" layer="20"/>
+<wire x1="-19.81" y1="-28.0401375" x2="-14.3101375" y2="-33.54" width="0.127" layer="20" curve="90"/>
+<wire x1="-14.3101375" y1="-33.54" x2="37.727878125" y2="-33.54" width="0.127" layer="20"/>
+<wire x1="37.727878125" y1="-33.54" x2="41.4" y2="-29.867878125" width="0.127" layer="20" curve="90"/>
+<wire x1="41.4" y1="-29.867878125" x2="41.4" y2="32.38548125" width="0.127" layer="20"/>
+<wire x1="41.4" y1="32.38548125" x2="37.83548125" y2="35.95" width="0.127" layer="20" curve="90"/>
+<wire x1="37.83548125" y1="35.95" x2="-15.3969625" y2="35.95" width="0.127" layer="20"/>
+<wire x1="-15.3969625" y1="35.95" x2="-19.81" y2="31.5369625" width="0.127" layer="20" curve="90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SN3-2CP-P">
@@ -13682,6 +13713,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="VCC_3V3_2" pad="CN1_17"/>
 <connect gate="G$1" pin="VCC_5V" pad="CN1_18"/>
 <connect gate="G$1" pin="VSYS(5V)" pad="CN2_18"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SQUARE-TYPE3">
+<gates>
+<gate name="G$1" symbol="BATTERY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SQUARE-TYPE3">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND@1 GND@2 GND@3"/>
+<connect gate="G$1" pin="VCC" pad="VCC@1 VCC@2 VCC@3"/>
 </connects>
 <technologies>
 <technology name=""/>
