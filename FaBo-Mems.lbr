@@ -909,6 +909,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="2" x="0" y="-1.4" dx="0.4" dy="0.7" layer="1"/>
 <smd name="3" x="1" y="-1.4" dx="0.4" dy="0.7" layer="1"/>
 </package>
+<package name="TI-TD1050">
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<smd name="7" x="0" y="0" dx="1.5" dy="2.4" layer="1" rot="R90"/>
+<smd name="5" x="0" y="1.4" dx="0.4" dy="0.6" layer="1"/>
+<smd name="2" x="0" y="-1.4" dx="0.4" dy="0.6" layer="1"/>
+<smd name="6" x="-1" y="1.4" dx="0.4" dy="0.6" layer="1"/>
+<smd name="1" x="-1" y="-1.4" dx="0.4" dy="0.6" layer="1"/>
+<smd name="3" x="1" y="-1.4" dx="0.4" dy="0.6" layer="1"/>
+<smd name="4" x="1" y="1.4" dx="0.4" dy="0.6" layer="1"/>
+<rectangle x1="-1.5" y1="-1.5" x2="-0.75" y2="-0.75" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FREESCALE-MMA8451Q">
@@ -1530,6 +1544,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="SDA" x="12.7" y="-5.08" length="middle" rot="R180"/>
 <pin name="GND" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="NC@3" x="12.7" y="5.08" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TI-TD1050">
+<pin name="SDA" x="-12.7" y="5.08" length="middle"/>
+<pin name="GND" x="-12.7" y="0" length="middle"/>
+<pin name="NC@3" x="-12.7" y="-5.08" length="middle"/>
+<pin name="SCL" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="VDD" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="NC@4" x="12.7" y="-5.08" length="middle" rot="R180"/>
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
@@ -2401,6 +2427,26 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </gates>
 <devices>
 <device name="" package="SENSIRION-SHT21">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 7"/>
+<connect gate="G$1" pin="NC@3" pad="3"/>
+<connect gate="G$1" pin="NC@4" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TI-TD1050">
+<gates>
+<gate name="G$1" symbol="TI-TD1050" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TI-TD1050">
 <connects>
 <connect gate="G$1" pin="GND" pad="2 7"/>
 <connect gate="G$1" pin="NC@3" pad="3"/>
