@@ -536,7 +536,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="1.9812" y1="2.4892" x2="-1.9812" y2="2.4892" width="0.1524" layer="21"/>
 <wire x1="-1.9812" y1="2.4892" x2="-1.9812" y2="-2.4892" width="0.1524" layer="21"/>
 <text x="-2.8702" y="3.175" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
-<wire x1="0.508" y1="2.4892" x2="-0.508" y2="2.4892" width="0.127" layer="21" curve="-180"/>
+<circle x="-0.762" y="1.524" radius="0.359209375" width="0.127" layer="21"/>
 </package>
 <package name="FREESCALE-MPL115A2">
 <wire x1="-1.5" y1="-2.5" x2="1.5" y2="-2.5" width="0.2032" layer="21"/>
