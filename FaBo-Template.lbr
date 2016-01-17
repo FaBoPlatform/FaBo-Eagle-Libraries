@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -12496,118 +12496,118 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-24" y1="37.784240625" x2="-21.784240625" y2="40" width="0.127" layer="20" curve="-90"/>
 <wire x1="-21.784240625" y1="40" x2="21.784240625" y2="40" width="0.127" layer="20"/>
 <wire x1="21.784240625" y1="40" x2="24" y2="37.784240625" width="0.127" layer="20" curve="-90"/>
-<pad name="CN1_1" x="22.35" y="-35" drill="0.8" shape="octagon"/>
-<pad name="CN1_2" x="22.35" y="-32.46" drill="0.8" shape="octagon"/>
-<pad name="CN1_3" x="22.35" y="-29.92" drill="0.8" shape="octagon"/>
-<pad name="CN1_4" x="22.35" y="-27.38" drill="0.8" shape="octagon"/>
-<pad name="CN1_5" x="22.35" y="-24.84" drill="0.8" shape="octagon"/>
-<pad name="CN1_6" x="22.35" y="-22.3" drill="0.8" shape="octagon"/>
-<pad name="CN1_7" x="22.35" y="-19.76" drill="0.8" shape="octagon"/>
-<pad name="CN1_8" x="22.35" y="-17.22" drill="0.8" shape="octagon"/>
-<pad name="CN1_9" x="22.35" y="-14.68" drill="0.8" shape="octagon"/>
-<pad name="CN1_10" x="22.35" y="-12.14" drill="0.8" shape="octagon"/>
-<pad name="CN1_11" x="22.35" y="-9.6" drill="0.8" shape="octagon"/>
-<pad name="CN1_12" x="22.35" y="-7.06" drill="0.8" shape="octagon"/>
-<pad name="CN1_13" x="22.35" y="-4.52" drill="0.8" shape="octagon"/>
-<pad name="CN1_14" x="22.35" y="-1.98" drill="0.8" shape="octagon"/>
-<pad name="CN1_15" x="22.35" y="0.56" drill="0.8" shape="octagon"/>
-<pad name="CN1_16" x="22.35" y="3.1" drill="0.8" shape="octagon"/>
-<pad name="CN1_17" x="22.35" y="5.64" drill="0.8" shape="octagon"/>
-<pad name="CN1_18" x="22.35" y="8.18" drill="0.8" shape="octagon"/>
-<pad name="CN2_18" x="-22.1" y="-35" drill="0.8" shape="octagon"/>
-<pad name="CN2_17" x="-22.1" y="-32.46" drill="0.8" shape="octagon"/>
-<pad name="CN2_16" x="-22.1" y="-29.92" drill="0.8" shape="octagon"/>
-<pad name="CN2_15" x="-22.1" y="-27.38" drill="0.8" shape="octagon"/>
-<pad name="CN2_14" x="-22.1" y="-24.84" drill="0.8" shape="octagon"/>
-<pad name="CN2_13" x="-22.1" y="-22.3" drill="0.8" shape="octagon"/>
-<pad name="CN2_12" x="-22.1" y="-19.76" drill="0.8" shape="octagon"/>
-<pad name="CN2_11" x="-22.1" y="-17.22" drill="0.8" shape="octagon"/>
-<pad name="CN2_10" x="-22.1" y="-14.68" drill="0.8" shape="octagon"/>
-<pad name="CN2_9" x="-22.1" y="-12.14" drill="0.8" shape="octagon"/>
-<pad name="CN2_8" x="-22.1" y="-9.6" drill="0.8" shape="octagon"/>
-<pad name="CN2_7" x="-22.1" y="-7.06" drill="0.8" shape="octagon"/>
-<pad name="CN2_6" x="-22.1" y="-4.52" drill="0.8" shape="octagon"/>
-<pad name="CN2_5" x="-22.1" y="-1.98" drill="0.8" shape="octagon"/>
-<pad name="CN2_4" x="-22.1" y="0.56" drill="0.8" shape="octagon"/>
-<pad name="CN2_3" x="-22.1" y="3.1" drill="0.8" shape="octagon"/>
-<pad name="CN2_2" x="-22.1" y="5.64" drill="0.8" shape="octagon"/>
-<pad name="CN2_1" x="-22.1" y="8.18" drill="0.8" shape="octagon"/>
-<text x="19.32" y="-35.56" size="1.27" layer="21">1</text>
-<text x="19.32" y="-33.06" size="1.27" layer="21">2</text>
-<text x="19.32" y="-30.56" size="1.27" layer="21">3</text>
-<text x="19.32" y="-28.06" size="1.27" layer="21">4</text>
-<text x="19.32" y="-25.31" size="1.27" layer="21">5</text>
-<text x="19.32" y="-22.81" size="1.27" layer="21">6</text>
-<text x="19.32" y="-20.31" size="1.27" layer="21">7</text>
-<text x="19.32" y="-17.81" size="1.27" layer="21">8</text>
-<text x="19.32" y="-15.31" size="1.27" layer="21">9</text>
-<text x="18.32" y="-12.81" size="1.27" layer="21">10</text>
-<text x="18.32" y="-10.31" size="1.27" layer="21">11</text>
-<text x="18.32" y="-7.56" size="1.27" layer="21">12</text>
-<text x="18.32" y="-5.06" size="1.27" layer="21">13</text>
-<text x="18.32" y="-2.56" size="1.27" layer="21">14</text>
-<text x="18.32" y="-0.06" size="1.27" layer="21">15</text>
-<text x="18.32" y="2.44" size="1.27" layer="21">16</text>
-<text x="18.32" y="4.94" size="1.27" layer="21">17</text>
-<text x="18.32" y="7.44" size="1.27" layer="21">18</text>
-<text x="14.57" y="-35.56" size="1.27" layer="21">GND</text>
-<text x="11.07" y="-33.06" size="1.27" layer="21">I2C_SDA</text>
-<text x="11.07" y="-30.56" size="1.27" layer="21">I2C_SCL</text>
-<text x="8.82" y="-28.06" size="1.27" layer="21">UART3_RX</text>
-<text x="8.82" y="-25.31" size="1.27" layer="21">UART3_TX</text>
-<text x="10.32" y="-22.81" size="1.27" layer="21">ADC0_IN</text>
-<text x="9.57" y="-20.31" size="1.27" layer="21">SPI0_CS</text>
-<text x="9.57" y="-17.81" size="1.27" layer="21">SPI0_CLK</text>
-<text x="9.57" y="-15.31" size="1.27" layer="21">SPI0_RX</text>
-<text x="9.57" y="-12.81" size="1.27" layer="21">SPI0_TX</text>
-<text x="9.57" y="-10.31" size="1.27" layer="21">SPI1_CS</text>
-<text x="9.57" y="-7.81" size="1.27" layer="21">SPI1_CLK</text>
-<text x="9.57" y="-5.31" size="1.27" layer="21">SPI1_RX</text>
-<text x="9.57" y="-2.81" size="1.27" layer="21">SPI1_TX</text>
-<text x="13.57" y="-0.06" size="1.27" layer="21">GND</text>
-<text x="9.57" y="2.44" size="1.27" layer="21">VCC_3V3</text>
-<text x="9.57" y="4.94" size="1.27" layer="21">VCC_3V3</text>
-<text x="9.32" y="7.44" size="1.27" layer="21">VCC_5V</text>
-<text x="-20.43" y="-35.56" size="1.27" layer="21">18</text>
-<text x="-20.43" y="-32.81" size="1.27" layer="21">17</text>
-<text x="-20.43" y="-30.56" size="1.27" layer="21">16</text>
-<text x="-20.43" y="-28.06" size="1.27" layer="21">15</text>
-<text x="-20.43" y="-25.31" size="1.27" layer="21">14</text>
-<text x="-20.43" y="-22.81" size="1.27" layer="21">13</text>
-<text x="-20.43" y="-20.06" size="1.27" layer="21">12</text>
-<text x="-20.43" y="-17.81" size="1.27" layer="21">11</text>
-<text x="-20.43" y="-15.31" size="1.27" layer="21">10</text>
-<text x="-20.18" y="-12.81" size="1.27" layer="21">9</text>
-<text x="-20.18" y="-10.31" size="1.27" layer="21">8</text>
-<text x="-20.18" y="-7.56" size="1.27" layer="21">7</text>
-<text x="-20.18" y="-5.06" size="1.27" layer="21">6</text>
-<text x="-20.18" y="-2.56" size="1.27" layer="21">5</text>
-<text x="-20.18" y="-0.06" size="1.27" layer="21">4</text>
-<text x="-20.18" y="2.44" size="1.27" layer="21">3</text>
-<text x="-20.18" y="4.94" size="1.27" layer="21">2</text>
-<text x="-20.18" y="7.44" size="1.27" layer="21">1</text>
-<text x="-17.93" y="-35.56" size="1.27" layer="21">VSYS(5V)</text>
-<text x="-17.68" y="-32.81" size="1.27" layer="21">GND</text>
-<text x="-17.68" y="-30.56" size="1.27" layer="21">PWRON</text>
-<text x="-17.68" y="-28.06" size="1.27" layer="21">GPIO6_A1</text>
-<text x="-17.68" y="-25.31" size="1.27" layer="21">UART0_RX</text>
-<text x="-17.68" y="-22.56" size="1.27" layer="21">URAT0_TX</text>
-<text x="-17.68" y="-20.06" size="1.27" layer="21">I2C0_SDA</text>
-<text x="-17.68" y="-17.81" size="1.27" layer="21">I2C0_SCL</text>
-<text x="-17.68" y="-15.31" size="1.27" layer="21">PWM0</text>
-<text x="-17.68" y="-12.56" size="1.27" layer="21">AGND</text>
-<text x="-17.68" y="-7.56" size="1.27" layer="21">ALIN</text>
-<text x="-17.68" y="-5.06" size="1.27" layer="21">AROUT</text>
-<text x="-17.68" y="-2.56" size="1.27" layer="21">ALOUT</text>
-<text x="-17.68" y="-0.06" size="1.27" layer="21">GND</text>
-<text x="18.61" y="10.19" size="1.6764" layer="21">CN1</text>
-<text x="-23.22" y="10.19" size="1.6764" layer="21">CN2</text>
-<text x="-17.68" y="7.44" size="1.27" layer="21">GND</text>
-<text x="-17.68" y="4.94" size="1.27" layer="21">GND</text>
-<text x="-17.68" y="2.44" size="1.27" layer="21">GND</text>
-<text x="-17.68" y="-10.31" size="1.27" layer="21">ARIN</text>
-<pad name="P$1" x="21.75" y="-38" drill="2"/>
-<pad name="P$2" x="-21.75" y="38" drill="2"/>
+<pad name="CN1_1" x="-22.1" y="-35" drill="0.8" shape="octagon"/>
+<pad name="CN1_2" x="-22.1" y="-32.46" drill="0.8" shape="octagon"/>
+<pad name="CN1_3" x="-22.1" y="-29.92" drill="0.8" shape="octagon"/>
+<pad name="CN1_4" x="-22.1" y="-27.38" drill="0.8" shape="octagon"/>
+<pad name="CN1_5" x="-22.1" y="-24.84" drill="0.8" shape="octagon"/>
+<pad name="CN1_6" x="-22.1" y="-22.3" drill="0.8" shape="octagon"/>
+<pad name="CN1_7" x="-22.1" y="-19.76" drill="0.8" shape="octagon"/>
+<pad name="CN1_8" x="-22.1" y="-17.22" drill="0.8" shape="octagon"/>
+<pad name="CN1_9" x="-22.1" y="-14.68" drill="0.8" shape="octagon"/>
+<pad name="CN1_10" x="-22.1" y="-12.14" drill="0.8" shape="octagon"/>
+<pad name="CN1_11" x="-22.1" y="-9.6" drill="0.8" shape="octagon"/>
+<pad name="CN1_12" x="-22.1" y="-7.06" drill="0.8" shape="octagon"/>
+<pad name="CN1_13" x="-22.1" y="-4.52" drill="0.8" shape="octagon"/>
+<pad name="CN1_14" x="-22.1" y="-1.98" drill="0.8" shape="octagon"/>
+<pad name="CN1_15" x="-22.1" y="0.56" drill="0.8" shape="octagon"/>
+<pad name="CN1_16" x="-22.1" y="3.1" drill="0.8" shape="octagon"/>
+<pad name="CN1_17" x="-22.1" y="5.64" drill="0.8" shape="octagon"/>
+<pad name="CN1_18" x="-22.1" y="8.18" drill="0.8" shape="octagon"/>
+<pad name="CN2_18" x="22.35" y="-35" drill="0.8" shape="octagon"/>
+<pad name="CN2_17" x="22.35" y="-32.46" drill="0.8" shape="octagon"/>
+<pad name="CN2_16" x="22.35" y="-29.92" drill="0.8" shape="octagon"/>
+<pad name="CN2_15" x="22.35" y="-27.38" drill="0.8" shape="octagon"/>
+<pad name="CN2_14" x="22.35" y="-24.84" drill="0.8" shape="octagon"/>
+<pad name="CN2_13" x="22.35" y="-22.3" drill="0.8" shape="octagon"/>
+<pad name="CN2_12" x="22.35" y="-19.76" drill="0.8" shape="octagon"/>
+<pad name="CN2_11" x="22.35" y="-17.22" drill="0.8" shape="octagon"/>
+<pad name="CN2_10" x="22.35" y="-14.68" drill="0.8" shape="octagon"/>
+<pad name="CN2_9" x="22.35" y="-12.14" drill="0.8" shape="octagon"/>
+<pad name="CN2_8" x="22.35" y="-9.6" drill="0.8" shape="octagon"/>
+<pad name="CN2_7" x="22.35" y="-7.06" drill="0.8" shape="octagon"/>
+<pad name="CN2_6" x="22.35" y="-4.52" drill="0.8" shape="octagon"/>
+<pad name="CN2_5" x="22.35" y="-1.98" drill="0.8" shape="octagon"/>
+<pad name="CN2_4" x="22.35" y="0.56" drill="0.8" shape="octagon"/>
+<pad name="CN2_3" x="22.35" y="3.1" drill="0.8" shape="octagon"/>
+<pad name="CN2_2" x="22.35" y="5.64" drill="0.8" shape="octagon"/>
+<pad name="CN2_1" x="22.35" y="8.18" drill="0.8" shape="octagon"/>
+<text x="-20.05" y="-35.56" size="1.27" layer="21">1</text>
+<text x="-20.05" y="-33.06" size="1.27" layer="21">2</text>
+<text x="-20.05" y="-30.56" size="1.27" layer="21">3</text>
+<text x="-20.05" y="-28.06" size="1.27" layer="21">4</text>
+<text x="-20.05" y="-25.31" size="1.27" layer="21">5</text>
+<text x="-20.05" y="-22.81" size="1.27" layer="21">6</text>
+<text x="-20.05" y="-20.31" size="1.27" layer="21">7</text>
+<text x="-20.05" y="-17.81" size="1.27" layer="21">8</text>
+<text x="-20.05" y="-15.31" size="1.27" layer="21">9</text>
+<text x="-21.05" y="-12.81" size="1.27" layer="21">10</text>
+<text x="-21.05" y="-10.31" size="1.27" layer="21">11</text>
+<text x="-21.05" y="-7.56" size="1.27" layer="21">12</text>
+<text x="-21.05" y="-5.06" size="1.27" layer="21">13</text>
+<text x="-21.05" y="-2.56" size="1.27" layer="21">14</text>
+<text x="-21.05" y="-0.06" size="1.27" layer="21">15</text>
+<text x="-21.05" y="2.44" size="1.27" layer="21">16</text>
+<text x="-21.05" y="4.94" size="1.27" layer="21">17</text>
+<text x="-21.05" y="7.44" size="1.27" layer="21">18</text>
+<text x="-18.68" y="-35.56" size="1.27" layer="21">GND</text>
+<text x="-18.64" y="-33.06" size="1.27" layer="21">I2C2_SDA</text>
+<text x="-18.64" y="-30.56" size="1.27" layer="21">I2C2_SCL</text>
+<text x="-18.62" y="-28.06" size="1.27" layer="21">UART3_RX</text>
+<text x="-18.62" y="-25.31" size="1.27" layer="21">UART3_TX</text>
+<text x="-18.39" y="-22.81" size="1.27" layer="21">ADC0_IN</text>
+<text x="-18.37" y="-20.31" size="1.27" layer="21">SPI0_CS</text>
+<text x="-18.37" y="-17.81" size="1.27" layer="21">SPI0_CLK</text>
+<text x="-18.37" y="-15.31" size="1.27" layer="21">SPI0_RX</text>
+<text x="-18.37" y="-12.81" size="1.27" layer="21">SPI0_TX</text>
+<text x="-18.37" y="-10.31" size="1.27" layer="21">SPI1_CS</text>
+<text x="-18.37" y="-7.81" size="1.27" layer="21">SPI1_CLK</text>
+<text x="-18.37" y="-5.31" size="1.27" layer="21">SPI1_RX</text>
+<text x="-18.37" y="-2.81" size="1.27" layer="21">SPI1_TX</text>
+<text x="-18.18" y="-0.06" size="1.27" layer="21">GND</text>
+<text x="-18.37" y="2.44" size="1.27" layer="21">VCC_3V3</text>
+<text x="-18.37" y="4.94" size="1.27" layer="21">VCC_3V3</text>
+<text x="-18.12" y="7.44" size="1.27" layer="21">VCC_5V</text>
+<text x="19.47" y="-35.52" size="1.27" layer="21">18</text>
+<text x="19.47" y="-32.77" size="1.27" layer="21">17</text>
+<text x="19.47" y="-30.52" size="1.27" layer="21">16</text>
+<text x="19.47" y="-28.02" size="1.27" layer="21">15</text>
+<text x="19.47" y="-25.27" size="1.27" layer="21">14</text>
+<text x="19.47" y="-22.77" size="1.27" layer="21">13</text>
+<text x="19.47" y="-20.02" size="1.27" layer="21">12</text>
+<text x="19.47" y="-17.77" size="1.27" layer="21">11</text>
+<text x="19.47" y="-15.27" size="1.27" layer="21">10</text>
+<text x="19.72" y="-12.77" size="1.27" layer="21">9</text>
+<text x="19.72" y="-10.27" size="1.27" layer="21">8</text>
+<text x="19.72" y="-7.52" size="1.27" layer="21">7</text>
+<text x="19.72" y="-5.02" size="1.27" layer="21">6</text>
+<text x="19.72" y="-2.52" size="1.27" layer="21">5</text>
+<text x="19.72" y="-0.02" size="1.27" layer="21">4</text>
+<text x="19.72" y="2.48" size="1.27" layer="21">3</text>
+<text x="19.72" y="4.98" size="1.27" layer="21">2</text>
+<text x="19.72" y="7.48" size="1.27" layer="21">1</text>
+<text x="10.97" y="-35.52" size="1.27" layer="21">VSYS(5V)</text>
+<text x="14.72" y="-32.77" size="1.27" layer="21">GND</text>
+<text x="11.72" y="-30.52" size="1.27" layer="21">PWRON</text>
+<text x="10.22" y="-28.02" size="1.27" layer="21">GPIO6_A1</text>
+<text x="9.72" y="-25.27" size="1.27" layer="21">UART0_RX</text>
+<text x="9.72" y="-22.52" size="1.27" layer="21">URAT0_TX</text>
+<text x="10.72" y="-20.02" size="1.27" layer="21">I2C0_SDA</text>
+<text x="10.72" y="-17.77" size="1.27" layer="21">I2C0_SCL</text>
+<text x="13.22" y="-15.27" size="1.27" layer="21">PWM0</text>
+<text x="13.72" y="-13.02" size="1.27" layer="21">AGND</text>
+<text x="14.72" y="-7.52" size="1.27" layer="21">ALIN</text>
+<text x="12.72" y="-5.02" size="1.27" layer="21">AROUT</text>
+<text x="13.22" y="-2.52" size="1.27" layer="21">ALOUT</text>
+<text x="15.22" y="-0.02" size="1.27" layer="21">GND</text>
+<text x="-22.69" y="9.69" size="1.6764" layer="21">CN1</text>
+<text x="18.88" y="9.69" size="1.6764" layer="21">CN2</text>
+<text x="15.22" y="7.48" size="1.27" layer="21">GND</text>
+<text x="15.22" y="4.98" size="1.27" layer="21">GND</text>
+<text x="15.22" y="2.48" size="1.27" layer="21">GND</text>
+<text x="14.22" y="-10.27" size="1.27" layer="21">ARIN</text>
+<hole x="-21.8" y="38" drill="2.8"/>
+<hole x="21.8" y="-38" drill="2.8"/>
 </package>
 <package name="FABO_BRICK_I2C_CONNECTOR_I">
 <pad name="GND" x="-3.81" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
