@@ -186,8 +186,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <symbol name="CAPACITOR">
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<text x="-2.54" y="2.54" size="1.4224" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.4224" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-2.286" y="2.286" size="1.4224" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-2.286" size="1.4224" layer="96" align="top-left">&gt;VALUE</text>
 <wire x1="0.762" y1="1.524" x2="0.762" y2="0" width="0.508" layer="94"/>
 <wire x1="0.762" y1="0" x2="0.762" y2="-1.524" width="0.508" layer="94"/>
 <wire x1="1.778" y1="1.524" x2="1.778" y2="0" width="0.508" layer="94"/>
