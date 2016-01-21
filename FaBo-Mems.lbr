@@ -821,7 +821,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="3" x="0" y="-0.75" dx="0.3" dy="0.35" layer="1" rot="R90"/>
 <rectangle x1="-1" y1="0.25" x2="-0.5" y2="1" layer="25"/>
 <rectangle x1="-1" y1="0" x2="-0.25" y2="1" layer="25"/>
-<text x="-3.425" y="1.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 <polygon width="0.1" layer="21">
 <vertex x="-2" y="1"/>
 <vertex x="-2" y="0.23"/>
@@ -1426,16 +1426,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </symbol>
 <symbol name="ST-HTS221">
 <pin name="VDD" x="-15.24" y="2.54" length="middle"/>
-<pin name="SCL" x="-15.24" y="-2.54" length="middle"/>
-<pin name="DRDY" x="0" y="-12.7" length="middle" rot="R90"/>
-<pin name="SDA" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="CS" x="0" y="12.7" length="middle" rot="R270"/>
+<pin name="SCL" x="-15.24" y="-5.08" length="middle"/>
+<pin name="DRDY" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="SDA" x="-15.24" y="-7.62" length="middle"/>
+<pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="CS" x="-15.24" y="0" length="middle"/>
 <wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-12.3444" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-9.906" y="7.874" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="0" y="5.08" size="1.778" layer="94" align="bottom-center">HTS221</text>
 </symbol>
 <symbol name="INVENSENSE-ICM30630">
 <pin name="GPIO2" x="-20.32" y="2.54" length="middle"/>
@@ -2265,7 +2266,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ST-HTS221" prefix="HTS221" uservalue="yes">
+<deviceset name="ST-HTS221" prefix="IC" uservalue="yes">
 <gates>
 <gate name="HTS221" symbol="ST-HTS221" x="0" y="0"/>
 </gates>
