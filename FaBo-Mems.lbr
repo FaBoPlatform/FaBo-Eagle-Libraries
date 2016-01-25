@@ -2013,7 +2013,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </devices>
 </deviceset>
 <deviceset name="SL-SI1132">
-<description>SILICONLABS SI1145(PROXIMITY/UV/AMBIENT LIGHT SENSOR)</description>
+<description>SiliconLabs SI1131(UV Index sensor)&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="SILILONLABS-SI1132" x="0" y="0"/>
 </gates>
