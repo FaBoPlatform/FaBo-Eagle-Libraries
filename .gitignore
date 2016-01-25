@@ -1,4 +1,5 @@
-# EAGLE Backup files
+# EAGLE files
 *.s#?
 *.b#?
 *.l#?
+*.lck
