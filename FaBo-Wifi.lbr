@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -286,16 +286,16 @@
 <pin name="IO15" x="-15.24" y="-2.54" length="middle"/>
 <pin name="IO2" x="-15.24" y="-5.08" length="middle"/>
 <pin name="IO0" x="-15.24" y="-7.62" length="middle"/>
-<pin name="GND1" x="-15.24" y="-10.16" length="middle"/>
+<pin name="GND@1" x="-15.24" y="-10.16" length="middle"/>
 <pin name="IO4" x="15.24" y="-10.16" length="middle" rot="R180"/>
 <pin name="RXD" x="15.24" y="-7.62" length="middle" rot="R180"/>
 <pin name="TXD" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="GND2" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND@2" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="IO5" x="15.24" y="0" length="middle" rot="R180"/>
 <pin name="RST" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="TOUT" x="15.24" y="5.08" length="middle" rot="R180"/>
 <pin name="IO16" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="GND3" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="GND@3" x="15.24" y="10.16" length="middle" rot="R180"/>
 <wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
@@ -372,7 +372,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="ES-ESPWROOM02">
+<deviceset name="ES-ESPWROOM02" prefix="IC" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="ES-ESPWROOM02" x="0" y="0"/>
 </gates>
@@ -381,9 +381,9 @@
 <connects>
 <connect gate="G$1" pin="3V3" pad="1"/>
 <connect gate="G$1" pin="EN" pad="2"/>
-<connect gate="G$1" pin="GND1" pad="9"/>
-<connect gate="G$1" pin="GND2" pad="13"/>
-<connect gate="G$1" pin="GND3" pad="18"/>
+<connect gate="G$1" pin="GND@1" pad="9"/>
+<connect gate="G$1" pin="GND@2" pad="13"/>
+<connect gate="G$1" pin="GND@3" pad="18"/>
 <connect gate="G$1" pin="IO0" pad="8"/>
 <connect gate="G$1" pin="IO12" pad="4"/>
 <connect gate="G$1" pin="IO13" pad="5"/>
