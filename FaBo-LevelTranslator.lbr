@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -56,25 +56,31 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>&lt;h3&gt;FaBo LevelTranslator&lt;/h3&gt;
+Level Translators&lt;br&gt;
+&lt;br&gt;</description>
 <packages>
 <package name="TI-PCA9306">
-<smd name="3" x="0.175" y="-0.335" dx="0.53" dy="0.2" layer="1" rot="R90"/>
-<smd name="6" x="0.175" y="0.335" dx="0.53" dy="0.2" layer="1" rot="R90"/>
-<smd name="7" x="-0.175" y="0.335" dx="0.53" dy="0.2" layer="1" rot="R90"/>
-<smd name="8" x="-0.525" y="0.335" dx="0.53" dy="0.2" layer="1" rot="R90"/>
-<smd name="5" x="0.525" y="0.335" dx="0.53" dy="0.2" layer="1" rot="R90"/>
-<smd name="4" x="0.525" y="-0.335" dx="0.53" dy="0.2" layer="1" rot="R90"/>
-<smd name="2" x="-0.175" y="-0.335" dx="0.53" dy="0.2" layer="1" rot="R90"/>
-<smd name="1" x="-0.525" y="-0.335" dx="0.53" dy="0.2" layer="1" rot="R90"/>
-<wire x1="-0.7" y1="0.5" x2="0.7" y2="0.5" width="0.127" layer="21"/>
-<wire x1="0.7" y1="0.5" x2="0.7" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="0.7" y1="-0.5" x2="-0.7" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="-0.7" y1="-0.5" x2="-0.7" y2="0.5" width="0.127" layer="21"/>
+<smd name="3" x="0.175" y="-0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
+<smd name="6" x="0.175" y="0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
+<smd name="7" x="-0.175" y="0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
+<smd name="8" x="-0.525" y="0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
+<smd name="5" x="0.525" y="0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
+<smd name="4" x="0.525" y="-0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
+<smd name="2" x="-0.175" y="-0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
+<smd name="1" x="-0.525" y="-0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
+<wire x1="-0.725" y1="0.525" x2="0.725" y2="0.525" width="0.1" layer="21"/>
+<wire x1="0.725" y1="0.525" x2="0.725" y2="-0.525" width="0.1" layer="21"/>
+<wire x1="0.725" y1="-0.525" x2="-0.725" y2="-0.525" width="0.1" layer="21"/>
+<wire x1="-0.725" y1="-0.525" x2="-0.725" y2="0.525" width="0.1" layer="21"/>
+<rectangle x1="-0.725" y1="-0.525" x2="-0.275" y2="0.07" layer="21"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<circle x="-1" y="-0.8" radius="0.125" width="0.25" layer="21"/>
 </package>
 </packages>
 <symbols>
 <symbol name="TI-PCA9306">
-<pin name="GND" x="-15.24" y="5.08" length="middle"/>
+<pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
 <pin name="VREF1" x="-15.24" y="2.54" length="middle"/>
 <pin name="SCL1" x="-15.24" y="0" length="middle"/>
 <pin name="SDA1" x="-15.24" y="-2.54" length="middle"/>
@@ -82,19 +88,21 @@
 <pin name="SCL2" x="15.24" y="0" length="middle" rot="R180"/>
 <pin name="VREF2" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="EN" x="15.24" y="5.08" length="middle" rot="R180"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">PCA9306</text>
+<text x="-10.16" y="10.922" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TI-PCA9306">
+<deviceset name="TI-PCA9306" prefix="IC" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="TI-PCA9306" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TI-PCA9306">
+<device name="DQE" package="TI-PCA9306">
 <connects>
 <connect gate="G$1" pin="EN" pad="8"/>
 <connect gate="G$1" pin="GND" pad="1"/>

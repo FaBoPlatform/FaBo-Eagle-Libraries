@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -139,6 +139,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-0.17" y1="0.3" x2="-0.17" y2="0" width="0.2032" layer="21"/>
 <wire x1="-0.17" y1="0" x2="-0.17" y2="-0.3" width="0.2032" layer="21"/>
 <wire x1="-0.17" y1="0" x2="0.2" y2="0" width="0.1524" layer="21"/>
+<text x="0" y="1.905" size="0.8128" layer="27" font="vector" ratio="12" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="0805">
 <smd name="ANODE" x="-1" y="0" dx="1" dy="1.2" layer="1"/>
@@ -320,7 +321,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <vertex x="3.556" y="-3.048"/>
 </polygon>
 <text x="-0.762" y="2.54" size="1.27" layer="95">&gt;NAME</text>
-<text x="-0.762" y="-6.096" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-0.762" y="4.064" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="WS2812B">
 <pin name="VDD" x="-10.16" y="2.54" length="short"/>
