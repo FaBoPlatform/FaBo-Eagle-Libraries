@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -48,7 +48,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -11918,10 +11918,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-1.27" y="1.905" size="0.8128" layer="51" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
 <text x="1.27" y="1.905" size="0.8128" layer="51" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
 <text x="3.81" y="1.905" size="0.8128" layer="51" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
-<wire x1="-6.35" y1="13.4" x2="-6.35" y2="0" width="0.1" layer="21"/>
-<wire x1="6.35" y1="13.4" x2="6.35" y2="0" width="0.1" layer="21"/>
+<wire x1="-6.35" y1="1.97" x2="-6.35" y2="0" width="0.1" layer="21"/>
+<wire x1="6.35" y1="1.97" x2="6.35" y2="0" width="0.1" layer="21"/>
 <wire x1="-3.8" y1="13.4" x2="3.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="13.4" x2="6.35" y2="13.4" width="0.1" layer="21"/>
 <wire x1="-6.35" y1="0" x2="-5.08" y2="0" width="0.1" layer="21"/>
 <wire x1="5.08" y1="0" x2="6.35" y2="0" width="0.1" layer="21"/>
 </package>
