@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="11" fill="3" visible="no" active="no"/>
@@ -275,6 +275,28 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-3.27" y1="-3.02" x2="3.27" y2="-3.02" width="0.1" layer="21"/>
 <text x="-3.81" y="0" size="0.8128" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="SMD-JUMPER-2-OPEN">
+<wire x1="1.27" y1="-0.8" x2="-1.27" y2="-0.8" width="0.1" layer="21"/>
+<wire x1="1.27" y1="-0.8" x2="1.27" y2="0.8" width="0.1" layer="21"/>
+<wire x1="-1.27" y1="-0.8" x2="-1.27" y2="0.8" width="0.1" layer="21"/>
+<wire x1="-1.27" y1="0.8" x2="1.27" y2="0.8" width="0.1" layer="21"/>
+<smd name="1" x="-0.6" y="0" dx="0.8" dy="1.2" layer="1" cream="no"/>
+<smd name="2" x="0.6" y="0" dx="0.8" dy="1.2" layer="1" cream="no"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="SMD-JUMPER-2-CLOSE">
+<wire x1="1.27" y1="-0.8" x2="-1.27" y2="-0.8" width="0.1" layer="21"/>
+<wire x1="1.27" y1="-0.8" x2="1.27" y2="0.8" width="0.1" layer="21"/>
+<wire x1="-1.27" y1="-0.8" x2="-1.27" y2="0.8" width="0.1" layer="21"/>
+<wire x1="-1.27" y1="0.8" x2="1.27" y2="0.8" width="0.1" layer="21"/>
+<smd name="1" x="-0.6" y="0" dx="0.8" dy="1.2" layer="1" cream="no"/>
+<smd name="2" x="0.6" y="0" dx="0.8" dy="1.2" layer="1" cream="no"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<wire x1="-0.6" y1="0" x2="0.6" y2="0" width="0.3048" layer="1"/>
+</package>
+<package name="TP-10">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" thermals="no" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TI-TPS62730">
@@ -434,6 +456,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-7.112" y="0" size="1.6764" layer="97" align="center-left">VIN</text>
 <text x="7.112" y="0" size="1.6764" layer="97" align="center-right">VOUT</text>
 <text x="-7.62" y="5.588" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="SMD-JUMPER-2">
+<wire x1="-0.635" y1="1.651" x2="0.635" y2="1.651" width="1.27" layer="94" curve="-180" cap="flat"/>
+<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="0.762" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<wire x1="0.635" y1="0.889" x2="-0.635" y2="0.889" width="1.27" layer="94" curve="-180" cap="flat"/>
+</symbol>
+<symbol name="TP">
+<pin name="1" x="0" y="5.08" visible="off" length="middle" rot="R270"/>
+<circle x="0" y="0" radius="1.27" width="0" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -693,6 +727,46 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="VIN" pad="2"/>
 <connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMD-JUMPER-2" prefix="SJ" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SMD-JUMPER-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-CLOSE" package="SMD-JUMPER-2-CLOSE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-OPEN" package="SMD-JUMPER-2-OPEN">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TP" prefix="TP" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="TP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-10" package="TP-10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
