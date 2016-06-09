@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -952,18 +952,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </symbol>
 <symbol name="VCNL4010">
 <pin name="IR_A" x="-15.24" y="-5.08" length="middle"/>
-<pin name="IR_C2" x="-15.24" y="-7.62" length="middle"/>
-<pin name="IR_C3" x="-15.24" y="-10.16" length="middle"/>
+<pin name="IR_C@2" x="-15.24" y="-7.62" length="middle"/>
+<pin name="IR_C@3" x="-15.24" y="-10.16" length="middle"/>
 <pin name="SDA" x="-15.24" y="0" length="middle"/>
 <pin name="SCL" x="-15.24" y="2.54" length="middle"/>
 <pin name="INT" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND12" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="GND@12" x="15.24" y="-7.62" length="middle" rot="R180"/>
 <pin name="VDD" x="-15.24" y="7.62" length="middle"/>
-<pin name="GND13" x="15.24" y="-10.16" length="middle" rot="R180"/>
-<pin name="NC8" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="NC9" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="NC10" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="NC11" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="GND@13" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="NC@8" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="NC@9" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="NC@10" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="NC@11" x="15.24" y="0" length="middle" rot="R180"/>
 <wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
@@ -1451,16 +1451,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <devices>
 <device name="" package="VCNL4010-GS08">
 <connects>
-<connect gate="G$1" pin="GND12" pad="12"/>
-<connect gate="G$1" pin="GND13" pad="13"/>
+<connect gate="G$1" pin="GND@12" pad="12"/>
+<connect gate="G$1" pin="GND@13" pad="13"/>
 <connect gate="G$1" pin="INT" pad="6"/>
 <connect gate="G$1" pin="IR_A" pad="1"/>
-<connect gate="G$1" pin="IR_C2" pad="2"/>
-<connect gate="G$1" pin="IR_C3" pad="3"/>
-<connect gate="G$1" pin="NC10" pad="10"/>
-<connect gate="G$1" pin="NC11" pad="11"/>
-<connect gate="G$1" pin="NC8" pad="8"/>
-<connect gate="G$1" pin="NC9" pad="9"/>
+<connect gate="G$1" pin="IR_C@2" pad="2"/>
+<connect gate="G$1" pin="IR_C@3" pad="3"/>
+<connect gate="G$1" pin="NC@10" pad="10"/>
+<connect gate="G$1" pin="NC@11" pad="11"/>
+<connect gate="G$1" pin="NC@8" pad="8"/>
+<connect gate="G$1" pin="NC@9" pad="9"/>
 <connect gate="G$1" pin="SCL" pad="5"/>
 <connect gate="G$1" pin="SDA" pad="4"/>
 <connect gate="G$1" pin="VDD" pad="7"/>
