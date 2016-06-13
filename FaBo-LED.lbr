@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -295,23 +295,23 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="0" y="3.175" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="A-551SRD">
-<description>&lt;h2&gt;7segment LED anode common&lt;/h2&gt;
-
+<description>&lt;h3&gt;7segment LED anode common&lt;/h3&gt;
+&lt;br&gt;
 &lt;a href="http://akizukidenshi.com/catalog/g/gI-00639/"&gt;http://akizukidenshi.com/catalog/g/gI-00639/&lt;/a&gt;</description>
 <wire x1="-6.35" y1="9.5" x2="6.35" y2="9.5" width="0.1" layer="51"/>
 <wire x1="-6.35" y1="-9.5" x2="6.35" y2="-9.5" width="0.1" layer="51"/>
 <wire x1="-6.35" y1="-9.5" x2="-6.35" y2="9.5" width="0.1" layer="51"/>
 <wire x1="6.35" y1="-9.5" x2="6.35" y2="9.5" width="0.1" layer="51"/>
-<pad name="G" x="-5.08" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="F" x="-2.54" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="ANO2" x="0" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="A" x="2.54" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="B" x="5.08" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="DP" x="5.08" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="C" x="2.54" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="ANO1" x="0" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="D" x="-2.54" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="E" x="-5.08" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="G" x="-5.08" y="7.62" drill="0.9" diameter="1.6764" shape="octagon"/>
+<pad name="F" x="-2.54" y="7.62" drill="0.9" diameter="1.6764" shape="octagon"/>
+<pad name="ANO2" x="0" y="7.62" drill="0.9" diameter="1.6764" shape="octagon"/>
+<pad name="A" x="2.54" y="7.62" drill="0.9" diameter="1.6764" shape="octagon"/>
+<pad name="B" x="5.08" y="7.62" drill="0.9" diameter="1.6764" shape="octagon"/>
+<pad name="DP" x="5.08" y="-7.62" drill="0.9" diameter="1.6764" shape="octagon"/>
+<pad name="C" x="2.54" y="-7.62" drill="0.9" diameter="1.6764" shape="octagon"/>
+<pad name="ANO1" x="0" y="-7.62" drill="0.9" diameter="1.6764" shape="octagon"/>
+<pad name="D" x="-2.54" y="-7.62" drill="0.9" diameter="1.6764" shape="octagon"/>
+<pad name="E" x="-5.08" y="-7.62" drill="0.9" diameter="1.6764" shape="octagon"/>
 <wire x1="-4" y1="7.1" x2="4" y2="7.1" width="0.1" layer="51"/>
 <wire x1="-4" y1="-7.1" x2="4" y2="-7.1" width="0.1" layer="51"/>
 <wire x1="-4" y1="-7.1" x2="-4" y2="7.1" width="0.1" layer="51"/>
