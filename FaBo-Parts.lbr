@@ -173,13 +173,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="4.8" y1="-1.1" x2="-4.8" y2="-1.1" width="0.1" layer="21"/>
 </package>
 <package name="SOT23">
-<smd name="3" x="0.03" y="1.1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="1" x="-0.97" y="-1.1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="2" x="0.97" y="-1.1" dx="0.8" dy="0.9" layer="1"/>
-<wire x1="-1.45" y1="-0.65" x2="1.45" y2="-0.65" width="0.127" layer="21"/>
-<wire x1="1.45" y1="-0.65" x2="1.45" y2="0.65" width="0.127" layer="21"/>
-<wire x1="1.45" y1="0.65" x2="-1.45" y2="0.65" width="0.127" layer="21"/>
-<wire x1="-1.45" y1="0.65" x2="-1.45" y2="-0.65" width="0.127" layer="21"/>
+<smd name="3" x="0.03" y="1.1" dx="0.8" dy="0.9" layer="1" roundness="20"/>
+<smd name="1" x="-0.97" y="-1.1" dx="0.8" dy="0.9" layer="1" roundness="20"/>
+<smd name="2" x="0.97" y="-1.1" dx="0.8" dy="0.9" layer="1" roundness="20"/>
+<wire x1="-1.45" y1="-0.65" x2="1.45" y2="-0.65" width="0.1" layer="21"/>
+<wire x1="1.45" y1="-0.65" x2="1.45" y2="0.65" width="0.1" layer="21"/>
+<wire x1="1.45" y1="0.65" x2="-1.45" y2="0.65" width="0.1" layer="21"/>
+<wire x1="-1.45" y1="0.65" x2="-1.45" y2="-0.65" width="0.1" layer="21"/>
+<text x="0" y="1.905" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="SOT23-5">
 <smd name="1" x="-0.97" y="-0.85" dx="0.55" dy="1" layer="1"/>
