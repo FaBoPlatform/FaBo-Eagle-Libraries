@@ -431,9 +431,9 @@ FTDI USB to Serial UART interface</description>
 <pin name="3V3OUT" x="-15.24" y="7.62" length="middle" direction="out"/>
 <pin name="USBDM" x="-15.24" y="17.78" length="middle"/>
 <pin name="USBDP" x="-15.24" y="15.24" length="middle"/>
-<pin name="GND7" x="-15.24" y="-12.7" length="middle" direction="pwr"/>
-<pin name="GND18" x="-15.24" y="-15.24" length="middle" direction="pwr"/>
-<pin name="GND21" x="-15.24" y="-17.78" length="middle" direction="pwr"/>
+<pin name="GND@7" x="-15.24" y="-12.7" length="middle" direction="pwr"/>
+<pin name="GND@18" x="-15.24" y="-15.24" length="middle" direction="pwr"/>
+<pin name="GND@21" x="-15.24" y="-17.78" length="middle" direction="pwr"/>
 <pin name="TXD" x="15.24" y="17.78" length="middle" direction="out" rot="R180"/>
 <pin name="RXD" x="15.24" y="15.24" length="middle" direction="in" rot="R180"/>
 <pin name="VCCIO" x="-15.24" y="5.08" length="middle" direction="pwr"/>
@@ -677,7 +677,7 @@ FTDI USB to Serial UART interface</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FT232RL" prefix="U">
+<deviceset name="FT232RL" prefix="IC">
 <description>&lt;h3&gt;FT232RL&lt;/h3&gt;
 FTDI FT232RL USB to serial UART interface SSOP28</description>
 <gates>
@@ -692,9 +692,9 @@ FTDI FT232RL USB to serial UART interface SSOP28</description>
 <connect gate="G$1" pin="DCD" pad="10"/>
 <connect gate="G$1" pin="DSR" pad="9"/>
 <connect gate="G$1" pin="DTR" pad="2"/>
-<connect gate="G$1" pin="GND18" pad="18"/>
-<connect gate="G$1" pin="GND21" pad="21"/>
-<connect gate="G$1" pin="GND7" pad="7"/>
+<connect gate="G$1" pin="GND@18" pad="18"/>
+<connect gate="G$1" pin="GND@21" pad="21"/>
+<connect gate="G$1" pin="GND@7" pad="7"/>
 <connect gate="G$1" pin="OSCI" pad="27"/>
 <connect gate="G$1" pin="OSCO" pad="28"/>
 <connect gate="G$1" pin="PWREN" pad="14"/>
