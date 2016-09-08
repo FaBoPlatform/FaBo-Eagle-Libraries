@@ -1350,6 +1350,64 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="88.9" y1="1.27" x2="87.63" y2="0" width="0" layer="20" curve="-90"/>
 <wire x1="87.63" y1="53.34" x2="88.9" y2="52.07" width="0" layer="20" curve="-90"/>
 </package>
+<package name="ARDUINO_MEGA_SHIELD_NOHOLE">
+<wire x1="87.63" y1="0" x2="1.27" y2="0" width="0" layer="20"/>
+<wire x1="1.27" y1="0" x2="0" y2="1.27" width="0" layer="20" curve="-90"/>
+<wire x1="0" y1="1.27" x2="0" y2="52.07" width="0" layer="20"/>
+<wire x1="0" y1="52.07" x2="1.27" y2="53.34" width="0" layer="20" curve="-90"/>
+<wire x1="1.27" y1="53.34" x2="87.63" y2="53.34" width="0" layer="20"/>
+<wire x1="88.9" y1="52.07" x2="88.9" y2="1.27" width="0" layer="20"/>
+<pad name="D7" x="45.72" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="D6" x="48.26" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="D5" x="50.8" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="D4" x="53.34" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="D3" x="55.88" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="D2" x="58.42" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="D1" x="60.96" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="D0" x="63.5" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="RX2" x="76.2" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="TX2" x="73.66" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="RX3" x="71.12" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="TX3" x="68.58" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="TX1" x="78.74" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="RX1" x="81.28" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="SDA2" x="83.82" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="SCL2" x="86.36" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="D13" x="28.956" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="GND3" x="26.416" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="AREF" x="23.876" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="SDA1" x="21.336" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="D12" x="31.496" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="D11" x="34.036" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="D10" x="36.576" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="D9" x="39.116" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="D8" x="41.656" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="SCL1" x="18.796" y="50.8" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="3V3" x="35.56" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="5V1" x="38.1" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="RESET1" x="33.02" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="IOREF" x="30.48" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="NC" x="27.94" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="GND1" x="40.64" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="GND2" x="43.18" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="VIN" x="45.72" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="A3" x="58.42" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="A2" x="55.88" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="A1" x="53.34" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="A0" x="50.8" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="A4" x="60.96" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="A5" x="63.5" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="A6" x="66.04" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="A7" x="68.58" y="2.54" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="SCK" x="63.5" y="27.94" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="MOSI" x="66.04" y="27.94" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="MISO" x="63.5" y="30.48" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="5V2" x="66.04" y="30.48" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="GND4" x="66.04" y="25.4" drill="1.1" diameter="1.9304" shape="octagon"/>
+<pad name="RESET2" x="63.5" y="25.4" drill="1.1" diameter="1.9304" shape="octagon"/>
+<wire x1="88.9" y1="1.27" x2="87.63" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="87.63" y1="53.34" x2="88.9" y2="52.07" width="0" layer="20" curve="-90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_UNO_R3">
@@ -2403,6 +2461,61 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </gates>
 <devices>
 <device name="" package="ARDUINO_MEGA_SHIELD">
+<connects>
+<connect gate="G$1" pin="3V3" pad="3V3"/>
+<connect gate="G$1" pin="5V@1" pad="5V1"/>
+<connect gate="G$1" pin="5V@2" pad="5V2"/>
+<connect gate="G$1" pin="A0" pad="A0"/>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="A3" pad="A3"/>
+<connect gate="G$1" pin="A4" pad="A4"/>
+<connect gate="G$1" pin="A5" pad="A5"/>
+<connect gate="G$1" pin="A6" pad="A6"/>
+<connect gate="G$1" pin="A7" pad="A7"/>
+<connect gate="G$1" pin="AREF" pad="AREF"/>
+<connect gate="G$1" pin="D0" pad="D0"/>
+<connect gate="G$1" pin="D1" pad="D1"/>
+<connect gate="G$1" pin="D10" pad="D10"/>
+<connect gate="G$1" pin="D11" pad="D11"/>
+<connect gate="G$1" pin="D12" pad="D12"/>
+<connect gate="G$1" pin="D13" pad="D13"/>
+<connect gate="G$1" pin="D2" pad="D2"/>
+<connect gate="G$1" pin="D3" pad="D3"/>
+<connect gate="G$1" pin="D4" pad="D4"/>
+<connect gate="G$1" pin="D5" pad="D5"/>
+<connect gate="G$1" pin="D6" pad="D6"/>
+<connect gate="G$1" pin="D7" pad="D7"/>
+<connect gate="G$1" pin="D8" pad="D8"/>
+<connect gate="G$1" pin="D9" pad="D9"/>
+<connect gate="G$1" pin="GND@1" pad="GND1"/>
+<connect gate="G$1" pin="GND@2" pad="GND2"/>
+<connect gate="G$1" pin="GND@3" pad="GND3"/>
+<connect gate="G$1" pin="GND@4" pad="GND4"/>
+<connect gate="G$1" pin="IOREF" pad="IOREF"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="NC" pad="NC"/>
+<connect gate="G$1" pin="RESET@1" pad="RESET1"/>
+<connect gate="G$1" pin="RESET@2" pad="RESET2"/>
+<connect gate="G$1" pin="RX1" pad="RX1"/>
+<connect gate="G$1" pin="RX2" pad="RX2"/>
+<connect gate="G$1" pin="RX3" pad="RX3"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="SCL@1" pad="SCL1"/>
+<connect gate="G$1" pin="SCL@2" pad="SCL2"/>
+<connect gate="G$1" pin="SDA@1" pad="SDA1"/>
+<connect gate="G$1" pin="SDA@2" pad="SDA2"/>
+<connect gate="G$1" pin="TX1" pad="TX1"/>
+<connect gate="G$1" pin="TX2" pad="TX2"/>
+<connect gate="G$1" pin="TX3" pad="TX3"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-NOHOLE" package="ARDUINO_MEGA_SHIELD_NOHOLE">
 <connects>
 <connect gate="G$1" pin="3V3" pad="3V3"/>
 <connect gate="G$1" pin="5V@1" pad="5V1"/>
