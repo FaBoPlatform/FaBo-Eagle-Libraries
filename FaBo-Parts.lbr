@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -582,22 +582,46 @@ http://akizukidenshi.com/download/ds/avvicon/MJ-4PP-9.pdf</description>
 <text x="0" y="1.905" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 <text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
 </package>
+<package name="ST-MITE">
+<wire x1="-1.45" y1="0.95" x2="0.45" y2="0.95" width="0.1" layer="51"/>
+<wire x1="0.45" y1="0.95" x2="0.45" y2="-0.95" width="0.1" layer="51"/>
+<wire x1="0.45" y1="-0.95" x2="-1.45" y2="-0.95" width="0.1" layer="51"/>
+<wire x1="-1.45" y1="-0.95" x2="-1.45" y2="0.95" width="0.1" layer="51"/>
+<smd name="K" x="-0.75" y="0" dx="2.5" dy="2.2" layer="1" roundness="20"/>
+<smd name="A" x="1.81" y="0" dx="1.4" dy="0.8" layer="1" roundness="30"/>
+<wire x1="-1.95" y1="0.95" x2="-1.95" y2="-0.95" width="0.1" layer="21"/>
+<wire x1="1.95" y1="0.95" x2="1.95" y2="-0.95" width="0.1" layer="21"/>
+<wire x1="-1.95" y1="0.95" x2="1.95" y2="0.95" width="0.1" layer="21"/>
+<wire x1="-1.95" y1="-0.95" x2="1.95" y2="-0.95" width="0.1" layer="21"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="NR5040">
+<smd name="1" x="-1.8" y="0" dx="1.5" dy="4" layer="1" roundness="30"/>
+<smd name="2" x="1.8" y="0" dx="1.5" dy="4" layer="1" roundness="30"/>
+<wire x1="-2.45" y1="2.45" x2="2.45" y2="2.45" width="0.1" layer="21"/>
+<wire x1="2.45" y1="2.45" x2="2.45" y2="-2.45" width="0.1" layer="21"/>
+<wire x1="2.45" y1="-2.45" x2="-2.45" y2="-2.45" width="0.1" layer="21"/>
+<wire x1="-2.45" y1="-2.45" x2="-2.45" y2="2.45" width="0.1" layer="21"/>
+<text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
-<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="point"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" rot="R180"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0.762" x2="-2.54" y2="0.762" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0.762" x2="-2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="0.762" x2="-1.27" y2="0.762" width="0.254" layer="94" curve="-180"/>
 <wire x1="-1.27" y1="0.762" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="0.762" x2="0" y2="0.762" width="0.254" layer="94" curve="-180"/>
 <wire x1="0" y1="0.762" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0.762" x2="1.27" y2="0.762" width="0.254" layer="94" curve="-180"/>
 <wire x1="1.27" y1="0.762" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0.762" x2="2.54" y2="0.762" width="0.254" layer="94" curve="-180"/>
-<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.254" layer="94"/>
-<text x="0" y="-1.27" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
-<text x="0" y="2.54" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-5.08" y="-1.27" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
 </symbol>
 <symbol name="C&amp;K_JS202011SCQN">
 <pin name="1" x="-10.16" y="2.54" visible="pin" length="middle"/>
@@ -1131,6 +1155,16 @@ http://akizukidenshi.com/download/ds/avvicon/MJ-4PP-9.pdf</description>
 <wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <text x="-5.08" y="8.128" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="DIODE">
+<pin name="K" x="-5.08" y="0" visible="pad" length="short"/>
+<pin name="A" x="2.54" y="0" visible="pad" length="short" rot="R180"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<text x="-5.08" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="INDUCTOR" prefix="L" uservalue="yes">
@@ -1148,6 +1182,15 @@ http://akizukidenshi.com/download/ds/avvicon/MJ-4PP-9.pdf</description>
 </technologies>
 </device>
 <device name="-LQH3NPN" package="LQH3NPN">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-NR5040" package="NR5040">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1733,6 +1776,22 @@ akizuki
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="OUT" pad="OUT"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODE" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-STPS120M" package="ST-MITE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
