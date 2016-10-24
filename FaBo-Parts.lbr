@@ -598,10 +598,10 @@ http://akizukidenshi.com/download/ds/avvicon/MJ-4PP-9.pdf</description>
 <package name="NR5040">
 <smd name="1" x="-1.8" y="0" dx="1.5" dy="4" layer="1" roundness="30"/>
 <smd name="2" x="1.8" y="0" dx="1.5" dy="4" layer="1" roundness="30"/>
-<wire x1="-2.45" y1="2.45" x2="2.45" y2="2.45" width="0.1" layer="21"/>
-<wire x1="2.45" y1="2.45" x2="2.45" y2="-2.45" width="0.1" layer="21"/>
-<wire x1="2.45" y1="-2.45" x2="-2.45" y2="-2.45" width="0.1" layer="21"/>
-<wire x1="-2.45" y1="-2.45" x2="-2.45" y2="2.45" width="0.1" layer="21"/>
+<wire x1="-2.55" y1="2.55" x2="2.55" y2="2.55" width="0.1" layer="21"/>
+<wire x1="2.55" y1="2.55" x2="2.55" y2="-2.55" width="0.1" layer="21"/>
+<wire x1="2.55" y1="-2.55" x2="-2.55" y2="-2.55" width="0.1" layer="21"/>
+<wire x1="-2.55" y1="-2.55" x2="-2.55" y2="2.55" width="0.1" layer="21"/>
 <text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="NR6028">
