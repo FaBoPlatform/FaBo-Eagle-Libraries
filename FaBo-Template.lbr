@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -13632,6 +13632,34 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-6.35" y="-8.89" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">MISO</text>
 <text x="6.35" y="-8.89" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
 </package>
+<package name="FABO_BRICK_SERIAL_S05B-PASK-2">
+<pad name="GND" x="-4" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="VCC" x="-2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="TX" x="0" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="5.5" y="2.1" drill="1.1"/>
+<wire x1="6" y1="-3.5" x2="6" y2="8.2" width="0.127" layer="51"/>
+<wire x1="-6" y1="-3.5" x2="-6" y2="8.2" width="0.127" layer="51"/>
+<wire x1="6" y1="8.2" x2="2" y2="8.2" width="0.127" layer="51"/>
+<wire x1="2" y1="8.2" x2="-2" y2="8.2" width="0.127" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-6" y2="8.2" width="0.127" layer="51"/>
+<wire x1="6" y1="-3.5" x2="5.3" y2="-3.5" width="0.127" layer="51"/>
+<text x="0" y="-4.445" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<hole x="-5.5" y="2.1" drill="1.1"/>
+<wire x1="-5.3" y1="-3.5" x2="-6" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="2" y1="6.7" x2="-2" y2="6.7" width="0.127" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-2" y2="6.7" width="0.127" layer="51"/>
+<wire x1="2" y1="8.2" x2="2" y2="6.7" width="0.127" layer="51"/>
+<text x="-4" y="1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<text x="-2" y="1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="0" y="1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
+<pad name="RX" x="2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<text x="2" y="1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
+<wire x1="-5.3" y1="-3.5" x2="-5.3" y2="0.5" width="0.127" layer="51"/>
+<wire x1="5.3" y1="-3.5" x2="5.3" y2="0.5" width="0.127" layer="51"/>
+<wire x1="5.3" y1="0.5" x2="-5.3" y2="0.5" width="0.127" layer="51"/>
+<pad name="IO" x="4" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<text x="4" y="1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">IO</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SN3-2CP-P">
@@ -13922,6 +13950,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-10.16" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <text x="-5.08" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="SERIAL_5P">
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="TX" x="10.16" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="RX" x="10.16" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VCC" x="10.16" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="10.16" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<text x="-5.08" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+<pin name="IO" x="10.16" y="5.08" visible="pin" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -14680,6 +14720,25 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="MOSI" pad="MOSI"/>
 <connect gate="G$1" pin="RESET" pad="RESET"/>
 <connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SERIAL_5P" prefix="CN" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SERIAL_5P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SIDE" package="FABO_BRICK_SERIAL_S05B-PASK-2">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IO" pad="IO"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>

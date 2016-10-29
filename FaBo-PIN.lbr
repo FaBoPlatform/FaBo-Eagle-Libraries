@@ -1348,6 +1348,63 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="20" x="-2.3" y="1.95" dx="0.4" dy="1.1" layer="1"/>
 <text x="0" y="0" size="0.8128" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
 </package>
+<package name="FH12-5S-1SH">
+<wire x1="-4.3" y1="0" x2="4.3" y2="0" width="0.1" layer="51"/>
+<smd name="1" x="-2" y="6" dx="0.6" dy="1.3" layer="1" roundness="30"/>
+<smd name="2" x="-1" y="6" dx="0.6" dy="1.3" layer="1" roundness="30"/>
+<smd name="3" x="0" y="6" dx="0.6" dy="1.3" layer="1" roundness="30"/>
+<smd name="4" x="1" y="6" dx="0.6" dy="1.3" layer="1" roundness="30"/>
+<smd name="5" x="2" y="6" dx="0.6" dy="1.3" layer="1" roundness="30"/>
+<smd name="P$1" x="-4.25" y="3" dx="1.8" dy="2.2" layer="1" roundness="30"/>
+<smd name="P$2" x="4.25" y="3" dx="1.8" dy="2.2" layer="1" roundness="30"/>
+<wire x1="-4.3" y1="5.6" x2="4.3" y2="5.6" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="5.6" x2="-4.3" y2="4.4" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="4.4" x2="-4.3" y2="0" width="0.1" layer="51"/>
+<wire x1="4.3" y1="5.6" x2="4.3" y2="4.4" width="0.1" layer="51"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<circle x="-3.2" y="6" radius="0.3" width="0.4" layer="21"/>
+<wire x1="4.3" y1="4.4" x2="4.3" y2="0" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="4.4" x2="4.3" y2="4.4" width="0.1" layer="51" style="shortdash"/>
+</package>
+<package name="PIN_1X1_SMALL">
+<pad name="1" x="0" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+</package>
+<package name="PIN_1X4_2MM">
+<pad name="3" x="1" y="0" drill="0.8" diameter="1.4224" shape="octagon" rot="R90"/>
+<pad name="4" x="3" y="0" drill="0.8" diameter="1.4224" shape="octagon" rot="R90"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<pad name="1" x="-3" y="0" drill="0.8" diameter="1.4224" shape="square" rot="R90"/>
+<pad name="2" x="-1" y="0" drill="0.8" diameter="1.4224" shape="octagon" rot="R90"/>
+</package>
+<package name="20R-JMCS-G-B-TF">
+<smd name="1" x="-2.3" y="-1.85" dx="0.4" dy="1" layer="1"/>
+<smd name="2" x="-1.75" y="-1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="3" x="-1.25" y="-1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="4" x="-0.75" y="-1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="5" x="-0.25" y="-1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="6" x="0.25" y="-1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="7" x="0.75" y="-1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="8" x="1.25" y="-1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="9" x="1.75" y="-1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="10" x="2.3" y="-1.85" dx="0.4" dy="1" layer="1"/>
+<smd name="11" x="2.3" y="1.85" dx="0.4" dy="1" layer="1"/>
+<smd name="12" x="1.75" y="1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="13" x="1.25" y="1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="14" x="0.75" y="1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="15" x="0.25" y="1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="16" x="-0.25" y="1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="17" x="-0.75" y="1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="18" x="-1.25" y="1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="19" x="-1.75" y="1.85" dx="0.3" dy="1" layer="1"/>
+<smd name="20" x="-2.3" y="1.85" dx="0.4" dy="1" layer="1"/>
+<wire x1="-3.15" y1="1.65" x2="3.15" y2="1.65" width="0.1" layer="51"/>
+<wire x1="-3.15" y1="-1.65" x2="3.15" y2="-1.65" width="0.1" layer="51"/>
+<wire x1="-3.15" y1="-1.65" x2="-3.15" y2="1.65" width="0.1" layer="51"/>
+<wire x1="3.15" y1="-1.65" x2="3.15" y2="1.65" width="0.1" layer="51"/>
+<hole x="-2.85" y="0" drill="0.5"/>
+<hole x="2.85" y="0" drill="0.5"/>
+<text x="0" y="0" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FABO-PIN-HEADER-2X3-SMD">
@@ -1687,6 +1744,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="0" y="12.7" size="1.27" layer="94" align="bottom-center">PLUG</text>
 <text x="-7.62" y="15.494" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="PIN_HEADER_1X5">
+<pin name="1" x="-5.08" y="7.62" visible="pin" length="short" rot="R270"/>
+<pin name="2" x="-2.54" y="7.62" visible="pin" length="short" rot="R270"/>
+<pin name="3" x="0" y="7.62" visible="pin" length="short" rot="R270"/>
+<pin name="4" x="2.54" y="7.62" visible="pin" length="short" rot="R270"/>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-8.89" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<pin name="5" x="5.08" y="7.62" visible="pin" length="short" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FABO-PIN-HEADER-2X3-SMD">
@@ -1840,6 +1909,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-SMALL" package="PIN_1X1_SMALL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="PIN_HEADER_1X12" prefix="CN" uservalue="yes">
@@ -1901,6 +1978,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </gates>
 <devices>
 <device name="" package="PIN_1X4_SNEAKY">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2MM" package="PIN_1X4_2MM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2323,6 +2411,52 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-RECEPT" package="20R-JMCS-G-B-TF">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FH12-5S-1SH" prefix="CN" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="PIN_HEADER_1X5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FH12-5S-1SH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>

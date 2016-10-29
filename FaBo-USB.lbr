@@ -417,6 +417,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="3" x="0" y="0" drill="1" diameter="1.778" shape="octagon"/>
 <pad name="4" x="2.5" y="0" drill="1" diameter="1.778" shape="octagon"/>
 <pad name="5" x="5" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<wire x1="-7" y1="1.9" x2="7" y2="1.9" width="0.127" layer="51"/>
+<wire x1="7" y1="1.9" x2="7" y2="-1.9" width="0.127" layer="51"/>
+<wire x1="7" y1="-1.9" x2="-7" y2="-1.9" width="0.127" layer="51"/>
+<wire x1="-7" y1="-1.9" x2="-7" y2="1.9" width="0.127" layer="51"/>
+<text x="-7.62" y="0" size="0.8128" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="SSOP-20">
 <wire x1="-3.5" y1="2.65" x2="3.5" y2="2.65" width="0.1" layer="21"/>
@@ -665,13 +670,13 @@ FTDI USB to Serial UART interface</description>
 <pin name="GND@1" x="-20.32" y="-25.4" length="middle"/>
 <pin name="VCC@2" x="-20.32" y="33.02" length="middle"/>
 <pin name="AVCC@3" x="-20.32" y="20.32" length="middle"/>
-<pin name="XTIN" x="-20.32" y="-5.08" length="middle"/>
-<pin name="XTOUT" x="-20.32" y="-7.62" length="middle"/>
+<pin name="XTIN" x="-20.32" y="-10.16" length="middle"/>
+<pin name="XTOUT" x="-20.32" y="-12.7" length="middle"/>
 <pin name="AGND@6" x="-20.32" y="-27.94" length="middle"/>
-<pin name="PLLFLTR@7" x="-20.32" y="15.24" length="middle"/>
+<pin name="PLLFLTR@7" x="-20.32" y="-17.78" length="middle"/>
 <pin name="TEST@8" x="-20.32" y="-20.32" length="middle"/>
-<pin name="RESET@9" x="-20.32" y="-12.7" length="middle"/>
-<pin name="PROG@10" x="-20.32" y="-15.24" length="middle"/>
+<pin name="RESET@9" x="-20.32" y="15.24" length="middle"/>
+<pin name="PROG@10" x="-20.32" y="10.16" length="middle"/>
 <pin name="BDBUS0" x="20.32" y="33.02" length="middle" rot="R180"/>
 <pin name="BDBUS1" x="20.32" y="30.48" length="middle" rot="R180"/>
 <pin name="BDBUS2" x="20.32" y="27.94" length="middle" rot="R180"/>
@@ -686,11 +691,11 @@ FTDI USB to Serial UART interface</description>
 <pin name="BCBUS2" x="20.32" y="7.62" length="middle" rot="R180"/>
 <pin name="BCBUS3" x="20.32" y="5.08" length="middle" rot="R180"/>
 <pin name="GND@24" x="-20.32" y="-30.48" length="middle"/>
-<pin name="USB1DP" x="-20.32" y="10.16" length="middle"/>
-<pin name="USB1DM" x="-20.32" y="7.62" length="middle"/>
+<pin name="USB1DP" x="-20.32" y="5.08" length="middle"/>
+<pin name="USB1DM" x="-20.32" y="2.54" length="middle"/>
 <pin name="GND@27" x="-20.32" y="-33.02" length="middle"/>
-<pin name="USB2DP" x="-20.32" y="2.54" length="middle"/>
-<pin name="USB2DM" x="-20.32" y="0" length="middle"/>
+<pin name="USB2DP" x="-20.32" y="-2.54" length="middle"/>
+<pin name="USB2DM" x="-20.32" y="-5.08" length="middle"/>
 <pin name="VCCIO@30" x="-20.32" y="27.94" length="middle"/>
 <pin name="ADBUS0" x="20.32" y="2.54" length="middle" rot="R180"/>
 <pin name="ADBUS1" x="20.32" y="0" length="middle" rot="R180"/>
