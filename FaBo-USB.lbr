@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -492,6 +492,77 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="5.3" y1="0.5" x2="-5.3" y2="0.5" width="0.127" layer="51"/>
 <pad name="1" x="4" y="0" drill="0.8" diameter="1.4224" shape="square"/>
 <circle x="4" y="-1.5" radius="0.3" width="0.5" layer="21"/>
+</package>
+<package name="S05B-PASK-2_DOC">
+<pad name="5" x="-4" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="4" x="-2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="3" x="0" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="5.5" y="2.1" drill="1.1"/>
+<wire x1="6" y1="-3.5" x2="6" y2="8.2" width="0.127" layer="51"/>
+<wire x1="-6" y1="-3.5" x2="-6" y2="8.2" width="0.127" layer="51"/>
+<wire x1="6" y1="8.2" x2="2" y2="8.2" width="0.127" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-6" y2="8.2" width="0.127" layer="51"/>
+<wire x1="6" y1="-3.5" x2="5.3" y2="-3.5" width="0.127" layer="51"/>
+<text x="0" y="-4.445" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<hole x="-5.5" y="2.1" drill="1.1"/>
+<wire x1="-5.3" y1="-3.5" x2="-6" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="2" y1="2.89" x2="-2" y2="2.89" width="0.127" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-2" y2="2.89" width="0.127" layer="51"/>
+<wire x1="2" y1="8.2" x2="2" y2="2.89" width="0.127" layer="51"/>
+<pad name="2" x="2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<wire x1="-5.3" y1="-3.5" x2="-5.3" y2="0.5" width="0.127" layer="51"/>
+<wire x1="5.3" y1="-3.5" x2="5.3" y2="0.5" width="0.127" layer="51"/>
+<wire x1="5.3" y1="0.5" x2="-5.3" y2="0.5" width="0.127" layer="51"/>
+<pad name="1" x="4" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<circle x="4" y="-1.5" radius="0.3" width="0.5" layer="21"/>
+<wire x1="6" y1="10.3" x2="-6" y2="10.3" width="0.127" layer="51"/>
+<wire x1="-6" y1="10.3" x2="-6" y2="8.2" width="0.127" layer="51"/>
+<wire x1="6" y1="10.3" x2="6" y2="8.2" width="0.127" layer="51"/>
+</package>
+<package name="SM05B-PASS">
+<wire x1="7" y1="0.25" x2="7" y2="9.15" width="0.127" layer="51"/>
+<wire x1="-7" y1="0.25" x2="-7" y2="9.15" width="0.127" layer="51"/>
+<wire x1="7" y1="9.15" x2="5" y2="9.15" width="0.127" layer="51"/>
+<wire x1="-5" y1="9.15" x2="-7" y2="9.15" width="0.127" layer="51"/>
+<text x="0" y="-4.445" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<wire x1="5" y1="6.7" x2="-5" y2="6.7" width="0.127" layer="51"/>
+<wire x1="-5" y1="9.15" x2="-5" y2="6.7" width="0.127" layer="51"/>
+<wire x1="5" y1="9.15" x2="5" y2="6.7" width="0.127" layer="51"/>
+<wire x1="7" y1="0.25" x2="-7" y2="0.25" width="0.127" layer="51"/>
+<circle x="4" y="-2" radius="0.3" width="0.5" layer="21"/>
+<smd name="1" x="4" y="0" dx="1" dy="2.7" layer="1" roundness="20"/>
+<smd name="2" x="2" y="0" dx="1" dy="2.7" layer="1" roundness="20"/>
+<smd name="3" x="0" y="0" dx="1" dy="2.7" layer="1" roundness="20"/>
+<smd name="4" x="-2" y="0" dx="1" dy="2.7" layer="1" roundness="20"/>
+<smd name="5" x="-4" y="0" dx="1" dy="2.7" layer="1" roundness="20"/>
+<smd name="P$1" x="6.35" y="4.45" dx="1.8" dy="3.8" layer="1" roundness="20"/>
+<smd name="P$2" x="-6.35" y="4.45" dx="1.8" dy="3.8" layer="1" roundness="20"/>
+<wire x1="-7" y1="0.25" x2="-7" y2="9.15" width="0.127" layer="21"/>
+<wire x1="-5" y1="9.15" x2="-7" y2="9.15" width="0.127" layer="21"/>
+<wire x1="7" y1="0.25" x2="-7" y2="0.25" width="0.127" layer="21"/>
+<wire x1="7" y1="0.25" x2="7" y2="9.15" width="0.127" layer="21"/>
+<wire x1="7" y1="9.15" x2="5" y2="9.15" width="0.127" layer="21"/>
+</package>
+<package name="SM05B-PASS_DOC">
+<wire x1="7" y1="0.25" x2="7" y2="9.15" width="0.127" layer="51"/>
+<wire x1="-7" y1="0.25" x2="-7" y2="9.15" width="0.127" layer="51"/>
+<wire x1="7" y1="9.15" x2="2" y2="9.15" width="0.127" layer="51"/>
+<wire x1="-2" y1="9.15" x2="-7" y2="9.15" width="0.127" layer="51"/>
+<wire x1="2" y1="2.89" x2="-2" y2="2.89" width="0.127" layer="51"/>
+<wire x1="-2" y1="9.15" x2="-2" y2="2.89" width="0.127" layer="51"/>
+<wire x1="2" y1="9.15" x2="2" y2="2.89" width="0.127" layer="51"/>
+<wire x1="7" y1="0.25" x2="-7" y2="0.25" width="0.127" layer="51"/>
+<circle x="4" y="-2" radius="0.3" width="0.5" layer="21"/>
+<smd name="1" x="4" y="0" dx="1" dy="2.7" layer="1" roundness="20"/>
+<smd name="2" x="2" y="0" dx="1" dy="2.7" layer="1" roundness="20"/>
+<smd name="3" x="0" y="0" dx="1" dy="2.7" layer="1" roundness="20"/>
+<smd name="4" x="-2" y="0" dx="1" dy="2.7" layer="1" roundness="20"/>
+<smd name="5" x="-4" y="0" dx="1" dy="2.7" layer="1" roundness="20"/>
+<smd name="P$1" x="6.35" y="4.45" dx="1.8" dy="3.8" layer="1" roundness="20"/>
+<smd name="P$2" x="-6.35" y="4.45" dx="1.8" dy="3.8" layer="1" roundness="20"/>
+<wire x1="7" y1="11.35" x2="-7" y2="11.35" width="0.127" layer="51"/>
+<wire x1="-7" y1="11.35" x2="-7" y2="9.15" width="0.127" layer="51"/>
+<wire x1="7" y1="11.35" x2="7" y2="9.15" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -1189,6 +1260,18 @@ FTDI FT232RL USB to serial UART interface SSOP28</description>
 </gates>
 <devices>
 <device name="_S05B-PASK-2" package="S05B-PASK-2">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SHLD" pad="1"/>
+<connect gate="G$1" pin="VBUS" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SMT" package="SM05B-PASS">
 <connects>
 <connect gate="G$1" pin="D+" pad="3"/>
 <connect gate="G$1" pin="D-" pad="2"/>
