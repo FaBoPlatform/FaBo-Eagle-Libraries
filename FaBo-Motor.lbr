@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -162,6 +162,22 @@
 <wire x1="7.62" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 </symbol>
+<symbol name="DRV8832">
+<pin name="OUT2" x="-12.7" y="5.08" length="middle"/>
+<pin name="ISEN" x="-12.7" y="2.54" length="middle"/>
+<pin name="OUT1" x="-12.7" y="0" length="middle"/>
+<pin name="VCC" x="-12.7" y="-2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="-5.08" length="middle"/>
+<pin name="FAULT" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="VSET" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="VREF" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="IN2" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="IN1" x="15.24" y="5.08" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PCA9685">
@@ -223,6 +239,30 @@
 <connect gate="G$1" pin="SCL" pad="10"/>
 <connect gate="G$1" pin="SDA" pad="9"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DRV8832">
+<gates>
+<gate name="G$1" symbol="DRV8832" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DRV8830">
+<connects>
+<connect gate="G$1" pin="FAULT" pad="6"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="IN1" pad="9"/>
+<connect gate="G$1" pin="IN2" pad="10"/>
+<connect gate="G$1" pin="ISEN" pad="2"/>
+<connect gate="G$1" pin="OUT1" pad="3"/>
+<connect gate="G$1" pin="OUT2" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+<connect gate="G$1" pin="VREF" pad="8"/>
+<connect gate="G$1" pin="VSET" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
