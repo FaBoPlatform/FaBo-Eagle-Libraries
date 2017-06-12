@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1491,6 +1491,27 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <vertex x="3.81" y="0.2413"/>
 </polygon>
 </package>
+<package name="PIN_2X5_BOX">
+<pad name="1" x="-1.27" y="5.08" drill="1.1" diameter="1.6764" shape="square" rot="R270"/>
+<pad name="2" x="1.27" y="5.08" drill="1.1" diameter="1.9304" shape="octagon" rot="R270"/>
+<pad name="3" x="-1.27" y="2.54" drill="1.1" diameter="1.9304" shape="octagon" rot="R270"/>
+<pad name="4" x="1.27" y="2.54" drill="1.1" diameter="1.9304" shape="octagon" rot="R270"/>
+<pad name="5" x="-1.27" y="0" drill="1.1" diameter="1.9304" shape="octagon" rot="R270"/>
+<pad name="6" x="1.27" y="0" drill="1.1" diameter="1.9304" shape="octagon" rot="R270"/>
+<text x="0.25" y="11.735" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<pad name="7" x="-1.27" y="-2.54" drill="1.1" diameter="1.9304" shape="octagon" rot="R270"/>
+<pad name="8" x="1.27" y="-2.54" drill="1.1" diameter="1.9304" shape="octagon" rot="R270"/>
+<pad name="9" x="-1.27" y="-5.08" drill="1.1" diameter="1.9304" shape="octagon" rot="R270"/>
+<pad name="10" x="1.27" y="-5.08" drill="1.1" diameter="1.9304" shape="octagon" rot="R270"/>
+<wire x1="4.16" y1="-10.125" x2="4.16" y2="10.125" width="0.127" layer="51"/>
+<wire x1="4.16" y1="10.125" x2="-4.16" y2="10.125" width="0.127" layer="51"/>
+<wire x1="4.16" y1="-10.125" x2="-4.16" y2="-10.125" width="0.127" layer="51"/>
+<wire x1="-4.16" y1="-10.125" x2="-4.16" y2="-2.375" width="0.127" layer="51"/>
+<wire x1="-4.16" y1="2.375" x2="-4.16" y2="10.125" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="2.375" x2="-3.5" y2="-2.375" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="2.375" x2="-4.16" y2="2.375" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="-2.375" x2="-4.16" y2="-2.375" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FABO-PIN-HEADER-2X3-SMD">
@@ -2861,6 +2882,23 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </gates>
 <devices>
 <device name="-TC2015-NL" package="TC2050">
+<connects>
+<connect gate="G$1" pin="BOOT0" pad="5"/>
+<connect gate="G$1" pin="NRST" pad="3"/>
+<connect gate="G$1" pin="PA10" pad="9"/>
+<connect gate="G$1" pin="PA11" pad="8"/>
+<connect gate="G$1" pin="PA12" pad="7"/>
+<connect gate="G$1" pin="PA9" pad="10"/>
+<connect gate="G$1" pin="RESET" pad="6"/>
+<connect gate="G$1" pin="SWO" pad="4"/>
+<connect gate="G$1" pin="TCK" pad="1"/>
+<connect gate="G$1" pin="TMS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-BOX" package="PIN_2X5_BOX">
 <connects>
 <connect gate="G$1" pin="BOOT0" pad="5"/>
 <connect gate="G$1" pin="NRST" pad="3"/>
