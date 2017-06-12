@@ -209,8 +209,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <vertex x="-2.5" y="0" curve="-41.67409"/>
 </polygon>
 </package>
-<<<<<<< HEAD
-<<<<<<< HEAD
 <package name="H13">
 <wire x1="-6.65" y1="6.65" x2="4.0586" y2="6.6454" width="0.127" layer="21"/>
 <wire x1="4.24" y1="-6.67" x2="-6.65" y2="-6.65" width="0.127" layer="21"/>
@@ -223,9 +221,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="MINUS" x="-4.6" y="0" dx="4.7" dy="0.9" layer="1"/>
 <text x="-6.096" y="7.3152" size="1.27" layer="25">&gt;NAME</text>
 <text x="-6.1722" y="-8.509" size="1.27" layer="27">&gt;VALUE</text>
-=======
-=======
->>>>>>> f93081e5f24fb47256799a9ea90aa78d243621ca
+</package>
 <package name="PTH-RADIAL_2.54">
 <pad name="P$1" x="-1.27" y="0" drill="0.8" diameter="1.6764" shape="octagon"/>
 <pad name="P$2" x="1.27" y="0" drill="0.8" diameter="1.6764" shape="octagon"/>
@@ -234,10 +230,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-1.905" y1="1.27" x2="1.905" y2="1.27" width="0.3048" layer="21"/>
 <wire x1="-1.905" y1="-1.27" x2="1.905" y2="-1.27" width="0.3048" layer="21"/>
 <text x="0" y="1.905" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<<<<<<< HEAD
->>>>>>> f93081e5f24fb47256799a9ea90aa78d243621ca
-=======
->>>>>>> f93081e5f24fb47256799a9ea90aa78d243621ca
 </package>
 </packages>
 <symbols>
