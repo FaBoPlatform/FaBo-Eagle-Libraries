@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14883,15 +14883,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-10.16" y1="25.4" x2="-10.16" y2="33.02" width="0.254" layer="94"/>
 <pin name="GND3" x="-15.24" y="-5.08" length="middle"/>
 <wire x1="-25.4" y1="33.02" x2="-12.7" y2="33.02" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="33.02" x2="-12.7" y2="25.4" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="25.4" x2="-25.4" y2="25.4" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="25.4" x2="-25.4" y2="33.02" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="33.02" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="22.86" x2="-25.4" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="22.86" x2="-25.4" y2="33.02" width="0.254" layer="94"/>
 <pin name="VCC_SUPPLY" x="-30.48" y="30.48" length="middle"/>
 <pin name="GND5" x="-30.48" y="27.94" length="middle"/>
 <pin name="SDA" x="12.7" y="15.24" length="middle" rot="R180"/>
 <pin name="SCL" x="12.7" y="17.78" length="middle" rot="R180"/>
 <pin name="IOREF" x="-15.24" y="5.08" length="middle"/>
 <pin name="NE" x="-15.24" y="7.62" length="middle"/>
+<pin name="GND6" x="-30.48" y="25.4" length="middle"/>
 </symbol>
 <symbol name="FABO-BEACON">
 <pin name="VDD" x="-20.32" y="17.78" length="middle"/>
@@ -15930,6 +15931,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND3" pad="V_GND3"/>
 <connect gate="G$1" pin="GND4" pad="V_GND4"/>
 <connect gate="G$1" pin="GND5" pad="V_GND5"/>
+<connect gate="G$1" pin="GND6" pad="GND1"/>
 <connect gate="G$1" pin="IOREF" pad="V_IOREF"/>
 <connect gate="G$1" pin="NE" pad="V_NE"/>
 <connect gate="G$1" pin="RESET" pad="V_RESET"/>
