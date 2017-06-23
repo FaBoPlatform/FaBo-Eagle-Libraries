@@ -896,6 +896,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <text x="-5.08" y="10.16" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="L7805C">
+<pin name="VIN" x="-12.7" y="0" visible="pad" length="middle"/>
+<pin name="GND" x="0" y="-10.16" visible="pad" length="middle" rot="R90"/>
+<pin name="VOUT" x="12.7" y="0" visible="pad" length="middle" rot="R180"/>
+<text x="0" y="-4.572" size="1.6764" layer="97" align="bottom-center">GND</text>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="1.6764" layer="94" align="bottom-center">L7805C</text>
+<text x="-7.112" y="0" size="1.6764" layer="97" align="center-left">VIN</text>
+<text x="7.112" y="0" size="1.6764" layer="97" align="center-right">VOUT</text>
+<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TI-TPS62730" prefix="TPS62730">
@@ -1619,6 +1633,23 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="IN" pad="3"/>
 <connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L7805C" prefix="L78">
+<gates>
+<gate name="G$1" symbol="L7805C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-220">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
