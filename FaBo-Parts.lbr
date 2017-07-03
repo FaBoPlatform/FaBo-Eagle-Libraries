@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -633,7 +633,7 @@ http://akizukidenshi.com/download/ds/avvicon/MJ-4PP-9.pdf</description>
 <text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 <text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
 </package>
-<package name="DM3AT-SF-PEJM5">
+<package name="DM3AT-SF-PEJM5_HOLE">
 <smd name="1" x="2.775" y="16.05" dx="0.7" dy="1.2" layer="1" roundness="20"/>
 <wire x1="-6.925" y1="0" x2="6.925" y2="0" width="0.1" layer="21"/>
 <wire x1="-6.925" y1="0" x2="-6.925" y2="16.15" width="0.1" layer="21"/>
@@ -764,12 +764,63 @@ http://akizukidenshi.com/download/ds/avvicon/MJ-4PP-9.pdf</description>
 <package name="SOD-323">
 <smd name="A" x="-1.2" y="0" dx="0.8" dy="0.6" layer="1" roundness="30"/>
 <wire x1="-0.9" y1="0.725" x2="-0.9" y2="-0.725" width="0.1" layer="21"/>
-<wire x1="1" y1="0.725" x2="1" y2="-0.725" width="0.1" layer="21"/>
-<wire x1="-0.9" y1="0.725" x2="1" y2="0.725" width="0.1" layer="21"/>
-<wire x1="-0.9" y1="-0.725" x2="1" y2="-0.725" width="0.1" layer="21"/>
+<wire x1="1.1" y1="0.725" x2="1.1" y2="-0.725" width="0.1" layer="21"/>
+<wire x1="-0.9" y1="0.725" x2="1.1" y2="0.725" width="0.1" layer="21"/>
+<wire x1="-0.9" y1="-0.725" x2="1.1" y2="-0.725" width="0.1" layer="21"/>
 <smd name="K" x="1.2" y="0" dx="0.8" dy="0.6" layer="1" roundness="30"/>
-<rectangle x1="0.25" y1="-0.75" x2="1" y2="0.75" layer="21"/>
-<text x="0" y="1.25" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<rectangle x1="0.25" y1="-0.75" x2="1.1" y2="0.75" layer="21"/>
+<text x="0" y="1" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="DM3AT-SF-PEJM5">
+<smd name="1" x="2.775" y="16.05" dx="0.7" dy="1.2" layer="1" roundness="20"/>
+<wire x1="-6.925" y1="0" x2="-5.925" y2="0" width="0.1" layer="21"/>
+<wire x1="-5.925" y1="0" x2="5.075" y2="0" width="0.1" layer="21"/>
+<wire x1="5.075" y1="0" x2="6.925" y2="0" width="0.1" layer="21"/>
+<wire x1="-6.925" y1="0" x2="-6.925" y2="16.15" width="0.1" layer="21"/>
+<wire x1="-0.425" y1="-7.5" x2="-0.425" y2="1" width="0" layer="115" style="shortdash"/>
+<wire x1="5.075" y1="-5.4" x2="-5.925" y2="-5.4" width="0" layer="115" style="shortdash"/>
+<wire x1="-5.925" y1="0" x2="-5.925" y2="-1.4" width="0.1" layer="51"/>
+<wire x1="-5.925" y1="-1.4" x2="-5.925" y2="-5.4" width="0" layer="115" style="shortdash"/>
+<wire x1="5.075" y1="-1.4" x2="5.075" y2="-5.4" width="0" layer="115" style="shortdash"/>
+<wire x1="5.075" y1="-1.4" x2="-5.925" y2="-1.4" width="0.1" layer="51"/>
+<smd name="SHD3" x="-6.825" y="1.4" dx="1" dy="2.8" layer="1" roundness="20"/>
+<smd name="SHD4" x="6.675" y="0.95" dx="1.3" dy="1.9" layer="1" roundness="20"/>
+<smd name="SHD1" x="4.325" y="16.05" dx="1" dy="1.2" layer="1" roundness="20"/>
+<smd name="2" x="1.675" y="16.05" dx="0.7" dy="1.2" layer="1" roundness="20"/>
+<smd name="3" x="0.575" y="16.05" dx="0.7" dy="1.2" layer="1" roundness="20"/>
+<smd name="4" x="-0.525" y="16.05" dx="0.7" dy="1.2" layer="1" roundness="20"/>
+<smd name="5" x="-1.625" y="16.05" dx="0.7" dy="1.2" layer="1" roundness="20"/>
+<smd name="6" x="-2.725" y="16.05" dx="0.7" dy="1.2" layer="1" roundness="20"/>
+<smd name="7" x="-3.825" y="16.05" dx="0.7" dy="1.2" layer="1" roundness="20"/>
+<smd name="8" x="-4.925" y="16.05" dx="0.7" dy="1.2" layer="1" roundness="20"/>
+<smd name="SWB" x="-5.875" y="16.05" dx="0.7" dy="1.2" layer="1" roundness="20"/>
+<smd name="SWA" x="-6.825" y="5.55" dx="1" dy="0.8" layer="1" roundness="20"/>
+<smd name="SHD2" x="-6.825" y="11.75" dx="1" dy="1.2" layer="1" roundness="20"/>
+<rectangle x1="2.925" y1="0" x2="5.475" y2="1.35" layer="41"/>
+<rectangle x1="-7.225" y1="12.35" x2="-6.475" y2="15.6" layer="41"/>
+<rectangle x1="-7.225" y1="7.55" x2="-6.475" y2="11.15" layer="41"/>
+<rectangle x1="-6.125" y1="2.15" x2="-5.425" y2="9.75" layer="41"/>
+<rectangle x1="-5.425" y1="9.45" x2="3.275" y2="11.05" layer="41"/>
+<wire x1="-6.925" y1="16.15" x2="6.925" y2="16.15" width="0.1" layer="21"/>
+<wire x1="6.925" y1="0" x2="6.925" y2="16.15" width="0.1" layer="21"/>
+<wire x1="5.075" y1="0" x2="5.075" y2="-1.4" width="0.1" layer="51"/>
+<wire x1="5.075" y1="1.4" x2="5.075" y2="0" width="0.1" layer="21"/>
+<wire x1="-5.925" y1="1.4" x2="-5.925" y2="0" width="0.1" layer="21"/>
+<wire x1="-5.925" y1="1.4" x2="5.075" y2="1.4" width="0.1" layer="21"/>
+<text x="0" y="3.81" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="MF-MSMF050">
+<smd name="1" x="-2.1" y="0" dx="1.5" dy="3.2" layer="1" roundness="30"/>
+<smd name="2" x="2.1" y="0" dx="1.5" dy="3.2" layer="1" roundness="30"/>
+<wire x1="-2.9" y1="1.65" x2="2.9" y2="1.65" width="0.0508" layer="39"/>
+<wire x1="2.9" y1="1.65" x2="2.9" y2="-1.65" width="0.0508" layer="39"/>
+<wire x1="2.9" y1="-1.65" x2="-2.9" y2="-1.65" width="0.0508" layer="39"/>
+<wire x1="-2.9" y1="-1.65" x2="-2.9" y2="1.65" width="0.0508" layer="39"/>
+<wire x1="-2.365" y1="1.535" x2="2.365" y2="1.535" width="0.1" layer="51"/>
+<wire x1="-2.365" y1="-1.535" x2="2.365" y2="-1.535" width="0.1" layer="51"/>
+<wire x1="-2.365" y1="-1.535" x2="-2.365" y2="1.535" width="0.1" layer="51"/>
+<wire x1="2.365" y1="-1.535" x2="2.365" y2="1.535" width="0.1" layer="51"/>
+<text x="0" y="1.905" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -2063,7 +2114,16 @@ akizuki
 <gate name="G$1" symbol="POLYSWITCH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="NANOSMDC035F">
+<device name="-NANO" package="NANOSMDC035F">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MSMF" package="MF-MSMF050">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2074,12 +2134,12 @@ akizuki
 </device>
 </devices>
 </deviceset>
-<deviceset name="SD-CARD_MICRO" prefix="CN" uservalue="yes">
+<deviceset name="SD-CARD_MICRO" prefix="SD" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="SD-CARD_MICRO" x="0" y="0"/>
 </gates>
 <devices>
-<device name="_HIROSE" package="DM3AT-SF-PEJM5">
+<device name="_HOLE" package="DM3AT-SF-PEJM5_HOLE">
 <connects>
 <connect gate="G$1" pin="CD/DAT3" pad="2"/>
 <connect gate="G$1" pin="CLK" pad="5"/>
@@ -2097,6 +2157,23 @@ akizuki
 </technologies>
 </device>
 <device name="_BRICK" package="DM3AT-SF-PEJM5_BRICK">
+<connects>
+<connect gate="G$1" pin="CD/DAT3" pad="2"/>
+<connect gate="G$1" pin="CLK" pad="5"/>
+<connect gate="G$1" pin="CMD" pad="3"/>
+<connect gate="G$1" pin="DAT0" pad="7"/>
+<connect gate="G$1" pin="DAT1" pad="8"/>
+<connect gate="G$1" pin="DAT2" pad="1"/>
+<connect gate="G$1" pin="SW_A" pad="SWA"/>
+<connect gate="G$1" pin="SW_B" pad="SWB"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_HIROSE" package="DM3AT-SF-PEJM5">
 <connects>
 <connect gate="G$1" pin="CD/DAT3" pad="2"/>
 <connect gate="G$1" pin="CLK" pad="5"/>

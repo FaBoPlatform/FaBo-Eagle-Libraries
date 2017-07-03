@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1512,6 +1512,92 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-3.5" y1="2.375" x2="-4.16" y2="2.375" width="0.127" layer="51"/>
 <wire x1="-3.5" y1="-2.375" x2="-4.16" y2="-2.375" width="0.127" layer="51"/>
 </package>
+<package name="S05B-PASK-2">
+<pad name="5" x="-4" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="4" x="-2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="3" x="0" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="5.5" y="2.1" drill="1.1"/>
+<wire x1="6" y1="-3.5" x2="6" y2="8.2" width="0.127" layer="51"/>
+<wire x1="-6" y1="-3.5" x2="-6" y2="8.2" width="0.127" layer="51"/>
+<wire x1="6" y1="8.2" x2="2" y2="8.2" width="0.127" layer="51"/>
+<wire x1="2" y1="8.2" x2="-2" y2="8.2" width="0.127" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-6" y2="8.2" width="0.127" layer="51"/>
+<wire x1="6" y1="-3.5" x2="5.3" y2="-3.5" width="0.127" layer="51"/>
+<text x="0" y="-4.445" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<hole x="-5.5" y="2.1" drill="1.1"/>
+<wire x1="-5.3" y1="-3.5" x2="-6" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="2" y1="6.7" x2="-2" y2="6.7" width="0.127" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-2" y2="6.7" width="0.127" layer="51"/>
+<wire x1="2" y1="8.2" x2="2" y2="6.7" width="0.127" layer="51"/>
+<pad name="2" x="2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<wire x1="-5.3" y1="-3.5" x2="-5.3" y2="0.5" width="0.127" layer="51"/>
+<wire x1="5.3" y1="-3.5" x2="5.3" y2="0.5" width="0.127" layer="51"/>
+<wire x1="5.3" y1="0.5" x2="-5.3" y2="0.5" width="0.127" layer="51"/>
+<pad name="1" x="4" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<circle x="4" y="-1.5" radius="0.3" width="0.5" layer="21"/>
+</package>
+<package name="S06B-PASK-2">
+<pad name="5" x="-3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="4" x="-1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="3" x="1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="6.5" y="2.1" drill="1.1"/>
+<wire x1="7" y1="-3.5" x2="7" y2="8.2" width="0.1" layer="21"/>
+<wire x1="-7" y1="-3.5" x2="-7" y2="8.2" width="0.1" layer="21"/>
+<wire x1="7" y1="8.2" x2="2" y2="8.2" width="0.1" layer="21"/>
+<wire x1="2" y1="8.2" x2="-2" y2="8.2" width="0.1" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-7" y2="8.2" width="0.1" layer="21"/>
+<wire x1="7" y1="-3.5" x2="6.3" y2="-3.5" width="0.1" layer="21"/>
+<text x="0" y="-4.445" size="0.8128" layer="25" font="vector" ratio="15" rot="R180" align="bottom-center">&gt;NAME</text>
+<hole x="-6.5" y="2.1" drill="1.1"/>
+<wire x1="-6.3" y1="-3.5" x2="-7" y2="-3.5" width="0.1" layer="21"/>
+<wire x1="2" y1="6.7" x2="-2" y2="6.7" width="0.1" layer="21"/>
+<wire x1="-2" y1="8.2" x2="-2" y2="6.7" width="0.1" layer="21"/>
+<wire x1="2" y1="8.2" x2="2" y2="6.7" width="0.1" layer="21"/>
+<pad name="2" x="3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<wire x1="-6.3" y1="-3.5" x2="-6.3" y2="0.5" width="0.1" layer="21"/>
+<wire x1="6.3" y1="-3.5" x2="6.3" y2="0.5" width="0.1" layer="21"/>
+<wire x1="6.3" y1="0.5" x2="-6.3" y2="0.5" width="0.1" layer="21"/>
+<pad name="1" x="5" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<circle x="5" y="-1.5" radius="0.3" width="0.5" layer="21"/>
+<pad name="6" x="-5" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<wire x1="7" y1="10.3" x2="-7" y2="10.3" width="0" layer="51"/>
+</package>
+<package name="PIN_1X12">
+<pad name="3" x="-8.89" y="0" drill="1.1" diameter="1.9304" shape="octagon" rot="R90"/>
+<pad name="4" x="-6.35" y="0" drill="1.1" diameter="1.9304" shape="octagon" rot="R90"/>
+<pad name="5" x="-3.81" y="0" drill="1.1" diameter="1.9304" shape="octagon" rot="R90"/>
+<pad name="6" x="-1.27" y="0" drill="1.1" diameter="1.9304" shape="octagon" rot="R90"/>
+<pad name="7" x="1.27" y="0" drill="1.1" diameter="1.9304" shape="octagon" rot="R90"/>
+<pad name="8" x="3.81" y="0" drill="1.1" diameter="1.9304" shape="octagon" rot="R90"/>
+<text x="-13.97" y="1.27" size="0.8128" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<pad name="1" x="-13.97" y="0" drill="1.1" diameter="1.9304" shape="square" rot="R90"/>
+<pad name="2" x="-11.43" y="0" drill="1.1" diameter="1.9304" shape="octagon" rot="R90"/>
+<pad name="9" x="6.35" y="0" drill="1.1" diameter="1.9304" shape="octagon" rot="R90"/>
+<pad name="10" x="8.89" y="0" drill="1.1" diameter="1.9304" shape="octagon" rot="R90"/>
+<pad name="11" x="11.43" y="0" drill="1.1" diameter="1.9304" shape="octagon" rot="R90"/>
+<pad name="12" x="13.97" y="0" drill="1.1" diameter="1.9304" shape="octagon" rot="R90"/>
+</package>
+<package name="S02B-PASK-2">
+<pad name="2" x="-1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="1" x="1" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<hole x="2.5" y="2.1" drill="1.1"/>
+<wire x1="3" y1="-3.5" x2="3" y2="8.2" width="0.1" layer="21"/>
+<wire x1="-3" y1="-3.5" x2="-3" y2="8.2" width="0.1" layer="21"/>
+<wire x1="3" y1="8.2" x2="2" y2="8.2" width="0.1" layer="21"/>
+<wire x1="2" y1="8.2" x2="-2" y2="8.2" width="0.1" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-3" y2="8.2" width="0.1" layer="21"/>
+<text x="0" y="-4.445" size="0.8128" layer="25" font="vector" ratio="15" rot="R180" align="bottom-center">&gt;NAME</text>
+<hole x="-2.5" y="2.1" drill="1.1"/>
+<wire x1="2" y1="6.7" x2="-2" y2="6.7" width="0.1" layer="21"/>
+<wire x1="-2" y1="8.2" x2="-2" y2="6.7" width="0.1" layer="21"/>
+<wire x1="2" y1="8.2" x2="2" y2="6.7" width="0.1" layer="21"/>
+<wire x1="-2.3" y1="-3.5" x2="-2.3" y2="0.5" width="0.1" layer="21"/>
+<wire x1="2.3" y1="-3.5" x2="2.3" y2="0.5" width="0.1" layer="21"/>
+<wire x1="-2.3" y1="0.5" x2="2.3" y2="0.5" width="0.1" layer="21"/>
+<wire x1="-3" y1="-3.5" x2="-2.3" y2="-3.5" width="0.1" layer="21"/>
+<wire x1="2.3" y1="-3.5" x2="3" y2="-3.5" width="0.1" layer="21"/>
+<wire x1="-3" y1="10.3" x2="3" y2="10.3" width="0" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FABO-PIN-HEADER-2X3-SMD">
@@ -1563,23 +1649,23 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-3.81" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 </symbol>
 <symbol name="PIN_HEADER_1X12">
-<pin name="1" x="-12.7" y="10.16" visible="pin" length="middle" rot="R270"/>
-<pin name="2" x="-10.16" y="10.16" visible="pin" length="middle" rot="R270"/>
-<pin name="3" x="-7.62" y="10.16" visible="pin" length="middle" rot="R270"/>
-<pin name="4" x="-5.08" y="10.16" visible="pin" length="middle" rot="R270"/>
-<pin name="5" x="-2.54" y="10.16" visible="pin" length="middle" rot="R270"/>
-<pin name="6" x="0" y="10.16" visible="pin" length="middle" rot="R270"/>
-<pin name="7" x="2.54" y="10.16" visible="pin" length="middle" rot="R270"/>
-<pin name="8" x="5.08" y="10.16" visible="pin" length="middle" rot="R270"/>
-<wire x1="-15.24" y1="5.08" x2="17.78" y2="5.08" width="0.254" layer="94"/>
-<wire x1="17.78" y1="5.08" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
+<pin name="1" x="-12.7" y="5.08" visible="pin" length="short" rot="R270"/>
+<pin name="2" x="-10.16" y="5.08" visible="pin" length="short" rot="R270"/>
+<pin name="3" x="-7.62" y="5.08" visible="pin" length="short" rot="R270"/>
+<pin name="4" x="-5.08" y="5.08" visible="pin" length="short" rot="R270"/>
+<pin name="5" x="-2.54" y="5.08" visible="pin" length="short" rot="R270"/>
+<pin name="6" x="0" y="5.08" visible="pin" length="short" rot="R270"/>
+<pin name="7" x="2.54" y="5.08" visible="pin" length="short" rot="R270"/>
+<pin name="8" x="5.08" y="5.08" visible="pin" length="short" rot="R270"/>
+<wire x1="-15.24" y1="2.54" x2="17.78" y2="2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="2.54" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-2.54" x2="-15.24" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-2.54" x2="-15.24" y2="5.08" width="0.254" layer="94"/>
-<text x="-16.51" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<pin name="9" x="7.62" y="10.16" visible="pin" length="middle" rot="R270"/>
-<pin name="10" x="10.16" y="10.16" visible="pin" length="middle" rot="R270"/>
-<pin name="11" x="12.7" y="10.16" visible="pin" length="middle" rot="R270"/>
-<pin name="12" x="15.24" y="10.16" visible="pin" length="middle" rot="R270"/>
+<wire x1="-15.24" y1="-2.54" x2="-15.24" y2="2.54" width="0.254" layer="94"/>
+<text x="-15.494" y="-2.286" size="1.27" layer="95" rot="R90">&gt;NAME</text>
+<pin name="9" x="7.62" y="5.08" visible="pin" length="short" rot="R270"/>
+<pin name="10" x="10.16" y="5.08" visible="pin" length="short" rot="R270"/>
+<pin name="11" x="12.7" y="5.08" visible="pin" length="short" rot="R270"/>
+<pin name="12" x="15.24" y="5.08" visible="pin" length="short" rot="R270"/>
 </symbol>
 <symbol name="PIN_HEADER_1X3">
 <pin name="1" x="-2.54" y="5.08" visible="pin" length="short" rot="R270"/>
@@ -1966,6 +2052,40 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">ICSP</text>
 <text x="-9.906" y="10.414" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="LCD-5">
+<pin name="VIN" x="10.16" y="10.16" length="middle" rot="R180"/>
+<pin name="VOUT" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="RX" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="TX" x="10.16" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="10.16" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+</symbol>
+<symbol name="UART-DEBUG">
+<pin name="TX" x="5.08" y="2.54" length="short" rot="R180"/>
+<pin name="RX" x="5.08" y="0" length="short" rot="R180"/>
+<pin name="GND" x="5.08" y="-2.54" length="short" rot="R180"/>
+<text x="-4.826" y="5.588" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="-5.08" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="LCD-6">
+<pin name="VIN" x="10.16" y="12.7" length="middle" rot="R180"/>
+<pin name="VOUT" x="10.16" y="7.62" length="middle" rot="R180"/>
+<pin name="RX" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<pin name="TX" x="10.16" y="-7.62" length="middle" rot="R180"/>
+<pin name="GND" x="10.16" y="-12.7" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<pin name="3V3" x="10.16" y="2.54" length="middle" rot="R180"/>
+<text x="-4.826" y="15.748" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FABO-PIN-HEADER-2X3-SMD">
@@ -2134,7 +2254,26 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <gate name="G$1" symbol="PIN_HEADER_1X12" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PIN_1X12_SNEAKY">
+<device name="_SNEAKY" package="PIN_1X12_SNEAKY">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="PIN_1X12">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -2394,6 +2533,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </technologies>
 </device>
 <device name="" package="PIN_1X2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-S02B-PASK" package="S02B-PASK-2">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2883,12 +3031,29 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <devices>
 <device name="-TC2015-NL" package="TC2050">
 <connects>
-<connect gate="G$1" pin="BOOT0" pad="5"/>
+<connect gate="G$1" pin="BOOT0" pad="9"/>
+<connect gate="G$1" pin="NRST" pad="2"/>
+<connect gate="G$1" pin="PA10" pad="6"/>
+<connect gate="G$1" pin="PA11" pad="7"/>
+<connect gate="G$1" pin="PA12" pad="8"/>
+<connect gate="G$1" pin="PA9" pad="5"/>
+<connect gate="G$1" pin="RESET" pad="10"/>
+<connect gate="G$1" pin="SWO" pad="1"/>
+<connect gate="G$1" pin="TCK" pad="4"/>
+<connect gate="G$1" pin="TMS" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-BOX" package="PIN_2X5_BOX">
+<connects>
+<connect gate="G$1" pin="BOOT0" pad="7"/>
 <connect gate="G$1" pin="NRST" pad="3"/>
-<connect gate="G$1" pin="PA10" pad="9"/>
-<connect gate="G$1" pin="PA11" pad="8"/>
-<connect gate="G$1" pin="PA12" pad="7"/>
-<connect gate="G$1" pin="PA9" pad="10"/>
+<connect gate="G$1" pin="PA10" pad="10"/>
+<connect gate="G$1" pin="PA11" pad="9"/>
+<connect gate="G$1" pin="PA12" pad="8"/>
+<connect gate="G$1" pin="PA9" pad="5"/>
 <connect gate="G$1" pin="RESET" pad="6"/>
 <connect gate="G$1" pin="SWO" pad="4"/>
 <connect gate="G$1" pin="TCK" pad="1"/>
@@ -2898,18 +3063,57 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-BOX" package="PIN_2X5_BOX">
+</devices>
+</deviceset>
+<deviceset name="LCD-5" prefix="LCD" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LCD-5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_S05B" package="S05B-PASK-2">
 <connects>
-<connect gate="G$1" pin="BOOT0" pad="5"/>
-<connect gate="G$1" pin="NRST" pad="3"/>
-<connect gate="G$1" pin="PA10" pad="9"/>
-<connect gate="G$1" pin="PA11" pad="8"/>
-<connect gate="G$1" pin="PA12" pad="7"/>
-<connect gate="G$1" pin="PA9" pad="10"/>
-<connect gate="G$1" pin="RESET" pad="6"/>
-<connect gate="G$1" pin="SWO" pad="4"/>
-<connect gate="G$1" pin="TCK" pad="1"/>
-<connect gate="G$1" pin="TMS" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="RX" pad="1"/>
+<connect gate="G$1" pin="TX" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="4"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UART-DEBUG" prefix="J" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="UART-DEBUG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PIN_1X3">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="RX" pad="2"/>
+<connect gate="G$1" pin="TX" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LCD-6" prefix="CN" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LCD-6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_S06B-PASK" package="S06B-PASK-2">
+<connects>
+<connect gate="G$1" pin="3V3" pad="3"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="RX" pad="1"/>
+<connect gate="G$1" pin="TX" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="4"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
