@@ -80,6 +80,7 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="sd" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -968,6 +969,30 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="0" y="5.08" size="1.778" layer="94" align="bottom-center">ADP3338</text>
 <text x="-7.366" y="8.128" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="AP7333">
+<pin name="IN" x="-12.7" y="2.54" length="middle"/>
+<pin name="OUT" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-5.08" y="10.16" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="L7805C">
+<pin name="VIN" x="-12.7" y="0" visible="pad" length="middle"/>
+<pin name="GND" x="0" y="-10.16" visible="pad" length="middle" rot="R90"/>
+<pin name="VOUT" x="12.7" y="0" visible="pad" length="middle" rot="R180"/>
+<text x="0" y="-4.572" size="1.6764" layer="97" align="bottom-center">GND</text>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="1.6764" layer="94" align="bottom-center">L7805C</text>
+<text x="-7.112" y="0" size="1.6764" layer="97" align="center-left">VIN</text>
+<text x="7.112" y="0" size="1.6764" layer="97" align="center-right">VOUT</text>
+<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TI-TPS62730" prefix="TPS62730">
@@ -1688,6 +1713,23 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="AP7333">
+<gates>
+<gate name="G$1" symbol="AP7333" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="VLIN" prefix="VLIN">
 <gates>
 <gate name="G$1" symbol="VLIN" x="0" y="0"/>
@@ -1741,6 +1783,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-R" package="SOT-23">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="ADP3338AKCZ" prefix="IC" uservalue="yes">
@@ -1753,6 +1800,23 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="IN" pad="3"/>
 <connect gate="G$1" pin="OUT" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L7805C" prefix="L78">
+<gates>
+<gate name="G$1" symbol="L7805C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-220">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
