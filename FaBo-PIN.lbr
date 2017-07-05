@@ -6,23 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -53,7 +39,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
@@ -1598,6 +1584,54 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="2.3" y1="-3.5" x2="3" y2="-3.5" width="0.1" layer="21"/>
 <wire x1="-3" y1="10.3" x2="3" y2="10.3" width="0" layer="51"/>
 </package>
+<package name="SM06B-PASS-1">
+<text x="0" y="-13.97" size="0.8128" layer="25" font="vector" ratio="15" align="top-center">&gt;NAME</text>
+<wire x1="5" y1="-4.5" x2="-5" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="-5" y1="-2.7" x2="-5" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="5" y1="-2.7" x2="5" y2="-4.5" width="0.1" layer="21"/>
+<circle x="5" y="-14.05" radius="0.3" width="0.5" layer="21"/>
+<smd name="1" x="5" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="2" x="3" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="3" x="1" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="4" x="-1" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="P$1" x="7.35" y="-7.4" dx="1.8" dy="3.8" layer="1" roundness="30"/>
+<smd name="P$2" x="-7.35" y="-7.4" dx="1.8" dy="3.8" layer="1" roundness="30"/>
+<wire x1="-8" y1="-11.6" x2="-8" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="-5" y1="-2.7" x2="-8" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="8" y1="-11.6" x2="-8" y2="-11.6" width="0.1" layer="21"/>
+<wire x1="8" y1="-11.6" x2="8" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="8" y1="-2.7" x2="5" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="8" y1="-0.5" x2="-8" y2="-0.5" width="0" layer="51"/>
+<hole x="7.2" y="-10.65" drill="0.8"/>
+<wire x1="-7.7" y1="-10.65" x2="-6.7" y2="-10.65" width="0.8" layer="46"/>
+<wire x1="-7.7" y1="-10.65" x2="-6.7" y2="-10.65" width="1.1" layer="41"/>
+<wire x1="-7.7" y1="-10.65" x2="-6.7" y2="-10.65" width="1.1" layer="42"/>
+<circle x="0" y="-7.15" radius="1" width="0.1" layer="21"/>
+<smd name="5" x="-3" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="6" x="-5" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+</package>
+<package name="SM02B-PASS-1">
+<text x="0" y="-14.859" size="0.8128" layer="25" font="vector" ratio="15" align="top-center">&gt;NAME</text>
+<wire x1="1" y1="-4.5" x2="-1" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="-1" y1="-2.7" x2="-1" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="1" y1="-2.7" x2="1" y2="-4.5" width="0.1" layer="21"/>
+<circle x="1" y="-14.05" radius="0.3" width="0.5" layer="21"/>
+<smd name="1" x="1" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="2" x="-1" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="P$1" x="3.35" y="-7.4" dx="1.8" dy="3.8" layer="1" roundness="30"/>
+<smd name="P$2" x="-3.35" y="-7.4" dx="1.8" dy="3.8" layer="1" roundness="30"/>
+<wire x1="-4" y1="-11.6" x2="-4" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="-1" y1="-2.7" x2="-4" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="4" y1="-11.6" x2="-4" y2="-11.6" width="0.1" layer="21"/>
+<wire x1="4" y1="-11.6" x2="4" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="4" y1="-2.7" x2="1" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="4" y1="-0.5" x2="-4" y2="-0.5" width="0" layer="51"/>
+<hole x="3.2" y="-10.65" drill="0.8"/>
+<wire x1="-3.7" y1="-10.65" x2="-2.7" y2="-10.65" width="0.8" layer="46"/>
+<wire x1="-3.7" y1="-10.65" x2="-2.7" y2="-10.65" width="1.1" layer="41"/>
+<wire x1="-3.7" y1="-10.65" x2="-2.7" y2="-10.65" width="1.1" layer="42"/>
+<circle x="0" y="-7.15" radius="1" width="0.1" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FABO-PIN-HEADER-2X3-SMD">
@@ -2550,6 +2584,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-SM02B-PASS-1" package="SM02B-PASS-1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="PIN_HEADER_1X1_NOLABEL" prefix="J" uservalue="yes">
@@ -3048,16 +3091,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 <device name="-BOX" package="PIN_2X5_BOX">
 <connects>
-<connect gate="G$1" pin="BOOT0" pad="7"/>
-<connect gate="G$1" pin="NRST" pad="3"/>
-<connect gate="G$1" pin="PA10" pad="10"/>
-<connect gate="G$1" pin="PA11" pad="9"/>
+<connect gate="G$1" pin="BOOT0" pad="9"/>
+<connect gate="G$1" pin="NRST" pad="2"/>
+<connect gate="G$1" pin="PA10" pad="6"/>
+<connect gate="G$1" pin="PA11" pad="7"/>
 <connect gate="G$1" pin="PA12" pad="8"/>
 <connect gate="G$1" pin="PA9" pad="5"/>
-<connect gate="G$1" pin="RESET" pad="6"/>
-<connect gate="G$1" pin="SWO" pad="4"/>
-<connect gate="G$1" pin="TCK" pad="1"/>
-<connect gate="G$1" pin="TMS" pad="2"/>
+<connect gate="G$1" pin="RESET" pad="10"/>
+<connect gate="G$1" pin="SWO" pad="1"/>
+<connect gate="G$1" pin="TCK" pad="4"/>
+<connect gate="G$1" pin="TMS" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3107,6 +3150,19 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </gates>
 <devices>
 <device name="_S06B-PASK" package="S06B-PASK-2">
+<connects>
+<connect gate="G$1" pin="3V3" pad="3"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="RX" pad="1"/>
+<connect gate="G$1" pin="TX" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="4"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SM06B-PASS-1" package="SM06B-PASS-1">
 <connects>
 <connect gate="G$1" pin="3V3" pad="3"/>
 <connect gate="G$1" pin="GND" pad="6"/>

@@ -668,55 +668,55 @@ BL600-ST 204-320048 Trace Pad&lt;br&gt;
 <rectangle x1="3.5052" y1="1.1684" x2="3.8354" y2="4.2418" layer="42"/>
 </package>
 <package name="SILICONLABS-BT121">
-<smd name="1" x="-5.1" y="6" dx="2" dy="0.7" layer="1" roundness="30"/>
-<wire x1="-5.5" y1="6.95" x2="-5.5" y2="-6.95" width="0.127" layer="21"/>
-<wire x1="5.5" y1="6.95" x2="5.5" y2="-6.95" width="0.127" layer="21"/>
-<wire x1="-5.5" y1="6.95" x2="5.5" y2="6.95" width="0.127" layer="51"/>
-<wire x1="-5.5" y1="-6.95" x2="5.5" y2="-6.95" width="0.127" layer="21"/>
-<smd name="2" x="-5.1" y="5" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="3" x="-5.1" y="4" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="4" x="-5.1" y="3" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="5" x="-5.1" y="2" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="6" x="-5.1" y="1" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="7" x="-5.1" y="0" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="8" x="-5.1" y="-1" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="9" x="-5.1" y="-2" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="10" x="-5.1" y="-3" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="11" x="-5.1" y="-4" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="12" x="-5.1" y="-5" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="13" x="-5.1" y="-6" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="14" x="-3" y="-6.55" dx="0.7" dy="2" layer="1" roundness="30"/>
-<smd name="15" x="-2" y="-6.55" dx="0.7" dy="2" layer="1" roundness="30"/>
-<smd name="16" x="-1" y="-6.55" dx="0.7" dy="2" layer="1" roundness="30"/>
-<smd name="17" x="0" y="-6.55" dx="0.7" dy="2" layer="1" roundness="30"/>
-<smd name="18" x="1" y="-6.55" dx="0.7" dy="2" layer="1" roundness="30"/>
-<smd name="19" x="2" y="-6.55" dx="0.7" dy="2" layer="1" roundness="30"/>
-<smd name="20" x="3" y="-6.55" dx="0.7" dy="2" layer="1" roundness="30"/>
-<smd name="21" x="5.1" y="-6" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="22" x="5.1" y="-5" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="23" x="5.1" y="-4" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="24" x="5.1" y="-3" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="25" x="5.1" y="-2" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="26" x="5.1" y="-1" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="27" x="5.1" y="0" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="28" x="5.1" y="1" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="29" x="5.1" y="2" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="30" x="5.1" y="3" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="31" x="5.1" y="4" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="32" x="5.1" y="5" dx="2" dy="0.7" layer="1" roundness="30"/>
-<smd name="33" x="5.1" y="6" dx="2" dy="0.7" layer="1" roundness="30"/>
-<rectangle x1="-3.75" y1="3.55" x2="3.75" y2="6.95" layer="43"/>
-<rectangle x1="-3.75" y1="3.55" x2="3.75" y2="6.95" layer="41"/>
-<rectangle x1="-3.75" y1="3.55" x2="3.75" y2="6.95" layer="42"/>
-<text x="0" y="-4.63" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<wire x1="-3.75" y1="3.25" x2="3.75" y2="3.25" width="0.1" layer="21"/>
-<wire x1="-3.75" y1="-5.25" x2="3.75" y2="-5.25" width="0.1" layer="21"/>
-<wire x1="-3.75" y1="-5.25" x2="-3.75" y2="3.25" width="0.1" layer="21"/>
-<wire x1="3.75" y1="-5.25" x2="3.75" y2="3.25" width="0.1" layer="21"/>
-<wire x1="-2.75" y1="6.75" x2="0.25" y2="6.75" width="0.1" layer="21"/>
-<wire x1="-2.75" y1="5.25" x2="0.25" y2="5.25" width="0.1" layer="21"/>
-<wire x1="-2.75" y1="5.25" x2="-2.75" y2="6.75" width="0.1" layer="21"/>
-<wire x1="0.25" y1="5.25" x2="0.25" y2="6.75" width="0.1" layer="21"/>
+<smd name="1" x="-5.1" y="-1.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<wire x1="-5.5" y1="-0.5" x2="-5.5" y2="-14.4" width="0.1" layer="21"/>
+<wire x1="5.5" y1="-0.5" x2="5.5" y2="-14.4" width="0.1" layer="21"/>
+<wire x1="-5.5" y1="-0.5" x2="5.5" y2="-0.5" width="0.1" layer="51"/>
+<wire x1="-5.5" y1="-14.4" x2="5.5" y2="-14.4" width="0.1" layer="21"/>
+<smd name="2" x="-5.1" y="-2.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="3" x="-5.1" y="-3.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="4" x="-5.1" y="-4.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="5" x="-5.1" y="-5.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="6" x="-5.1" y="-6.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="7" x="-5.1" y="-7.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="8" x="-5.1" y="-8.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="9" x="-5.1" y="-9.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="10" x="-5.1" y="-10.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="11" x="-5.1" y="-11.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="12" x="-5.1" y="-12.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="13" x="-5.1" y="-13.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="14" x="-3" y="-13.9" dx="0.7" dy="2" layer="1" roundness="30"/>
+<smd name="15" x="-2" y="-13.9" dx="0.7" dy="2" layer="1" roundness="30"/>
+<smd name="16" x="-1" y="-13.9" dx="0.7" dy="2" layer="1" roundness="30"/>
+<smd name="17" x="0" y="-13.9" dx="0.7" dy="2" layer="1" roundness="30"/>
+<smd name="18" x="1" y="-13.9" dx="0.7" dy="2" layer="1" roundness="30"/>
+<smd name="19" x="2" y="-13.9" dx="0.7" dy="2" layer="1" roundness="30"/>
+<smd name="20" x="3" y="-13.9" dx="0.7" dy="2" layer="1" roundness="30"/>
+<smd name="21" x="5.1" y="-13.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="22" x="5.1" y="-12.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="23" x="5.1" y="-11.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="24" x="5.1" y="-10.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="25" x="5.1" y="-9.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="26" x="5.1" y="-8.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="27" x="5.1" y="-7.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="28" x="5.1" y="-6.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="29" x="5.1" y="-5.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="30" x="5.1" y="-4.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="31" x="5.1" y="-3.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="32" x="5.1" y="-2.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<smd name="33" x="5.1" y="-1.45" dx="2" dy="0.7" layer="1" roundness="30"/>
+<rectangle x1="-3.75" y1="-3.9" x2="3.75" y2="-0.5" layer="43"/>
+<rectangle x1="-3.75" y1="-3.9" x2="3.75" y2="-0.5" layer="41"/>
+<rectangle x1="-3.75" y1="-3.9" x2="3.75" y2="-0.5" layer="42"/>
+<text x="0" y="-12.065" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<wire x1="-3.75" y1="-5.2" x2="3.75" y2="-5.2" width="0.1" layer="21"/>
+<wire x1="-3.75" y1="-12.7" x2="3.75" y2="-12.7" width="0.1" layer="21"/>
+<wire x1="-3.75" y1="-12.7" x2="-3.75" y2="-5.2" width="0.1" layer="21"/>
+<wire x1="3.75" y1="-12.7" x2="3.75" y2="-5.2" width="0.1" layer="21"/>
+<wire x1="-2.75" y1="-0.7" x2="0.25" y2="-0.7" width="0.1" layer="21"/>
+<wire x1="-2.75" y1="-2.2" x2="0.25" y2="-2.2" width="0.1" layer="21"/>
+<wire x1="-2.75" y1="-2.2" x2="-2.75" y2="-0.7" width="0.1" layer="21"/>
+<wire x1="0.25" y1="-2.2" x2="0.25" y2="-0.7" width="0.1" layer="21"/>
 </package>
 </packages>
 <symbols>
