@@ -1428,7 +1428,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="6" x="6.35" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
 <smd name="4" x="5.08" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
 <smd name="5" x="6.35" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="8.89" y="0" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="top-center">&gt;NAME</text>
 <hole x="0" y="0" drill="1"/>
 <hole x="7.62" y="-1.016" drill="1"/>
 <hole x="7.62" y="1.016" drill="1"/>
@@ -3074,16 +3074,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <devices>
 <device name="-TC2015-NL" package="TC2050">
 <connects>
-<connect gate="G$1" pin="BOOT0" pad="9"/>
+<connect gate="G$1" pin="BOOT0" pad="10"/>
 <connect gate="G$1" pin="NRST" pad="2"/>
-<connect gate="G$1" pin="PA10" pad="6"/>
-<connect gate="G$1" pin="PA11" pad="7"/>
-<connect gate="G$1" pin="PA12" pad="8"/>
-<connect gate="G$1" pin="PA9" pad="5"/>
-<connect gate="G$1" pin="RESET" pad="10"/>
-<connect gate="G$1" pin="SWO" pad="1"/>
+<connect gate="G$1" pin="PA10" pad="7"/>
+<connect gate="G$1" pin="PA11" pad="8"/>
+<connect gate="G$1" pin="PA12" pad="9"/>
+<connect gate="G$1" pin="PA9" pad="6"/>
+<connect gate="G$1" pin="RESET" pad="1"/>
+<connect gate="G$1" pin="SWO" pad="3"/>
 <connect gate="G$1" pin="TCK" pad="4"/>
-<connect gate="G$1" pin="TMS" pad="3"/>
+<connect gate="G$1" pin="TMS" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3164,12 +3164,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 <device name="_SM06B-PASS-1" package="SM06B-PASS-1">
 <connects>
-<connect gate="G$1" pin="3V3" pad="3"/>
-<connect gate="G$1" pin="GND" pad="6"/>
-<connect gate="G$1" pin="RX" pad="1"/>
-<connect gate="G$1" pin="TX" pad="2"/>
-<connect gate="G$1" pin="VIN" pad="4"/>
-<connect gate="G$1" pin="VOUT" pad="5"/>
+<connect gate="G$1" pin="3V3" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="RX" pad="5"/>
+<connect gate="G$1" pin="TX" pad="6"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
