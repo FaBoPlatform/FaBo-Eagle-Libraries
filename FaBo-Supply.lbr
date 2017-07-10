@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="11" fill="3" visible="no" active="no"/>
@@ -498,6 +498,29 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-1.575" y1="1.55" x2="1.575" y2="1.55" width="0.1" layer="21"/>
 <circle x="-2.3" y="-1.25" radius="0.2" width="0.5" layer="21"/>
 </package>
+<package name="DFN-14">
+<wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.1" layer="21"/>
+<wire x1="-2" y1="-1.5" x2="2" y2="-1.5" width="0.1" layer="21"/>
+<wire x1="2" y1="-1.5" x2="2" y2="1.5" width="0.1" layer="21"/>
+<wire x1="-2" y1="-1.5" x2="-2" y2="1.5" width="0.1" layer="21"/>
+<smd name="1" x="-1.5" y="-1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="2" x="-1" y="-1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="3" x="-0.5" y="-1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="4" x="0" y="-1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="5" x="0.5" y="-1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="6" x="1" y="-1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="7" x="1.5" y="-1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="8" x="1.5" y="1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="9" x="1" y="1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="10" x="0.5" y="1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="11" x="0" y="1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="12" x="-0.5" y="1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="13" x="-1" y="1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="14" x="-1.5" y="1.45" dx="0.25" dy="0.7" layer="1" roundness="30"/>
+<smd name="15" x="0" y="0" dx="3.3" dy="1.7" layer="1" roundness="30"/>
+<text x="-2.413" y="0" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-2.25" y1="-1.75" x2="-1.25" y2="-0.75" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TI-TPS62730">
@@ -920,6 +943,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
 <text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">STMPS21x1</text>
 <text x="-7.366" y="10.668" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-8.128" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
 </symbol>
 <symbol name="VUSB">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
@@ -992,6 +1016,29 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-7.112" y="0" size="1.6764" layer="97" align="center-left">VIN</text>
 <text x="7.112" y="0" size="1.6764" layer="97" align="center-right">VOUT</text>
 <text x="-7.62" y="5.588" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="LTC3111">
+<pin name="COMP" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="FB" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="SNSGND" x="-15.24" y="-12.7" length="middle"/>
+<pin name="RUN" x="-15.24" y="0" length="middle"/>
+<pin name="VIN" x="-15.24" y="5.08" length="middle"/>
+<pin name="SW1" x="-15.24" y="10.16" length="middle"/>
+<pin name="BST1" x="-15.24" y="12.7" length="middle"/>
+<pin name="BST2" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="SW2" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="VOUT" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="NC" x="-15.24" y="-10.16" length="middle"/>
+<pin name="VCC" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="PWM/SYNC" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="SGND" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="PGND" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+<text x="-9.906" y="18.034" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="15.24" size="1.778" layer="94" align="bottom-center">LTC3111</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1817,6 +1864,35 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC3111" prefix="IC" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LTC3111" x="0" y="0"/>
+</gates>
+<devices>
+<device name="EDE" package="DFN-14">
+<connects>
+<connect gate="G$1" pin="BST1" pad="7"/>
+<connect gate="G$1" pin="BST2" pad="8"/>
+<connect gate="G$1" pin="COMP" pad="1"/>
+<connect gate="G$1" pin="FB" pad="2"/>
+<connect gate="G$1" pin="NC" pad="11"/>
+<connect gate="G$1" pin="PGND" pad="15"/>
+<connect gate="G$1" pin="PWM/SYNC" pad="13"/>
+<connect gate="G$1" pin="RUN" pad="4"/>
+<connect gate="G$1" pin="SGND" pad="14"/>
+<connect gate="G$1" pin="SNSGND" pad="3"/>
+<connect gate="G$1" pin="SW1" pad="6"/>
+<connect gate="G$1" pin="SW2" pad="9"/>
+<connect gate="G$1" pin="VCC" pad="12"/>
+<connect gate="G$1" pin="VIN" pad="5"/>
+<connect gate="G$1" pin="VOUT" pad="10"/>
 </connects>
 <technologies>
 <technology name=""/>

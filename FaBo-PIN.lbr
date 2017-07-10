@@ -3091,16 +3091,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 <device name="-BOX" package="PIN_2X5_BOX">
 <connects>
-<connect gate="G$1" pin="BOOT0" pad="9"/>
+<connect gate="G$1" pin="BOOT0" pad="10"/>
 <connect gate="G$1" pin="NRST" pad="2"/>
-<connect gate="G$1" pin="PA10" pad="6"/>
-<connect gate="G$1" pin="PA11" pad="7"/>
-<connect gate="G$1" pin="PA12" pad="8"/>
-<connect gate="G$1" pin="PA9" pad="5"/>
-<connect gate="G$1" pin="RESET" pad="10"/>
-<connect gate="G$1" pin="SWO" pad="1"/>
+<connect gate="G$1" pin="PA10" pad="7"/>
+<connect gate="G$1" pin="PA11" pad="8"/>
+<connect gate="G$1" pin="PA12" pad="9"/>
+<connect gate="G$1" pin="PA9" pad="6"/>
+<connect gate="G$1" pin="RESET" pad="1"/>
+<connect gate="G$1" pin="SWO" pad="3"/>
 <connect gate="G$1" pin="TCK" pad="4"/>
-<connect gate="G$1" pin="TMS" pad="3"/>
+<connect gate="G$1" pin="TMS" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
