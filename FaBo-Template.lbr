@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -76,6 +76,7 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
+<layer number="115" name="sd" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
@@ -14533,6 +14534,59 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-5.334" y="-22.225" size="1.4224" layer="21" font="vector" ratio="10" rot="R90">IOREF</text>
 <text x="4.7074" y="-22.3652" size="1.4224" layer="21" font="vector" ratio="12" rot="R90">GND</text>
 </package>
+<package name="FABO_BRICK_2PIN_B02B-PASK-1_SILK">
+<pad name="VCC" x="-0.9525" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="GND" x="1.0475" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<hole x="2.5475" y="1.7" drill="1.1"/>
+<wire x1="3.0475" y1="-3.1" x2="3.0475" y2="2.2" width="0.127" layer="51"/>
+<wire x1="-3.0475" y1="-3.1" x2="-3.0475" y2="2.2" width="0.127" layer="51"/>
+<wire x1="3.0475" y1="2.2" x2="-3.0475" y2="2.2" width="0.127" layer="51"/>
+<wire x1="3.0475" y1="-3.1" x2="2.3175" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="2.3175" y1="-3.1" x2="-2.3175" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="-2.3175" y1="-3.1" x2="-3.0475" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="2.3175" y1="-3.6" x2="-2.3175" y2="-3.6" width="0.127" layer="51"/>
+<wire x1="-2.3175" y1="-3.6" x2="-2.3175" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="2.3175" y1="-3.6" x2="2.3175" y2="-3.1" width="0.127" layer="51"/>
+<text x="0" y="3.175" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0.9845" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
+<text x="-1.0795" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
+</package>
+<package name="FABO_BRICK_2PIN_S02B−PASK-2_SILK">
+<pad name="VCC" x="-1" y="-0.1016" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="GND" x="1" y="-0.1016" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="2.5" y="1.9984" drill="1.1"/>
+<wire x1="3.0602" y1="-3.6016" x2="3.0602" y2="8.0984" width="0.1" layer="51"/>
+<wire x1="-3.0348" y1="-3.6016" x2="-3.0348" y2="8.0984" width="0.1" layer="51"/>
+<wire x1="3.0602" y1="8.0984" x2="1.746" y2="8.0984" width="0.1" layer="51"/>
+<wire x1="1.746" y1="8.0984" x2="-1.746" y2="8.0984" width="0.1" layer="51"/>
+<wire x1="-1.746" y1="8.0984" x2="-3.0348" y2="8.0984" width="0.1" layer="51"/>
+<wire x1="3.0602" y1="-3.6016" x2="2.284" y2="-3.6016" width="0.1" layer="51"/>
+<text x="0.0508" y="-4.5466" size="0.8128" layer="25" font="vector" ratio="12" align="top-center">&gt;NAME</text>
+<hole x="-2.5" y="1.9984" drill="1.1"/>
+<wire x1="-2.284" y1="-3.6016" x2="-3.0348" y2="-3.6016" width="0.1" layer="51"/>
+<wire x1="1.746" y1="6.5984" x2="-1.746" y2="6.5984" width="0.1" layer="51"/>
+<wire x1="-1.746" y1="8.0984" x2="-1.746" y2="6.5984" width="0.1" layer="51"/>
+<wire x1="1.746" y1="8.0984" x2="1.746" y2="6.5984" width="0.1" layer="51"/>
+<wire x1="-2.284" y1="-3.6016" x2="-2.284" y2="0.3984" width="0.1" layer="51"/>
+<wire x1="2.284" y1="-3.6016" x2="2.284" y2="0.3984" width="0.1" layer="51"/>
+<wire x1="2.284" y1="0.3984" x2="-2.284" y2="0.3984" width="0.1" layer="51"/>
+<text x="0.9845" y="-1.714" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
+<text x="-1.0795" y="-1.714" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
+</package>
+<package name="FABO-NINJA">
+<wire x1="0" y1="32" x2="0" y2="3" width="0.1524" layer="20"/>
+<wire x1="0" y1="3" x2="3" y2="0" width="0.1524" layer="20" curve="90"/>
+<wire x1="3" y1="0" x2="35" y2="0" width="0.1524" layer="20"/>
+<wire x1="35" y1="0" x2="38" y2="3" width="0.1524" layer="20" curve="90"/>
+<wire x1="38" y1="3" x2="38" y2="32" width="0.1524" layer="20"/>
+<wire x1="38" y1="32" x2="35" y2="35" width="0.1524" layer="20" curve="90"/>
+<wire x1="35" y1="35" x2="3" y2="35" width="0.1524" layer="20"/>
+<wire x1="3" y1="35" x2="0" y2="32" width="0.1524" layer="20" curve="90"/>
+<hole x="2.5" y="32.5" drill="3"/>
+<hole x="35.5" y="32.5" drill="3"/>
+<hole x="35.5" y="2.5" drill="3"/>
+<hole x="2.5" y="2.5" drill="3"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SN3-2CP-P">
@@ -15045,6 +15099,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="SCL" x="12.7" y="20.32" length="middle" rot="R180"/>
 <pin name="IOREF" x="-15.24" y="7.62" length="middle"/>
 <pin name="NE" x="-15.24" y="10.16" length="middle"/>
+</symbol>
+<symbol name="FABO_BRICK_2PIN">
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="VCC" x="7.62" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="7.62" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<text x="-5.08" y="5.588" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="FABO-NINJA">
 </symbol>
 </symbols>
 <devicesets>
@@ -16105,6 +16170,42 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FABO_BRICK_2PIN">
+<gates>
+<gate name="G$1" symbol="FABO_BRICK_2PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FABO_BRICK_2PIN_B02B-PASK-1_SILK">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SIDE" package="FABO_BRICK_2PIN_S02B−PASK-2_SILK">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FABO-NINJA">
+<gates>
+</gates>
+<devices>
+<device name="" package="FABO-NINJA">
 <technologies>
 <technology name=""/>
 </technologies>
