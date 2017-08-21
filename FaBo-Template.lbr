@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -14574,17 +14574,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-1.0795" y="-1.714" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
 </package>
 <package name="FABO-NINJA">
+<wire x1="40.54" y1="3" x2="40.54" y2="32" width="0.1524" layer="20"/>
+<wire x1="40.54" y1="32" x2="37.54" y2="35" width="0.1524" layer="20" curve="90"/>
+<wire x1="37.54" y1="35" x2="3" y2="35" width="0.1524" layer="20"/>
+<wire x1="3" y1="35" x2="0" y2="32" width="0.1524" layer="20" curve="90"/>
 <wire x1="0" y1="32" x2="0" y2="3" width="0.1524" layer="20"/>
 <wire x1="0" y1="3" x2="3" y2="0" width="0.1524" layer="20" curve="90"/>
-<wire x1="3" y1="0" x2="35" y2="0" width="0.1524" layer="20"/>
-<wire x1="35" y1="0" x2="38" y2="3" width="0.1524" layer="20" curve="90"/>
-<wire x1="38" y1="3" x2="38" y2="32" width="0.1524" layer="20"/>
-<wire x1="38" y1="32" x2="35" y2="35" width="0.1524" layer="20" curve="90"/>
-<wire x1="35" y1="35" x2="3" y2="35" width="0.1524" layer="20"/>
-<wire x1="3" y1="35" x2="0" y2="32" width="0.1524" layer="20" curve="90"/>
+<wire x1="3" y1="0" x2="37.54" y2="0" width="0.1524" layer="20"/>
+<wire x1="37.54" y1="0" x2="40.54" y2="3" width="0.1524" layer="20" curve="90"/>
 <hole x="2.5" y="32.5" drill="3"/>
-<hole x="35.5" y="32.5" drill="3"/>
-<hole x="35.5" y="2.5" drill="3"/>
+<hole x="38.04" y="32.5" drill="3"/>
+<hole x="38.04" y="2.5" drill="3"/>
 <hole x="2.5" y="2.5" drill="3"/>
 </package>
 </packages>
