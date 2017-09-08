@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -177,6 +177,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="1.27" y1="-0.55" x2="-1.27" y2="-0.55" width="0.0508" layer="39"/>
 <wire x1="-1.27" y1="-0.55" x2="-1.27" y2="0.55" width="0.0508" layer="39"/>
 </package>
+<package name="1812">
+<smd name="P$1" x="-2.25" y="0" dx="2.8" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$2" x="2.25" y="0" dx="2.8" dy="1.5" layer="1" rot="R90"/>
+<wire x1="-3" y1="1.5" x2="3.1" y2="1.5" width="0.127" layer="21"/>
+<wire x1="3.1" y1="1.5" x2="3.1" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="3.1" y1="-1.5" x2="-3.1" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="-1.5" x2="-3.1" y2="1.5" width="0.127" layer="21"/>
+<text x="-3.1" y="1.9" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-0.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -238,6 +248,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1812" package="1812">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
