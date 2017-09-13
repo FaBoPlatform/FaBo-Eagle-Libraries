@@ -14715,6 +14715,44 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="GND" x="4" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
 <text x="2" y="-6.46" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
 </package>
+<package name="FABO_BRICK_SERIAL_LONGER">
+<wire x1="-10.16" y1="-25.4" x2="10.16" y2="-25.4" width="0" layer="20"/>
+<wire x1="10.16" y1="-25.4" x2="13.97" y2="-21.59" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-21.59" x2="13.97" y2="16.51" width="0" layer="20"/>
+<wire x1="-10.16" y1="-25.4" x2="-13.97" y2="-21.59" width="0" layer="20" curve="-90"/>
+<pad name="GND" x="3.81" y="-18.415" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="1.27" y="-18.415" drill="1" shape="long" rot="R90"/>
+<pad name="RX" x="-3.81" y="-18.415" drill="1" shape="long" rot="R90"/>
+<pad name="TX" x="-1.27" y="-18.415" drill="1" shape="long" rot="R90"/>
+<wire x1="-13.97" y1="16.51" x2="-13.97" y2="-21.59" width="0" layer="20"/>
+<pad name="P$5" x="-10.16" y="0" drill="3" diameter="3.81"/>
+<pad name="P$6" x="10.16" y="0" drill="3" diameter="3.81"/>
+<pad name="P$7" x="-10.16" y="-21.59" drill="3" diameter="3.81"/>
+<pad name="P$8" x="10.16" y="-21.59" drill="3" diameter="3.81"/>
+<wire x1="-13.97" y1="16.51" x2="13.97" y2="16.51" width="0" layer="20" curve="-180"/>
+<text x="-3.81" y="-16.51" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
+<text x="-1.27" y="-16.51" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
+<text x="1.27" y="-16.51" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3.81" y="-16.51" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="0" radius="2.55" width="0.127" layer="51"/>
+<circle x="-10.16" y="-21.59" radius="2.55" width="0.127" layer="51"/>
+<circle x="10.16" y="0" radius="2.55" width="0.127" layer="51"/>
+<circle x="10.16" y="-21.59" radius="2.55" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-18.415" x2="-6.35" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="6.35" y1="-18.415" x2="6.35" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-31.815" x2="-3.8" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-31.815" x2="-2.8" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-31.815" x2="2.8" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-31.815" x2="3.8" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-31.815" x2="6.35" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-28.015" x2="-3.8" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-28.015" x2="3.8" y2="-28.015" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-28.015" x2="3.8" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-31.815" x2="-2.8" y2="-29.415" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-31.815" x2="2.8" y2="-29.415" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-29.415" x2="2.8" y2="-29.415" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-18.415" x2="6.35" y2="-18.415" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SN3-2CP-P">
@@ -15877,6 +15915,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="RX" pad="V_RX"/>
 <connect gate="G$1" pin="TX" pad="V_TX"/>
 <connect gate="G$1" pin="VCC" pad="V_VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-LONGER" package="FABO_BRICK_SERIAL_LONGER">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
