@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -172,6 +172,7 @@
 <smd name="1" x="-0.6" y="0" dx="0.48" dy="0.4" layer="1"/>
 <smd name="2" x="0.6" y="0" dx="0.48" dy="0.4" layer="1"/>
 <rectangle x1="-0.6" y1="-0.4" x2="-0.1" y2="0.4" layer="21"/>
+<text x="-0.762" y="0.508" size="0.6096" layer="25">&gt;NAME</text>
 </package>
 <package name="SOT-323">
 <wire x1="-1.05" y1="0.62" x2="1.05" y2="0.62" width="0.1" layer="21"/>
@@ -182,6 +183,37 @@
 <smd name="2" x="0.65" y="-0.95" dx="0.7" dy="0.9" layer="1"/>
 <smd name="3" x="0" y="0.95" dx="0.7" dy="0.9" layer="1"/>
 <text x="0" y="1.905" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="0603">
+<wire x1="-1.48" y1="0.6" x2="1.48" y2="0.6" width="0.0508" layer="39"/>
+<wire x1="1.48" y1="0.6" x2="1.48" y2="-0.6" width="0.0508" layer="39"/>
+<wire x1="1.48" y1="-0.6" x2="-1.48" y2="-0.6" width="0.0508" layer="39"/>
+<wire x1="-1.48" y1="-0.6" x2="-1.48" y2="0.6" width="0.0508" layer="39"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1" roundness="20"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1" roundness="20"/>
+<text x="0" y="0.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<wire x1="-1.7272" y1="0" x2="-2.286" y2="0.5588" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="0.5588" x2="-2.286" y2="-0.6096" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="-0.6096" x2="-1.7018" y2="-0.0254" width="0.127" layer="21"/>
+<wire x1="-1.7018" y1="-0.0254" x2="-2.2352" y2="-0.0254" width="0.127" layer="21"/>
+<wire x1="-2.2352" y1="-0.0254" x2="-2.2352" y2="0.3302" width="0.127" layer="21"/>
+<wire x1="-2.2352" y1="0.3302" x2="-2.2098" y2="0.3556" width="0.127" layer="21"/>
+<wire x1="-2.2098" y1="0.3556" x2="-1.8796" y2="0.0254" width="0.127" layer="21"/>
+<wire x1="-1.8796" y1="0.0254" x2="-2.0828" y2="0.0254" width="0.127" layer="21"/>
+<wire x1="-2.0828" y1="0.0254" x2="-2.1336" y2="0.0762" width="0.127" layer="21"/>
+<wire x1="-2.1336" y1="0.0762" x2="-2.1336" y2="0.1524" width="0.127" layer="21"/>
+<wire x1="-2.1336" y1="0.1524" x2="-2.159" y2="0.1778" width="0.127" layer="21"/>
+<wire x1="-2.1336" y1="0.1524" x2="-2.0828" y2="0.1016" width="0.127" layer="21"/>
+<wire x1="-2.0828" y1="0.1016" x2="-2.0828" y2="-0.0254" width="0.127" layer="21"/>
+<wire x1="-2.0828" y1="-0.0254" x2="-2.2098" y2="-0.1524" width="0.127" layer="21"/>
+<wire x1="-2.2098" y1="-0.1524" x2="-2.2098" y2="-0.4064" width="0.127" layer="21"/>
+<wire x1="-2.2098" y1="-0.4064" x2="-2.2352" y2="-0.4318" width="0.127" layer="21"/>
+<wire x1="-2.2352" y1="-0.4318" x2="-2.2098" y2="-0.4318" width="0.127" layer="21"/>
+<wire x1="-2.2098" y1="-0.4318" x2="-1.905" y2="-0.127" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-0.127" x2="-2.0828" y2="-0.127" width="0.127" layer="21"/>
+<wire x1="-2.0828" y1="-0.127" x2="-2.0828" y2="-0.2032" width="0.127" layer="21"/>
+<wire x1="-2.0828" y1="-0.2032" x2="-2.1336" y2="-0.254" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -244,12 +276,13 @@
 <wire x1="-0.254" y1="0" x2="-2.124" y2="-1.524" width="0.254" layer="94"/>
 <wire x1="-2.124" y1="-1.524" x2="-2.124" y2="1.27" width="0.254" layer="94"/>
 <wire x1="-2.124" y1="1.27" x2="-0.254" y2="0" width="0.254" layer="94"/>
-<text x="-3.81" y="-3.048" size="1.27" layer="95">&gt;NAME</text>
+<text x="-3.81" y="2.032" size="1.27" layer="95">&gt;NAME</text>
 <wire x1="-2.2" y1="0" x2="-5" y2="0" width="0.254" layer="94"/>
 <wire x1="-0.2" y1="0" x2="-0.2" y2="0.278890625" width="0.254" layer="94"/>
 <wire x1="-0.2" y1="0.278890625" x2="-0.8" y2="1.4" width="0.254" layer="94" curve="56.309932"/>
 <wire x1="-0.2" y1="0" x2="-0.2" y2="-0.151471875" width="0.254" layer="94"/>
 <wire x1="-0.2" y1="-0.151471875" x2="0.4" y2="-1.6" width="0.254" layer="94" curve="45"/>
+<text x="-3.81" y="-3.048" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="SCHOTTYKY_DIODE">
 <pin name="CATHODE" x="-5.08" y="0" visible="off" length="point"/>
@@ -258,12 +291,36 @@
 <wire x1="-0.254" y1="0" x2="-2.2352" y2="-1.5494" width="0.254" layer="94"/>
 <wire x1="-2.2352" y1="-1.5494" x2="-2.2352" y2="1.2446" width="0.254" layer="94"/>
 <wire x1="-2.2352" y1="1.2446" x2="-0.254" y2="0" width="0.254" layer="94"/>
-<text x="-3.81" y="-3.048" size="1.27" layer="95">&gt;NAME</text>
+<text x="-3.81" y="2.032" size="1.27" layer="95">&gt;NAME</text>
 <wire x1="-2.3112" y1="0" x2="-5" y2="0" width="0.254" layer="94"/>
 <wire x1="-0.2" y1="0.1" x2="-0.2" y2="0.334315625" width="0.254" layer="94"/>
 <wire x1="-0.2" y1="0.334315625" x2="0.2" y2="1.3" width="0.254" layer="94" curve="-45"/>
 <wire x1="-0.2" y1="-0.1" x2="-0.2" y2="-0.634315625" width="0.254" layer="94"/>
 <wire x1="-0.2" y1="-0.634315625" x2="-0.6" y2="-1.6" width="0.254" layer="94" curve="-45"/>
+<text x="-3.81" y="-3.048" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="AVALANCHE_DIODE">
+<pin name="1" x="-7.62" y="0" visible="pin" length="point"/>
+<pin name="2" x="7.62" y="0" visible="pin" length="point" rot="R180"/>
+<wire x1="-2.794" y1="0" x2="-4.7752" y2="-1.5494" width="0.254" layer="94"/>
+<wire x1="-4.7752" y1="-1.5494" x2="-4.7752" y2="1.2446" width="0.254" layer="94"/>
+<wire x1="-4.7752" y1="1.2446" x2="-2.794" y2="0" width="0.254" layer="94"/>
+<text x="-3.81" y="2.032" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="-4.8512" y1="0" x2="-7.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.74" y1="0.1" x2="-2.74" y2="0.334315625" width="0.254" layer="94"/>
+<wire x1="-2.74" y1="0.334315625" x2="-2.34" y2="1.3" width="0.254" layer="94" curve="-45"/>
+<wire x1="-2.74" y1="-0.1" x2="-2.74" y2="-0.634315625" width="0.254" layer="94"/>
+<wire x1="-2.74" y1="-0.634315625" x2="-3.14" y2="-1.6" width="0.254" layer="94" curve="-45"/>
+<wire x1="2.794" y1="0" x2="-2.794" y2="0" width="0.254" layer="94"/>
+<wire x1="2.794" y1="0" x2="4.7752" y2="1.5494" width="0.254" layer="94"/>
+<wire x1="4.7752" y1="1.5494" x2="4.7752" y2="-1.2446" width="0.254" layer="94"/>
+<wire x1="4.7752" y1="-1.2446" x2="2.794" y2="0" width="0.254" layer="94"/>
+<wire x1="4.8512" y1="0" x2="7.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.74" y1="-0.1" x2="2.74" y2="-0.334315625" width="0.254" layer="94"/>
+<wire x1="2.74" y1="-0.334315625" x2="2.34" y2="-1.3" width="0.254" layer="94" curve="-45"/>
+<wire x1="2.74" y1="0.1" x2="2.74" y2="0.634315625" width="0.254" layer="94"/>
+<wire x1="2.74" y1="0.634315625" x2="3.14" y2="1.6" width="0.254" layer="94" curve="-45"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -308,6 +365,22 @@
 <connects>
 <connect gate="G$1" pin="ANODE" pad="2"/>
 <connect gate="G$1" pin="CATHODE" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVALANCHE_DIODE" prefix="D">
+<gates>
+<gate name="G$1" symbol="AVALANCHE_DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="2"/>
+<connect gate="G$1" pin="2" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>

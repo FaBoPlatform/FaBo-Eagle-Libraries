@@ -511,7 +511,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="5" x="1" y="-2.2" dx="1.24" dy="0.3" layer="1" rot="R90"/>
 <smd name="2" x="-0.5" y="-2.2" dx="1.24" dy="0.3" layer="1" rot="R90"/>
 <smd name="1" x="-1" y="-2.2" dx="1.24" dy="0.3" layer="1" rot="R90"/>
-<text x="-5" y="1" size="0.6096" layer="25">&gt;NAME</text>
+<text x="1.8326" y="-0.27" size="0.6096" layer="25">&gt;NAME</text>
+<circle x="-0.7874" y="-0.635" radius="0.38688125" width="0.127" layer="21"/>
 </package>
 <package name="TDFN3X3-10">
 <smd name="8" x="1.525" y="0" dx="0.75" dy="0.3" layer="1" roundness="50"/>
@@ -1068,6 +1069,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="10.16" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-15.24" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
 <text x="-5.08" y="10.16" size="1.27" layer="94">TPS53015</text>
+<text x="-12.7" y="15.24" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="APW8805">
 <pin name="VIN" x="-12.7" y="7.62" length="middle"/>
@@ -1106,6 +1108,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="10.16" y1="-27.94" x2="-10.16" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-27.94" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
 <text x="-2.54" y="-5.08" size="1.27" layer="94">INA3221</text>
+</symbol>
+<symbol name="AMS1117">
+<pin name="IN" x="-12.7" y="0" length="middle"/>
+<pin name="OUT" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="ADJ" x="0" y="-12.7" length="middle" rot="R90"/>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-2.54" y="2.54" size="1.27" layer="94">AMS1117</text>
+<text x="-3.302" y="5.588" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1967,6 +1980,23 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="VPU" pad="16"/>
 <connect gate="G$1" pin="VS" pad="4"/>
 <connect gate="G$1" pin="WARN" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AMS1117" prefix="S">
+<gates>
+<gate name="G$1" symbol="AMS1117" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-223-3">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

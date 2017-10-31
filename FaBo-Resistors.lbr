@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -215,14 +215,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="1.96" y1="-0.87545" x2="1.96" y2="0.873384375" width="0.127" layer="21"/>
 </package>
 <package name="SHUNT">
-<wire x1="-2.5" y1="2" x2="2.5" y2="2" width="0.127" layer="21"/>
-<wire x1="2.5" y1="2" x2="2.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-2" x2="-2.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-2" x2="-2.5" y2="2" width="0.127" layer="21"/>
-<smd name="2" x="1.6" y="-1.2" dx="1" dy="1" layer="1" rot="R90"/>
-<smd name="1" x="-0.9" y="-0.7" dx="2" dy="2.5" layer="1" rot="R90"/>
-<smd name="3" x="-0.9" y="1.17" dx="1" dy="2.5" layer="1" rot="R90"/>
-<smd name="4" x="1.6" y="0.7" dx="2" dy="1" layer="1" rot="R90"/>
+<wire x1="-0.75" y1="1.715" x2="0.75" y2="1.715" width="0.127" layer="21"/>
+<wire x1="0.75" y1="1.715" x2="0.75" y2="-1.715" width="0.127" layer="21"/>
+<wire x1="0.75" y1="-1.715" x2="-0.75" y2="-1.715" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="-1.715" x2="-0.75" y2="1.715" width="0.127" layer="21"/>
+<smd name="2" x="0.8" y="0.62" dx="2.3" dy="1.01" layer="1" rot="R90"/>
+<smd name="1" x="-0.82" y="0.64" dx="2.3" dy="1.01" layer="1" rot="R90"/>
+<smd name="3" x="-0.825240625" y="-1.406540625" dx="0.765" dy="1.01" layer="1" rot="R90"/>
+<smd name="4" x="0.830478125" y="-1.399078125" dx="0.765" dy="1.01" layer="1" rot="R90"/>
+<text x="-1.10998125" y="2.054859375" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
