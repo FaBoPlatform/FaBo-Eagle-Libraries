@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -278,6 +278,64 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="0" y="1.597915625" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 <text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
 </package>
+<package name="D10">
+<circle x="0" y="0" radius="5" width="0.127" layer="21"/>
+<pad name="+" x="-2.5" y="0" drill="0.6" shape="square"/>
+<pad name="-" x="2.5" y="0" drill="0.6" shape="square"/>
+<text x="-3.246121875" y="5.4483" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.36041875" y="-6.687821875" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="0" y1="4.97078125" x2="0" y2="4.3307" width="0.127" layer="21"/>
+<text x="1.361434375" y="1.12014375" size="2.54" layer="21">-</text>
+<wire x1="0" y1="4.231640625" x2="0" y2="-4.99871875" width="0.127" layer="21"/>
+<wire x1="0.111759375" y1="4.88188125" x2="0.69088125" y2="4.88188125" width="0.127" layer="21"/>
+<wire x1="0.69088125" y1="4.88188125" x2="0.69088125" y2="4.866640625" width="0.127" layer="21"/>
+<wire x1="1.140459375" y1="4.79551875" x2="0.08381875" y2="4.79551875" width="0.127" layer="21"/>
+<wire x1="0.08381875" y1="4.79551875" x2="0.08381875" y2="4.78281875" width="0.127" layer="21"/>
+<wire x1="0.015240625" y1="4.7244" x2="1.63321875" y2="4.7244" width="0.127" layer="21"/>
+<wire x1="1.63321875" y1="4.7244" x2="1.63321875" y2="4.612640625" width="0.127" layer="21"/>
+<wire x1="1.63321875" y1="4.612640625" x2="0.04318125" y2="4.612640625" width="0.127" layer="21"/>
+<wire x1="0.04318125" y1="4.612640625" x2="0.04318125" y2="4.569459375" width="0.127" layer="21"/>
+<wire x1="0.04318125" y1="4.569459375" x2="0.05588125" y2="4.569459375" width="0.127" layer="21"/>
+<wire x1="0.05588125" y1="4.569459375" x2="0.05588125" y2="4.52881875" width="0.127" layer="21"/>
+<wire x1="0.05588125" y1="4.52881875" x2="1.73228125" y2="4.52881875" width="0.127" layer="21"/>
+<wire x1="1.98628125" y1="4.52881875" x2="1.73228125" y2="4.52881875" width="0.127" layer="21"/>
+<wire x1="1.73228125" y1="4.52881875" x2="1.73228125" y2="4.569459375" width="0.127" layer="21"/>
+<wire x1="1.73228125" y1="4.569459375" x2="1.98628125" y2="4.569459375" width="0.127" layer="21"/>
+<wire x1="1.98628125" y1="4.569459375" x2="2.212340625" y2="4.3434" width="0.127" layer="21"/>
+<wire x1="2.212340625" y1="4.3434" x2="0.1143" y2="4.3434" width="0.127" layer="21"/>
+<wire x1="0.1143" y1="4.3434" x2="0.08381875" y2="4.37388125" width="0.127" layer="21"/>
+<wire x1="0.08381875" y1="4.37388125" x2="0.08381875" y2="4.445" width="0.127" layer="21"/>
+<wire x1="0.08381875" y1="4.445" x2="0.07111875" y2="4.4577" width="0.127" layer="21"/>
+<wire x1="0.07111875" y1="4.4577" x2="2.237740625" y2="4.4577" width="0.127" layer="21"/>
+<wire x1="2.237740625" y1="4.4577" x2="2.37998125" y2="4.315459375" width="0.127" layer="21"/>
+<wire x1="2.37998125" y1="4.315459375" x2="0.015240625" y2="4.315459375" width="0.127" layer="21"/>
+<wire x1="0.015240625" y1="4.315459375" x2="0" y2="4.3307" width="0.127" layer="21"/>
+<wire x1="0" y1="4.3307" x2="0" y2="4.231640625" width="0.127" layer="21"/>
+<wire x1="0" y1="4.231640625" x2="2.60858125" y2="4.231640625" width="0.127" layer="21"/>
+<wire x1="2.60858125" y1="4.231640625" x2="2.62128125" y2="4.218940625" width="0.127" layer="21"/>
+<wire x1="2.62128125" y1="4.218940625" x2="2.677159375" y2="4.218940625" width="0.127" layer="21"/>
+<wire x1="2.677159375" y1="4.218940625" x2="2.74828125" y2="4.14781875" width="0.127" layer="21"/>
+<wire x1="2.74828125" y1="4.14781875" x2="0.04318125" y2="4.14781875" width="0.127" layer="21"/>
+<wire x1="0.04318125" y1="4.14781875" x2="0.04318125" y2="4.03351875" width="0.127" layer="21"/>
+<wire x1="0.04318125" y1="4.03351875" x2="2.83464375" y2="4.03351875" width="0.127" layer="21"/>
+<wire x1="2.83464375" y1="4.03351875" x2="2.87528125" y2="3.99288125" width="0.127" layer="21"/>
+<wire x1="2.87528125" y1="3.99288125" x2="2.9845" y2="3.99288125" width="0.127" layer="21"/>
+<wire x1="2.9845" y1="3.99288125" x2="3.0988" y2="3.87858125" width="0.127" layer="21"/>
+<wire x1="3.0988" y1="3.87858125" x2="0.015240625" y2="3.87858125" width="0.127" layer="21"/>
+<wire x1="0.015240625" y1="3.87858125" x2="0.015240625" y2="3.9090625" width="0.127" layer="21"/>
+<wire x1="0.015240625" y1="3.9090625" x2="0.07111875" y2="3.964940625" width="0.127" layer="21"/>
+<wire x1="0.07111875" y1="3.964940625" x2="2.733040625" y2="3.964940625" width="0.127" layer="21"/>
+<wire x1="2.733040625" y1="3.964940625" x2="2.76098125" y2="3.99288125" width="0.127" layer="21"/>
+</package>
+<package name="D12.5">
+<circle x="0.027940625" y="0.254" radius="6.25" width="0.127" layer="21"/>
+<pad name="+" x="-2.472059375" y="0.254" drill="0.6" shape="square"/>
+<pad name="-" x="2.527940625" y="0.254" drill="0.6" shape="square"/>
+<text x="-3.21818125" y="6.8605375" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.2791375" y="-7.9603625" size="1.27" layer="27">&gt;VALUE</text>
+<text x="1.389375" y="2.501903125" size="2.54" layer="21">-</text>
+<wire x1="0.027940625" y1="6.43381875" x2="0.027940625" y2="-5.95121875" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -411,6 +469,24 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connects>
 <connect gate="G$1" pin="+" pad="PLUS"/>
 <connect gate="G$1" pin="-" pad="MINUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_D10" package="D10">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_D12_5" package="D12.5">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
