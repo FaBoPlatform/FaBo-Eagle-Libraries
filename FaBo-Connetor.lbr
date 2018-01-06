@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -57,15 +58,6 @@
 </layers>
 <library>
 <packages>
-<package name="HIROSE-UF.L">
-<smd name="GND@1" x="-1.5" y="0" dx="2.2" dy="1" layer="1" rot="R90"/>
-<smd name="GND@2" x="1.5" y="0" dx="2.2" dy="1" layer="1" rot="R90"/>
-<smd name="SIG" x="0" y="-1.5" dx="1" dy="1" layer="1"/>
-<wire x1="-1.3" y1="1.3" x2="1.3" y2="1.3" width="0.127" layer="21"/>
-<wire x1="1.3" y1="1.3" x2="1.3" y2="-1.3" width="0.127" layer="21"/>
-<wire x1="1.3" y1="-1.3" x2="-1.3" y2="-1.3" width="0.127" layer="21"/>
-<wire x1="-1.3" y1="-1.3" x2="-1.3" y2="1.3" width="0.127" layer="21"/>
-</package>
 <package name="PCC-SMP-J">
 <pad name="+" x="-6.8" y="-6.75" drill="1.77"/>
 <pad name="-" x="6.8" y="-6.75" drill="1.77"/>
@@ -1003,14 +995,6 @@
 </package>
 </packages>
 <symbols>
-<symbol name="HIROSE-U.FL">
-<pin name="GND" x="-7.62" y="2.54" length="middle"/>
-<pin name="SIG" x="-7.62" y="-2.54" length="middle"/>
-<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-</symbol>
 <symbol name="PCC-SMP-J">
 <pin name="+" x="-7.62" y="2.54" length="middle"/>
 <pin name="-" x="-7.62" y="0" length="middle"/>
@@ -1482,22 +1466,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="HIROSE-U.FL" prefix="UF" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="HIROSE-U.FL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="HIROSE-UF.L">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND@1 GND@2"/>
-<connect gate="G$1" pin="SIG" pad="SIG"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PCC-SMP-J">
 <gates>
 <gate name="G$1" symbol="PCC-SMP-J" x="0" y="0"/>
