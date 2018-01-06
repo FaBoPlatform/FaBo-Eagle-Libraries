@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -222,10 +223,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="0" x="10" y="0" dx="2.6" dy="3.6" layer="16" rot="R180"/>
 <text x="-6.12" y="-0.5" size="1.27" layer="21">CH7410-2032LF</text>
 <text x="8.88" y="-4" size="1.6764" layer="21">+</text>
-</package>
-<package name="BUTTON-SKQMBAE010">
-<smd name="1" x="-2.94" y="0.01" dx="1.8" dy="1.6" layer="1"/>
-<smd name="2" x="2.4" y="0" dx="1.8" dy="1.6" layer="1"/>
 </package>
 <package name="SWITCH-4P(PTS840)">
 <smd name="1" x="-0.9" y="0.5" dx="1.4" dy="1.05" layer="1"/>
@@ -1830,15 +1827,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </symbol>
 <symbol name="DIP-SWOTCH-4P(EHS104LD)">
 </symbol>
-<symbol name="BUTTON-SKQMBAE010">
-<pin name="IN" x="-10.414" y="-2.54" length="middle"/>
-<pin name="OUT" x="9.906" y="-2.54" length="middle" rot="R180"/>
-<circle x="-5.08" y="-2.54" radius="1.135921875" width="0.254" layer="94"/>
-<circle x="4.572" y="-2.54" radius="1.135921875" width="0.254" layer="94"/>
-<wire x1="-5.842" y1="-0.254" x2="-0.508" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="-0.508" y1="-0.254" x2="5.334" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="-0.508" y1="-0.254" x2="-0.508" y2="3.556" width="0.254" layer="94"/>
-</symbol>
 <symbol name="SWICTH-4P(PTS840)">
 <wire x1="0" y1="5.08" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
@@ -3425,22 +3413,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connects>
 <connect gate="G$1" pin="0" pad="0"/>
 <connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BUTTON-SKQMBAE010">
-<gates>
-<gate name="G$1" symbol="BUTTON-SKQMBAE010" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="BUTTON-SKQMBAE010">
-<connects>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

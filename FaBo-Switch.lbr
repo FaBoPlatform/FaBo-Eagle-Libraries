@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -50,6 +53,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -242,6 +247,14 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <wire x1="3.1" y1="3.1" x2="3.1" y2="-3.1" width="0.127" layer="21"/>
 <wire x1="3.1" y1="-3.1" x2="-3.1" y2="-3.1" width="0.127" layer="21"/>
 <wire x1="-3.1" y1="-3.1" x2="-3.1" y2="3.1" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.905" x2="0" y2="1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="1.905" x2="-2.54" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="1.905" x2="0" y2="0.635" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.635" x2="0.635" y2="0.635" width="0.127" layer="21"/>
+<text x="-3.175" y="3.556" size="0.8128" layer="21">&gt;NAME</text>
 </package>
 <package name="CJS-1200TA">
 <smd name="2" x="0" y="1.15" dx="1" dy="1.6" layer="1"/>
@@ -252,6 +265,16 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <wire x1="2.25" y1="-1.25" x2="-2.25" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="-2.25" y1="-1.25" x2="-2.25" y2="1.25" width="0.127" layer="21"/>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="SKQMBBE10">
+<smd name="IN" x="-2.5" y="0" dx="1.8" dy="1.6" layer="1"/>
+<smd name="OUT" x="2.5" y="0" dx="1.8" dy="1.6" layer="1"/>
+<wire x1="-3" y1="1.75" x2="-3" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.75" x2="3" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="3" y1="-1.75" x2="3" y2="1.75" width="0.127" layer="21"/>
+<wire x1="3" y1="1.75" x2="-3" y2="1.75" width="0.127" layer="21"/>
+<text x="-3" y="2" size="1.016" layer="25">&gt;NAME</text>
+<text x="-3" y="-3" size="1.016" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -360,6 +383,84 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 </devices>
 </deviceset>
 <deviceset name="TACT-SWITCH" prefix="S" uservalue="yes">
+<description>&lt;table border=1&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Part No
+&lt;/td&gt;
+&lt;td&gt;
+Maker
+&lt;/td&gt;
+&lt;td&gt;
+Datasheet
+&lt;/td&gt;
+&lt;td&gt;
+Distributor
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+1273HA-160G-G
+&lt;/td&gt;
+&lt;td&gt;
+SWITRONIC
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.switronic.com/uploads/images/A10.gif"&gt;Catalog&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://akizukidenshi.com/catalog/g/gP-02561/"&gt;Akizuki&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+DTS-6-V
+&lt;/td&gt;
+&lt;td&gt;
+Cosland
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.cosland.com/newproduct/DTS%20SERIES.pdf"&gt;DTS 6 Series&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://akizukidenshi.com/catalog/g/gP-03647/"&gt;Akizuki&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+KMR2
+&lt;/td&gt;
+&lt;td&gt;
+C&amp;K
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.ckswitches.com/products/switches/product-details/Tactile/KMR2/"&gt;KMR2 SERIES&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/search?q=KMR2&amp;start=0"&gt;Octoparts Result&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+TSHA-T-XB2-19E
+&lt;/td&gt;
+&lt;td&gt;
+TOP UP INDUSTORY
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.top-up.com.tw/front/bin/ptdetail.phtml?Part=TSHA-T"&gt;TSHA-T&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://akizukidenshi.com/catalog/g/gP-09361/"&gt;Akizuki&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;/table&gt;</description>
 <gates>
 <gate name="G$1" symbol="SWITCH-TACT" x="0" y="0"/>
 </gates>
@@ -397,9 +498,56 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <technology name=""/>
 </technologies>
 </device>
+<device name="-TSHA-T-XB2-19E" package="TSHA-T-XB2-19E">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="B"/>
+<connect gate="G$1" pin="3" pad="C"/>
+<connect gate="G$1" pin="4" pad="D"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="SLIDE" prefix="S" uservalue="yes">
+<description>&lt;table border=1&gt;
+
+
+&lt;tr&gt;
+&lt;td&gt;
+EG1218
+&lt;/td&gt;
+&lt;td&gt;
+E-SWICTH
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.e-switch.com/system/asset/product_line/data_sheet/119/EG.pdf"&gt;Series EG-Swicthes&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+Distributor
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+SSSS810701
+&lt;/td&gt;
+&lt;td&gt;
+Alps
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.alps.com/prod/info/J/HTML/Switch/Slide/SSSS8/SSSS810701.html"&gt;SSSS8 Series&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/search?q=SSSS810701+"&gt;Octoatrs&lt;/a&gt;
+&lt;/td&gt;
+
+&lt;/tr&gt;
+
+
+&lt;/table&gt;</description>
 <gates>
 <gate name="G$1" symbol="SLIDE" x="0" y="0"/>
 </gates>
@@ -427,11 +575,45 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 </devices>
 </deviceset>
 <deviceset name="SWITCH" prefix="S" uservalue="yes">
+<description>&lt;table border=1&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+Part No
+&lt;/td&gt;
+&lt;td&gt;
+Maker
+&lt;/td&gt;
+&lt;td&gt;
+Datasheet
+&lt;/td&gt;
+&lt;td&gt;
+Distributor
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+SKQMBBE10
+&lt;/td&gt;
+&lt;td&gt;
+ALPS
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.alps.com/prod/info/J/HTML/Tact/SurfaceMount/SKQM/SKQMBBE010.html"&gt;SKQ Series&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/search?q=SKQMBBE010&amp;start=0"&gt;Octoparts&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;/table&gt;</description>
 <gates>
 <gate name="G$1" symbol="SWITCH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="M-SWITCH">
+<device name="_M-SWITCH" package="M-SWITCH">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -440,19 +622,10 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <technology name=""/>
 </technologies>
 </device>
-</devices>
-</deviceset>
-<deviceset name="TSHA-T-XB2-19E">
-<gates>
-<gate name="G$1" symbol="SWITCH-TACT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TSHA-T-XB2-19E">
+<device name="_SKQMBBE10" package="SKQMBBE10">
 <connects>
-<connect gate="G$1" pin="1" pad="A"/>
-<connect gate="G$1" pin="2" pad="B"/>
-<connect gate="G$1" pin="3" pad="C"/>
-<connect gate="G$1" pin="4" pad="D"/>
+<connect gate="G$1" pin="1" pad="IN"/>
+<connect gate="G$1" pin="2" pad="OUT"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -461,6 +634,41 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 </devices>
 </deviceset>
 <deviceset name="CJS-1200">
+<description>&lt;table border=1&gt;
+
+
+&lt;tr&gt;
+&lt;td&gt;
+Parts No
+&lt;/td&gt;
+&lt;td&gt;
+Maker
+&lt;/td&gt;
+&lt;td&gt;
+Datasheet
+&lt;/td&gt;
+&lt;td&gt;
+Distributor
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+CJS-1200TA
+&lt;/td&gt;
+&lt;td&gt;
+Nidec copal electronics
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.nidec-copal-electronics.com/j/product/detail/00000189/"&gt;CSJ&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/cjs-1200ta1-copal-17213397"&gt;Octoparts&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;/table&gt;</description>
 <gates>
 <gate name="G$1" symbol="CJS-1200" x="0" y="0"/>
 </gates>

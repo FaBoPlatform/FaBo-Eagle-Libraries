@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -418,12 +419,12 @@ Level Translators&lt;br&gt;
 <pin name="B2" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="B1" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="VCCB" x="15.24" y="7.62" length="middle" rot="R180"/>
-<wire x1="-7.62" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<text x="-3.81" y="-1.27" size="1.27" layer="94">SN74LVC2T45</text>
-<text x="-7.62" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<text x="-4.318" y="10.16" size="1.27" layer="94">SN74LVC2T45</text>
+<text x="-7.62" y="13.208" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="TXB0108">
 <pin name="A3" x="-15.24" y="7.62" length="middle"/>
@@ -446,12 +447,12 @@ Level Translators&lt;br&gt;
 <pin name="B7" x="12.7" y="-12.7" length="middle" rot="R180"/>
 <pin name="B8" x="12.7" y="-17.78" length="middle" rot="R180"/>
 <pin name="GND" x="12.7" y="-22.86" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="25.4" x2="7.62" y2="25.4" width="0.254" layer="94"/>
-<wire x1="7.62" y1="25.4" x2="7.62" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="27.94" x2="7.62" y2="27.94" width="0.254" layer="94"/>
+<wire x1="7.62" y1="27.94" x2="7.62" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-25.4" x2="-10.16" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-25.4" x2="-10.16" y2="25.4" width="0.254" layer="94"/>
-<text x="-5.08" y="0" size="1.27" layer="94">TXB0108</text>
-<text x="-10.16" y="26.67" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="-10.16" y1="-25.4" x2="-10.16" y2="27.94" width="0.254" layer="94"/>
+<text x="-5.08" y="25.4" size="1.27" layer="94">TXB0108</text>
+<text x="-10.16" y="29.21" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
