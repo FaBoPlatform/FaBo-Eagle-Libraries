@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -745,6 +746,25 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="P$4" x="5.85" y="-2.75" dx="2" dy="4.5" layer="16" roundness="100" cream="no"/>
 <wire x1="6" y1="0.25" x2="6" y2="15.15" width="0.127" layer="51"/>
 </package>
+<package name="WR-COM3.0_TYPE_A">
+<smd name="7" x="0" y="5.14" dx="2.16" dy="0.9" layer="1" rot="R90"/>
+<smd name="2" x="-1.25" y="4.91" dx="2.6" dy="0.9" layer="1" rot="R90"/>
+<smd name="3" x="1.25" y="4.92" dx="2.6" dy="0.9" layer="1" rot="R90"/>
+<smd name="6" x="2.5" y="5.14" dx="2.16" dy="0.9" layer="1" rot="R90"/>
+<smd name="4" x="3.75" y="4.92" dx="2.6" dy="0.9" layer="1" rot="R90"/>
+<smd name="8" x="-2.5" y="5.14" dx="2.16" dy="0.9" layer="1" rot="R90"/>
+<smd name="9" x="-5" y="5.14" dx="2.16" dy="0.9" layer="1" rot="R90"/>
+<smd name="5" x="5" y="5.14" dx="2.16" dy="0.9" layer="1" rot="R90"/>
+<smd name="1" x="-3.75" y="4.92" dx="2.6" dy="0.9" layer="1" rot="R90"/>
+<pad name="TAB2" x="6.8" y="0" drill="2" shape="square"/>
+<pad name="TAB1" x="-6.8" y="0" drill="2" shape="square"/>
+<wire x1="-6.55" y1="5.15" x2="6.55" y2="5.15" width="0.127" layer="21"/>
+<hole x="3.4" y="0" drill="2"/>
+<hole x="-3.4" y="0" drill="2"/>
+<wire x1="-6.55" y1="5.1" x2="-6.55" y2="-11.51" width="0.127" layer="21"/>
+<wire x1="-6.55" y1="-11.51" x2="6.55" y2="-11.51" width="0.127" layer="21"/>
+<wire x1="6.55" y1="-11.51" x2="6.55" y2="5.1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FT232RL">
@@ -1175,6 +1195,27 @@ FTDI USB to Serial UART interface</description>
 <pin name="ID" x="7.62" y="-2.54" length="short" rot="R180"/>
 <text x="-7.366" y="8.128" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="WR-COM3.0_TYPE_A">
+<pin name="VBUS" x="-15.24" y="12.7" length="middle"/>
+<pin name="DN" x="-15.24" y="10.16" length="middle"/>
+<pin name="DP" x="-15.24" y="7.62" length="middle"/>
+<pin name="GND@4" x="-15.24" y="5.08" length="middle"/>
+<pin name="RX_N" x="-15.24" y="0" length="middle"/>
+<pin name="RX_P" x="-15.24" y="-2.54" length="middle"/>
+<pin name="GND@7" x="-15.24" y="-5.08" length="middle"/>
+<pin name="TX_N" x="-15.24" y="-7.62" length="middle"/>
+<pin name="TX_P" x="-15.24" y="-10.16" length="middle"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<pin name="TAB1" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="TAB2" x="20.32" y="-2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FT232RL" prefix="IC">
@@ -1260,6 +1301,128 @@ FTDI FT232RL USB to serial UART interface SSOP28</description>
 </devices>
 </deviceset>
 <deviceset name="USB" prefix="USB" uservalue="yes">
+<description>&lt;table border=1&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Parts No
+&lt;/td&gt;
+&lt;td&gt;
+Maker
+&lt;/td&gt;
+&lt;td&gt;
+Datasheet
+&lt;/td&gt;
+&lt;td&gt;
+Distributor
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+B05B-PASK-1
+&lt;/td&gt;
+&lt;td&gt;
+JST
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/search?q=B05B-PASK-1"&gt;Octoparts Result&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+DX4R005JJ2R1800
+&lt;/td&gt;
+&lt;td&gt;
+JAE
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.jae.com/z-jp/product_jp.cfm?l_code=JA&amp;series_code=DX4&amp;product_number=DX4R005JJ2R1800"&gt;Datasheet&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/dx4r005jj2r1800-jae+electronics-22232443"&gt;Octoparts Result&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+S04B-PASK-2
+&lt;/td&gt;
+&lt;td&gt;
+JST
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.jst-mfg.com/product/detail.php?series=189"&gt;Web&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/search?q=S04B-PASK-2&amp;start=0"&gt;Octoparts Result&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+USB-4AF103BS
+&lt;/td&gt;
+&lt;td&gt;
+Useconn Electronics
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://akizukidenshi.com/download/ds/useconn/USB-4AF103BS-Rev_C.PDF"&gt;Datasheet&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://akizukidenshi.com/catalog/g/gC-11551/"&gt;Akizuki&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+USB-A-4P-MALE(1734028-1)
+&lt;/td&gt;
+&lt;td&gt;
+TE
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.te.com/jpn-ja/product-1734028-1.html"&gt;Web&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/1734028-1-te+connectivity-40535237"&gt;Octopart Result&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+USB2-AF-WTP-CS-QRFL
+&lt;/td&gt;
+&lt;td&gt;
+VPI
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.vpi.us/dpdf/70/usb2-af-wtp-cs-qrfl.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.vpi.us/usba-waterproof/waterproof-usb-typeb-qrfl-357"&gt;VPI Store&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+ZX62R-B-5P
+&lt;/td&gt;
+&lt;td&gt;
+VPI
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.hirose.com/product/jp/products/ZX/ZX62R-B-5P(30)/"&gt;Web&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/zx62d-b-5p8%2830%29-hirose-70111550"&gt;Octopart Result&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;</description>
 <gates>
 <gate name="G$1" symbol="USB" x="0" y="0"/>
 </gates>
@@ -1749,6 +1912,31 @@ FTDI FT232RL USB to serial UART interface SSOP28</description>
 <connect gate="G$1" pin="D-" pad="2"/>
 <connect gate="G$1" pin="GND" pad="5"/>
 <connect gate="G$1" pin="ID" pad="4"/>
+<connect gate="G$1" pin="VBUS" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WR-COM3.0_TYPE_A">
+<gates>
+<gate name="G$1" symbol="WR-COM3.0_TYPE_A" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="WR-COM3.0_TYPE_A">
+<connects>
+<connect gate="G$1" pin="DN" pad="2"/>
+<connect gate="G$1" pin="DP" pad="3"/>
+<connect gate="G$1" pin="GND@4" pad="4"/>
+<connect gate="G$1" pin="GND@7" pad="7"/>
+<connect gate="G$1" pin="RX_N" pad="5"/>
+<connect gate="G$1" pin="RX_P" pad="6"/>
+<connect gate="G$1" pin="TAB1" pad="TAB1"/>
+<connect gate="G$1" pin="TAB2" pad="TAB2"/>
+<connect gate="G$1" pin="TX_N" pad="8"/>
+<connect gate="G$1" pin="TX_P" pad="9"/>
 <connect gate="G$1" pin="VBUS" pad="1"/>
 </connects>
 <technologies>

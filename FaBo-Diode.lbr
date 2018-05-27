@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.1">
+<eagle version="8.6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -411,8 +411,8 @@
 <devices>
 <device name="" package="SOT-23">
 <connects>
-<connect gate="G$1" pin="ANODE" pad="1"/>
-<connect gate="G$1" pin="CATHODE" pad="3"/>
+<connect gate="G$1" pin="ANODE" pad="3"/>
+<connect gate="G$1" pin="CATHODE" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
