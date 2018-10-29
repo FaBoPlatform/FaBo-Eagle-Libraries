@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -615,6 +615,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="3.7" y1="4.6" x2="3.7" y2="-3.4" width="0.127" layer="21"/>
 <text x="-3" y="6.4" size="1.27" layer="25">&gt;NAME</text>
 <text x="4.2" y="0.8" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="BK-885">
+<smd name="VCC" x="0" y="0" dx="3.96" dy="3.96" layer="16"/>
+<smd name="GND1" x="-7.62" y="0" dx="4.17" dy="4.17" layer="16"/>
+<smd name="GND2" x="7.62" y="0" dx="4.17" dy="4.17" layer="16"/>
 </package>
 </packages>
 <symbols>
@@ -2232,6 +2237,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="NR/FB" pad="4"/>
 <connect gate="G$1" pin="OUT" pad="5"/>
 <connect gate="G$1" pin="VIN" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="COILCELL">
+<gates>
+<gate name="G$1" symbol="BATTERY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="BK-885-BOTTOM" package="BK-885">
+<connects>
+<connect gate="G$1" pin="+" pad="VCC"/>
+<connect gate="G$1" pin="-" pad="GND1 GND2"/>
 </connects>
 <technologies>
 <technology name=""/>
