@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="11" fill="3" visible="no" active="no"/>
@@ -620,6 +620,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="VCC" x="0" y="0" dx="3.96" dy="3.96" layer="16"/>
 <smd name="GND1" x="-7.62" y="0" dx="4.17" dy="4.17" layer="16"/>
 <smd name="GND2" x="7.62" y="0" dx="4.17" dy="4.17" layer="16"/>
+</package>
+<package name="SMTU-2450-BOTTOM">
+<smd name="P$_VCC" x="0" y="15.5021" dx="4.826" dy="3.2512" layer="16" rot="R270"/>
+<smd name="P$_GND" x="0" y="-15.40684375" dx="4.826" dy="3.2512" layer="16" rot="R270"/>
+<text x="3.97" y="14.73" size="2.54" layer="22">+</text>
+<circle x="0" y="0" radius="12.5" width="0.127" layer="22"/>
 </package>
 </packages>
 <symbols>
@@ -2253,6 +2259,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connects>
 <connect gate="G$1" pin="+" pad="VCC"/>
 <connect gate="G$1" pin="-" pad="GND1 GND2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMTU-BOTTOM">
+<gates>
+<gate name="G$1" symbol="BATTERY" x="-1.016" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMTU-2450-BOTTOM">
+<connects>
+<connect gate="G$1" pin="+" pad="P$_VCC"/>
+<connect gate="G$1" pin="-" pad="P$_GND"/>
 </connects>
 <technologies>
 <technology name=""/>

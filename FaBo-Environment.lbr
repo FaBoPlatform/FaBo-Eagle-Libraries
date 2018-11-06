@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1286,6 +1286,48 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="1" x="0.9" y="-0.75" dx="0.2" dy="0.5" layer="1" rot="R90"/>
 <rectangle x1="0" y1="-1.016" x2="1.0414" y2="0" layer="21"/>
 </package>
+<package name="SENSARION-SHT31">
+<wire x1="-1.2" y1="1.2" x2="1.2" y2="1.2" width="0.127" layer="21"/>
+<wire x1="1.2" y1="1.2" x2="1.2" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="1.2" y1="-1.2" x2="-1.2" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-1.2" x2="-1.2" y2="1.2" width="0.127" layer="21"/>
+<smd name="2" x="-1.275" y="0.25" dx="0.55" dy="0.25" layer="1"/>
+<smd name="3" x="-1.275" y="-0.25" dx="0.55" dy="0.25" layer="1"/>
+<smd name="1" x="-1.275" y="0.75" dx="0.55" dy="0.25" layer="1"/>
+<smd name="4" x="-1.275" y="-0.75" dx="0.55" dy="0.25" layer="1"/>
+<smd name="7" x="1.275" y="0.25" dx="0.55" dy="0.25" layer="1"/>
+<smd name="6" x="1.275" y="-0.25" dx="0.55" dy="0.25" layer="1"/>
+<smd name="8" x="1.275" y="0.75" dx="0.55" dy="0.25" layer="1"/>
+<smd name="5" x="1.275" y="-0.75" dx="0.55" dy="0.25" layer="1"/>
+<smd name="9" x="0" y="0" dx="1.7" dy="1" layer="1" rot="R90"/>
+<text x="0" y="1.5" size="0.6096" layer="21" align="bottom-center">&gt;NAME</text>
+<circle x="-1.651" y="1.4478" radius="0.091578125" width="0.127" layer="21"/>
+</package>
+<package name="ANALOGDEVICES-ADT7420">
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
+<smd name="1" x="-1.9" y="0.975" dx="0.6" dy="0.35" layer="1"/>
+<smd name="2" x="-1.9" y="0.325" dx="0.6" dy="0.35" layer="1"/>
+<smd name="3" x="-1.9" y="-0.325" dx="0.6" dy="0.35" layer="1"/>
+<smd name="4" x="-1.9" y="-0.975" dx="0.6" dy="0.35" layer="1"/>
+<smd name="17" x="0" y="0" dx="2.7" dy="2.7" layer="1"/>
+<smd name="12" x="1.9" y="0.975" dx="0.6" dy="0.35" layer="1"/>
+<smd name="11" x="1.9" y="0.325" dx="0.6" dy="0.35" layer="1"/>
+<smd name="10" x="1.9" y="-0.325" dx="0.6" dy="0.35" layer="1"/>
+<smd name="9" x="1.9" y="-0.975" dx="0.6" dy="0.35" layer="1"/>
+<smd name="5" x="-0.975" y="-1.9" dx="0.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="6" x="-0.325" y="-1.9" dx="0.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="7" x="0.325" y="-1.9" dx="0.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="8" x="0.975" y="-1.9" dx="0.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="16" x="-0.975" y="1.9" dx="0.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="15" x="-0.325" y="1.9" dx="0.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="14" x="0.325" y="1.9" dx="0.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="13" x="0.975" y="1.9" dx="0.6" dy="0.35" layer="1" rot="R90"/>
+<circle x="-2.6" y="2.6" radius="0.325" width="0.127" layer="21"/>
+<text x="0" y="2.6" size="0.8128" layer="21" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FREESCALE-MMA8451Q">
@@ -2232,88 +2274,39 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-7.62" y1="-10.16" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
 <text x="-2.54" y="10.16" size="1.27" layer="94">BH1749</text>
 </symbol>
+<symbol name="SENSARION-SHT31">
+<pin name="NRESET" x="-15.24" y="5.08" length="middle"/>
+<pin name="ALERT" x="-15.24" y="0" length="middle"/>
+<pin name="ADDR" x="-15.24" y="-5.08" length="middle"/>
+<pin name="VSS" x="-15.24" y="-10.16" length="middle"/>
+<pin name="VCC" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="SCL" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="R" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="PAD" x="0" y="-22.86" length="middle" rot="R90"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.27" layer="94">SHT31</text>
+</symbol>
+<symbol name="ANALOGDEVICES-ADT7420">
+<pin name="CT" x="-15.24" y="7.62" length="middle"/>
+<pin name="INT" x="-15.24" y="0" length="middle"/>
+<pin name="A0" x="-15.24" y="-2.54" length="middle"/>
+<pin name="A1" x="-15.24" y="-5.08" length="middle"/>
+<pin name="GND" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="SDA" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="VDD" x="12.7" y="7.62" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="-5.08" y="2.54" size="1.27" layer="94">ADT7420</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="FS-MMA8451Q" prefix="MMA">
-<description>FREESCALE MMA8451Q(9axis)</description>
-<gates>
-<gate name="G$1" symbol="FREESCALE-MMA8451Q" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FREESCALE-MMA8451Q">
-<connects>
-<connect gate="G$1" pin="BYP" pad="2"/>
-<connect gate="G$1" pin="DNC" pad="3"/>
-<connect gate="G$1" pin="GND1" pad="5"/>
-<connect gate="G$1" pin="GND2" pad="10"/>
-<connect gate="G$1" pin="GND3" pad="12"/>
-<connect gate="G$1" pin="INT1" pad="11"/>
-<connect gate="G$1" pin="INT2" pad="9"/>
-<connect gate="G$1" pin="NC1" pad="8"/>
-<connect gate="G$1" pin="NC2" pad="13"/>
-<connect gate="G$1" pin="NC3" pad="15"/>
-<connect gate="G$1" pin="NC4" pad="16"/>
-<connect gate="G$1" pin="SA0" pad="7"/>
-<connect gate="G$1" pin="SCL" pad="4"/>
-<connect gate="G$1" pin="SDA" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="14"/>
-<connect gate="G$1" pin="VDDIO" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="HM-S11059" prefix="S11059">
-<description>HAMAMATSU S11059(Color)</description>
-<gates>
-<gate name="G$1" symbol="HAMAMATSU-S11059" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="HAMAMATSU-S11059">
-<connects>
-<connect gate="G$1" pin="GND1" pad="2"/>
-<connect gate="G$1" pin="GND2" pad="3"/>
-<connect gate="G$1" pin="GND3" pad="4"/>
-<connect gate="G$1" pin="GND4" pad="5"/>
-<connect gate="G$1" pin="GND5" pad="7"/>
-<connect gate="G$1" pin="GND6" pad="8"/>
-<connect gate="G$1" pin="SCL" pad="6"/>
-<connect gate="G$1" pin="SDA" pad="9"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TI-INA226" prefix="INA226">
-<description>Texus Instruments INA226(Power)</description>
-<gates>
-<gate name="G$1" symbol="TI-INA226" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="TI-INA226">
-<connects>
-<connect gate="G$1" pin="A0" pad="2"/>
-<connect gate="G$1" pin="A1" pad="1"/>
-<connect gate="G$1" pin="ALERT" pad="3"/>
-<connect gate="G$1" pin="GND" pad="7"/>
-<connect gate="G$1" pin="SCL" pad="5"/>
-<connect gate="G$1" pin="SDA" pad="4"/>
-<connect gate="G$1" pin="VBUS" pad="8"/>
-<connect gate="G$1" pin="VIN+" pad="10"/>
-<connect gate="G$1" pin="VIN-" pad="9"/>
-<connect gate="G$1" pin="VS+" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SL-SI7005" prefix="SI7005">
 <description>SILICONLABS SI7005(Humidity, Temperature)</description>
 <gates>
@@ -2353,207 +2346,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AD-ADXL345" prefix="IC" uservalue="yes">
-<description>ANALOGDEVICES ADXL345(3axis)</description>
-<gates>
-<gate name="G$1" symbol="ANALOGDEVICES-ADXL345" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ANALOGDEVICES-ADXL345">
-<connects>
-<connect gate="G$1" pin="CS" pad="7"/>
-<connect gate="G$1" pin="GND1" pad="2"/>
-<connect gate="G$1" pin="GND2" pad="4"/>
-<connect gate="G$1" pin="GND3" pad="5"/>
-<connect gate="G$1" pin="INT1" pad="8"/>
-<connect gate="G$1" pin="INT2" pad="9"/>
-<connect gate="G$1" pin="NC" pad="10"/>
-<connect gate="G$1" pin="RESV1" pad="3"/>
-<connect gate="G$1" pin="RESV2" pad="11"/>
-<connect gate="G$1" pin="SCL" pad="14"/>
-<connect gate="G$1" pin="SDA" pad="13"/>
-<connect gate="G$1" pin="SDO" pad="12"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-<connect gate="G$1" pin="VS" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="IS-MPU9250" prefix="IC" uservalue="yes">
-<description>INVENSENSE MPU9250(9axis)</description>
-<gates>
-<gate name="G$1" symbol="INVENSENSE-MPU9250" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="INVENSENSE-MPU9250">
-<connects>
-<connect gate="G$1" pin="AD0" pad="9"/>
-<connect gate="G$1" pin="AUX_CL" pad="7"/>
-<connect gate="G$1" pin="AUX_DA" pad="21"/>
-<connect gate="G$1" pin="FSYNC" pad="11"/>
-<connect gate="G$1" pin="GND" pad="18"/>
-<connect gate="G$1" pin="INT" pad="12"/>
-<connect gate="G$1" pin="NC@14" pad="14"/>
-<connect gate="G$1" pin="NC@15" pad="15"/>
-<connect gate="G$1" pin="NC@16" pad="16"/>
-<connect gate="G$1" pin="NC@17" pad="17"/>
-<connect gate="G$1" pin="NC@2" pad="2"/>
-<connect gate="G$1" pin="NC@3" pad="3"/>
-<connect gate="G$1" pin="NC@4" pad="4"/>
-<connect gate="G$1" pin="NC@5" pad="5"/>
-<connect gate="G$1" pin="NC@6" pad="6"/>
-<connect gate="G$1" pin="NCS" pad="22"/>
-<connect gate="G$1" pin="PAD" pad="25"/>
-<connect gate="G$1" pin="REGOUT" pad="10"/>
-<connect gate="G$1" pin="RESV@1" pad="1"/>
-<connect gate="G$1" pin="RESV@19" pad="19"/>
-<connect gate="G$1" pin="RESV@20" pad="20"/>
-<connect gate="G$1" pin="SCL" pad="23"/>
-<connect gate="G$1" pin="SDA" pad="24"/>
-<connect gate="G$1" pin="VDD" pad="13"/>
-<connect gate="G$1" pin="VDDIO" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ST-LIS331HH">
-<description>STMicroelectronics LIS331HH(3axis)</description>
-<gates>
-<gate name="G$1" symbol="ST-LIS331HH" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ST-LIS331HH">
-<connects>
-<connect gate="G$1" pin="CS" pad="8"/>
-<connect gate="G$1" pin="GND1" pad="5"/>
-<connect gate="G$1" pin="GND2" pad="12"/>
-<connect gate="G$1" pin="GND3" pad="13"/>
-<connect gate="G$1" pin="GND4" pad="16"/>
-<connect gate="G$1" pin="INT1" pad="11"/>
-<connect gate="G$1" pin="INT2" pad="9"/>
-<connect gate="G$1" pin="NC1" pad="2"/>
-<connect gate="G$1" pin="NC2" pad="3"/>
-<connect gate="G$1" pin="RESV1" pad="10"/>
-<connect gate="G$1" pin="RESV2" pad="15"/>
-<connect gate="G$1" pin="SCL" pad="4"/>
-<connect gate="G$1" pin="SDA" pad="6"/>
-<connect gate="G$1" pin="SDO" pad="7"/>
-<connect gate="G$1" pin="VDD" pad="14"/>
-<connect gate="G$1" pin="VDDIO" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ST-L3GD20">
-<description>STMicroelectronics L3GD20</description>
-<gates>
-<gate name="G$1" symbol="ST-L3GD20" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LGA-16">
-<connects>
-<connect gate="G$1" pin="CS" pad="5"/>
-<connect gate="G$1" pin="GND" pad="13"/>
-<connect gate="G$1" pin="INT1" pad="7"/>
-<connect gate="G$1" pin="INT2" pad="6"/>
-<connect gate="G$1" pin="RESV1" pad="8"/>
-<connect gate="G$1" pin="RESV2" pad="9"/>
-<connect gate="G$1" pin="RESV3" pad="10"/>
-<connect gate="G$1" pin="RESV4" pad="11"/>
-<connect gate="G$1" pin="RESV5" pad="12"/>
-<connect gate="G$1" pin="RESV6" pad="14"/>
-<connect gate="G$1" pin="RESV7" pad="15"/>
-<connect gate="G$1" pin="SCL" pad="2"/>
-<connect gate="G$1" pin="SDA" pad="3"/>
-<connect gate="G$1" pin="SDO" pad="4"/>
-<connect gate="G$1" pin="VDD" pad="16"/>
-<connect gate="G$1" pin="VDDIO" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ST-LSM303DLH" uservalue="yes">
-<description>STMicroelectronics LSM303DLH</description>
-<gates>
-<gate name="G$1" symbol="ST-LSM303DLH" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ST-LSM303DLH">
-<connects>
-<connect gate="G$1" pin="C1" pad="15"/>
-<connect gate="G$1" pin="CS" pad="8"/>
-<connect gate="G$1" pin="GND10" pad="10"/>
-<connect gate="G$1" pin="GND12" pad="12"/>
-<connect gate="G$1" pin="GND13" pad="13"/>
-<connect gate="G$1" pin="GND16" pad="16"/>
-<connect gate="G$1" pin="GND5" pad="5"/>
-<connect gate="G$1" pin="INT1" pad="11"/>
-<connect gate="G$1" pin="INT2" pad="9"/>
-<connect gate="G$1" pin="SCL/SPC" pad="4"/>
-<connect gate="G$1" pin="SDA/SDI" pad="6"/>
-<connect gate="G$1" pin="SDO/SA0" pad="7"/>
-<connect gate="G$1" pin="SETC" pad="2"/>
-<connect gate="G$1" pin="SETP" pad="3"/>
-<connect gate="G$1" pin="VDD" pad="14"/>
-<connect gate="G$1" pin="VDD_IO" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ST-LSM9DS1TR">
-<description>STMicroelectronics LSM9DS1TR(9aixs)</description>
-<gates>
-<gate name="G$1" symbol="ST-LSM9DS1TR" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="ST-LSM9DS1TR">
-<connects>
-<connect gate="G$1" pin="C1" pad="24"/>
-<connect gate="G$1" pin="CAP" pad="21"/>
-<connect gate="G$1" pin="CS_AG" pad="7"/>
-<connect gate="G$1" pin="CS_M" pad="8"/>
-<connect gate="G$1" pin="DEN_AG" pad="13"/>
-<connect gate="G$1" pin="DRDY_M" pad="9"/>
-<connect gate="G$1" pin="GND1" pad="19"/>
-<connect gate="G$1" pin="GND2" pad="20"/>
-<connect gate="G$1" pin="INT1_AG" pad="11"/>
-<connect gate="G$1" pin="INT2_AG" pad="12"/>
-<connect gate="G$1" pin="INT_M" pad="10"/>
-<connect gate="G$1" pin="RES1" pad="14"/>
-<connect gate="G$1" pin="RES2" pad="15"/>
-<connect gate="G$1" pin="RES3" pad="16"/>
-<connect gate="G$1" pin="RES4" pad="17"/>
-<connect gate="G$1" pin="RES5" pad="18"/>
-<connect gate="G$1" pin="SCL" pad="2"/>
-<connect gate="G$1" pin="SDA" pad="4"/>
-<connect gate="G$1" pin="SDO" pad="5"/>
-<connect gate="G$1" pin="SDO_M" pad="6"/>
-<connect gate="G$1" pin="VDD1" pad="22"/>
-<connect gate="G$1" pin="VDD2" pad="23"/>
-<connect gate="G$1" pin="VDDIO1" pad="1"/>
-<connect gate="G$1" pin="VDDIO2" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TI-LM60" prefix="U">
 <description>Texus Instrument LM60 (Temperature)</description>
 <gates>
@@ -2575,24 +2367,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="OUT" pad="OUT"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="HM-G6262" prefix="U">
-<description>HAMAMATSU GaAsP G6262(UV Index)</description>
-<gates>
-<gate name="G$1" symbol="HAMAMATSU-G6262" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="HAMAMATSU-G6262">
-<connects>
-<connect gate="G$1" pin="PIN1" pad="1"/>
-<connect gate="G$1" pin="PIN2" pad="2"/>
-<connect gate="G$1" pin="PIN3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2706,65 +2480,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NX-PCAL6408A" prefix="IC" uservalue="yes">
-<description>NXP PCAL6408A</description>
-<gates>
-<gate name="G$1" symbol="NXP-PCAL6408A" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="NXP-PCAL6408A">
-<connects>
-<connect gate="G$1" pin="ADDR" pad="16"/>
-<connect gate="G$1" pin="INT" pad="11"/>
-<connect gate="G$1" pin="P0" pad="2"/>
-<connect gate="G$1" pin="P1" pad="3"/>
-<connect gate="G$1" pin="P2" pad="4"/>
-<connect gate="G$1" pin="P3" pad="5"/>
-<connect gate="G$1" pin="P4" pad="7"/>
-<connect gate="G$1" pin="P5" pad="8"/>
-<connect gate="G$1" pin="P6" pad="9"/>
-<connect gate="G$1" pin="P7" pad="10"/>
-<connect gate="G$1" pin="RESET" pad="1"/>
-<connect gate="G$1" pin="SCL" pad="12"/>
-<connect gate="G$1" pin="SDA" pad="13"/>
-<connect gate="G$1" pin="VDD1" pad="14"/>
-<connect gate="G$1" pin="VDD2" pad="15"/>
-<connect gate="G$1" pin="VSS" pad="6 17"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MA-MAX30100" prefix="MAX30100">
-<gates>
-<gate name="G$1" symbol="MAXIM-MAX30100" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MAXIM-30100">
-<connects>
-<connect gate="G$1" pin="GND" pad="12"/>
-<connect gate="G$1" pin="INT" pad="13"/>
-<connect gate="G$1" pin="IR_DRV" pad="5"/>
-<connect gate="G$1" pin="IR_LED+" pad="10"/>
-<connect gate="G$1" pin="NC1" pad="1"/>
-<connect gate="G$1" pin="NC2" pad="7"/>
-<connect gate="G$1" pin="NC3" pad="8"/>
-<connect gate="G$1" pin="NC4" pad="14"/>
-<connect gate="G$1" pin="PGND" pad="4"/>
-<connect gate="G$1" pin="R_DRV" pad="6"/>
-<connect gate="G$1" pin="R_LED+" pad="9"/>
-<connect gate="G$1" pin="SCL" pad="2"/>
-<connect gate="G$1" pin="SDA" pad="3"/>
-<connect gate="G$1" pin="VDD" pad="11"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="VI-VEML6040" prefix="VEML6040">
 <gates>
 <gate name="G$1" symbol="VISHAY-VEML6040" x="0" y="0"/>
@@ -2825,27 +2540,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BO-BMP180">
-<gates>
-<gate name="G$1" symbol="BOSCH-BMP180" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BOSCH-BMP180">
-<connects>
-<connect gate="G$1" pin="CSB" pad="1"/>
-<connect gate="G$1" pin="GND" pad="7"/>
-<connect gate="G$1" pin="SCL" pad="5"/>
-<connect gate="G$1" pin="SDA" pad="6"/>
-<connect gate="G$1" pin="SDO" pad="4"/>
-<connect gate="G$1" pin="VDD" pad="2"/>
-<connect gate="G$1" pin="VDDIO" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PN-AMG8331">
 <gates>
 <gate name="G$1" symbol="PANASONIC-AGM8831" x="0" y="0"/>
@@ -2892,28 +2586,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BO-BMP280" prefix="BMP280" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="BOSCH-BMX280" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BOSCH-BMP280">
-<connects>
-<connect gate="G$1" pin="CSB" pad="2"/>
-<connect gate="G$1" pin="GND@1" pad="1"/>
-<connect gate="G$1" pin="GND@7" pad="7"/>
-<connect gate="G$1" pin="SCK" pad="4"/>
-<connect gate="G$1" pin="SDI" pad="3"/>
-<connect gate="G$1" pin="SDO" pad="5"/>
-<connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VDDIO" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="BO-BME280" prefix="BME280" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="BOSCH-BMX280" x="0" y="0"/>
@@ -2949,44 +2621,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="HTS221" pin="SCL" pad="2"/>
 <connect gate="HTS221" pin="SDA" pad="4"/>
 <connect gate="HTS221" pin="VDD" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="IS-ICM30630" prefix="ICM30630" uservalue="yes">
-<gates>
-<gate name="ICM30630" symbol="INVENSENSE-ICM30630" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LGA-24">
-<connects>
-<connect gate="ICM30630" pin="AUX_CL" pad="7"/>
-<connect gate="ICM30630" pin="AUX_DA" pad="21"/>
-<connect gate="ICM30630" pin="FSYNC" pad="11"/>
-<connect gate="ICM30630" pin="GND" pad="18"/>
-<connect gate="ICM30630" pin="GPIO0" pad="19"/>
-<connect gate="ICM30630" pin="GPIO2" pad="12"/>
-<connect gate="ICM30630" pin="NC@14" pad="14"/>
-<connect gate="ICM30630" pin="NC@2" pad="2"/>
-<connect gate="ICM30630" pin="NC@3" pad="3"/>
-<connect gate="ICM30630" pin="NC@4" pad="4"/>
-<connect gate="ICM30630" pin="NCS" pad="22"/>
-<connect gate="ICM30630" pin="REGOUT" pad="10"/>
-<connect gate="ICM30630" pin="RESETL" pad="1"/>
-<connect gate="ICM30630" pin="RESV" pad="20"/>
-<connect gate="ICM30630" pin="SCL" pad="23"/>
-<connect gate="ICM30630" pin="SD0" pad="9"/>
-<connect gate="ICM30630" pin="SDA" pad="24"/>
-<connect gate="ICM30630" pin="SWDCLK" pad="6"/>
-<connect gate="ICM30630" pin="SWDIO" pad="5"/>
-<connect gate="ICM30630" pin="VDD" pad="13"/>
-<connect gate="ICM30630" pin="VDD1P2" pad="15"/>
-<connect gate="ICM30630" pin="VDDIO" pad="8"/>
-<connect gate="ICM30630" pin="XTAL0" pad="17"/>
-<connect gate="ICM30630" pin="XTAL1" pad="16"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3038,61 +2672,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ST-LIS3MDL">
-<gates>
-<gate name="G$1" symbol="ST-LIS3DMLTR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ST-LIS3MDLTR">
-<connects>
-<connect gate="G$1" pin="C1" pad="4"/>
-<connect gate="G$1" pin="CS" pad="10"/>
-<connect gate="G$1" pin="DRDY" pad="8"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="INT" pad="7"/>
-<connect gate="G$1" pin="RES@12" pad="12"/>
-<connect gate="G$1" pin="RES@2" pad="2"/>
-<connect gate="G$1" pin="SCL" pad="1"/>
-<connect gate="G$1" pin="SD0" pad="9"/>
-<connect gate="G$1" pin="SDA" pad="11"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="VDDIO" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BO-BMI160">
-<gates>
-<gate name="G$1" symbol="BOSCH-BMI160" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BOSCH-BMI160">
-<connects>
-<connect gate="G$1" pin="ASCX" pad="3"/>
-<connect gate="G$1" pin="ASDX" pad="2"/>
-<connect gate="G$1" pin="CBS" pad="12"/>
-<connect gate="G$1" pin="GND" pad="7"/>
-<connect gate="G$1" pin="GNDIO" pad="6"/>
-<connect gate="G$1" pin="INT1" pad="4"/>
-<connect gate="G$1" pin="INT2" pad="9"/>
-<connect gate="G$1" pin="OSCB" pad="10"/>
-<connect gate="G$1" pin="OSDO" pad="11"/>
-<connect gate="G$1" pin="SCX" pad="13"/>
-<connect gate="G$1" pin="SDO" pad="1"/>
-<connect gate="G$1" pin="SDX" pad="14"/>
-<connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VDDIO" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SENSIRION-SHT21">
+<deviceset name="SENSARION-SHT21">
 <gates>
 <gate name="G$1" symbol="SENSIRION-SHT21" x="0" y="0"/>
 </gates>
@@ -3178,62 +2758,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BO-BMX055">
-<gates>
-<gate name="G$1" symbol="BOSCH-BMX055" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BOSCH-BMX055">
-<connects>
-<connect gate="G$1" pin="CSB1" pad="16"/>
-<connect gate="G$1" pin="CSB2" pad="5"/>
-<connect gate="G$1" pin="CSB3" pad="20"/>
-<connect gate="G$1" pin="DRDYM" pad="2"/>
-<connect gate="G$1" pin="GNDA" pad="4"/>
-<connect gate="G$1" pin="GNDIO" pad="6"/>
-<connect gate="G$1" pin="INT1" pad="19"/>
-<connect gate="G$1" pin="INT2" pad="1"/>
-<connect gate="G$1" pin="INT3" pad="14"/>
-<connect gate="G$1" pin="INT4" pad="15"/>
-<connect gate="G$1" pin="INT5" pad="10"/>
-<connect gate="G$1" pin="NC@18" pad="18"/>
-<connect gate="G$1" pin="NC@8" pad="8"/>
-<connect gate="G$1" pin="PS" pad="7"/>
-<connect gate="G$1" pin="SCX" pad="9"/>
-<connect gate="G$1" pin="SDO1" pad="17"/>
-<connect gate="G$1" pin="SDO2" pad="12"/>
-<connect gate="G$1" pin="SDX" pad="11"/>
-<connect gate="G$1" pin="VDD" pad="3"/>
-<connect gate="G$1" pin="VDDIO" pad="13"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ST-ST25DV64K">
-<gates>
-<gate name="G$1" symbol="ST-ST25DV64K" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SO-8">
-<connects>
-<connect gate="G$1" pin="AC0" pad="2"/>
-<connect gate="G$1" pin="AC1" pad="3"/>
-<connect gate="G$1" pin="GPO" pad="7"/>
-<connect gate="G$1" pin="SCL" pad="6"/>
-<connect gate="G$1" pin="SDA" pad="5"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
-<connect gate="G$1" pin="V_EH" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="AM-CSS811" prefix="C">
 <gates>
 <gate name="G$1" symbol="AMS-CSS811" x="0" y="0"/>
@@ -3259,266 +2783,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ST-VL53L0X" prefix="VL53" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="ST-VL53L0X" x="0" y="0"/>
-</gates>
-<devices>
-<device name="VL53" package="ST-VL53L0X">
-<connects>
-<connect gate="G$1" pin="AVDD" pad="11"/>
-<connect gate="G$1" pin="AVDDVCSEL" pad="1"/>
-<connect gate="G$1" pin="AVSSVCSEL" pad="2"/>
-<connect gate="G$1" pin="DNC" pad="8"/>
-<connect gate="G$1" pin="GND@12" pad="12"/>
-<connect gate="G$1" pin="GND@3" pad="3"/>
-<connect gate="G$1" pin="GND@4" pad="4"/>
-<connect gate="G$1" pin="GND@6" pad="6"/>
-<connect gate="G$1" pin="GPIO1" pad="7"/>
-<connect gate="G$1" pin="SCL" pad="10"/>
-<connect gate="G$1" pin="SDA" pad="9"/>
-<connect gate="G$1" pin="XSHUT" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="KW-SPH0645" prefix="MIC">
-<gates>
-<gate name="G$1" symbol="KNOWLES-SPH0645" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="KNOWLES-SPH0645">
-<connects>
-<connect gate="G$1" pin="BCLK" pad="4"/>
-<connect gate="G$1" pin="DATA" pad="6"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="SEL" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="WS" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TDK-ICS43432">
-<gates>
-<gate name="G$1" symbol="TDK-ICS43432" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TDK-ICS43432">
-<connects>
-<connect gate="G$1" pin="CONFIG" pad="2"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="LR" pad="1"/>
-<connect gate="G$1" pin="SCK" pad="6"/>
-<connect gate="G$1" pin="SD" pad="7"/>
-<connect gate="G$1" pin="VDD" pad="3"/>
-<connect gate="G$1" pin="WS" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MA-MAX98357" prefix="MAX">
-<gates>
-<gate name="G$1" symbol="MAXIM-MAX98357" x="-2.54" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="MAXIM-MAX98357">
-<connects>
-<connect gate="G$1" pin="BCLK" pad="16"/>
-<connect gate="G$1" pin="DIN" pad="1"/>
-<connect gate="G$1" pin="EP" pad="EP"/>
-<connect gate="G$1" pin="GAIN" pad="2"/>
-<connect gate="G$1" pin="GND@11" pad="11"/>
-<connect gate="G$1" pin="GND@15" pad="15"/>
-<connect gate="G$1" pin="GND@3" pad="3"/>
-<connect gate="G$1" pin="LRCLK" pad="14"/>
-<connect gate="G$1" pin="NC@12" pad="12"/>
-<connect gate="G$1" pin="NC@13" pad="13"/>
-<connect gate="G$1" pin="NC@5" pad="5"/>
-<connect gate="G$1" pin="NC@6" pad="6"/>
-<connect gate="G$1" pin="OUTN" pad="10"/>
-<connect gate="G$1" pin="OUTP" pad="9"/>
-<connect gate="G$1" pin="SD_MODE" pad="4"/>
-<connect gate="G$1" pin="VDD@7" pad="7"/>
-<connect gate="G$1" pin="VDD@8" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AD-ADXL356">
-<gates>
-<gate name="G$1" symbol="ANALOGDEVICES-ADXL356" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ANALOGDEVICES-ADXL356">
-<connects>
-<connect gate="G$1" pin="ASEL" pad="4"/>
-<connect gate="G$1" pin="DRDY" pad="14"/>
-<connect gate="G$1" pin="INT1" pad="12"/>
-<connect gate="G$1" pin="INT2" pad="13"/>
-<connect gate="G$1" pin="RESV" pad="7"/>
-<connect gate="G$1" pin="SCL" pad="1"/>
-<connect gate="G$1" pin="SDA" pad="3"/>
-<connect gate="G$1" pin="V1P8ANA" pad="10"/>
-<connect gate="G$1" pin="V1P8DIG" pad="8"/>
-<connect gate="G$1" pin="VDDIO@5" pad="5"/>
-<connect gate="G$1" pin="VSS" pad="9"/>
-<connect gate="G$1" pin="VSSIO" pad="6"/>
-<connect gate="G$1" pin="VSSIO@2" pad="2"/>
-<connect gate="G$1" pin="VSUPPLY" pad="11"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MA-MAX30003">
-<gates>
-<gate name="G$1" symbol="MAXIM-MAX30003" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="MAXIM-MAX30003">
-<connects>
-<connect gate="G$1" pin="0VDD" pad="19"/>
-<connect gate="G$1" pin="AGND@28" pad="28"/>
-<connect gate="G$1" pin="AGND@3" pad="3"/>
-<connect gate="G$1" pin="AGND@8" pad="8"/>
-<connect gate="G$1" pin="AVDD" pad="22"/>
-<connect gate="G$1" pin="CAPN" pad="10"/>
-<connect gate="G$1" pin="CAPP" pad="9"/>
-<connect gate="G$1" pin="CPLL" pad="11"/>
-<connect gate="G$1" pin="CSB" pad="15"/>
-<connect gate="G$1" pin="DGND" pad="12"/>
-<connect gate="G$1" pin="DVDD" pad="13"/>
-<connect gate="G$1" pin="EP" pad="P$29"/>
-<connect gate="G$1" pin="FCLK" pad="14"/>
-<connect gate="G$1" pin="IC" pad="1 2 4 5 24 26"/>
-<connect gate="G$1" pin="INN" pad="7"/>
-<connect gate="G$1" pin="INP" pad="6"/>
-<connect gate="G$1" pin="INT2B" pad="20"/>
-<connect gate="G$1" pin="INTB" pad="21"/>
-<connect gate="G$1" pin="SCLK" pad="16"/>
-<connect gate="G$1" pin="SDI" pad="17"/>
-<connect gate="G$1" pin="SDO" pad="18"/>
-<connect gate="G$1" pin="VBG" pad="27"/>
-<connect gate="G$1" pin="VCM" pad="25"/>
-<connect gate="G$1" pin="VREF" pad="23"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="KX-KX126">
-<gates>
-<gate name="G$1" symbol="KIONIX-KX126" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="KIONIX-KX126">
-<connects>
-<connect gate="G$1" pin="ADDR" pad="1"/>
-<connect gate="G$1" pin="GND@8" pad="8"/>
-<connect gate="G$1" pin="GND@9" pad="9"/>
-<connect gate="G$1" pin="INT1" pad="5"/>
-<connect gate="G$1" pin="INT2" pad="6"/>
-<connect gate="G$1" pin="IO_VDD" pad="3"/>
-<connect gate="G$1" pin="NCS" pad="10"/>
-<connect gate="G$1" pin="RESV" pad="11"/>
-<connect gate="G$1" pin="SCL" pad="12"/>
-<connect gate="G$1" pin="SDA" pad="2"/>
-<connect gate="G$1" pin="TRIG" pad="4"/>
-<connect gate="G$1" pin="VDD" pad="7"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="NX-PCA9698" prefix="IC" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="NXP-PCA9689" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="NXP-PCA9698">
-<connects>
-<connect gate="G$1" pin="AD0" pad="27"/>
-<connect gate="G$1" pin="AD1" pad="28"/>
-<connect gate="G$1" pin="AD2" pad="29"/>
-<connect gate="G$1" pin="INT" pad="55"/>
-<connect gate="G$1" pin="IO0_0" pad="3"/>
-<connect gate="G$1" pin="IO0_1" pad="4"/>
-<connect gate="G$1" pin="IO0_2" pad="5"/>
-<connect gate="G$1" pin="IO0_3" pad="7"/>
-<connect gate="G$1" pin="IO0_4" pad="8"/>
-<connect gate="G$1" pin="IO0_5" pad="9"/>
-<connect gate="G$1" pin="IO0_6" pad="10"/>
-<connect gate="G$1" pin="IO0_7" pad="12"/>
-<connect gate="G$1" pin="IO1_0" pad="13"/>
-<connect gate="G$1" pin="IO1_1" pad="14"/>
-<connect gate="G$1" pin="IO1_2" pad="15"/>
-<connect gate="G$1" pin="IO1_3" pad="16"/>
-<connect gate="G$1" pin="IO1_4" pad="17"/>
-<connect gate="G$1" pin="IO1_5" pad="19"/>
-<connect gate="G$1" pin="IO1_6" pad="20"/>
-<connect gate="G$1" pin="IO1_7" pad="21"/>
-<connect gate="G$1" pin="IO2_0" pad="22"/>
-<connect gate="G$1" pin="IO2_1" pad="24"/>
-<connect gate="G$1" pin="IO2_2" pad="25"/>
-<connect gate="G$1" pin="IO2_3" pad="26"/>
-<connect gate="G$1" pin="IO2_4" pad="31"/>
-<connect gate="G$1" pin="IO2_5" pad="32"/>
-<connect gate="G$1" pin="IO2_6" pad="33"/>
-<connect gate="G$1" pin="IO2_7" pad="35"/>
-<connect gate="G$1" pin="IO3_0" pad="36"/>
-<connect gate="G$1" pin="IO3_1" pad="37"/>
-<connect gate="G$1" pin="IO3_2" pad="38"/>
-<connect gate="G$1" pin="IO3_3" pad="40"/>
-<connect gate="G$1" pin="IO3_4" pad="41"/>
-<connect gate="G$1" pin="IO3_5" pad="42"/>
-<connect gate="G$1" pin="IO3_6" pad="43"/>
-<connect gate="G$1" pin="IO3_7" pad="44"/>
-<connect gate="G$1" pin="IO4_0" pad="45"/>
-<connect gate="G$1" pin="IO4_1" pad="47"/>
-<connect gate="G$1" pin="IO4_2" pad="48"/>
-<connect gate="G$1" pin="IO4_3" pad="49"/>
-<connect gate="G$1" pin="IO4_4" pad="50"/>
-<connect gate="G$1" pin="IO4_5" pad="52"/>
-<connect gate="G$1" pin="IO4_6" pad="53"/>
-<connect gate="G$1" pin="IO4_7" pad="54"/>
-<connect gate="G$1" pin="OE" pad="30"/>
-<connect gate="G$1" pin="RESET" pad="56"/>
-<connect gate="G$1" pin="SCL" pad="2"/>
-<connect gate="G$1" pin="SDA" pad="1"/>
-<connect gate="G$1" pin="VDD@18" pad="18"/>
-<connect gate="G$1" pin="VDD@46" pad="46"/>
-<connect gate="G$1" pin="VSS@11" pad="11"/>
-<connect gate="G$1" pin="VSS@23" pad="23"/>
-<connect gate="G$1" pin="VSS@34" pad="34"/>
-<connect gate="G$1" pin="VSS@39" pad="39"/>
-<connect gate="G$1" pin="VSS@51" pad="51"/>
-<connect gate="G$1" pin="VSS@6" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ROHM-BH1749">
 <gates>
 <gate name="G$1" symbol="ROHM-BH1749" x="0" y="0"/>
@@ -3534,6 +2798,51 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="SDA" pad="6"/>
 <connect gate="G$1" pin="TEST" pad="4"/>
 <connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SENSARION-SHT31">
+<gates>
+<gate name="G$1" symbol="SENSARION-SHT31" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="SENSARION-SHT31">
+<connects>
+<connect gate="G$1" pin="ADDR" pad="2"/>
+<connect gate="G$1" pin="ALERT" pad="3"/>
+<connect gate="G$1" pin="NRESET" pad="6"/>
+<connect gate="G$1" pin="PAD" pad="9"/>
+<connect gate="G$1" pin="R" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ANALOGDEVICES-ADT7420">
+<gates>
+<gate name="G$1" symbol="ANALOGDEVICES-ADT7420" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ANALOGDEVICES-ADT7420">
+<connects>
+<connect gate="G$1" pin="A0" pad="3"/>
+<connect gate="G$1" pin="A1" pad="4"/>
+<connect gate="G$1" pin="CT" pad="10"/>
+<connect gate="G$1" pin="GND" pad="11"/>
+<connect gate="G$1" pin="INT" pad="9"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="12"/>
 </connects>
 <technologies>
 <technology name=""/>
