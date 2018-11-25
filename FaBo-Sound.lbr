@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -387,9 +387,9 @@
 <text x="-0.16" y="1.86" size="0.6096" layer="25" align="bottom-center">&gt;NAME</text>
 <smd name="1" x="-0.61" y="0.92" dx="0.9" dy="0.68" layer="1" rot="R90"/>
 <smd name="3" x="0.61" y="0.92" dx="0.9" dy="0.68" layer="1" rot="R90"/>
-<wire x1="-0.6096" y1="-0.3302" x2="0.2794" y2="0" width="0.2032" layer="21" curve="-91.454216"/>
-<wire x1="0.0254" y1="-1.2954" x2="-0.6604" y2="-0.6604" width="0.2032" layer="21" curve="-86.744884"/>
-<wire x1="0.508" y1="-0.2032" x2="0.381" y2="-1.1684" width="0.2032" layer="21" curve="-98.130102"/>
+<wire x1="-0.6096" y1="-0.3302" x2="0.2794" y2="0" width="0.2032" layer="31" curve="-91.454216"/>
+<wire x1="0.0254" y1="-1.2954" x2="-0.6604" y2="-0.6604" width="0.2032" layer="31" curve="-86.744884"/>
+<wire x1="0.508" y1="-0.2032" x2="0.381" y2="-1.1684" width="0.2032" layer="31" curve="-98.130102"/>
 </package>
 <package name="TDK-ICS43432">
 <smd name="5" x="-1.075" y="-1.275" dx="0.3" dy="0.5" layer="1" rot="R90"/>

@@ -133,7 +133,7 @@
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="TI-OPA335">
+<symbol name="OPA344">
 <wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-12.7" x2="12.7" y2="0" width="0.254" layer="94"/>
 <wire x1="12.7" y1="0" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
@@ -142,7 +142,7 @@
 <pin name="V-" x="0" y="-12.7" length="middle" rot="R90"/>
 <pin name="V+" x="0" y="12.7" length="middle" rot="R270"/>
 <pin name="OUT" x="17.78" y="0" length="middle" rot="R180"/>
-<text x="-2.54" y="0" size="1.27" layer="94" align="center">OPA335</text>
+<text x="-2.54" y="0" size="1.27" layer="94" align="center">OPA344</text>
 <text x="5.08" y="5.08" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
@@ -213,9 +213,9 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="OPA335" prefix="OP" uservalue="yes">
+<deviceset name="OPA344" prefix="OP" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="TI-OPA335" x="0" y="0"/>
+<gate name="G$1" symbol="OPA344" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT23-5">
