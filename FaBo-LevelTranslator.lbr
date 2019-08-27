@@ -291,7 +291,7 @@ Level Translators&lt;br&gt;
 <circle x="-1.95" y="-0.65" radius="0.65" width="0.127" layer="21"/>
 <text x="-1.905" y="0.635" size="0.8128" layer="25">&gt;NAME</text>
 </package>
-<package name="DCU(R-PDSO-G8)">
+<package name="8PIN-VSSOP">
 <smd name="6" x="0.25" y="1.55" dx="0.81" dy="0.31" layer="1" rot="R90"/>
 <smd name="7" x="-0.25" y="1.55" dx="0.81" dy="0.31" layer="1" rot="R90"/>
 <smd name="8" x="-0.75" y="1.55" dx="0.81" dy="0.31" layer="1" rot="R90"/>
@@ -318,6 +318,21 @@ Level Translators&lt;br&gt;
 <wire x1="1.05" y1="1.05" x2="1.05" y2="-1.05" width="0.127" layer="21"/>
 <wire x1="1.05" y1="-1.05" x2="-1.05" y2="-1.05" width="0.127" layer="21"/>
 <wire x1="-1.05" y1="-1.05" x2="-1.05" y2="1.05" width="0.127" layer="21"/>
+</package>
+<package name="8PIN-SSOP">
+<smd name="6" x="0.325" y="1.7" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="-0.325" y="1.7" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="-0.975" y="1.7" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="0.975" y="1.7" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="0.325" y="-1.7" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-0.325" y="-1.7" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="1" x="-0.975" y="-1.7" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="4" x="0.975" y="-1.7" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<wire x1="-1.575" y1="1.45" x2="1.575" y2="1.45" width="0.127" layer="21"/>
+<wire x1="1.575" y1="1.45" x2="1.575" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="1.575" y1="-1.45" x2="-1.575" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="-1.575" y1="-1.45" x2="-1.575" y2="1.45" width="0.127" layer="21"/>
+<circle x="-0.8" y="-0.2" radius="0.2" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -530,7 +545,7 @@ Level Translators&lt;br&gt;
 <gate name="G$1" symbol="PCA9306" x="0" y="0"/>
 </gates>
 <devices>
-<device name="DQER" package="X2SON">
+<device name="_DQER" package="X2SON">
 <connects>
 <connect gate="G$1" pin="EN" pad="8"/>
 <connect gate="G$1" pin="GND" pad="1"/>
@@ -545,7 +560,7 @@ Level Translators&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="GM" package="XQFN8">
+<device name="_GM" package="XQFN8">
 <connects>
 <connect gate="G$1" pin="EN" pad="8"/>
 <connect gate="G$1" pin="GND" pad="1"/>
@@ -560,7 +575,22 @@ Level Translators&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="DCU(R-PDSO-G8)" package="DCU(R-PDSO-G8)">
+<device name="_VSSOP" package="8PIN-VSSOP">
+<connects>
+<connect gate="G$1" pin="EN" pad="8"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SCL1" pad="3"/>
+<connect gate="G$1" pin="SCL2" pad="6"/>
+<connect gate="G$1" pin="SDA1" pad="4"/>
+<connect gate="G$1" pin="SDA2" pad="5"/>
+<connect gate="G$1" pin="VREF1" pad="2"/>
+<connect gate="G$1" pin="VREF2" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SSOP" package="8PIN-SSOP">
 <connects>
 <connect gate="G$1" pin="EN" pad="8"/>
 <connect gate="G$1" pin="GND" pad="1"/>
