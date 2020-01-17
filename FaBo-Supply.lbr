@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -639,6 +639,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="9" y1="-4" x2="9" y2="5" width="0.127" layer="21"/>
 <wire x1="9" y1="5" x2="-3" y2="5" width="0.127" layer="21"/>
 </package>
+<package name="SOIC-8">
+<wire x1="-2.5" y1="2" x2="-2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2" x2="2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2" x2="2.5" y2="2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2" x2="-2.5" y2="2" width="0.127" layer="21"/>
+<smd name="1" x="-1.9" y="-2.9" dx="0.6" dy="1.6" layer="1"/>
+<smd name="2" x="-0.6" y="-2.9" dx="0.6" dy="1.6" layer="1"/>
+<smd name="3" x="0.66" y="-2.9" dx="0.6" dy="1.6" layer="1"/>
+<smd name="4" x="1.9" y="-2.9" dx="0.6" dy="1.6" layer="1"/>
+<smd name="8" x="-1.9" y="2.9" dx="0.6" dy="1.6" layer="1"/>
+<smd name="7" x="-0.6" y="2.9" dx="0.6" dy="1.6" layer="1"/>
+<smd name="6" x="0.6" y="2.9" dx="0.6" dy="1.6" layer="1"/>
+<smd name="5" x="1.9" y="2.9" dx="0.6" dy="1.6" layer="1"/>
+<circle x="-1.8" y="-1.2" radius="0.316225" width="0.127" layer="21"/>
+<text x="-3.048" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TI-TPS62730">
@@ -1241,6 +1257,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TC1121">
+<pin name="FC" x="-10.16" y="5.08" length="middle"/>
+<pin name="CAP+" x="-10.16" y="0" length="middle"/>
+<pin name="GND" x="-10.16" y="-5.08" length="middle"/>
+<pin name="CAP-" x="-10.16" y="-10.16" length="middle"/>
+<pin name="VIN" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="OSC" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="VOUT" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="SHDN" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2310,6 +2340,40 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="+" pad="P$_VCC"/>
 <connect gate="G$1" pin="-" pad="P$_GND"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TC1121">
+<gates>
+<gate name="G$1" symbol="TC1121" x="-2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="SOIC-8">
+<connects>
+<connect gate="G$1" pin="CAP+" pad="2"/>
+<connect gate="G$1" pin="CAP-" pad="4"/>
+<connect gate="G$1" pin="FC" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="OSC" pad="7"/>
+<connect gate="G$1" pin="SHDN" pad="6"/>
+<connect gate="G$1" pin="VIN" pad="8"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-5V" prefix="-5V" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>

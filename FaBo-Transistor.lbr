@@ -189,6 +189,7 @@
 <wire x1="0" y1="-1.27" x2="-0.889" y2="-1.016" width="0.254" layer="94"/>
 <wire x1="-0.889" y1="-1.016" x2="-0.508" y2="-0.508" width="0.254" layer="94"/>
 <wire x1="-0.508" y1="-0.508" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<text x="2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="DUAL-PNP-TRANSISTOR">
 <pin name="B2" x="2.54" y="0" visible="pad" length="point"/>
@@ -231,7 +232,7 @@
 <gate name="G$1" symbol="TRANSISTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="MMBT2222" package="SOT-23">
+<device name="-NPN" package="SOT-23">
 <connects>
 <connect gate="G$1" pin="B" pad="1"/>
 <connect gate="G$1" pin="C" pad="3"/>

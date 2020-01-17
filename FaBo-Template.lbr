@@ -15279,21 +15279,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <hole x="-4.5" y="-1.09" drill="1.1"/>
 </package>
 <package name="FABO_BRICK_I2C_SMARTHOME">
-<hole x="-11.5" y="6.25" drill="1"/>
+<hole x="-10.5" y="6.25" drill="2"/>
 <wire x1="-12.5" y1="12.5" x2="12.5" y2="12.5" width="0.127" layer="20"/>
 <wire x1="12.5" y1="12.5" x2="12.5" y2="-12.5" width="0.127" layer="20"/>
 <wire x1="12.5" y1="-12.5" x2="-12.5" y2="-12.5" width="0.127" layer="20"/>
 <wire x1="-12.5" y1="-12.5" x2="-12.5" y2="12.5" width="0.127" layer="20"/>
-<pad name="SCL" x="3.05" y="-5.71" drill="0.8" diameter="1.4224" shape="octagon" rot="R180"/>
-<pad name="SDA" x="1.05" y="-5.71" drill="0.8" diameter="1.4224" shape="octagon" rot="R180"/>
-<pad name="VCC" x="-0.95" y="-5.71" drill="0.8" diameter="1.4224" shape="octagon" rot="R180"/>
 <hole x="-4.45" y="-7.81" drill="1.1"/>
 <wire x1="-4.95" y1="-2.21" x2="-4.95" y2="-13.91" width="0.127" layer="51"/>
 <wire x1="5.05" y1="-2.21" x2="5.05" y2="-13.91" width="0.127" layer="51"/>
 <wire x1="-4.95" y1="-13.91" x2="-1.95" y2="-13.91" width="0.127" layer="51"/>
 <wire x1="-1.95" y1="-13.91" x2="2.05" y2="-13.91" width="0.127" layer="51"/>
 <wire x1="2.05" y1="-13.91" x2="5.05" y2="-13.91" width="0.127" layer="51"/>
-<text x="0.05" y="-3.805" size="1.27" layer="21" font="vector" ratio="12" align="bottom-center">I2C IN</text>
+<text x="0.15" y="-3.905" size="1.27" layer="21" font="vector" ratio="12" align="bottom-center">I2C IN</text>
 <hole x="4.55" y="-7.81" drill="1.1"/>
 <wire x1="-1.95" y1="-12.41" x2="2.05" y2="-12.41" width="0.127" layer="51"/>
 <wire x1="2.05" y1="-13.91" x2="2.05" y2="-12.41" width="0.127" layer="51"/>
@@ -15301,16 +15298,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="3.05" y="-6.98" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">SCL</text>
 <text x="1.05" y="-6.98" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">SDA</text>
 <text x="-0.95" y="-6.98" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
-<pad name="GND" x="-2.95" y="-5.71" drill="0.8" diameter="1.4224" shape="square" rot="R180"/>
 <text x="-2.95" y="-6.98" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
 <wire x1="4.35" y1="-2.21" x2="4.35" y2="-6.21" width="0.127" layer="51"/>
 <wire x1="-4.25" y1="-2.21" x2="-4.25" y2="-6.21" width="0.127" layer="51"/>
 <wire x1="4.35" y1="-6.21" x2="-4.25" y2="-6.21" width="0.127" layer="51"/>
 <wire x1="5.05" y1="-2.21" x2="4.35" y2="-2.21" width="0.127" layer="51"/>
 <wire x1="-4.25" y1="-2.21" x2="-4.95" y2="-2.21" width="0.127" layer="51"/>
-<hole x="-11.5" y="-6.25" drill="1"/>
-<hole x="11.5" y="6.25" drill="1"/>
-<hole x="11.5" y="-6.25" drill="1"/>
+<hole x="-10.5" y="-6.25" drill="2"/>
+<hole x="10.5" y="6.25" drill="2"/>
+<hole x="10.5" y="-6.25" drill="2"/>
 <pad name="SCL1" x="-3.05" y="5.71" drill="0.8" diameter="1.4224" shape="octagon"/>
 <pad name="SDA1" x="-1.05" y="5.71" drill="0.8" diameter="1.4224" shape="octagon"/>
 <pad name="VCC1" x="0.95" y="5.71" drill="0.8" diameter="1.4224" shape="octagon"/>
@@ -15335,6 +15331,23 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-4.35" y1="6.21" x2="4.25" y2="6.21" width="0.127" layer="51"/>
 <wire x1="-5.05" y1="2.21" x2="-4.35" y2="2.21" width="0.127" layer="51"/>
 <wire x1="4.25" y1="2.21" x2="4.95" y2="2.21" width="0.127" layer="51"/>
+<pad name="SCL" x="-2.95" y="-5.71" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="SDA" x="-0.95" y="-5.71" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="VCC" x="1.05" y="-5.71" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="GND" x="3.05" y="-5.71" drill="0.8" diameter="1.4224" shape="square"/>
+</package>
+<package name="FABO_BRICK_3PIN_DEBUG">
+<pad name="GND" x="-2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="RX" x="0" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="TX" x="2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<text x="5.08" y="0" size="1.27" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<wire x1="-3.81" y1="-1.25" x2="3.81" y2="-1.25" width="0.0762" layer="51"/>
+<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.0762" layer="51"/>
+<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.0762" layer="51"/>
+<wire x1="3.81" y1="1.25" x2="3.81" y2="-1.25" width="0.0762" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -15988,6 +16001,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="GND@OUT" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
 <text x="7.62" y="10.668" size="1.778" layer="97" align="bottom-center">OUT</text>
 </symbol>
+<symbol name="FABO_BRICK_3PIN_DEBUG">
+<wire x1="2.54" y1="7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<pin name="RX" x="7.62" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="TX" x="7.62" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="7.62" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<text x="-5.08" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SQUARE-TYPE2-TC2030">
@@ -16477,17 +16500,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </technologies>
 </device>
 <device name="-B04B-PASK-1_SILK_BOTTOM" package="FABO_BRICK_I2C_B04B-PASK-1_SILK_BOTTOM">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="SCL" pad="SCL"/>
-<connect gate="G$1" pin="SDA" pad="SDA"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_SMARTHOME" package="FABO_BRICK_I2C_SMARTHOME">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
@@ -17372,16 +17384,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </gates>
 <devices>
 <device name="" package="FABO_BRICK_SPI_LED_BOARD">
-<connects>
-<connect gate="G$1" pin="5V" pad="5V"/>
-<connect gate="G$1" pin="5V@OUT" pad="5V@OUT"/>
-<connect gate="G$1" pin="CI" pad="CI"/>
-<connect gate="G$1" pin="CO" pad="CO"/>
-<connect gate="G$1" pin="DI" pad="DI"/>
-<connect gate="G$1" pin="DO" pad="DO"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND@OUT" pad="GND@OUT"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -17412,15 +17414,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </gates>
 <devices>
 <device name="" package="FABO_BRICK_I2C_SMARTHOME">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FABO_BRICK_3PIN_DEBUG">
+<gates>
+<gate name="G$1" symbol="FABO_BRICK_3PIN_DEBUG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FABO_BRICK_3PIN_DEBUG">
 <connects>
-<connect gate="G$1" pin="5V" pad="VCC"/>
-<connect gate="G$1" pin="5V@OUT" pad="VCC1"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND@OUT" pad="GND1"/>
-<connect gate="G$1" pin="SCL" pad="SCL"/>
-<connect gate="G$1" pin="SCL@OUT" pad="SCL1"/>
-<connect gate="G$1" pin="SDA" pad="SDA"/>
-<connect gate="G$1" pin="SDA@OUT" pad="SDA1"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
 </connects>
 <technologies>
 <technology name=""/>
