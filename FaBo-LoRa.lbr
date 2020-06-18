@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -74,9 +74,9 @@
 <packages>
 <package name="ES920LR">
 <wire x1="-8.5" y1="12" x2="8.5" y2="12" width="0.127" layer="21"/>
-<wire x1="8.5" y1="12" x2="8.5" y2="-11" width="0.127" layer="21"/>
-<wire x1="8.5" y1="-11" x2="-8.5" y2="-11" width="0.127" layer="21"/>
-<wire x1="-8.5" y1="-11" x2="-8.5" y2="12" width="0.127" layer="21"/>
+<wire x1="8.5" y1="12" x2="8.5" y2="-11.4" width="0.127" layer="21"/>
+<wire x1="8.5" y1="-11.4" x2="-8.5" y2="-11.4" width="0.127" layer="21"/>
+<wire x1="-8.5" y1="-11.4" x2="-8.5" y2="12" width="0.127" layer="21"/>
 <smd name="GND" x="0" y="-2.6" dx="4.6" dy="4.6" layer="1" roundness="41"/>
 <smd name="14" x="7.8" y="-9.4" dx="2.5" dy="1" layer="1" roundness="50"/>
 <smd name="13" x="-7.8" y="-9.4" dx="2.5" dy="1" layer="1" roundness="50"/>
@@ -110,7 +110,7 @@
 <rectangle x1="2.54" y1="-10.287" x2="6.223" y2="6.477" layer="41"/>
 <rectangle x1="-2.667" y1="0" x2="2.667" y2="6.35" layer="41"/>
 <rectangle x1="-2.667" y1="-10.287" x2="2.667" y2="-5.207" layer="41"/>
-<rectangle x1="-8.5" y1="-11" x2="8.5" y2="-10" layer="41"/>
+<rectangle x1="-8.5" y1="-11.5" x2="8.5" y2="-10" layer="41"/>
 </package>
 <package name="RAK811">
 <smd name="6" x="0" y="-7" dx="1.2" dy="2.5" layer="1"/>
