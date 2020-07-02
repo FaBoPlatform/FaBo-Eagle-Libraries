@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15349,6 +15349,46 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.0762" layer="51"/>
 <wire x1="3.81" y1="1.25" x2="3.81" y2="-1.25" width="0.0762" layer="51"/>
 </package>
+<package name="FABO_BRICK_3PIN_B03B-PASK-1-CAN">
+<pad name="CAN_H" x="-2" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="CAN_L" x="0" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="GND" x="2" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<hole x="3.5" y="1.7" drill="1.1"/>
+<wire x1="4" y1="-3.1" x2="4" y2="2.2" width="0.1" layer="51"/>
+<wire x1="-4" y1="-3.1" x2="-4" y2="2.2" width="0.1" layer="51"/>
+<wire x1="4" y1="2.2" x2="-4" y2="2.2" width="0.1" layer="51"/>
+<wire x1="4" y1="-3.1" x2="2" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="2" y1="-3.1" x2="-2" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="-2" y1="-3.1" x2="-4" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="2" y1="-3.6" x2="-2" y2="-3.6" width="0.1" layer="51"/>
+<wire x1="-2" y1="-3.6" x2="-2" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="2" y1="-3.6" x2="2" y2="-3.1" width="0.1" layer="51"/>
+<text x="0" y="3.175" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="-1.74" y="-6.85" size="0.6096" layer="21" rot="R90">CAN_H</text>
+<text x="0.36" y="-6.85" size="0.6096" layer="21" rot="R90">CAN_L</text>
+<text x="2.46" y="-6.85" size="0.6096" layer="21" rot="R90">GND</text>
+</package>
+<package name="FABO_BRICK_CAN_B04B-PASL-1_BOTTOM">
+<pad name="GND" x="3" y="0.0254" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="VCC" x="1" y="0.0254" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="CAN_RX" x="-1" y="0.0254" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="-4.5" y="1.7254" drill="1.1"/>
+<wire x1="5" y1="-3.0746" x2="5" y2="2.2254" width="0.127" layer="51"/>
+<wire x1="-5" y1="-3.0746" x2="-5" y2="2.2254" width="0.127" layer="51"/>
+<wire x1="5" y1="2.2254" x2="-5" y2="2.2254" width="0.127" layer="51"/>
+<wire x1="5" y1="-3.0746" x2="3" y2="-3.0746" width="0.127" layer="51"/>
+<text x="0" y="3.0254" size="1.27" layer="26" font="vector" ratio="12" rot="MR0" align="bottom-center">&gt;NAME</text>
+<wire x1="3" y1="-3.0746" x2="-3" y2="-3.0746" width="0.127" layer="51"/>
+<wire x1="-3" y1="-3.0746" x2="-5" y2="-3.0746" width="0.127" layer="51"/>
+<wire x1="3" y1="-3.5746" x2="-3" y2="-3.5746" width="0.127" layer="51"/>
+<text x="3.0706" y="-3.9238" size="0.8128" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">GND</text>
+<text x="1.2098" y="-3.9238" size="0.8128" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">3V3</text>
+<text x="-0.8796" y="-3.9746" size="0.8128" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">CAN_RX</text>
+<pad name="CAN_TX" x="-3" y="0.0254" drill="0.8" diameter="1.4224" shape="square"/>
+<text x="-3.0706" y="-3.9746" size="0.8128" layer="22" font="vector" ratio="12" rot="MR270" align="center-left">CAN_TX</text>
+<wire x1="-3" y1="-3.0746" x2="-3" y2="-3.5746" width="0.127" layer="51"/>
+<wire x1="3" y1="-3.0746" x2="3" y2="-3.5746" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SN3-2CP-P">
@@ -15940,14 +15980,13 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="SCL" x="15.24" y="-35.56" length="middle" rot="R180"/>
 </symbol>
 <symbol name="FABO_BRICK_CAN">
-<wire x1="5.08" y1="10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
-<pin name="CAN_RX" x="10.16" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="CAN_TX" x="10.16" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="VCC" x="10.16" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="GND" x="10.16" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="CAN_L" x="10.16" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="CAN_H" x="10.16" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="10.16" y="-2.54" visible="pin" length="middle" rot="R180"/>
 <text x="-5.08" y="10.668" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="FABO_BRICK_SPI_LED_BOARD">
@@ -16009,6 +16048,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="RX" x="7.62" y="5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="TX" x="7.62" y="0" visible="pin" length="middle" rot="R180"/>
 <pin name="GND" x="7.62" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<text x="-5.08" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="FABO_CAN_4P">
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="CAN_TX" x="10.16" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="CAN_RX" x="10.16" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="3V3" x="10.16" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="10.16" y="-10.16" visible="pin" length="middle" rot="R180"/>
 <text x="-5.08" y="8.128" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
@@ -17365,12 +17415,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <gate name="G$1" symbol="FABO_BRICK_CAN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="FABO_BRICK_CAN_S04B-PASK-2_LONG">
+<device name="" package="FABO_BRICK_3PIN_B03B-PASK-1-CAN">
 <connects>
-<connect gate="G$1" pin="CAN_RX" pad="CAN_RX"/>
-<connect gate="G$1" pin="CAN_TX" pad="CAN_TX"/>
+<connect gate="G$1" pin="CAN_H" pad="CAN_H"/>
+<connect gate="G$1" pin="CAN_L" pad="CAN_L"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -17430,6 +17479,24 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="RX" pad="RX"/>
 <connect gate="G$1" pin="TX" pad="TX"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FABO_BRICK_CAN_4P">
+<gates>
+<gate name="G$1" symbol="FABO_CAN_4P" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="FABO_BRICK_CAN_B04B-PASL-1_BOTTOM">
+<connects>
+<connect gate="G$1" pin="3V3" pad="VCC"/>
+<connect gate="G$1" pin="CAN_RX" pad="CAN_RX"/>
+<connect gate="G$1" pin="CAN_TX" pad="CAN_TX"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>
