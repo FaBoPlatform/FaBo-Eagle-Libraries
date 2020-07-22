@@ -698,6 +698,25 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="VDD" x="2" y="-2" drill="0.85" shape="long"/>
 <circle x="0" y="0" radius="5.5" width="0.127" layer="21"/>
 </package>
+<package name="TSL2591(SON)">
+<smd name="2" x="-0.75" y="0" dx="1.2" dy="0.35" layer="1"/>
+<smd name="1" x="-0.75" y="0.65" dx="1.2" dy="0.35" layer="1"/>
+<smd name="3" x="-0.75" y="-0.65" dx="1.2" dy="0.35" layer="1"/>
+<smd name="4" x="0.75" y="-0.65" dx="1.2" dy="0.35" layer="1"/>
+<smd name="5" x="0.75" y="0" dx="1.2" dy="0.35" layer="1"/>
+<smd name="6" x="0.75" y="0.65" dx="1.2" dy="0.35" layer="1"/>
+<wire x1="-1" y1="1.2" x2="1" y2="1.2" width="0.127" layer="51"/>
+<wire x1="1" y1="1.2" x2="1" y2="-1.2" width="0.127" layer="51"/>
+<wire x1="1" y1="-1.2" x2="-1" y2="-1.2" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1.2" x2="-1" y2="1.2" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.9" x2="-1" y2="1.2" width="0.127" layer="21"/>
+<wire x1="-1" y1="1.2" x2="1" y2="1.2" width="0.127" layer="21"/>
+<wire x1="1" y1="1.2" x2="1" y2="0.9" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.9" x2="-1" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1.2" x2="1" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="1" y1="-1.2" x2="1" y2="-0.9" width="0.127" layer="21"/>
+<circle x="-1.5" y="1.2" radius="0.1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FREESCALE-MMA8451Q">
@@ -1125,6 +1144,19 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="OUT" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
 <circle x="0" y="0" radius="7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TSL2591">
+<pin name="SCL" x="-12.7" y="5.08" length="middle"/>
+<pin name="INT" x="-12.7" y="0" length="middle"/>
+<pin name="GND" x="-12.7" y="-5.08" length="middle"/>
+<pin name="NC" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="VDD" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="SDA" x="12.7" y="5.08" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-2.54" y="12.7" size="1.27" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1721,6 +1753,26 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="OUT" pad="OUT"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TSL2591">
+<gates>
+<gate name="G$1" symbol="TSL2591" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSL2591(SON)">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="INT" pad="2"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
