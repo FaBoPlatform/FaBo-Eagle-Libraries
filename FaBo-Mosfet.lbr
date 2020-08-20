@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -243,6 +243,11 @@
 <smd name="1" x="-2.3" y="-3.66" dx="3" dy="1.6" layer="1" rot="R90"/>
 <smd name="3" x="2.3" y="-3.66" dx="3" dy="1.6" layer="1" rot="R90"/>
 <smd name="2" x="0" y="2.84" dx="6" dy="6" layer="1" rot="R90"/>
+</package>
+<package name="TO-247">
+<pad name="P$1" x="-5.44" y="0" drill="2" diameter="4.2"/>
+<pad name="P$2" x="0" y="0" drill="2" diameter="4.2"/>
+<pad name="P$3" x="5.44" y="0" drill="2" diameter="4.2"/>
 </package>
 </packages>
 <symbols>
@@ -839,6 +844,16 @@
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="TO-247">
+<connects>
+<connect gate="G$1" pin="D" pad="P$2"/>
+<connect gate="G$1" pin="G" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
