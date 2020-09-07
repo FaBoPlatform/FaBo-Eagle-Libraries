@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1605,10 +1605,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <package name="PIN_2X13_1.27_SMD">
 <smd name="5" x="-5.08" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
 <smd name="6" x="-5.08" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="3" x="-6.28" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="4" x="-6.28" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="1" x="-7.43" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="2" x="-7.48" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
+<smd name="3" x="-6.35" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
+<smd name="4" x="-6.35" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
+<smd name="1" x="-7.62" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
+<smd name="2" x="-7.62" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
 <smd name="7" x="-3.81" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
 <smd name="8" x="-3.81" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
 <smd name="10" x="-2.54" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
