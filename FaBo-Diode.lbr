@@ -285,6 +285,19 @@
 <smd name="ANODE1" x="-2.3" y="-6.9" dx="1.5" dy="2.5" layer="1"/>
 <smd name="ANODE2" x="2.3" y="-6.9" dx="1.5" dy="2.5" layer="1"/>
 </package>
+<package name="SC-70">
+<smd name="2" x="0" y="-1.1" dx="0.5" dy="1" layer="1"/>
+<smd name="1" x="-0.65" y="-1.1" dx="0.5" dy="1" layer="1"/>
+<smd name="3" x="0.65" y="-1.1" dx="0.5" dy="1" layer="1"/>
+<smd name="5" x="0" y="1.1" dx="0.5" dy="1" layer="1"/>
+<smd name="6" x="-0.65" y="1.1" dx="0.5" dy="1" layer="1"/>
+<smd name="4" x="0.65" y="1.1" dx="0.5" dy="1" layer="1"/>
+<wire x1="-1.075" y1="-0.7" x2="1.075" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="1.075" y1="-0.7" x2="1.075" y2="0.7" width="0.127" layer="51"/>
+<wire x1="1.075" y1="0.7" x2="-1.075" y2="0.7" width="0.127" layer="51"/>
+<wire x1="-1.075" y1="0.7" x2="-1.075" y2="-0.7" width="0.127" layer="51"/>
+<circle x="-0.7" y="-0.3" radius="0.14141875" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE">
@@ -528,6 +541,55 @@
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-2.54" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
+<symbol name="IDEAL_DIODE_A">
+<pin name="NC" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="VOUT" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="ST" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="CE" x="-20.32" y="-10.16" length="middle"/>
+<pin name="VIN" x="-20.32" y="0" length="middle"/>
+<pin name="GND" x="0" y="-20.32" length="middle" rot="R90"/>
+<wire x1="-11.43" y1="-13.97" x2="-11.43" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="-11.43" y1="-11.43" x2="-11.43" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-11.43" y1="-7.62" x2="-11.43" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-11.43" y1="-5.08" x2="-6.35" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-8.89" x2="-11.43" y2="-13.97" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-6.35" x2="-2.54" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-8.89" x2="-2.54" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-6.35" x2="2.54" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-6.35" x2="-2.54" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-6.35" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="0" x2="-15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-8.89" x2="-6.35" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-11.43" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-11.43" y1="-11.43" x2="-15.24" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<text x="0" y="-10.16" size="1.27" layer="94">LOGIC</text>
+<wire x1="-11.43" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="0" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DIODE" prefix="D" uservalue="yes">
@@ -729,6 +791,26 @@ On Semiconductor
 <connect gate="G$1" pin="ANODE1" pad="ANODE1"/>
 <connect gate="G$1" pin="ANODE2" pad="ANODE2"/>
 <connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM66100">
+<gates>
+<gate name="G$1" symbol="IDEAL_DIODE_A" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="SC-70">
+<connects>
+<connect gate="G$1" pin="CE" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="ST" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>

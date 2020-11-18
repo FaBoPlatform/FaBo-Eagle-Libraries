@@ -1395,6 +1395,33 @@
 <wire x1="-1.7" y1="-2.7" x2="-1.7" y2="-2.8" width="0.127" layer="51"/>
 <wire x1="1.7" y1="-2.6" x2="1.7" y2="-2.8" width="0.127" layer="51"/>
 </package>
+<package name="BM07B-PASS-1">
+<smd name="4" x="0" y="-5.1" dx="2.7" dy="1" layer="1" rot="R90"/>
+<smd name="5" x="-2" y="-5.1" dx="2.7" dy="1" layer="1" rot="R90"/>
+<smd name="6" x="-4" y="-5.1" dx="2.7" dy="1" layer="1" rot="R90"/>
+<smd name="3" x="2" y="-5.1" dx="2.7" dy="1" layer="1" rot="R90"/>
+<smd name="PR" x="-8.35" y="-0.55" dx="3.8" dy="1.8" layer="1" rot="R90"/>
+<smd name="PL" x="8.35" y="-0.55" dx="3.8" dy="1.8" layer="1" rot="R90"/>
+<wire x1="-9" y1="3.7" x2="-6.4" y2="3.7" width="0.127" layer="21"/>
+<wire x1="-6.4" y1="3.7" x2="-6.4" y2="2.9" width="0.127" layer="21"/>
+<wire x1="-6.4" y1="2.9" x2="6.4" y2="2.9" width="0.127" layer="21"/>
+<wire x1="6.4" y1="2.9" x2="6.4" y2="3.7" width="0.127" layer="21"/>
+<wire x1="6.4" y1="3.7" x2="9" y2="3.7" width="0.127" layer="21"/>
+<wire x1="-9" y1="3.7" x2="-9" y2="-4.8" width="0.127" layer="21"/>
+<wire x1="-9" y1="-4.8" x2="-7.4" y2="-4.8" width="0.127" layer="21"/>
+<wire x1="-7.4" y1="-4.8" x2="-7.4" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="-7.4" y1="-4.6" x2="7.4" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="7.4" y1="-4.6" x2="7.4" y2="-4.8" width="0.127" layer="21"/>
+<wire x1="7.4" y1="-4.8" x2="9" y2="-4.8" width="0.127" layer="21"/>
+<wire x1="9" y1="-4.8" x2="9" y2="3.7" width="0.127" layer="21"/>
+<hole x="8.2" y="-3.85" drill="0.8"/>
+<smd name="2" x="4" y="-5.1" dx="2.7" dy="1" layer="1" rot="R90"/>
+<smd name="7" x="-6" y="-5.1" dx="2.7" dy="1" layer="1" rot="R90"/>
+<smd name="1" x="6" y="-5.1" dx="2.7" dy="1" layer="1" rot="R90"/>
+<wire x1="-7.7" y1="-3.85" x2="-8.9" y2="-3.85" width="1.3" layer="46"/>
+<wire x1="-1" y1="0" x2="1" y2="0" width="0.254" layer="51"/>
+<wire x1="0" y1="-1" x2="0" y2="1" width="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PCC-SMP-J">
@@ -2017,6 +2044,20 @@
 <circle x="0" y="2.54" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="-2.54" radius="1.27" width="0.254" layer="94"/>
 </symbol>
+<symbol name="FABO-7PINMULTI">
+<wire x1="5.08" y1="17.78" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-17.78" x2="-5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-17.78" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="17.78" x2="5.08" y2="17.78" width="0.254" layer="94"/>
+<pin name="5V1" x="10.16" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="5V2" x="10.16" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="3.3V" x="10.16" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="GND1" x="10.16" y="5.08" visible="pin" length="middle" rot="R180"/>
+<text x="-5.08" y="18.288" size="1.778" layer="95">&gt;NAME</text>
+<pin name="GND2" x="10.16" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="SDA" x="10.16" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="SCL" x="10.16" y="-15.24" visible="pin" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PCC-SMP-J">
@@ -2570,6 +2611,27 @@
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FABO-7PINMULTI">
+<gates>
+<gate name="G$1" symbol="FABO-7PINMULTI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BM07B-PASS-1">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="4"/>
+<connect gate="G$1" pin="5V1" pad="1"/>
+<connect gate="G$1" pin="5V2" pad="2"/>
+<connect gate="G$1" pin="GND1" pad="3"/>
+<connect gate="G$1" pin="GND2" pad="5"/>
+<connect gate="G$1" pin="SCL" pad="7"/>
+<connect gate="G$1" pin="SDA" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
