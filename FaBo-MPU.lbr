@@ -388,6 +388,45 @@
 <pad name="13" x="3.81" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
 <pad name="14" x="3.81" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
 </package>
+<package name="SOIC_W">
+<smd name="7" x="-0.635" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="6" x="-1.905" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="5" x="-3.175" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="4" x="-4.445" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="3" x="-5.715" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="2" x="-6.985" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="1" x="-8.255" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="8" x="0.635" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="9" x="1.905" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="10" x="3.175" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="11" x="4.445" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="12" x="5.715" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="13" x="6.985" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="14" x="8.255" y="-4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="22" x="-0.635" y="4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="23" x="-1.905" y="4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="24" x="-3.175" y="4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="25" x="-4.445" y="4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="26" x="-5.715" y="4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="27" x="-6.985" y="4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="28" x="-8.255" y="4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="21" x="0.635" y="4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="20" x="1.905" y="4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="19" x="3.175" y="4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="18" x="4.445" y="4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="17" x="5.715" y="4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="16" x="6.985" y="4.7" dx="0.6" dy="2" layer="1"/>
+<smd name="15" x="8.255" y="4.7" dx="0.6" dy="2" layer="1"/>
+<wire x1="-8.95" y1="-3.7" x2="-8.95" y2="3.7" width="0.127" layer="51"/>
+<wire x1="-8.95" y1="3.7" x2="8.95" y2="3.7" width="0.127" layer="51"/>
+<wire x1="8.95" y1="3.7" x2="8.95" y2="-3.7" width="0.127" layer="51"/>
+<wire x1="8.95" y1="-3.7" x2="-8.95" y2="-3.7" width="0.127" layer="51"/>
+<circle x="-7.2" y="-2.3" radius="0.282840625" width="0.3048" layer="21"/>
+<wire x1="-1" y1="0" x2="0" y2="0" width="0.3048" layer="21"/>
+<wire x1="0" y1="0" x2="1" y2="0" width="0.3048" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="1" width="0.3048" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-1" width="0.3048" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEL-MEGA328P">
@@ -627,6 +666,41 @@
 <wire x1="22.86" y1="20.32" x2="22.86" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="22.86" y1="-20.32" x2="-20.32" y2="-20.32" width="0.254" layer="94"/>
 <text x="-5.08" y="17.78" size="1.778" layer="94">PIC16F505</text>
+</symbol>
+<symbol name="DSPIC33FJ64GP802">
+<pin name="1.MCLR" x="-48.26" y="15.24" length="middle"/>
+<pin name="2.AN0/VREF+/CN2/RA0" x="-48.26" y="12.7" length="middle"/>
+<pin name="3.AN1/VREF-/CN3/RA1" x="-48.26" y="10.16" length="middle"/>
+<pin name="4.PGED1/AN2/C2IN-/RP0/CN4/RB0" x="-48.26" y="7.62" length="middle"/>
+<pin name="5.PGEC1/AN3/C2IN+/RP1/CN5/RB1" x="-48.26" y="5.08" length="middle"/>
+<pin name="6.AN4/C1IN-/RP2/CN6/RB2" x="-48.26" y="2.54" length="middle"/>
+<pin name="7.AN5/C1IN+/RP3/CN7/RB3" x="-48.26" y="0" length="middle"/>
+<pin name="8.VSS" x="-48.26" y="-2.54" length="middle"/>
+<pin name="9.OSC1/CLK/CN30/RA2" x="-48.26" y="-5.08" length="middle"/>
+<pin name="10.OSC2/CLKO/CN29/PMA0/RA3" x="-48.26" y="-7.62" length="middle"/>
+<pin name="11.SOSCI/RP4/CN1/PMBE/RB4" x="-48.26" y="-10.16" length="middle"/>
+<pin name="12.SOSCO/T1CK/CN0/PMA1/RA4" x="-48.26" y="-12.7" length="middle"/>
+<pin name="13.VDD" x="-48.26" y="-15.24" length="middle"/>
+<pin name="14.PGED3/ASDA1/RP5/CN27/PMD7/RB5" x="-48.26" y="-17.78" length="middle"/>
+<pin name="15.PGEC3/ASCL1/RP6/CN24/PMD6/RB6" x="50.8" y="-17.78" length="middle" rot="R180"/>
+<pin name="16.INT0/RP7/CN23/PMD5/RB7" x="50.8" y="-15.24" length="middle" rot="R180"/>
+<pin name="17.TCK/SCL1/RP8/CN22/PMD4/RB8" x="50.8" y="-12.7" length="middle" rot="R180"/>
+<pin name="18.TDO/SDA1/RP9/CN21/PMD3/RB9" x="50.8" y="-10.16" length="middle" rot="R180"/>
+<pin name="19.VSS" x="50.8" y="-7.62" length="middle" rot="R180"/>
+<pin name="20.VCAP" x="50.8" y="-5.08" length="middle" rot="R180"/>
+<pin name="21.PGED2/TDI/RP10/CN16/PMD2/RB10" x="50.8" y="-2.54" length="middle" rot="R180"/>
+<pin name="22.PGEC2/TMS/RP1/CN15/PMD1/RB11" x="50.8" y="0" length="middle" rot="R180"/>
+<pin name="23.AN12/DAC1RP/RP12/CN14/PMD0/RB12" x="50.8" y="2.54" length="middle" rot="R180"/>
+<pin name="24.AN11/DAC1RN/RP13/CN13/PMRD/RB13" x="50.8" y="5.08" length="middle" rot="R180"/>
+<pin name="25.AN10/DAC1LP/RTCC/RP14/CN12/PMWR/RB14" x="50.8" y="7.62" length="middle" rot="R180"/>
+<pin name="26.AN9/DAC1LM/RP15/CN11/PMCS1/RB15" x="50.8" y="10.16" length="middle" rot="R180"/>
+<pin name="27.AVSS" x="50.8" y="12.7" length="middle" rot="R180"/>
+<pin name="28.AVDD" x="50.8" y="15.24" length="middle" rot="R180"/>
+<wire x1="-43.18" y1="20.32" x2="45.72" y2="20.32" width="0.254" layer="94"/>
+<wire x1="45.72" y1="20.32" x2="45.72" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="45.72" y1="-22.86" x2="-43.18" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-43.18" y1="-22.86" x2="-43.18" y2="20.32" width="0.254" layer="94"/>
+<text x="-43.18" y="22.86" size="1.27" layer="94">dsPIC33FJ64GP802</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -905,6 +979,48 @@
 <connect gate="G$1" pin="7:RC3" pad="7"/>
 <connect gate="G$1" pin="8:RC2" pad="8"/>
 <connect gate="G$1" pin="9:RC1" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DSPIC33FJ64GP802">
+<gates>
+<gate name="G$1" symbol="DSPIC33FJ64GP802" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC_W">
+<connects>
+<connect gate="G$1" pin="1.MCLR" pad="1"/>
+<connect gate="G$1" pin="10.OSC2/CLKO/CN29/PMA0/RA3" pad="10"/>
+<connect gate="G$1" pin="11.SOSCI/RP4/CN1/PMBE/RB4" pad="11"/>
+<connect gate="G$1" pin="12.SOSCO/T1CK/CN0/PMA1/RA4" pad="12"/>
+<connect gate="G$1" pin="13.VDD" pad="13"/>
+<connect gate="G$1" pin="14.PGED3/ASDA1/RP5/CN27/PMD7/RB5" pad="14"/>
+<connect gate="G$1" pin="15.PGEC3/ASCL1/RP6/CN24/PMD6/RB6" pad="15"/>
+<connect gate="G$1" pin="16.INT0/RP7/CN23/PMD5/RB7" pad="16"/>
+<connect gate="G$1" pin="17.TCK/SCL1/RP8/CN22/PMD4/RB8" pad="17"/>
+<connect gate="G$1" pin="18.TDO/SDA1/RP9/CN21/PMD3/RB9" pad="18"/>
+<connect gate="G$1" pin="19.VSS" pad="19"/>
+<connect gate="G$1" pin="2.AN0/VREF+/CN2/RA0" pad="2"/>
+<connect gate="G$1" pin="20.VCAP" pad="20"/>
+<connect gate="G$1" pin="21.PGED2/TDI/RP10/CN16/PMD2/RB10" pad="21"/>
+<connect gate="G$1" pin="22.PGEC2/TMS/RP1/CN15/PMD1/RB11" pad="22"/>
+<connect gate="G$1" pin="23.AN12/DAC1RP/RP12/CN14/PMD0/RB12" pad="23"/>
+<connect gate="G$1" pin="24.AN11/DAC1RN/RP13/CN13/PMRD/RB13" pad="24"/>
+<connect gate="G$1" pin="25.AN10/DAC1LP/RTCC/RP14/CN12/PMWR/RB14" pad="25"/>
+<connect gate="G$1" pin="26.AN9/DAC1LM/RP15/CN11/PMCS1/RB15" pad="26"/>
+<connect gate="G$1" pin="27.AVSS" pad="27"/>
+<connect gate="G$1" pin="28.AVDD" pad="28"/>
+<connect gate="G$1" pin="3.AN1/VREF-/CN3/RA1" pad="3"/>
+<connect gate="G$1" pin="4.PGED1/AN2/C2IN-/RP0/CN4/RB0" pad="4"/>
+<connect gate="G$1" pin="5.PGEC1/AN3/C2IN+/RP1/CN5/RB1" pad="5"/>
+<connect gate="G$1" pin="6.AN4/C1IN-/RP2/CN6/RB2" pad="6"/>
+<connect gate="G$1" pin="7.AN5/C1IN+/RP3/CN7/RB3" pad="7"/>
+<connect gate="G$1" pin="8.VSS" pad="8"/>
+<connect gate="G$1" pin="9.OSC1/CLK/CN30/RA2" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
