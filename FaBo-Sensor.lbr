@@ -823,6 +823,19 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <circle x="-1.4" y="-1.4" radius="0.1" width="0.4" layer="21"/>
 <text x="1.27" y="0" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="top-center">&gt;NAME</text>
 </package>
+<package name="ISL29034">
+<smd name="1" x="-0.575" y="0.25" dx="0.75" dy="0.25" layer="1" roundness="30"/>
+<wire x1="-0.75" y1="0.65" x2="0.75" y2="0.65" width="0.1" layer="21"/>
+<wire x1="-0.75" y1="-0.65" x2="0.75" y2="-0.65" width="0.1" layer="21"/>
+<wire x1="-0.75" y1="-0.65" x2="-0.75" y2="0.65" width="0.1" layer="21"/>
+<wire x1="0.75" y1="-0.65" x2="0.75" y2="0.65" width="0.1" layer="21"/>
+<smd name="2" x="-0.65" y="-0.25" dx="0.6" dy="0.25" layer="1" roundness="30"/>
+<smd name="3" x="0.65" y="-0.25" dx="0.6" dy="0.25" layer="1" roundness="30"/>
+<smd name="4" x="0.65" y="0.25" dx="0.6" dy="0.25" layer="1" roundness="30"/>
+<rectangle x1="-0.75" y1="0" x2="0" y2="0.65" layer="21"/>
+<circle x="-1" y="1" radius="0.15" width="0.3" layer="21"/>
+<text x="0" y="-1" size="0.8128" layer="25" font="vector" ratio="15" rot="R180" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FREESCALE-MMA8451Q">
@@ -1311,6 +1324,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
 <text x="-9.906" y="13.208" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="ISL29034">
+<pin name="VCC" x="-12.7" y="2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle"/>
+<pin name="SDA" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="5.08" size="1.778" layer="94" align="bottom-center">ISL29034</text>
+<text x="-7.366" y="8.128" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1995,6 +2020,24 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="SDA" pad="6"/>
 <connect gate="G$1" pin="TEST" pad="4"/>
 <connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ISL29034" prefix="IC" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="ISL29034" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ISL29034">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
