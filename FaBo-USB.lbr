@@ -799,37 +799,40 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-6.55" y1="-11.51" x2="6.55" y2="-11.51" width="0.127" layer="21"/>
 <wire x1="6.55" y1="-11.51" x2="6.55" y2="5.1" width="0.127" layer="21"/>
 </package>
-<package name="ZX62D-B-5PA8(30)">
-<description>ZX Series
-ZX62D-B-5PA(30) HRS NO.242-0056-4 30
-Micro B Standard (Bottom mount),Shell through hole</description>
-<smd name="SHIELD5" x="1.15" y="0" dx="1.8" dy="1.9" layer="1" roundness="6"/>
-<smd name="SHIELD4" x="-1.15" y="0" dx="1.8" dy="1.9" layer="1" roundness="6"/>
-<smd name="3:D+" x="0" y="2.9" dx="0.4" dy="1.25" layer="1" roundness="5"/>
-<smd name="2:D-" x="-0.65" y="2.9" dx="0.4" dy="1.25" layer="1" roundness="5"/>
-<smd name="1:VBUS" x="-1.3" y="2.9" dx="0.4" dy="1.25" layer="1" roundness="5"/>
-<smd name="4:ID" x="0.65" y="2.9" dx="0.4" dy="1.25" layer="1" roundness="5"/>
-<smd name="5:GND" x="1.3" y="2.9" dx="0.4" dy="1.25" layer="1" roundness="5"/>
-<pad name="SHILD1" x="-2.425" y="2.9" drill="0.65" diameter="1.05"/>
-<pad name="SHIELD2" x="2.425" y="2.9" drill="0.65" diameter="1.05"/>
-<pad name="SHIELD3" x="-3.6" y="0" drill="1" diameter="2.1" shape="square" thermals="no"/>
-<pad name="SHIELD6" x="3.6" y="0" drill="1" diameter="2.1" shape="square" thermals="no"/>
-<wire x1="-3.75" y1="2.9" x2="3.75" y2="2.9" width="0.127" layer="51"/>
-<wire x1="3.75" y1="2.9" x2="3.75" y2="-2.1" width="0.127" layer="51"/>
-<wire x1="-3.75" y1="2.9" x2="-3.75" y2="-2.1" width="0.127" layer="51"/>
-<wire x1="-3.7" y1="-2.1" x2="-3.2" y2="-2.1" width="0.127" layer="51"/>
-<wire x1="-3.2" y1="-2.1" x2="3.1" y2="-2.1" width="0.127" layer="51"/>
-<wire x1="3.1" y1="-2.1" x2="3.4" y2="-2.1" width="0.127" layer="51"/>
-<wire x1="3.4" y1="-2.1" x2="3.7" y2="-2.1" width="0.127" layer="51"/>
-<wire x1="-3.2" y1="-2.7" x2="3.1" y2="-2.7" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-2.1" x2="-4.4" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="-4.4" y1="-2.8" x2="-4.2" y2="-3" width="0.127" layer="51"/>
-<wire x1="-4.2" y1="-3" x2="-3.5" y2="-2.2" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-2.1" x2="4.2" y2="-2.9" width="0.127" layer="51"/>
-<wire x1="4.2" y1="-2.9" x2="3.9" y2="-3" width="0.127" layer="51"/>
-<wire x1="3.9" y1="-3" x2="3.4" y2="-2.1" width="0.127" layer="51"/>
-<wire x1="-3.2" y1="-2.7" x2="-3.2" y2="-2.1" width="0.127" layer="51"/>
-<wire x1="3.1" y1="-2.7" x2="3.1" y2="-2.1" width="0.127" layer="51"/>
+<package name="ZX62D-B-5PA8">
+<wire x1="-2.425" y1="4.55" x2="-2.425" y2="4.35" width="0.6" layer="46"/>
+<wire x1="2.425" y1="4.55" x2="2.425" y2="4.35" width="0.6" layer="46"/>
+<wire x1="-3.5" y1="1.8" x2="-3.5" y2="1.1" width="0.8" layer="46"/>
+<wire x1="3.5" y1="1.8" x2="3.5" y2="1.1" width="0.8" layer="46"/>
+<wire x1="-3.75" y1="-0.7" x2="3.75" y2="-0.7" width="0.05" layer="51"/>
+<wire x1="-3.75" y1="4.3" x2="3.75" y2="4.3" width="0.05" layer="51"/>
+<wire x1="-3.75" y1="4.3" x2="-3.75" y2="-0.7" width="0.05" layer="51"/>
+<wire x1="3.75" y1="4.3" x2="3.75" y2="-0.7" width="0.05" layer="51"/>
+<wire x1="-4.05" y1="-1.3" x2="4.05" y2="-1.3" width="0.05" layer="51"/>
+<wire x1="-3.75" y1="-0.7" x2="-4.05" y2="-1.3" width="0.05" layer="51"/>
+<wire x1="3.75" y1="-0.7" x2="4.05" y2="-1.3" width="0.05" layer="51"/>
+<wire x1="-4.75" y1="0" x2="4.75" y2="0" width="0.1" layer="51"/>
+<wire x1="-3.75" y1="4.3" x2="-3.25" y2="4.3" width="0.2" layer="21"/>
+<wire x1="3.75" y1="4.3" x2="3.25" y2="4.3" width="0.2" layer="21"/>
+<wire x1="3.75" y1="4.3" x2="3.75" y2="2.7" width="0.2" layer="21"/>
+<wire x1="-3.75" y1="4.3" x2="-3.75" y2="2.7" width="0.2" layer="21"/>
+<rectangle x1="-1.8" y1="0.8" x2="-0.5" y2="2.1" layer="31"/>
+<rectangle x1="0.5" y1="0.8" x2="1.8" y2="2.1" layer="31"/>
+<smd name="1" x="-1.3" y="4.25" dx="0.4" dy="1.6" layer="1" roundness="30"/>
+<smd name="2" x="-0.65" y="4.25" dx="0.4" dy="1.6" layer="1" roundness="30"/>
+<smd name="3" x="0" y="4.25" dx="0.4" dy="1.6" layer="1" roundness="30"/>
+<smd name="4" x="0.65" y="4.25" dx="0.4" dy="1.6" layer="1" roundness="30"/>
+<smd name="5" x="1.3" y="4.25" dx="0.4" dy="1.6" layer="1" roundness="30"/>
+<smd name="B1" x="-2.425" y="4.45" dx="1.05" dy="1.25" layer="16" roundness="100" cream="no"/>
+<smd name="B2" x="2.425" y="4.45" dx="1.05" dy="1.25" layer="16" roundness="100" cream="no"/>
+<smd name="B3" x="-3.6" y="1.45" dx="2.1" dy="1.9" layer="16" roundness="30" cream="no"/>
+<smd name="B4" x="3.6" y="1.45" dx="2.1" dy="1.9" layer="16" roundness="30" cream="no"/>
+<smd name="T1" x="-2.425" y="4.45" dx="1.05" dy="1.25" layer="1" roundness="100"/>
+<smd name="T2" x="2.425" y="4.45" dx="1.05" dy="1.25" layer="1" roundness="100"/>
+<smd name="T3" x="-3.6" y="1.45" dx="2.1" dy="1.9" layer="1" roundness="30"/>
+<smd name="T4" x="-1.15" y="1.45" dx="1.8" dy="1.9" layer="1" roundness="30" cream="no"/>
+<smd name="T5" x="1.15" y="1.45" dx="1.8" dy="1.9" layer="1" roundness="30" cream="no"/>
+<smd name="T6" x="3.6" y="1.45" dx="2.1" dy="1.9" layer="1" roundness="30"/>
 </package>
 </packages>
 <symbols>
@@ -1601,6 +1604,17 @@ VPI
 <technology name=""/>
 </technologies>
 </device>
+<device name="-ZX62D-B-5PA8" package="ZX62D-B-5PA8">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5 B1 B2 B3 B4 T1 T2 T3 T4 T5 T6"/>
+<connect gate="G$1" pin="VBUS" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="FT231X" prefix="IC" uservalue="yes">
@@ -2035,31 +2049,6 @@ VPI
 <connect gate="G$1" pin="TX_N" pad="8"/>
 <connect gate="G$1" pin="TX_P" pad="9"/>
 <connect gate="G$1" pin="VBUS" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ZX62D-B-5PA8(30)">
-<gates>
-<gate name="G$1" symbol="USB-CONN_5PIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ZX62D-B-5PA8(30)">
-<connects>
-<connect gate="G$1" pin="D+" pad="3:D+"/>
-<connect gate="G$1" pin="D−" pad="2:D-"/>
-<connect gate="G$1" pin="GND" pad="5:GND"/>
-<connect gate="G$1" pin="ID" pad="4:ID"/>
-<connect gate="G$1" pin="SHLD1" pad="SHILD1"/>
-<connect gate="G$1" pin="SHLD2" pad="SHIELD2"/>
-<connect gate="G$1" pin="SHLD3" pad="SHIELD3"/>
-<connect gate="G$1" pin="SHLD4" pad="SHIELD4"/>
-<connect gate="G$1" pin="SHLD5" pad="SHIELD5"/>
-<connect gate="G$1" pin="SHLD6" pad="SHIELD6"/>
-<connect gate="G$1" pin="VBUS" pad="1:VBUS"/>
 </connects>
 <technologies>
 <technology name=""/>
