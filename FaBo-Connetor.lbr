@@ -1537,6 +1537,100 @@ Voltage 50V</description>
 <wire x1="-4.3" y1="0" x2="4.3" y2="0" width="0.1" layer="21"/>
 <wire x1="4.3" y1="5.6" x2="4.3" y2="0" width="0.1" layer="21"/>
 </package>
+<package name="SM04B-PASS">
+<description>JST 2mmピッチ SMD ボス無し</description>
+<circle x="3" y="-10" radius="0.2" width="0.4" layer="21"/>
+<circle x="0" y="-7.15" radius="1" width="0.1" layer="21"/>
+<wire x1="3" y1="-4.5" x2="-3" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="-3" y1="-2.7" x2="-3" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="3" y1="-2.7" x2="3" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="-6" y1="-11.6" x2="-6" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="-3" y1="-2.7" x2="-6" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="6" y1="-11.6" x2="-6" y2="-11.6" width="0.1" layer="21"/>
+<wire x1="6" y1="-11.6" x2="6" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="6" y1="-2.7" x2="3" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="6" y1="-0.5" x2="-6" y2="-0.5" width="0" layer="51"/>
+<smd name="1" x="3" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="2" x="1" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="3" x="-1" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="4" x="-3" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="P$1" x="5.35" y="-7.4" dx="1.8" dy="3.8" layer="1" roundness="30"/>
+<smd name="P$2" x="-5.35" y="-7.4" dx="1.8" dy="3.8" layer="1" roundness="30"/>
+<text x="0" y="-1" size="0.8128" layer="25" font="vector" ratio="15" align="top-center">&gt;NAME</text>
+</package>
+<package name="SM04B-PASS-1">
+<description>JST 2mmピッチ SMD ボス有り</description>
+<circle x="3" y="-10" radius="0.15" width="0.3" layer="21"/>
+<circle x="0" y="-7.15" radius="1" width="0.1" layer="21"/>
+<wire x1="3" y1="-4.5" x2="-3" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="-3" y1="-2.7" x2="-3" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="3" y1="-2.7" x2="3" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="-6" y1="-11.6" x2="-6" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="-3" y1="-2.7" x2="-6" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="6" y1="-11.6" x2="-6" y2="-11.6" width="0.1" layer="21"/>
+<wire x1="6" y1="-11.6" x2="6" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="6" y1="-2.7" x2="3" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="6" y1="-0.5" x2="-6" y2="-0.5" width="0" layer="51"/>
+<wire x1="-5.7" y1="-10.65" x2="-4.7" y2="-10.65" width="0.8" layer="46"/>
+<wire x1="-5.7" y1="-10.65" x2="-4.7" y2="-10.65" width="1.1" layer="41"/>
+<wire x1="-5.7" y1="-10.65" x2="-4.7" y2="-10.65" width="1.1" layer="42"/>
+<smd name="1" x="3" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="2" x="1" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="3" x="-1" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="4" x="-3" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="P$1" x="5.35" y="-7.4" dx="1.8" dy="3.8" layer="1" roundness="30"/>
+<smd name="P$2" x="-5.35" y="-7.4" dx="1.8" dy="3.8" layer="1" roundness="30"/>
+<text x="0" y="-1" size="0.8128" layer="25" font="vector" ratio="15" align="top-center">&gt;NAME</text>
+</package>
+<package name="SM06B-PASS">
+<description>JST 2mmピッチ SMD ボス無し</description>
+<circle x="5" y="-10" radius="0.2" width="0.4" layer="21"/>
+<circle x="0" y="-7.15" radius="1" width="0.1" layer="21"/>
+<wire x1="5" y1="-4.5" x2="-5" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="-5" y1="-2.7" x2="-5" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="5" y1="-2.7" x2="5" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="-8" y1="-11.6" x2="-8" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="-5" y1="-2.7" x2="-8" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="8" y1="-11.6" x2="-8" y2="-11.6" width="0.1" layer="21"/>
+<wire x1="8" y1="-11.6" x2="8" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="8" y1="-2.7" x2="5" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="8" y1="-0.5" x2="-8" y2="-0.5" width="0" layer="51"/>
+<smd name="1" x="5" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="2" x="3" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="3" x="1" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="4" x="-1" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="5" x="-3" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="6" x="-5" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="P$1" x="7.35" y="-7.4" dx="1.8" dy="3.8" layer="1" roundness="30"/>
+<smd name="P$2" x="-7.35" y="-7.4" dx="1.8" dy="3.8" layer="1" roundness="30"/>
+<text x="0" y="-1" size="0.8128" layer="25" font="vector" ratio="15" align="top-center">&gt;NAME</text>
+</package>
+<package name="SM06B-PASS-1">
+<description>JST 2mmピッチ SMD ボス有り</description>
+<circle x="5.75" y="-10.25" radius="0.15" width="0.35" layer="21"/>
+<circle x="0" y="-7.15" radius="1" width="0.1" layer="21"/>
+<wire x1="5" y1="-4.5" x2="-5" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="-5" y1="-2.7" x2="-5" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="5" y1="-2.7" x2="5" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="-8" y1="-11.6" x2="-8" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="-5" y1="-2.7" x2="-8" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="8" y1="-11.6" x2="-8" y2="-11.6" width="0.1" layer="21"/>
+<wire x1="8" y1="-11.6" x2="8" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="8" y1="-2.7" x2="5" y2="-2.7" width="0.1" layer="21"/>
+<wire x1="8" y1="-0.5" x2="-8" y2="-0.5" width="0" layer="51"/>
+<wire x1="-7.7" y1="-10.65" x2="-6.7" y2="-10.65" width="0.8" layer="46"/>
+<wire x1="-7.7" y1="-10.65" x2="-6.7" y2="-10.65" width="1.1" layer="41"/>
+<wire x1="-7.7" y1="-10.65" x2="-6.7" y2="-10.65" width="1.1" layer="42"/>
+<smd name="1" x="5" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="2" x="3" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="3" x="1" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="4" x="-1" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="5" x="-3" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="6" x="-5" y="-11.85" dx="1" dy="2.7" layer="1" roundness="30"/>
+<smd name="P$1" x="7.35" y="-7.4" dx="1.8" dy="3.8" layer="1" roundness="30"/>
+<smd name="P$2" x="-7.35" y="-7.4" dx="1.8" dy="3.8" layer="1" roundness="30"/>
+<text x="0" y="-1" size="0.8128" layer="25" font="vector" ratio="15" align="top-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PCC-SMP-J">
@@ -2208,6 +2302,30 @@ Voltage 50V</description>
 <pin name="4" x="5.08" y="-2.54" visible="pin" length="short" rot="R180"/>
 <pin name="5" x="5.08" y="-5.08" visible="pin" length="short" rot="R180"/>
 </symbol>
+<symbol name="PIN_1X4">
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="1" x="5.08" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="2" x="5.08" y="0" visible="pin" length="short" rot="R180"/>
+<text x="-2.286" y="5.334" size="1.27" layer="95">&gt;NAME</text>
+<pin name="3" x="5.08" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="4" x="5.08" y="-5.08" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="PIN_1X6">
+<wire x1="-2.54" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<pin name="1" x="5.08" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="2" x="5.08" y="2.54" visible="pin" length="short" rot="R180"/>
+<text x="-2.286" y="7.874" size="1.27" layer="95">&gt;NAME</text>
+<pin name="3" x="5.08" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="4" x="5.08" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="5" x="5.08" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="6" x="5.08" y="-7.62" visible="pin" length="short" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PCC-SMP-J">
@@ -2830,6 +2948,68 @@ Voltage 50V</description>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMD-CONN-4PIN" prefix="CN" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="PIN_1X4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SM04B-PASS-1" package="SM04B-PASS-1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SM04B-PASS" package="SM04B-PASS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMD-CONN-6PIN" prefix="CN" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="PIN_1X6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SM06B-PASS" package="SM06B-PASS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SM06B-PASS-1" package="SM06B-PASS-1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
