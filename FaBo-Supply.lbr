@@ -315,7 +315,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-1.525" y1="0.875" x2="-1.525" y2="-0.875" width="0.1" layer="21"/>
 <wire x1="1.525" y1="0.875" x2="1.525" y2="-0.875" width="0.1" layer="21"/>
 <circle x="-0.95" y="-0.3" radius="0.2" width="0.35" layer="21"/>
-<text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="1.75" y="0" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="top-center">&gt;NAME</text>
 </package>
 <package name="TP-15">
 <smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" thermals="no" cream="no"/>
@@ -677,6 +677,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="3.048" y="0" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="-3.048" y="0" size="1.016" layer="27" font="vector" ratio="15" rot="R90" align="top-center">&gt;VALUE</text>
 </package>
+<package name="SOT-223-4">
+<circle x="-2.3" y="-0.8" radius="0.3" width="0.4" layer="21"/>
+<wire x1="-3.15" y1="1.6" x2="3.15" y2="1.6" width="0.1" layer="21"/>
+<wire x1="-3.15" y1="-1.6" x2="3.15" y2="-1.6" width="0.1" layer="21"/>
+<wire x1="-3.15" y1="-1.6" x2="-3.15" y2="1.6" width="0.1" layer="21"/>
+<wire x1="3.15" y1="-1.6" x2="3.15" y2="1.6" width="0.1" layer="21"/>
+<smd name="1" x="-2.3" y="-2.9" dx="0.95" dy="2.15" layer="1" roundness="30"/>
+<smd name="2" x="0" y="-2.9" dx="0.95" dy="2.15" layer="1" roundness="30"/>
+<smd name="3" x="2.3" y="-2.9" dx="0.95" dy="2.15" layer="1" roundness="30"/>
+<smd name="4" x="0" y="2.9" dx="3.25" dy="2.15" layer="1" roundness="30"/>
+<text x="3.048" y="0" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TI-TPS62730">
@@ -779,8 +791,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+<text x="-9.906" y="8.128" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="5.08" size="1.778" layer="94" align="bottom-center">LP2985</text>
+<text x="-9.652" y="-8.382" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="1V8">
 <description>1.8V</description>
@@ -1294,6 +1307,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-7.366" y="8.128" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-5.588" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
 <pin name="OUT-TAB" x="12.7" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="LM1117">
+<pin name="VIN" x="-12.7" y="2.54" length="middle"/>
+<pin name="VOUT" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="GND" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<text x="0" y="5.08" size="1.778" layer="94" align="bottom-center">LM1117</text>
+<text x="-7.366" y="7.874" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.366" y="-5.334" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2416,6 +2441,23 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="IN" pad="3"/>
 <connect gate="G$1" pin="OUT" pad="2"/>
 <connect gate="G$1" pin="OUT-TAB" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM1117" prefix="IC" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LM1117" x="0" y="0"/>
+</gates>
+<devices>
+<device name="IMPX" package="SOT-223-4">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
