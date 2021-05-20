@@ -451,20 +451,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="1.27" y1="-0.55" x2="-1.27" y2="-0.55" width="0.0508" layer="39"/>
 <wire x1="-1.27" y1="-0.55" x2="-1.27" y2="0.55" width="0.0508" layer="39"/>
 </package>
-<package name="SOT-23-6L">
-<smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="1.2" layer="1" roundness="30"/>
-<smd name="2" x="0" y="-1.15" dx="0.6" dy="1.2" layer="1" roundness="30"/>
-<smd name="3" x="0.95" y="-1.15" dx="0.6" dy="1.2" layer="1" roundness="30"/>
-<smd name="4" x="0.95" y="1.15" dx="0.6" dy="1.2" layer="1" roundness="30"/>
-<smd name="5" x="0" y="1.15" dx="0.6" dy="1.2" layer="1" roundness="30"/>
-<smd name="6" x="-0.95" y="1.15" dx="0.6" dy="1.2" layer="1" roundness="30"/>
-<wire x1="-1.525" y1="0.875" x2="1.525" y2="0.875" width="0.1" layer="21"/>
-<wire x1="-1.525" y1="-0.875" x2="1.525" y2="-0.875" width="0.1" layer="21"/>
-<wire x1="-1.525" y1="-0.875" x2="-1.525" y2="0.875" width="0.1" layer="21"/>
-<wire x1="1.525" y1="-0.875" x2="1.525" y2="0.875" width="0.1" layer="21"/>
-<circle x="-0.95" y="-0.3" radius="0.3" width="0.4" layer="21"/>
-<text x="-1.905" y="0" size="0.8128" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
-</package>
 <package name="SOT-23-5L">
 <smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="1.2" layer="1" roundness="30"/>
 <smd name="2" x="0" y="-1.15" dx="0.6" dy="1.2" layer="1" roundness="30"/>
@@ -800,24 +786,24 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <description>1.8V</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="1V8" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="3V3">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="3V3" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="5V">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
-<text x="-2.794" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="-3.048" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 <pin name="GND" x="0" y="0" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 <symbol name="78XX">
@@ -834,7 +820,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <symbol name="VCC">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="NJU7223">
@@ -892,25 +878,25 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <symbol name="VDD">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="VDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="VBAT">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="VBAT" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="AVDD">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="AVDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="VIN">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="VIN" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="LD1117">
@@ -942,13 +928,13 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <symbol name="VREG">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="VREG" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="VSELECT">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="VSELECT" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="TPS63000">
@@ -977,7 +963,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <symbol name="VOUT">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="VOUT" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="TPS61200">
@@ -1060,33 +1046,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="GND" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="PWR" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
 </symbol>
-<symbol name="ESDA6V1BC6">
-<pin name="1" x="-2.54" y="10.16" visible="pad" length="middle" rot="R270"/>
-<pin name="2" x="-2.54" y="-10.16" visible="pad" length="middle" rot="R90"/>
-<pin name="3" x="0" y="10.16" visible="pad" length="middle" rot="R270"/>
-<pin name="4" x="2.54" y="10.16" visible="pad" length="middle" rot="R270"/>
-<pin name="5" x="2.54" y="-10.16" visible="pad" length="middle" rot="R90"/>
-<pin name="6" x="5.08" y="10.16" visible="pad" length="middle" rot="R270"/>
-<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="-8.382" y="0" size="1.27" layer="95" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="-7.112" y="0" size="1.016" layer="94" rot="R90" align="top-center">ESDA6V1BC6</text>
-<wire x1="-0.254" y1="1.27" x2="-2.032" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="0" x2="-0.254" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-0.254" y1="-1.27" x2="-0.254" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0.254" y1="1.27" x2="0.254" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0.254" y1="-1.27" x2="2.032" y2="0" width="0.254" layer="94"/>
-<wire x1="2.032" y1="0" x2="0.254" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-1.778" y1="1.27" x2="-2.54" y2="0.508" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0.508" x2="-2.54" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="-3.302" y1="-1.27" x2="-2.54" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="3.302" y1="1.27" x2="2.54" y2="0.508" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0.508" x2="2.54" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-0.508" x2="1.778" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="0" x2="3.81" y2="0" width="0.254" layer="94"/>
-</symbol>
 <symbol name="LP2982">
 <pin name="VIN" x="-15.24" y="2.54" visible="pin" length="middle" direction="in"/>
 <pin name="GND" x="-15.24" y="-5.08" visible="pin" length="middle" direction="pwr"/>
@@ -1116,7 +1075,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <symbol name="VUSB">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="VUSB" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="AP7333">
@@ -1173,8 +1132,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <symbol name="19V">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1V8" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="19V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="TPS53015">
 <pin name="VFB" x="-15.24" y="-12.7" length="middle"/>
@@ -1974,26 +1933,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND" pad="GND1"/>
 <connect gate="G$1" pin="GNDBREAK" pad="GND2"/>
 <connect gate="G$1" pin="PWR" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ESDA6V1BC6" prefix="D" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="ESDA6V1BC6" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23-6L">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
