@@ -204,31 +204,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="2" y1="2" x2="-2" y2="2" width="0.127" layer="21"/>
 <circle x="-1.4" y="1.4" radius="0.282840625" width="0.127" layer="21"/>
 </package>
-<package name="MOTOR-DRIVER-TA7291FG">
-<smd name="1" x="-5.5" y="-4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="2" x="-4.5" y="-4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="3" x="-3.5" y="-4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="4" x="-2.5" y="-4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="5" x="2.5" y="-4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="6" x="3.5" y="-4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="7" x="4.5" y="-4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="8" x="5.5" y="-4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="9" x="5.5" y="4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="10" x="4.5" y="4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="11" x="3.5" y="4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="12" x="2.5" y="4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="13" x="-2.5" y="4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="14" x="-3.5" y="4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="15" x="-4.5" y="4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<smd name="16" x="-5.5" y="4.34" dx="1.4" dy="0.5" layer="1" rot="R90"/>
-<wire x1="6.75" y1="3.2" x2="-6.75" y2="3.2" width="0.127" layer="21"/>
-<wire x1="-6.75" y1="3.2" x2="-6.75" y2="-3.2" width="0.127" layer="21"/>
-<wire x1="-6.75" y1="-3.2" x2="6.75" y2="-3.2" width="0.127" layer="21"/>
-<wire x1="6.75" y1="-3.2" x2="6.75" y2="3.2" width="0.127" layer="21"/>
-<circle x="-5.5" y="-2" radius="0.75" width="0.2" layer="21"/>
-<smd name="17" x="0" y="-4.34" dx="3.4" dy="1.4" layer="1"/>
-<smd name="18" x="0" y="4.34" dx="3.4" dy="1.4" layer="1"/>
-</package>
 <package name="FLASH-MEMORY-2M(WINBOND)">
 <smd name="CS" x="-2.64" y="2.84" dx="1" dy="0.635" layer="1"/>
 <smd name="DO" x="-2.64" y="1.57" dx="1" dy="0.635" layer="1"/>
@@ -490,22 +465,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="5.08" y="-5.08" size="1.778" layer="94">8</text>
 <text x="-5.08" y="-5.08" size="1.778" layer="94">5</text>
 </symbol>
-<symbol name="MOTOR-DRIVER-TA7291FG">
-<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
-<pin name="GND" x="-12.7" y="-10.16" length="middle"/>
-<pin name="OUT1" x="12.7" y="-5.08" length="middle" rot="R180"/>
-<pin name="VREF" x="12.7" y="5.08" length="middle" rot="R180"/>
-<pin name="IN1" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="IN2" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="VCC" x="-12.7" y="7.62" length="middle"/>
-<pin name="OUT2" x="12.7" y="-7.62" length="middle" rot="R180"/>
-<pin name="VS" x="-12.7" y="5.08" length="middle"/>
-<text x="0" y="10.16" size="1.27" layer="94" align="bottom-center">TA7291FG</text>
-<text x="-7.62" y="13.208" size="1.27" layer="95">&gt;NAME</text>
-</symbol>
 <symbol name="SWITCH-LS6J2M-T">
 <pin name="1" x="-7.62" y="2.54" visible="pad" length="middle"/>
 <pin name="2" x="-7.62" y="-2.54" visible="pad" length="middle"/>
@@ -710,28 +669,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </gates>
 <devices>
 <device name="" package="FLASH-MEMORY-256K(ISSI)">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MOTOR-DRIVER-TA7291FG" prefix="IC" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="MOTOR-DRIVER-TA7291FG" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MOTOR-DRIVER-TA7291FG">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="IN1" pad="7"/>
-<connect gate="G$1" pin="IN2" pad="9"/>
-<connect gate="G$1" pin="OUT1" pad="4"/>
-<connect gate="G$1" pin="OUT2" pad="13"/>
-<connect gate="G$1" pin="VCC" pad="11"/>
-<connect gate="G$1" pin="VREF" pad="5"/>
-<connect gate="G$1" pin="VS" pad="15"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
