@@ -887,6 +887,38 @@ http://akizukidenshi.com/download/ds/avvicon/MJ-4PP-9.pdf</description>
 <smd name="19" x="4.85" y="4.445" dx="1.8" dy="0.6" layer="1" roundness="30"/>
 <smd name="20" x="4.85" y="5.715" dx="1.8" dy="0.6" layer="1" roundness="30"/>
 </package>
+<package name="FLASH-MEMORY-2M(WINBOND)">
+<smd name="CS" x="-2.64" y="2.84" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="DO" x="-2.64" y="1.57" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="WP#" x="-2.64" y="0.2" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="GND" x="-2.64" y="-1.17" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="DI" x="2.67" y="-1.17" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="CLK" x="2.67" y="0.2" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="HOLD#" x="2.67" y="1.57" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="VCC" x="2.67" y="2.84" dx="1" dy="0.635" layer="1" roundness="30"/>
+<wire x1="-2" y1="3.27" x2="-2" y2="-1.73" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.73" x2="2" y2="-1.73" width="0.127" layer="22"/>
+<wire x1="2" y1="-1.73" x2="2" y2="3.27" width="0.127" layer="21"/>
+<wire x1="2" y1="3.27" x2="-2" y2="3.27" width="0.127" layer="21"/>
+<circle x="-1.4" y="2.67" radius="0.282840625" width="0.127" layer="21"/>
+<text x="0" y="3.5" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="FLASH-MEMORY-256K(ISSI)">
+<smd name="CE#" x="-2.64" y="1.57" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="SO" x="-2.64" y="0.3" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="WP#" x="-2.64" y="-1.07" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="GND" x="-2.64" y="-2.44" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="SIO" x="2.67" y="-2.44" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="SCK" x="2.67" y="-1.07" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="HOLD#" x="2.67" y="0.3" dx="1" dy="0.635" layer="1" roundness="30"/>
+<smd name="VCC" x="2.67" y="1.57" dx="1" dy="0.635" layer="1" roundness="30"/>
+<wire x1="-2" y1="2" x2="-2" y2="-3" width="0.127" layer="21"/>
+<wire x1="-2" y1="-3" x2="2" y2="-3" width="0.127" layer="22"/>
+<wire x1="2" y1="-3" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="-2" y2="2" width="0.127" layer="21"/>
+<circle x="-1.4" y="1.4" radius="0.282840625" width="0.127" layer="21"/>
+<text x="0" y="2.25" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -1572,6 +1604,25 @@ http://akizukidenshi.com/download/ds/avvicon/MJ-4PP-9.pdf</description>
 <wire x1="-10.16" y1="20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
 <text x="0" y="17.78" size="1.778" layer="94" align="bottom-center">PCF2129AT</text>
 <text x="-10.16" y="20.828" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="FLASH-MEMORY-256K(ISSI)">
+<wire x1="-5.08" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="1" x="5.08" y="12.7" length="middle" rot="R270"/>
+<pin name="2" x="2.54" y="12.7" length="middle" rot="R270"/>
+<pin name="3" x="0" y="12.7" length="middle" rot="R270"/>
+<pin name="4" x="-2.54" y="12.7" length="middle" rot="R270"/>
+<pin name="8" x="5.08" y="-10.16" length="middle" rot="R90"/>
+<pin name="7" x="2.54" y="-10.16" length="middle" rot="R90"/>
+<pin name="6" x="0" y="-10.16" length="middle" rot="R90"/>
+<pin name="5" x="-2.54" y="-10.16" length="middle" rot="R90"/>
+<text x="5.08" y="5.08" size="1.778" layer="94">1</text>
+<text x="-5.08" y="5.08" size="1.778" layer="94">4</text>
+<text x="5.08" y="-5.08" size="1.778" layer="94">8</text>
+<text x="-5.08" y="-5.08" size="1.778" layer="94">5</text>
+<text x="-5.588" y="-4.318" size="1.27" layer="95" rot="R90">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2376,6 +2427,28 @@ akizuki
 <connect gate="G$1" pin="VBAT" pad="19"/>
 <connect gate="G$1" pin="VDD" pad="20"/>
 <connect gate="G$1" pin="VSS" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FLASH-MEMORY-2M(WINBOND)" prefix="IC" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="FLASH-MEMORY-256K(ISSI)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FLASH-MEMORY-2M(WINBOND)">
+<connects>
+<connect gate="G$1" pin="1" pad="CS"/>
+<connect gate="G$1" pin="2" pad="DO"/>
+<connect gate="G$1" pin="3" pad="WP#"/>
+<connect gate="G$1" pin="4" pad="GND"/>
+<connect gate="G$1" pin="5" pad="DI"/>
+<connect gate="G$1" pin="6" pad="CLK"/>
+<connect gate="G$1" pin="7" pad="HOLD#"/>
+<connect gate="G$1" pin="8" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>

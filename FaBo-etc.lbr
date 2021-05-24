@@ -189,36 +189,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="2" x="3.1" y="0" dx="0.9" dy="0.95" layer="1"/>
 <smd name="4" x="3.1" y="-1.6" dx="0.9" dy="0.95" layer="1"/>
 </package>
-<package name="FLASH-MEMORY-256K(ISSI)">
-<smd name="CE#" x="-2.64" y="1.57" dx="1" dy="0.635" layer="1"/>
-<smd name="SO" x="-2.64" y="0.3" dx="1" dy="0.635" layer="1"/>
-<smd name="WP#" x="-2.64" y="-1.07" dx="1" dy="0.635" layer="1"/>
-<smd name="GND" x="-2.64" y="-2.44" dx="1" dy="0.635" layer="1"/>
-<smd name="SIO" x="2.67" y="-2.44" dx="1" dy="0.635" layer="1"/>
-<smd name="SCK" x="2.67" y="-1.07" dx="1" dy="0.635" layer="1"/>
-<smd name="HOLD#" x="2.67" y="0.3" dx="1" dy="0.635" layer="1"/>
-<smd name="VCC" x="2.67" y="1.57" dx="1" dy="0.635" layer="1"/>
-<wire x1="-2" y1="2" x2="-2" y2="-3" width="0.127" layer="21"/>
-<wire x1="-2" y1="-3" x2="2" y2="-3" width="0.127" layer="22"/>
-<wire x1="2" y1="-3" x2="2" y2="2" width="0.127" layer="21"/>
-<wire x1="2" y1="2" x2="-2" y2="2" width="0.127" layer="21"/>
-<circle x="-1.4" y="1.4" radius="0.282840625" width="0.127" layer="21"/>
-</package>
-<package name="FLASH-MEMORY-2M(WINBOND)">
-<smd name="CS" x="-2.64" y="2.84" dx="1" dy="0.635" layer="1"/>
-<smd name="DO" x="-2.64" y="1.57" dx="1" dy="0.635" layer="1"/>
-<smd name="WP#" x="-2.64" y="0.2" dx="1" dy="0.635" layer="1"/>
-<smd name="GND" x="-2.64" y="-1.17" dx="1" dy="0.635" layer="1"/>
-<smd name="DI" x="2.67" y="-1.17" dx="1" dy="0.635" layer="1"/>
-<smd name="CLK" x="2.67" y="0.2" dx="1" dy="0.635" layer="1"/>
-<smd name="HOLD#" x="2.67" y="1.57" dx="1" dy="0.635" layer="1"/>
-<smd name="VCC" x="2.67" y="2.84" dx="1" dy="0.635" layer="1"/>
-<wire x1="-2" y1="3.27" x2="-2" y2="-1.73" width="0.127" layer="21"/>
-<wire x1="-2" y1="-1.73" x2="2" y2="-1.73" width="0.127" layer="22"/>
-<wire x1="2" y1="-1.73" x2="2" y2="3.27" width="0.127" layer="21"/>
-<wire x1="2" y1="3.27" x2="-2" y2="3.27" width="0.127" layer="21"/>
-<circle x="-1.4" y="2.67" radius="0.282840625" width="0.127" layer="21"/>
-</package>
 <package name="SWITCH-LS6J2M-T">
 <wire x1="-2.6" y1="2.6" x2="2.6" y2="2.6" width="0.127" layer="21"/>
 <wire x1="2.6" y1="2.6" x2="2.6" y2="-2.6" width="0.127" layer="21"/>
@@ -421,24 +391,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="3" x="-7.62" y="-2.54" length="middle"/>
 <pin name="4" x="7.62" y="-2.54" length="middle" rot="R180"/>
 </symbol>
-<symbol name="FLASH-MEMORY-256K(ISSI)">
-<wire x1="-5.08" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<pin name="1" x="5.08" y="12.7" length="middle" rot="R270"/>
-<pin name="2" x="2.54" y="12.7" length="middle" rot="R270"/>
-<pin name="3" x="0" y="12.7" length="middle" rot="R270"/>
-<pin name="4" x="-2.54" y="12.7" length="middle" rot="R270"/>
-<pin name="8" x="5.08" y="-10.16" length="middle" rot="R90"/>
-<pin name="7" x="2.54" y="-10.16" length="middle" rot="R90"/>
-<pin name="6" x="0" y="-10.16" length="middle" rot="R90"/>
-<pin name="5" x="-2.54" y="-10.16" length="middle" rot="R90"/>
-<text x="5.08" y="5.08" size="1.778" layer="94">1</text>
-<text x="-5.08" y="5.08" size="1.778" layer="94">4</text>
-<text x="5.08" y="-5.08" size="1.778" layer="94">8</text>
-<text x="-5.08" y="-5.08" size="1.778" layer="94">5</text>
-</symbol>
 <symbol name="SWITCH-LS6J2M-T">
 <pin name="1" x="-7.62" y="2.54" visible="pad" length="middle"/>
 <pin name="2" x="-7.62" y="-2.54" visible="pad" length="middle"/>
@@ -604,40 +556,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FLASH-MEMORY-256K">
-<gates>
-<gate name="G$1" symbol="FLASH-MEMORY-256K(ISSI)" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FLASH-MEMORY-256K(ISSI)">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FLASH-MEMORY-2M(WINBOND)">
-<gates>
-<gate name="G$1" symbol="FLASH-MEMORY-256K(ISSI)" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FLASH-MEMORY-2M(WINBOND)">
-<connects>
-<connect gate="G$1" pin="1" pad="CS"/>
-<connect gate="G$1" pin="2" pad="DO"/>
-<connect gate="G$1" pin="3" pad="WP#"/>
-<connect gate="G$1" pin="4" pad="GND"/>
-<connect gate="G$1" pin="5" pad="DI"/>
-<connect gate="G$1" pin="6" pad="CLK"/>
-<connect gate="G$1" pin="7" pad="HOLD#"/>
-<connect gate="G$1" pin="8" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
