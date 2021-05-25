@@ -133,78 +133,10 @@ etc/etc...&lt;br&gt;
 Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
-<package name="SCREWPAD_3MM">
-<pad name="1" x="0" y="0" drill="3" diameter="3.81"/>
-<circle x="0" y="0" radius="2.55" width="0.127" layer="51"/>
-</package>
-<package name="SCREWPAD_3.2MM">
-<pad name="1" x="0" y="0" drill="3.2" diameter="4"/>
-<circle x="0" y="0" radius="2.55" width="0.127" layer="51"/>
-</package>
-<package name="SCREWPAD_2.8MM">
-<pad name="1" x="0" y="0" drill="2.8" diameter="3.1"/>
-<circle x="0" y="0" radius="2.1" width="0.1" layer="51"/>
-</package>
-<package name="MARK_POINT_3MM">
-<polygon width="0.127" layer="29">
-<vertex x="-1.5" y="0" curve="-270"/>
-<vertex x="0" y="-1.5" curve="-90"/>
-</polygon>
-<polygon width="0.15" layer="1">
-<vertex x="-0.5" y="0" curve="-180"/>
-<vertex x="0.5" y="0" curve="-90"/>
-<vertex x="0" y="-0.5" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="1.3" y="0" curve="328.109208"/>
-<vertex x="1.1" y="-0.7" curve="31.89072"/>
-</polygon>
-</package>
-<package name="MARK_POINT_3MM_BOTTOM">
-<polygon width="0.15" layer="16">
-<vertex x="-0.5" y="0" curve="-180"/>
-<vertex x="0.5" y="0" curve="-90"/>
-<vertex x="0" y="-0.5" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="42">
-<vertex x="1.3" y="0" curve="328.109208"/>
-<vertex x="1.1" y="-0.7" curve="31.89072"/>
-</polygon>
-</package>
 </packages>
 <symbols>
-<symbol name="SCREW-PAD">
-<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="SCREW-PAD" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="SCREW-PAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-3MM" package="SCREWPAD_3MM">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-3.2MM" package="SCREWPAD_3.2MM">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-2.8MM" package="SCREWPAD_2.8MM">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-3MM_BOTTOM" package="MARK_POINT_3MM_BOTTOM">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>
