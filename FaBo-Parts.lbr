@@ -167,18 +167,6 @@ Parts&lt;br&gt;
 Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
-<package name="C&amp;K_JS202011SCQN">
-<smd name="2" x="-2.75" y="0" dx="2.6" dy="1.2" layer="1"/>
-<smd name="1" x="-2.75" y="2.5" dx="2.6" dy="1.2" layer="1"/>
-<smd name="3" x="-2.75" y="-2.5" dx="2.6" dy="1.2" layer="1"/>
-<smd name="5" x="2.75" y="0" dx="2.6" dy="1.2" layer="1"/>
-<smd name="6" x="2.75" y="2.5" dx="2.6" dy="1.2" layer="1"/>
-<smd name="4" x="2.75" y="-2.5" dx="2.6" dy="1.2" layer="1"/>
-<wire x1="-1.5" y1="4.5" x2="1.5" y2="4.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="4.5" x2="1.5" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-4.5" x2="-1.5" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-4.5" x2="-1.5" y2="4.5" width="0.127" layer="21"/>
-</package>
 <package name="SOT23-5">
 <smd name="1" x="-0.97" y="-0.85" dx="0.55" dy="1" layer="1"/>
 <smd name="3" x="0.99" y="-0.85" dx="0.55" dy="1" layer="1"/>
@@ -637,18 +625,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </package>
 </packages>
 <symbols>
-<symbol name="C&amp;K_JS202011SCQN">
-<pin name="1" x="-10.16" y="2.54" visible="pin" length="middle"/>
-<pin name="2" x="-10.16" y="0" visible="pin" length="middle"/>
-<pin name="3" x="-10.16" y="-2.54" visible="pin" length="middle"/>
-<pin name="6" x="10.16" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="5" x="10.16" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="4" x="10.16" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-</symbol>
 <symbol name="TI-TLV70018DDCT">
 <pin name="IN" x="-10.16" y="2.54" length="middle"/>
 <pin name="GND" x="-10.16" y="0" length="middle"/>
@@ -1100,26 +1076,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="C&amp;K_JS202011SCQN" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="C&amp;K_JS202011SCQN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="C&amp;K_JS202011SCQN">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TI-TLV70018DDCT">
 <gates>
 <gate name="G$1" symbol="TI-TLV70018DDCT" x="0" y="0"/>
