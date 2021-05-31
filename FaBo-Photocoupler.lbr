@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -30,8 +31,6 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
@@ -41,10 +40,12 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -69,30 +70,32 @@
 <wire x1="6.35" y1="-3.81" x2="6.35" y2="1.27" width="0.127" layer="21"/>
 <wire x1="6.35" y1="1.27" x2="1.27" y2="1.27" width="0.127" layer="21"/>
 <circle x="2.2225" y="0.3175" radius="0.3175" width="0.127" layer="21"/>
+<text x="3.75" y="1.75" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="TLP2270">
-<smd name="1" x="-1.905" y="-5.3" dx="0.8" dy="1.8" layer="1"/>
-<smd name="2" x="-0.635" y="-5.3" dx="0.8" dy="1.8" layer="1"/>
-<smd name="3" x="0.635" y="-5.3" dx="0.8" dy="1.8" layer="1"/>
-<smd name="4" x="1.905" y="-5.3" dx="0.8" dy="1.8" layer="1"/>
-<smd name="8" x="-1.905" y="5.3" dx="0.8" dy="1.8" layer="1"/>
-<smd name="7" x="-0.635" y="5.3" dx="0.8" dy="1.8" layer="1"/>
-<smd name="6" x="0.635" y="5.3" dx="0.8" dy="1.8" layer="1"/>
-<smd name="5" x="1.905" y="5.3" dx="0.8" dy="1.8" layer="1"/>
-<wire x1="-2.925" y1="-3.75" x2="-2.925" y2="3.75" width="0.127" layer="51"/>
-<wire x1="-2.925" y1="3.75" x2="2.925" y2="3.75" width="0.127" layer="51"/>
-<wire x1="2.925" y1="3.75" x2="2.925" y2="-3.75" width="0.127" layer="51"/>
-<wire x1="2.925" y1="-3.75" x2="-2.925" y2="-3.75" width="0.127" layer="51"/>
-<circle x="-2.1" y="-2.8" radius="0.22360625" width="0.127" layer="21"/>
+<smd name="1" x="-1.905" y="-5.3" dx="0.8" dy="1.8" layer="1" roundness="30"/>
+<smd name="2" x="-0.635" y="-5.3" dx="0.8" dy="1.8" layer="1" roundness="30"/>
+<smd name="3" x="0.635" y="-5.3" dx="0.8" dy="1.8" layer="1" roundness="30"/>
+<smd name="4" x="1.905" y="-5.3" dx="0.8" dy="1.8" layer="1" roundness="30"/>
+<smd name="8" x="-1.905" y="5.3" dx="0.8" dy="1.8" layer="1" roundness="30"/>
+<smd name="7" x="-0.635" y="5.3" dx="0.8" dy="1.8" layer="1" roundness="30"/>
+<smd name="6" x="0.635" y="5.3" dx="0.8" dy="1.8" layer="1" roundness="30"/>
+<smd name="5" x="1.905" y="5.3" dx="0.8" dy="1.8" layer="1" roundness="30"/>
+<wire x1="-2.925" y1="-3.75" x2="-2.925" y2="3.75" width="0.1" layer="51"/>
+<wire x1="-2.925" y1="3.75" x2="2.925" y2="3.75" width="0.1" layer="51"/>
+<wire x1="2.925" y1="3.75" x2="2.925" y2="-3.75" width="0.1" layer="51"/>
+<wire x1="2.925" y1="-3.75" x2="-2.925" y2="-3.75" width="0.1" layer="51"/>
+<circle x="-1.905" y="-3.2" radius="0.2" width="0.5" layer="21"/>
+<text x="-3.25" y="0" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
 <symbol name="TLP222A">
 <text x="-6.6675" y="4.1275" size="2.54" layer="94">TLP222A</text>
-<pin name="1" x="-12.7" y="2.54" length="middle"/>
-<pin name="2" x="-12.7" y="-5.08" length="middle"/>
-<pin name="3" x="12.7" y="-5.08" length="middle" rot="R180"/>
-<pin name="4" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="1" x="-12.7" y="2.54" visible="pad" length="middle"/>
+<pin name="2" x="-12.7" y="-5.08" visible="pad" length="middle"/>
+<pin name="3" x="12.7" y="-5.08" visible="pad" length="middle" rot="R180"/>
+<pin name="4" x="12.7" y="2.54" visible="pad" length="middle" rot="R180"/>
 <wire x1="-0.3175" y1="-0.3175" x2="0.3175" y2="-0.9525" width="0.254" layer="94"/>
 <wire x1="0.3175" y1="-0.9525" x2="0.3175" y2="-0.3175" width="0.254" layer="94"/>
 <wire x1="0.3175" y1="-0.9525" x2="-0.3175" y2="-0.9525" width="0.254" layer="94"/>
@@ -192,13 +195,14 @@
 <wire x1="-1.27" y1="2.54" x2="-1.27" y2="-0.9525" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-5.08" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <wire x1="-6.0325" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="-7.62" size="1.27" layer="95" align="top-left">&gt;NAME</text>
 </symbol>
 <symbol name="TLP2270">
 <text x="-4.1275" y="6.6675" size="2.54" layer="94">TLP2270</text>
-<pin name="1:AN1" x="-12.7" y="2.54" length="middle"/>
-<pin name="2:CA1" x="-12.7" y="-5.08" length="middle"/>
-<pin name="3:CA2" x="-12.7" y="-12.7" length="middle"/>
-<pin name="4:AN2" x="-12.7" y="-20.32" length="middle"/>
+<pin name="1:AN1" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<pin name="2:CA1" x="-12.7" y="-5.08" visible="pin" length="middle"/>
+<pin name="3:CA2" x="-12.7" y="-12.7" visible="pin" length="middle"/>
+<pin name="4:AN2" x="-12.7" y="-20.32" visible="pin" length="middle"/>
 <wire x1="-1.905" y1="-0.9525" x2="-1.27" y2="-0.9525" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-0.9525" x2="-0.635" y2="-0.9525" width="0.254" layer="94"/>
 <wire x1="-0.635" y1="-0.9525" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
@@ -209,10 +213,10 @@
 <wire x1="-7.62" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="2.54" x2="-1.27" y2="-0.9525" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-5.08" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<pin name="5:GND" x="17.78" y="-20.32" length="middle" rot="R180"/>
-<pin name="6:OUT2" x="17.78" y="-12.7" length="middle" rot="R180"/>
-<pin name="7:OUT1" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="8:VDD_" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="5:GND" x="17.78" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="6:OUT2" x="17.78" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="7:OUT1" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="8:VDD_" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
 <wire x1="-0.635" y1="-16.8275" x2="-1.27" y2="-16.8275" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-16.8275" x2="-1.905" y2="-16.8275" width="0.254" layer="94"/>
 <wire x1="-1.905" y1="-16.8275" x2="-1.27" y2="-15.875" width="0.254" layer="94"/>
@@ -257,10 +261,11 @@
 <wire x1="12.7" y1="5.08" x2="12.7" y2="-27.94" width="0.3048" layer="94"/>
 <wire x1="12.7" y1="-27.94" x2="-7.62" y2="-27.94" width="0.3048" layer="94"/>
 <text x="-2.54" y="-25.4" size="1.27" layer="94">SHIELD</text>
+<text x="-7.366" y="-28.448" size="1.27" layer="95" align="top-left">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TLP222A">
+<deviceset name="TLP222A" prefix="U" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="TLP222A" x="2.54" y="2.54"/>
 </gates>
@@ -278,7 +283,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="TLP2270">
+<deviceset name="TLP2270" prefix="U" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="TLP2270" x="-2.54" y="12.7"/>
 </gates>
