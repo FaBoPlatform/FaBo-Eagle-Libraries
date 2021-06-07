@@ -1341,11 +1341,7 @@
 <wire x1="3" y1="-1.83" x2="-3" y2="-1.83" width="0.1" layer="51"/>
 <wire x1="-3" y1="-1.83" x2="-5" y2="-1.83" width="0.1" layer="51"/>
 <wire x1="3" y1="-2.33" x2="-3" y2="-2.33" width="0.1" layer="51"/>
-<text x="-3" y="-2.73" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">GND</text>
-<text x="-1" y="-2.73" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">VCC</text>
-<text x="1" y="-2.73" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">CI</text>
 <pad name="DI" x="3" y="1.27" drill="0.8" diameter="1.4224" shape="square"/>
-<text x="3" y="-2.73" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">DI</text>
 <wire x1="-3" y1="-1.83" x2="-3" y2="-2.33" width="0.1" layer="51"/>
 <wire x1="3" y1="-1.83" x2="3" y2="-2.33" width="0.1" layer="51"/>
 </package>
@@ -2964,7 +2960,7 @@ Voltage 50V
 </device>
 </devices>
 </deviceset>
-<deviceset name="FABO-SPI-LED">
+<deviceset name="FABO-SPI-LED" prefix="CN" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="FABO-SPI-LED" x="0" y="0"/>
 </gates>
