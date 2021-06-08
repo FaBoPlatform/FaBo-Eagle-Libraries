@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -44,10 +44,20 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -71,18 +81,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="88" name="SimResults" color="56" fill="1" visible="yes" active="yes"/>
-<layer number="89" name="SimProbes" color="56" fill="1" visible="yes" active="yes"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
-<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="56" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="56" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="no"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="no"/>
@@ -1304,6 +1304,10 @@
 <hole x="5.2" y="1.25" drill="0.8"/>
 <rectangle x1="-5.7" y1="0.3" x2="-4.7" y2="2.1" layer="46" rot="R90"/>
 <text x="0" y="9" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<text x="3" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">SCL</text>
+<text x="1" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">SDA</text>
+<text x="-1" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">5V</text>
+<text x="-3" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
 </package>
 <package name="SPI-BM04B-PASS-1">
 <smd name="CI" x="1" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
@@ -1327,23 +1331,31 @@
 <hole x="5.2" y="1.15" drill="0.8"/>
 <rectangle x1="-5.7" y1="0.2" x2="-4.7" y2="2" layer="46" rot="R90"/>
 <text x="0" y="8.75" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<text x="3" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">DI</text>
+<text x="1" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">CI</text>
+<text x="-1" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">5V</text>
+<text x="-3" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
 </package>
 <package name="SPI-B04B-PASK-1">
-<pad name="GND" x="-3" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="VCC" x="-1" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="CI" x="1" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
-<hole x="4.5" y="2.97" drill="1.1"/>
-<wire x1="5" y1="-1.83" x2="5" y2="3.47" width="0.1" layer="51"/>
-<wire x1="-5" y1="-1.83" x2="-5" y2="3.47" width="0.1" layer="51"/>
-<wire x1="5" y1="3.47" x2="-5" y2="3.47" width="0.1" layer="51"/>
-<wire x1="5" y1="-1.83" x2="3" y2="-1.83" width="0.1" layer="51"/>
-<text x="0" y="3.75" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
-<wire x1="3" y1="-1.83" x2="-3" y2="-1.83" width="0.1" layer="51"/>
-<wire x1="-3" y1="-1.83" x2="-5" y2="-1.83" width="0.1" layer="51"/>
-<wire x1="3" y1="-2.33" x2="-3" y2="-2.33" width="0.1" layer="51"/>
-<pad name="DI" x="3" y="1.27" drill="0.8" diameter="1.4224" shape="square"/>
-<wire x1="-3" y1="-1.83" x2="-3" y2="-2.33" width="0.1" layer="51"/>
-<wire x1="3" y1="-1.83" x2="3" y2="-2.33" width="0.1" layer="51"/>
+<pad name="GND" x="-3" y="0.02" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="VCC" x="-1" y="0.02" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="CI" x="1" y="0.02" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="4.5" y="1.72" drill="1.1"/>
+<wire x1="5" y1="-3.08" x2="5" y2="2.22" width="0.1" layer="51"/>
+<wire x1="-5" y1="-3.08" x2="-5" y2="2.22" width="0.1" layer="51"/>
+<wire x1="5" y1="2.22" x2="-5" y2="2.22" width="0.1" layer="51"/>
+<wire x1="5" y1="-3.08" x2="3" y2="-3.08" width="0.1" layer="51"/>
+<text x="0" y="2.5" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<wire x1="3" y1="-3.08" x2="-3" y2="-3.08" width="0.1" layer="51"/>
+<wire x1="-3" y1="-3.08" x2="-5" y2="-3.08" width="0.1" layer="51"/>
+<wire x1="3" y1="-3.58" x2="-3" y2="-3.58" width="0.1" layer="51"/>
+<pad name="DI" x="3" y="0.02" drill="0.8" diameter="1.4224" shape="square"/>
+<wire x1="-3" y1="-3.08" x2="-3" y2="-3.58" width="0.1" layer="51"/>
+<wire x1="3" y1="-3.08" x2="3" y2="-3.58" width="0.1" layer="51"/>
+<text x="3" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">DI</text>
+<text x="1" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">CI</text>
+<text x="-1" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">VCC</text>
+<text x="-3" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">GND</text>
 </package>
 <package name="SPI-B04-PASK-1-BOTTOM">
 <pad name="GND" x="3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
@@ -1358,11 +1370,11 @@
 <wire x1="3" y1="-3.1" x2="-3" y2="-3.1" width="0.1" layer="51"/>
 <wire x1="-3" y1="-3.1" x2="-5" y2="-3.1" width="0.1" layer="51"/>
 <wire x1="3" y1="-3.6" x2="-3" y2="-3.6" width="0.1" layer="51"/>
-<text x="-3" y="-4" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">DI</text>
-<text x="-1" y="-4" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">CI</text>
-<text x="1" y="-4" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">VCC</text>
+<text x="-3" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">DI</text>
+<text x="-1" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">CI</text>
+<text x="1" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">VCC</text>
 <pad name="DI" x="-3" y="0" drill="0.8" diameter="1.4224" shape="square"/>
-<text x="3" y="-4" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">GND</text>
+<text x="3" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">GND</text>
 <wire x1="-3" y1="-3.1" x2="-3" y2="-3.6" width="0.1" layer="51"/>
 <wire x1="3" y1="-3.1" x2="3" y2="-3.6" width="0.1" layer="51"/>
 </package>
