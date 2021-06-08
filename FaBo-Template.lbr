@@ -31,8 +31,6 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
@@ -44,17 +42,12 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="14" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
-<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -63,8 +56,19 @@
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="7" fill="1" visible="no" active="no"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="no"/>
@@ -90,10 +94,6 @@
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="no"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="no" active="no"/>
 <layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
@@ -4129,32 +4129,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <hole x="11.5" y="-6.25" drill="1"/>
 <hole x="-4.2" y="7.81" drill="1.1"/>
 </package>
-<package name="FABO_BRICK_SPI_LED">
-<pad name="GND" x="-3" y="-3.19" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="DI" x="-1" y="-3.19" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="CI" x="1" y="-3.19" drill="0.8" diameter="1.4224" shape="octagon"/>
-<hole x="4.5" y="-1.09" drill="1.1"/>
-<wire x1="5" y1="-6.69" x2="5" y2="5.01" width="0.127" layer="51"/>
-<wire x1="-5" y1="-6.69" x2="-5" y2="5.01" width="0.127" layer="51"/>
-<wire x1="5" y1="5.01" x2="2" y2="5.01" width="0.127" layer="51"/>
-<wire x1="2" y1="5.01" x2="-2" y2="5.01" width="0.127" layer="51"/>
-<wire x1="-2" y1="5.01" x2="-5" y2="5.01" width="0.127" layer="51"/>
-<text x="0" y="-5.095" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
-<wire x1="2" y1="3.51" x2="-2" y2="3.51" width="0.127" layer="51"/>
-<wire x1="-2" y1="5.01" x2="-2" y2="3.51" width="0.127" layer="51"/>
-<wire x1="2" y1="5.01" x2="2" y2="3.51" width="0.127" layer="51"/>
-<text x="-3" y="-1.92" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<text x="-1" y="-1.92" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">DI</text>
-<text x="1" y="-1.92" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">CI</text>
-<pad name="5V" x="3" y="-3.19" drill="0.8" diameter="1.4224" shape="square"/>
-<text x="3" y="-1.92" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">5V</text>
-<wire x1="-4.3" y1="-6.69" x2="-4.3" y2="-2.69" width="0.127" layer="51"/>
-<wire x1="4.3" y1="-6.69" x2="4.3" y2="-2.69" width="0.127" layer="51"/>
-<wire x1="-4.3" y1="-2.69" x2="4.3" y2="-2.69" width="0.127" layer="51"/>
-<wire x1="-5" y1="-6.69" x2="-4.3" y2="-6.69" width="0.127" layer="51"/>
-<wire x1="4.3" y1="-6.69" x2="5" y2="-6.69" width="0.127" layer="51"/>
-<hole x="-4.5" y="-1.09" drill="1.1"/>
-</package>
 <package name="FABO_BRICK_I2C_SMARTHOME">
 <hole x="-10.5" y="6.25" drill="2"/>
 <wire x1="-12.5" y1="12.5" x2="12.5" y2="12.5" width="0.127" layer="20"/>
@@ -4683,6 +4657,53 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="7.62" y="-4.445" size="1.27" layer="21">P0_23</text>
 <text x="7.62" y="-6.985" size="1.27" layer="21">P0_24</text>
 <circle x="0" y="-17.02" radius="12.5" width="0.127" layer="21"/>
+</package>
+<package name="FABO_BRICK_SPI_LED_B04B-PASK-1">
+<pad name="GND" x="-3" y="0.02" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="5V" x="-1" y="0.02" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="CI" x="1" y="0.02" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="4.5" y="1.72" drill="1.1"/>
+<wire x1="5" y1="-3.08" x2="5" y2="2.22" width="0.1" layer="51"/>
+<wire x1="-5" y1="-3.08" x2="-5" y2="2.22" width="0.1" layer="51"/>
+<wire x1="5" y1="2.22" x2="-5" y2="2.22" width="0.1" layer="51"/>
+<wire x1="5" y1="-3.08" x2="3" y2="-3.08" width="0.1" layer="51"/>
+<text x="0" y="2.5" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<wire x1="3" y1="-3.08" x2="-3" y2="-3.08" width="0.1" layer="51"/>
+<wire x1="-3" y1="-3.08" x2="-5" y2="-3.08" width="0.1" layer="51"/>
+<wire x1="3" y1="-3.58" x2="-3" y2="-3.58" width="0.1" layer="51"/>
+<pad name="DI" x="3" y="0.02" drill="0.8" diameter="1.4224" shape="square"/>
+<wire x1="-3" y1="-3.08" x2="-3" y2="-3.58" width="0.1" layer="51"/>
+<wire x1="3" y1="-3.08" x2="3" y2="-3.58" width="0.1" layer="51"/>
+<text x="3" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">DI</text>
+<text x="1" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">CI</text>
+<text x="-1" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">5V</text>
+<text x="-3" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">GND</text>
+</package>
+<package name="FABO_BRICK_SPI_LED_S04B-PASK-2">
+<pad name="GND" x="-3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="5V" x="-1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="CI" x="1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="4.5" y="2.1" drill="1.1"/>
+<wire x1="5" y1="-3.5" x2="5" y2="8.2" width="0.127" layer="51"/>
+<wire x1="-5" y1="-3.5" x2="-5" y2="8.2" width="0.127" layer="51"/>
+<wire x1="5" y1="8.2" x2="2" y2="8.2" width="0.127" layer="51"/>
+<wire x1="2" y1="8.2" x2="-2" y2="8.2" width="0.127" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-5" y2="8.2" width="0.127" layer="51"/>
+<text x="0" y="-2.695" size="0.8128" layer="25" font="vector" ratio="15" align="top-center">&gt;NAME</text>
+<hole x="-4.5" y="2.1" drill="1.1"/>
+<wire x1="2" y1="6.7" x2="-2" y2="6.7" width="0.127" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-2" y2="6.7" width="0.127" layer="51"/>
+<wire x1="2" y1="8.2" x2="2" y2="6.7" width="0.127" layer="51"/>
+<text x="-3" y="1.27" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
+<text x="-1" y="1.27" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">5V</text>
+<text x="1" y="1.27" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">CI</text>
+<pad name="DI" x="3" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<text x="3" y="1.27" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">DI</text>
+<wire x1="-4.3" y1="-3.5" x2="-4.3" y2="0.5" width="0.127" layer="51"/>
+<wire x1="4.3" y1="-3.5" x2="4.3" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-4.3" y1="0.5" x2="4.3" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-5" y1="-3.5" x2="-4.3" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="4.3" y1="-3.5" x2="5" y2="-3.5" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -5305,15 +5326,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="7.62" y="10.668" size="1.778" layer="97" align="bottom-center">OUT</text>
 </symbol>
 <symbol name="FABO_BRICK_SPI_LED">
-<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<pin name="5V" x="-10.16" y="7.62" visible="pin" length="middle"/>
-<pin name="CI" x="-10.16" y="2.54" visible="pin" length="middle"/>
-<pin name="DI" x="-10.16" y="-2.54" visible="pin" length="middle"/>
-<pin name="GND" x="-10.16" y="-7.62" visible="pin" length="middle"/>
-<text x="0" y="12.192" size="1.778" layer="97" rot="R180" align="bottom-center">IN</text>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<pin name="5V" x="7.62" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="CI" x="7.62" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="DI" x="7.62" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="7.62" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<text x="-7.366" y="10.668" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="FABO_BRICK_I2C_SMARTHOME">
 <wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
@@ -6898,12 +6919,23 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FABO_BRICK_SPI_LED">
+<deviceset name="FABO_BRICK_SPI_LED" prefix="J" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="FABO_BRICK_SPI_LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="FABO_BRICK_SPI_LED">
+<device name="-B04B-PASK-1" package="FABO_BRICK_SPI_LED_B04B-PASK-1">
+<connects>
+<connect gate="G$1" pin="5V" pad="5V"/>
+<connect gate="G$1" pin="CI" pad="CI"/>
+<connect gate="G$1" pin="DI" pad="DI"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-S04B-PASK-2" package="FABO_BRICK_SPI_LED_S04B-PASK-2">
 <connects>
 <connect gate="G$1" pin="5V" pad="5V"/>
 <connect gate="G$1" pin="CI" pad="CI"/>
