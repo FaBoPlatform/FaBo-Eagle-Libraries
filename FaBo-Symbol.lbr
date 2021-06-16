@@ -17890,7 +17890,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="A4L-CCBYSA4">
+<deviceset name="A4L-CCBYSA4" prefix="FRAME">
 <description>FRAME A4</description>
 <gates>
 <gate name="G$1" symbol="A4L-CCBYSA4" x="0" y="0"/>
@@ -17903,7 +17903,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="A3L-CCBYSA4">
+<deviceset name="A3L-CCBYSA4" prefix="FRAME">
 <description>FRAME A3</description>
 <gates>
 <gate name="G$1" symbol="A3L-CCBYSA4" x="0" y="0"/>
@@ -17916,7 +17916,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="A4L-FRAME" uservalue="yes">
+<deviceset name="A4L-FRAME" prefix="FRAME">
 <gates>
 <gate name="G$1" symbol="A4L-FRAME" x="0" y="0"/>
 </gates>
@@ -17928,7 +17928,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="A3L-FRAME">
+<deviceset name="A3L-FRAME" prefix="FRAME">
 <description>FRAME A3</description>
 <gates>
 <gate name="G$1" symbol="A3L-FRAME" x="0" y="0"/>
@@ -17941,7 +17941,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOGO_FABO_SYM">
+<deviceset name="LOGO_FABO_SYM" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="LOGO_FABO" x="0" y="0"/>
 </gates>
@@ -17953,7 +17953,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOGO_FABO_SYM2">
+<deviceset name="LOGO_FABO_SYM2" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="LOGO_FABO2" x="0" y="0"/>
 </gates>
@@ -17965,7 +17965,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOGO_OSHW_SYM">
+<deviceset name="LOGO_OSHW_SYM" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="LOGO_OSHW" x="0" y="0"/>
 </gates>
@@ -17977,7 +17977,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOGO_OSHW_SYM2">
+<deviceset name="LOGO_OSHW_SYM2" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="LOGO_OSHW2" x="0" y="0"/>
 </gates>
@@ -18169,7 +18169,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MARK_POINT" uservalue="yes">
+<deviceset name="MARK_POINT" prefix="MP" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="SCREW-PAD" x="0" y="0"/>
 </gates>
@@ -18186,7 +18186,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SCREW-PAD" uservalue="yes">
+<deviceset name="SCREW-PAD" prefix="PAD" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="SCREW-PAD" x="0" y="0"/>
 </gates>
@@ -18208,7 +18208,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FIDUCIAL" prefix="FID">
+<deviceset name="FIDUCIAL" prefix="FID" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
 </gates>
