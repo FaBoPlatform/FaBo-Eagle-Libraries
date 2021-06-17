@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -33,23 +33,23 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
@@ -190,6 +190,18 @@
 <pad name="B" x="2.54" y="0" drill="1" diameter="1.9304" shape="octagon"/>
 <text x="0" y="-2" size="0.8128" layer="25" font="vector" ratio="15" align="top-center">&gt;NAME</text>
 </package>
+<package name="SC-59" urn="urn:adsk.eagle:footprint:29647/1" locally_modified="yes">
+<description>SC-59</description>
+<wire x1="1.4224" y1="0.8604" x2="1.4224" y2="-0.8604" width="0.127" layer="51"/>
+<wire x1="1.4224" y1="-0.8604" x2="-1.4224" y2="-0.8604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="-0.8604" x2="-1.4224" y2="0.8604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="0.8604" x2="1.4224" y2="0.8604" width="0.127" layer="51"/>
+<smd name="C" x="0" y="1.2" dx="1" dy="1.4" layer="1" roundness="12"/>
+<smd name="E" x="0.95" y="-1.2" dx="1" dy="1.4" layer="1" roundness="12"/>
+<smd name="B" x="-0.95" y="-1.2" dx="1" dy="1.4" layer="1" roundness="12"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TRANSISTOR">
@@ -266,6 +278,52 @@
 <pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
 <pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
 </symbol>
+<symbol name="DNPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="5.08" y="0" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-22.86" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-20.32" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="17.78" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+<wire x1="0" y1="0" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-12.065" y2="0" width="0.254" layer="94"/>
+<wire x1="-12.065" y1="0" x2="-12.7" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-1.27" x2="-13.335" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-13.335" y1="1.27" x2="-13.97" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-13.97" y1="-1.27" x2="-14.605" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-14.605" y1="1.27" x2="-15.24" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-1.27" x2="-15.875" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-15.875" y1="1.27" x2="-16.51" y2="0" width="0.254" layer="94"/>
+<wire x1="-16.51" y1="0" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-4.445" x2="-6.35" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-5.08" x2="-8.89" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="-5.715" x2="-6.35" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-6.35" x2="-8.89" y2="-6.985" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="-6.985" x2="-6.35" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-7.62" x2="-8.89" y2="-8.255" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="-8.255" x2="-7.62" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-8.89" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-4.445" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="15.24" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<circle x="-7.62" y="0" radius="0.3175" width="0.254" layer="94"/>
+<circle x="2.54" y="-12.7" radius="0.3175" width="0.254" layer="94"/>
+<circle x="-2.2225" y="-0.3175" radius="15.81774375" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-12.7" x2="2.54" y2="-17.78" width="0.254" layer="94"/>
+<text x="-15.24" y="2.54" size="1.27" layer="94">4.7K</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="94">4.7K</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TRANSISTOR" prefix="T" uservalue="yes">
@@ -332,7 +390,31 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="RN1401">
+<gates>
+<gate name="G$1" symbol="DNPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC-59">
+<connects>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="E" pad="E"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
