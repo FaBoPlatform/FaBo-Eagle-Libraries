@@ -57,9 +57,10 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>&lt;h3&gt;FaBo LevelTranslator&lt;/h3&gt;
-Level Translators&lt;br&gt;
-&lt;br&gt;</description>
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
 <packages>
 <package name="X2SON">
 <smd name="3" x="0.175" y="-0.395" dx="0.65" dy="0.2" layer="1" roundness="30" rot="R90"/>

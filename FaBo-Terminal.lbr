@@ -144,6 +144,10 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <library>
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
 <packages>
 <package name="ML-1400-S1">
 <pad name="LEFT1" x="-2.5" y="2.5" drill="1.5" shape="square"/>

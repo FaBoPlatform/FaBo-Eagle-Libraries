@@ -126,11 +126,10 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <library>
-<description>&lt;h3&gt;FaBo Wifi&lt;/h3&gt;
-Wifi modules&lt;br&gt;
-&lt;br&gt;
-Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
-https://creativecommons.org/licenses/by-sa/4.0/</description>
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
 <packages>
 <package name="BLUEGIGA-WF121">
 <smd name="51" x="4.2" y="2.45" dx="6.1" dy="2.6" layer="1" roundness="30" rot="R270"/>

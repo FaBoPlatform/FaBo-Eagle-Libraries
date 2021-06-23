@@ -163,6 +163,10 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <library>
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
 <packages>
 <package name="DO-214AC">
 <smd name="CATHODE" x="-1.7" y="0" dx="1.52" dy="1.68" layer="1" roundness="30"/>

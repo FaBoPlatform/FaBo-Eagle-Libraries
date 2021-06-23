@@ -73,6 +73,10 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
 <packages>
 <package name="TSSOP-16">
 <smd name="5" x="0.325" y="-3.468784375" dx="1.397" dy="0.36" layer="1" roundness="30" rot="R90"/>

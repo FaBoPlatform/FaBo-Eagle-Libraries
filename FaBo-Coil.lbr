@@ -141,11 +141,10 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <library>
-<description>&lt;h3&gt;FaBo Resistors&lt;/h3&gt;
-Resistors&lt;br&gt;
-&lt;br&gt;
-Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
-https://creativecommons.org/licenses/by-sa/4.0/</description>
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
 <packages>
 <package name="0603">
 <wire x1="-1.175" y1="0.5" x2="1.175" y2="0.5" width="0.1" layer="39"/>

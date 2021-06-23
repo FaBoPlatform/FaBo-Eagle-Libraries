@@ -161,11 +161,10 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <library>
-<description>&lt;h3&gt;FaBo Template&lt;/h3&gt;
-FaBo Bricks/Beacons/Breakouts&lt;br&gt;
-&lt;br&gt;
-Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
-https://creativecommons.org/licenses/by-sa/4.0/</description>
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
 <packages>
 <package name="SQUARE-TYPE2-TC2030">
 <wire x1="-30.757359375" y1="-20" x2="31.39445" y2="-20" width="0" layer="20"/>

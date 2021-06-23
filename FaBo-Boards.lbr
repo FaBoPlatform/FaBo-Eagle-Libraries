@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -175,11 +175,10 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <library>
-<description>&lt;h3&gt;FaBo Boards&lt;/h3&gt;
-Arduino/Raspberry Pi/etc. boards&lt;br&gt;
-&lt;br&gt;
-Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
-https://creativecommons.org/licenses/by-sa/4.0/</description>
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
 <packages>
 <package name="ICHIGOJAM_SHIELD_HOLE_DIM">
 <pad name="VIDEO1" x="-10.795" y="16.51" drill="1" diameter="1.778" shape="octagon"/>
