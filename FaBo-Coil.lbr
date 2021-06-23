@@ -369,7 +369,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="COIL" prefix="R" uservalue="yes">
+<deviceset name="COIL" prefix="L" uservalue="yes">
 <description>RESISTOR</description>
 <gates>
 <gate name="G$1" symbol="COIL" x="0" y="0"/>
@@ -456,7 +456,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="DLP31DN441ML4L">
+<deviceset name="DLP31DN441ML4L" prefix="L" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="COMMON_COIL" x="0" y="0"/>
 </gates>
