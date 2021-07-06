@@ -601,6 +601,13 @@
 <hole x="2.5" y="0" drill="1.2"/>
 <pad name="A" x="5.8" y="-2.1" drill="1.5"/>
 </package>
+<package name="XCM6035-2022-354PR">
+<circle x="0" y="0" radius="2.95" width="0.1" layer="51"/>
+<pad name="1" x="-1" y="0.95" drill="0.55" shape="square"/>
+<pad name="2" x="-1" y="-0.95" drill="0.55" shape="octagon"/>
+<text x="0" y="0.95" size="1.27" layer="21" font="vector" ratio="15" align="center-left">+</text>
+<text x="0" y="3.5" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ZL38063">
@@ -873,6 +880,15 @@
 <wire x1="-1.27" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="0" y1="-1.27" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="ECM">
+<circle x="0" y="0" radius="3.81845625" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="3.81" x2="-3.81" y2="-3.81" width="0.254" layer="94"/>
+<pin name="+" x="0" y="7.62" visible="pin" length="short" rot="R270"/>
+<pin name="-" x="0" y="-7.62" visible="pin" length="short" rot="R90"/>
+<text x="-7.62" y="0" size="1.27" layer="95" rot="R90" align="top-center">&gt;NAME</text>
+<wire x1="0" y1="5.08" x2="0" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-3.81" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1210,6 +1226,22 @@ MJ-4PP-9&lt;br&gt;
 <connect gate="G$1" pin="B" pad="B"/>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="D" pad="D"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ECM" prefix="ECM" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="ECM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XCM6035-2022-354PR">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
