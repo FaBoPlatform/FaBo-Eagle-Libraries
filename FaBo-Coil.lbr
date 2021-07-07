@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -59,6 +59,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -242,6 +244,22 @@
 <wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.1" layer="51"/>
 <text x="0" y="1.25" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="MAF1608F">
+<smd name="1" x="-0.7" y="0" dx="0.6" dy="0.8" layer="1" roundness="20"/>
+<smd name="2" x="0.7" y="0" dx="0.6" dy="0.8" layer="1" roundness="20"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
+</package>
+<package name="AVRF0X0X100LT_0603">
+<smd name="1" x="-0.275" y="0" dx="0.25" dy="0.3" layer="1"/>
+<smd name="2" x="0.275" y="0" dx="0.25" dy="0.3" layer="1"/>
+<wire x1="-0.3" y1="-0.15" x2="-0.3" y2="0.15" width="0.0762" layer="51"/>
+<wire x1="-0.3" y1="0.15" x2="0.3" y2="0.15" width="0.0762" layer="51"/>
+<wire x1="0.3" y1="0.15" x2="0.3" y2="-0.15" width="0.0762" layer="51"/>
+<wire x1="0.3" y1="-0.15" x2="-0.3" y2="-0.15" width="0.0762" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="COIL">
@@ -367,6 +385,46 @@
 <text x="-2.54" y="3.048" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-1.778" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
+<symbol name="NOISE_SUPPRESSION_FILTER">
+<description>&lt;B&gt;WE-MLS mULTILINE emi Suppression Ferrite&lt;/b&gt;&lt;br&gt;
+4 WAYS</description>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<pin name="3" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="4" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<text x="0" y="2.54" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-5.08" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="NOTCH_FILTERS">
+<pin name="1" x="-20.32" y="0" length="middle"/>
+<pin name="2" x="20.32" y="0" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="-8.128" x2="-15.24" y2="8.128" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="8.128" x2="0" y2="8.128" width="0.254" layer="94"/>
+<wire x1="0" y1="8.128" x2="15.24" y2="8.128" width="0.254" layer="94"/>
+<wire x1="15.24" y1="8.128" x2="15.24" y2="-8.128" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="0" y="8.128"/>
+<vertex x="-3.048" y="10.922"/>
+<vertex x="-3.048" y="5.334"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="0" y="8.128"/>
+<vertex x="3.048" y="10.922"/>
+<vertex x="3.048" y="5.334"/>
+</polygon>
+<wire x1="0" y1="8.128" x2="0" y2="11.938" width="0.254" layer="94"/>
+<wire x1="0" y1="11.938" x2="1.016" y2="11.938" width="0.254" layer="94"/>
+<wire x1="0" y1="8.128" x2="0" y2="4.318" width="0.254" layer="94"/>
+<wire x1="0" y1="4.318" x2="-0.762" y2="4.318" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-5.588" x2="-1.016" y2="-8.128" width="0.762" layer="94"/>
+<wire x1="-1.016" y1="-8.128" x2="-1.016" y2="-10.414" width="0.762" layer="94"/>
+<wire x1="1.016" y1="-5.588" x2="1.016" y2="-8.128" width="0.762" layer="94"/>
+<wire x1="1.016" y1="-8.128" x2="1.016" y2="-10.414" width="0.762" layer="94"/>
+<wire x1="-15.24" y1="-8.128" x2="-1.016" y2="-8.128" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-8.128" x2="1.016" y2="-8.128" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="COIL" prefix="L" uservalue="yes">
@@ -484,6 +542,46 @@
 </gates>
 <devices>
 <device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAF1608F">
+<description>Noise suppression Filter for audio line(Class D amplifer noise suppression)
+TDK MAF series
+MAF1608F Type
+sound line device</description>
+<gates>
+<gate name="G$1" symbol="NOISE_SUPPRESSION_FILTER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MAF1608F">
+<connects>
+<connect gate="G$1" pin="3" pad="1"/>
+<connect gate="G$1" pin="4" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVRF060X100LT242">
+<description>ESD Notch Filters
+For wireless audio equipment
+TDK AVRF series
+ESD protection and noise protechtion.</description>
+<gates>
+<gate name="G$1" symbol="NOTCH_FILTERS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AVRF0X0X100LT_0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
