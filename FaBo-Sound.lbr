@@ -882,13 +882,13 @@
 <wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="ECM">
-<circle x="0" y="0" radius="3.81845625" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="3.81" x2="-3.81" y2="-3.81" width="0.254" layer="94"/>
-<pin name="+" x="0" y="7.62" visible="pin" length="short" rot="R270"/>
-<pin name="-" x="0" y="-7.62" visible="pin" length="short" rot="R90"/>
-<text x="-7.62" y="0" size="1.27" layer="95" rot="R90" align="top-center">&gt;NAME</text>
-<wire x1="0" y1="5.08" x2="0" y2="3.81" width="0.1524" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0" y2="-3.81" width="0.1524" layer="94"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<pin name="+" x="0" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+<text x="-3.556" y="0" size="1.27" layer="95" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="0" y="2.032" size="1.4224" layer="97" align="top-center">+</text>
+<text x="0" y="-2.032" size="1.4224" layer="97" align="bottom-center">-</text>
 </symbol>
 </symbols>
 <devicesets>
