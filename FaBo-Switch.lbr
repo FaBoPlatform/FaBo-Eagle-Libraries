@@ -453,6 +453,33 @@
 <text x="0" y="-2.75" size="0.8128" layer="21" font="vector" ratio="15" align="bottom-center">ON</text>
 <text x="-6.25" y="-0.25" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="LTM2">
+<pad name="2" x="2.54" y="2.54" drill="0.95" diameter="2.1844"/>
+<pad name="1" x="2.54" y="-2.54" drill="0.95" diameter="2.1844"/>
+<pad name="3" x="-2.54" y="-2.54" drill="0.95" diameter="2.1844"/>
+<pad name="4" x="-2.54" y="2.54" drill="0.95" diameter="2.1844"/>
+<hole x="2.54" y="0" drill="0.65"/>
+<wire x1="-3" y1="3" x2="-0.8" y2="3" width="0.1524" layer="48"/>
+<wire x1="-0.8" y1="3" x2="0.9" y2="3" width="0.1524" layer="48"/>
+<wire x1="0.9" y1="3" x2="3" y2="3" width="0.1524" layer="48"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.1524" layer="48"/>
+<wire x1="3" y1="-3" x2="0.7" y2="-3" width="0.1524" layer="48"/>
+<wire x1="0.7" y1="-3" x2="-0.8" y2="-3" width="0.1524" layer="48"/>
+<wire x1="-0.8" y1="-3" x2="-3" y2="-3" width="0.1524" layer="48"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.1524" layer="48"/>
+<pad name="M" x="0" y="3.1" drill="0.95" diameter="2.1844"/>
+<pad name="P" x="0" y="-3.1" drill="0.95" diameter="2.1844"/>
+<text x="0.2" y="-2.1" size="1.778" layer="48">+</text>
+<wire x1="-0.35" y1="3.5" x2="0.35" y2="3.5" width="0.1524" layer="48"/>
+<wire x1="-0.35" y1="-3.5" x2="0.3" y2="-3.5" width="0.1524" layer="48"/>
+<wire x1="0.3" y1="-3.5" x2="0.35" y2="-3.5" width="0.1524" layer="48"/>
+<wire x1="0.3" y1="-3.5" x2="0.7" y2="-3" width="0.1524" layer="48" curve="-83.181785"/>
+<wire x1="-0.4" y1="-3.5" x2="-0.8" y2="-3" width="0.1524" layer="48" curve="121.328693"/>
+<wire x1="0.4" y1="3.5" x2="0.9" y2="3" width="0.1524" layer="48" curve="102.680383"/>
+<wire x1="-0.4" y1="3.5" x2="-0.8" y2="3" width="0.1524" layer="48" curve="-121.328693"/>
+<circle x="0" y="0" radius="0.984884375" width="0.1524" layer="48"/>
+<wire x1="0.5" y1="1.5" x2="1.5" y2="1.5" width="0.1524" layer="48"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LIMIT-SWITCH">
@@ -645,6 +672,56 @@
 <pin name="15" x="-7.62" y="-7.62" visible="pin" length="short" rot="R90"/>
 <pin name="16" x="-10.16" y="-7.62" visible="pin" length="short" rot="R90"/>
 <text x="-12.954" y="-4.826" size="1.27" layer="95" rot="R90">&gt;NAME</text>
+</symbol>
+<symbol name="LTM2">
+<description>LTM2 SPST with LED</description>
+<pin name="3" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="4" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="1" x="-15.24" y="10.16" length="middle"/>
+<pin name="2" x="-15.24" y="-10.16" length="middle"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="0" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="0" x2="-10.16" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="0" width="0.1524" layer="94"/>
+<circle x="-6.35" y="0" radius="1.27" width="0.1524" layer="94"/>
+<circle x="6.35" y="0" radius="1.27" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0.635" x2="5.715" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-10.16" y2="0" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-10.795" y="0" curve="-90"/>
+<vertex x="-10.16" y="0.635" curve="-90"/>
+<vertex x="-9.525" y="0" curve="-90"/>
+<vertex x="-10.16" y="-0.635" curve="-90"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="9.525" y="0" curve="-90"/>
+<vertex x="10.16" y="0.635" curve="-90"/>
+<vertex x="10.795" y="0" curve="-90"/>
+<vertex x="10.16" y="-0.635" curve="-90"/>
+</polygon>
+<pin name="P" x="-15.24" y="17.78" length="middle" rot="R90"/>
+<pin name="M" x="15.24" y="17.78" length="middle" rot="R90"/>
+<wire x1="-15.24" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="20.955" x2="1.905" y2="24.765" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="1.905" y="22.86"/>
+<vertex x="-0.635" y="24.765"/>
+<vertex x="-0.635" y="20.955"/>
+</polygon>
+<wire x1="-13.335" y1="14.605" x2="-10.795" y2="14.605" width="0.1524" layer="94"/>
+<wire x1="-12.065" y1="15.875" x2="-12.065" y2="13.335" width="0.1524" layer="94"/>
+<circle x="-12.065" y="14.605" radius="1.79605" width="0.1524" layer="94"/>
+<wire x1="9.525" y1="15.24" x2="12.065" y2="15.24" width="0.1524" layer="94"/>
+<circle x="10.795" y="15.24" radius="1.79605" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="25.4" x2="2.54" y2="27.94" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="27.94" x2="2.54" y2="26.035" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="26.035" x2="5.715" y2="29.845" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="5.715" y="29.845"/>
+<vertex x="3.81" y="28.575"/>
+<vertex x="4.445" y="27.94"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -1118,6 +1195,33 @@ Nidec copal electronics
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTM2-01-L2(RED)">
+<description>FUJISOKU SWITCHS LTM2
+SPST with LED
+Swtich Function OFF-(ON)
+LTM 1VA Max,DC 48V
+ELECTRICAL LIFE 300,000 Operations
+BOUNCE 10m Sec
+TRAVEL 0.25mm</description>
+<gates>
+<gate name="G$1" symbol="LTM2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LTM2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="M" pad="M"/>
+<connect gate="G$1" pin="P" pad="P"/>
 </connects>
 <technologies>
 <technology name=""/>
