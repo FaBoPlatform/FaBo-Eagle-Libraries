@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -479,6 +479,8 @@
 <wire x1="-0.4" y1="3.5" x2="-0.8" y2="3" width="0.1524" layer="48" curve="-121.328693"/>
 <circle x="0" y="0" radius="0.984884375" width="0.1524" layer="48"/>
 <wire x1="0.5" y1="1.5" x2="1.5" y2="1.5" width="0.1524" layer="48"/>
+<text x="-1.905" y="0" size="0.762" layer="48">&gt;NAME</text>
+<text x="1.27" y="-1.27" size="0.762" layer="21">1</text>
 </package>
 </packages>
 <symbols>
@@ -722,6 +724,7 @@
 <vertex x="3.81" y="28.575"/>
 <vertex x="4.445" y="27.94"/>
 </polygon>
+<text x="-15.24" y="30.48" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1203,6 +1206,60 @@ Nidec copal electronics
 </devices>
 </deviceset>
 <deviceset name="LTM2-01-L2(RED)">
+<description>FUJISOKU SWITCHS LTM2
+SPST with LED
+Swtich Function OFF-(ON)
+LTM 1VA Max,DC 48V
+ELECTRICAL LIFE 300,000 Operations
+BOUNCE 10m Sec
+TRAVEL 0.25mm</description>
+<gates>
+<gate name="G$1" symbol="LTM2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LTM2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="M" pad="M"/>
+<connect gate="G$1" pin="P" pad="P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTM2-01-L5(GREEN)">
+<description>FUJISOKU SWITCHS LTM2
+SPST with LED
+Swtich Function OFF-(ON)
+LTM 1VA Max,DC 48V
+ELECTRICAL LIFE 300,000 Operations
+BOUNCE 10m Sec
+TRAVEL 0.25mm</description>
+<gates>
+<gate name="G$1" symbol="LTM2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LTM2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="M" pad="M"/>
+<connect gate="G$1" pin="P" pad="P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTM2-01-L8(YELLOW)">
 <description>FUJISOKU SWITCHS LTM2
 SPST with LED
 Swtich Function OFF-(ON)
