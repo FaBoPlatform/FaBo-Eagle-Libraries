@@ -234,6 +234,43 @@
 <text x="0" y="3.81" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
 <wire x1="-0.425" y1="-0.7" x2="-0.425" y2="-1.4" width="0.1" layer="51"/>
 </package>
+<package name="WQFN-24">
+<wire x1="-2.05" y1="2.05" x2="2.05" y2="2.05" width="0.1" layer="21"/>
+<wire x1="2.05" y1="2.05" x2="2.05" y2="-2.05" width="0.1" layer="21"/>
+<wire x1="2.05" y1="-2.05" x2="-2.05" y2="-2.05" width="0.1" layer="21"/>
+<wire x1="-2.05" y1="-2.05" x2="-2.05" y2="2.05" width="0.1" layer="21"/>
+<smd name="1" x="-1.9" y="1.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="2" x="-1.9" y="0.75" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="3" x="-1.9" y="0.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="4" x="-1.9" y="-0.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="5" x="-1.9" y="-0.75" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="6" x="-1.9" y="-1.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="7" x="-1.25" y="-1.9" dx="0.24" dy="0.6" layer="1" roundness="30"/>
+<smd name="8" x="-0.75" y="-1.9" dx="0.24" dy="0.6" layer="1" roundness="30"/>
+<smd name="9" x="-0.25" y="-1.9" dx="0.24" dy="0.6" layer="1" roundness="30"/>
+<smd name="10" x="0.25" y="-1.9" dx="0.24" dy="0.6" layer="1" roundness="30"/>
+<smd name="11" x="0.75" y="-1.9" dx="0.24" dy="0.6" layer="1" roundness="30"/>
+<smd name="12" x="1.25" y="-1.9" dx="0.24" dy="0.6" layer="1" roundness="30"/>
+<smd name="13" x="1.9" y="-1.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="14" x="1.9" y="-0.75" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="15" x="1.9" y="-0.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="16" x="1.9" y="0.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="17" x="1.9" y="0.75" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="18" x="1.9" y="1.25" dx="0.6" dy="0.24" layer="1" roundness="30"/>
+<smd name="19" x="1.25" y="1.9" dx="0.24" dy="0.6" layer="1" roundness="30"/>
+<smd name="20" x="0.75" y="1.9" dx="0.24" dy="0.6" layer="1" roundness="30"/>
+<smd name="21" x="0.25" y="1.9" dx="0.24" dy="0.6" layer="1" roundness="30"/>
+<smd name="22" x="-0.25" y="1.9" dx="0.24" dy="0.6" layer="1" roundness="30"/>
+<smd name="23" x="-0.75" y="1.9" dx="0.24" dy="0.6" layer="1" roundness="30"/>
+<smd name="24" x="-1.25" y="1.9" dx="0.24" dy="0.6" layer="1" roundness="30"/>
+<smd name="25" x="0" y="0" dx="2.45" dy="2.45" layer="1" roundness="5" cream="no"/>
+<rectangle x1="-1.125" y1="0.075" x2="-0.075" y2="1.125" layer="31"/>
+<rectangle x1="0.075" y1="0.075" x2="1.125" y2="1.125" layer="31"/>
+<rectangle x1="0.075" y1="-1.125" x2="1.125" y2="-0.075" layer="31"/>
+<rectangle x1="-1.125" y1="-1.125" x2="-0.075" y2="-0.075" layer="31"/>
+<rectangle x1="-2.25" y1="0" x2="0" y2="2.25" layer="21"/>
+<text x="0" y="2.75" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MICRO_SD">
@@ -270,6 +307,39 @@
 <text x="-9.906" y="10.414" size="1.27" layer="95">&gt;NAME</text>
 <pin name="VDD" x="-15.24" y="5.08" length="middle"/>
 <pin name="VSS" x="15.24" y="-7.62" length="middle" rot="R180"/>
+</symbol>
+<symbol name="TXS02612">
+<pin name="DAT2A" x="-12.7" y="10.16" length="short"/>
+<pin name="GND@2" x="-12.7" y="-12.7" length="short"/>
+<pin name="DAT3A" x="-12.7" y="7.62" length="short"/>
+<pin name="CMDA" x="-12.7" y="5.08" length="short"/>
+<pin name="VCCA" x="-12.7" y="17.78" length="short"/>
+<pin name="DAT0A" x="-12.7" y="15.24" length="short"/>
+<pin name="DAT1A" x="-12.7" y="12.7" length="short"/>
+<pin name="DAT2B1" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="CLKA" x="-12.7" y="2.54" length="short"/>
+<pin name="DAT3B1" x="12.7" y="-12.7" length="short" rot="R180"/>
+<pin name="GND@11" x="-12.7" y="-15.24" length="short"/>
+<pin name="CMDB1" x="12.7" y="-15.24" length="short" rot="R180"/>
+<pin name="CLKB1" x="12.7" y="-17.78" length="short" rot="R180"/>
+<pin name="DAT0B1" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="DAT1B1" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="DAT1B0" x="12.7" y="12.7" length="short" rot="R180"/>
+<pin name="VCCB1" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="DAT0B0" x="12.7" y="15.24" length="short" rot="R180"/>
+<pin name="CLKB0" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="CMDB0" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="VCCB0" x="12.7" y="17.78" length="short" rot="R180"/>
+<pin name="DAT3B0" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="DAT2B0" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="SEL" x="-12.7" y="0" length="short"/>
+<pin name="GND@25" x="-12.7" y="-17.78" length="short"/>
+<wire x1="-10.16" y1="22.86" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="10.16" y2="22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="22.86" x2="-10.16" y2="22.86" width="0.254" layer="94"/>
+<text x="0" y="20.32" size="1.778" layer="94" align="bottom-center">TXS02612</text>
+<text x="-9.906" y="23.114" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -313,6 +383,45 @@
 <connect gate="G$1" pin="SW_B" pad="SWB"/>
 <connect gate="G$1" pin="VDD" pad="4"/>
 <connect gate="G$1" pin="VSS" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TXS02612" prefix="IC" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="TXS02612" x="0" y="0"/>
+</gates>
+<devices>
+<device name="RTWR" package="WQFN-24">
+<connects>
+<connect gate="G$1" pin="CLKA" pad="9"/>
+<connect gate="G$1" pin="CLKB0" pad="19"/>
+<connect gate="G$1" pin="CLKB1" pad="13"/>
+<connect gate="G$1" pin="CMDA" pad="4"/>
+<connect gate="G$1" pin="CMDB0" pad="20"/>
+<connect gate="G$1" pin="CMDB1" pad="12"/>
+<connect gate="G$1" pin="DAT0A" pad="6"/>
+<connect gate="G$1" pin="DAT0B0" pad="18"/>
+<connect gate="G$1" pin="DAT0B1" pad="14"/>
+<connect gate="G$1" pin="DAT1A" pad="7"/>
+<connect gate="G$1" pin="DAT1B0" pad="16"/>
+<connect gate="G$1" pin="DAT1B1" pad="15"/>
+<connect gate="G$1" pin="DAT2A" pad="1"/>
+<connect gate="G$1" pin="DAT2B0" pad="23"/>
+<connect gate="G$1" pin="DAT2B1" pad="8"/>
+<connect gate="G$1" pin="DAT3A" pad="3"/>
+<connect gate="G$1" pin="DAT3B0" pad="22"/>
+<connect gate="G$1" pin="DAT3B1" pad="10"/>
+<connect gate="G$1" pin="GND@11" pad="11"/>
+<connect gate="G$1" pin="GND@2" pad="2"/>
+<connect gate="G$1" pin="GND@25" pad="25"/>
+<connect gate="G$1" pin="SEL" pad="24"/>
+<connect gate="G$1" pin="VCCA" pad="5"/>
+<connect gate="G$1" pin="VCCB0" pad="21"/>
+<connect gate="G$1" pin="VCCB1" pad="17"/>
 </connects>
 <technologies>
 <technology name=""/>
