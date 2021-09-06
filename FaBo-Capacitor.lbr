@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -370,6 +370,17 @@
 <wire x1="2.51968125" y1="2.359659375" x2="3.03021875" y2="2.359659375" width="0.127" layer="21"/>
 <wire x1="2.778759375" y1="2.667" x2="2.778759375" y2="2.10058125" width="0.127" layer="21"/>
 </package>
+<package name="F13">
+<pad name="ANODE" x="-2.5" y="0" drill="0.9" diameter="1.9304"/>
+<pad name="CATHODE" x="2.5" y="0" drill="0.9" diameter="1.9304"/>
+<circle x="0" y="0" radius="5" width="0.1524" layer="21"/>
+<polygon width="0.1524" layer="21">
+<vertex x="0" y="0"/>
+<vertex x="0" y="5"/>
+<vertex x="0.2" y="5" curve="-180"/>
+<vertex x="0" y="-5"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -553,6 +564,26 @@
 <connects>
 <connect gate="G$1" pin="+" pad="PLUS"/>
 <connect gate="G$1" pin="-" pad="MINUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAPACITOR-OS-CON" prefix="A" uservalue="yes">
+<description>Panasonic
+16SEPF1000M
+16V 1000uF ESR 12
+Size F13</description>
+<gates>
+<gate name="G$1" symbol="CAPACITOR-TANTULM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="F13">
+<connects>
+<connect gate="G$1" pin="+" pad="ANODE"/>
+<connect gate="G$1" pin="-" pad="CATHODE"/>
 </connects>
 <technologies>
 <technology name=""/>
