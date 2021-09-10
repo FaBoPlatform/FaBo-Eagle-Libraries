@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -254,6 +254,45 @@
 <smd name="32" x="8.74" y="-2.67" dx="3" dy="2" layer="16" roundness="10" rot="R90" cream="no"/>
 <text x="0" y="0.75" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="ER-CON30HT-1_REV2">
+<smd name="30" x="-7.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="29" x="-7" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="28" x="-6.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="27" x="-6" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="26" x="-5.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="25" x="-5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="24" x="-4.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="23" x="-4" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="22" x="-3.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="21" x="-3" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="20" x="-2.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="19" x="-2" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="18" x="-1.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="17" x="-1" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="16" x="-0.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="15" x="0" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="14" x="0.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="13" x="1" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="12" x="1.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="11" x="2" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="10" x="2.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="9" x="3" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="8" x="3.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="7" x="4" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="6" x="4.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="5" x="5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="4" x="5.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="3" x="6" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="2" x="6.5" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="1" x="7" y="-0.23" dx="1.5" dy="0.27" layer="16" roundness="30" rot="R90" cream="no"/>
+<smd name="31" x="-9.07" y="-2.67" dx="3" dy="2" layer="16" roundness="10" rot="R90" cream="no"/>
+<smd name="32" x="8.74" y="-2.67" dx="3" dy="2" layer="16" roundness="10" rot="R90" cream="no"/>
+<text x="0" y="0.75" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-center">&gt;NAME</text>
+<text x="6" y="-5.8" size="0.8" layer="48" ratio="19">Rev2</text>
+<dimension x1="-7.5" y1="-0.3" x2="-7" y2="-0.3" x3="-7.25" y3="1.7" textsize="0.8128" textratio="19" layer="48"/>
+<dimension x1="6.865" y1="0.485" x2="7.135" y2="0.465" x3="7" y3="1.005" textsize="0.8128" textratio="19" layer="48" dtype="horizontal" width="0.001"/>
+<dimension x1="6.635" y1="-0.92" x2="6.865" y2="-0.925" x3="6.75" y3="-2.365" textsize="0.8128" textratio="19" layer="48" dtype="horizontal" width="0.001"/>
+</package>
 </packages>
 <symbols>
 <symbol name="EASTRISING-ER-OLED0.49-1">
@@ -367,6 +406,7 @@
 </devices>
 </deviceset>
 <deviceset name="ER-OLED0.96-1" prefix="U" uservalue="yes">
+<description>ER-CON30HT-1 Rev2 wide distance 0.23mm</description>
 <gates>
 <gate name="G$1" symbol="ER-OLED0.96-1" x="0" y="0"/>
 </gates>
@@ -446,6 +486,43 @@
 </technologies>
 </device>
 <device name="ER-CON30HT-1" package="ER-CON30HT-1">
+<connects>
+<connect gate="G$1" pin="BS0" pad="21"/>
+<connect gate="G$1" pin="BS1" pad="20"/>
+<connect gate="G$1" pin="BS2" pad="19"/>
+<connect gate="G$1" pin="C1N" pad="26"/>
+<connect gate="G$1" pin="C1P" pad="27"/>
+<connect gate="G$1" pin="C2N" pad="28"/>
+<connect gate="G$1" pin="C2P" pad="29"/>
+<connect gate="G$1" pin="CS#" pad="18"/>
+<connect gate="G$1" pin="D/C#" pad="16"/>
+<connect gate="G$1" pin="D0" pad="13"/>
+<connect gate="G$1" pin="D1" pad="12"/>
+<connect gate="G$1" pin="D2" pad="11"/>
+<connect gate="G$1" pin="D3" pad="10"/>
+<connect gate="G$1" pin="D4" pad="9"/>
+<connect gate="G$1" pin="D5" pad="8"/>
+<connect gate="G$1" pin="D6" pad="7"/>
+<connect gate="G$1" pin="D7" pad="6"/>
+<connect gate="G$1" pin="E/RD#" pad="14"/>
+<connect gate="G$1" pin="IREF" pad="5"/>
+<connect gate="G$1" pin="NC@1" pad="30"/>
+<connect gate="G$1" pin="NC@30" pad="1"/>
+<connect gate="G$1" pin="NC@7" pad="24"/>
+<connect gate="G$1" pin="R/W#" pad="15"/>
+<connect gate="G$1" pin="RES#" pad="17"/>
+<connect gate="G$1" pin="VBAT" pad="25"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+<connect gate="G$1" pin="VCOMH" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="22"/>
+<connect gate="G$1" pin="VLSS" pad="2"/>
+<connect gate="G$1" pin="VSS" pad="23"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ER-CON30HT-1_REV2" package="ER-CON30HT-1_REV2">
 <connects>
 <connect gate="G$1" pin="BS0" pad="21"/>
 <connect gate="G$1" pin="BS1" pad="20"/>
