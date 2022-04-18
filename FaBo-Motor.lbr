@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mic" altunit="mic"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -396,8 +396,45 @@
 <smd name="18" x="0" y="4.34" dx="3.4" dy="1.4" layer="1" roundness="20"/>
 <text x="-7" y="0" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="SOT788-1">
-<smd name="P$1" x="0" y="0" dx="0.37" dy="0.8" layer="1"/>
+<package name="HVQFN28">
+<smd name="4:LED1" x="-3" y="0" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="5:LED2" x="-3" y="-0.65" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="3:LED0" x="-3" y="0.65" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="6:LED3" x="-3" y="-1.3" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="2:A4" x="-3" y="1.3" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="7:LED4" x="-3" y="-1.95" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="1:A3" x="-3" y="1.95" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="25:VDD" x="0" y="3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="26:A0" x="-0.65" y="3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="24:SDA" x="0.65" y="3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="27:A1" x="-1.3" y="3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="23:SCL" x="1.3" y="3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="28:A2" x="-1.95" y="3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="22:EXTCLK" x="1.95" y="3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="11:VSS" x="0" y="-3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="10:LED7" x="-0.65" y="-3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="12:LED8" x="0.65" y="-3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="9:LED6" x="-1.3" y="-3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="13:LED9" x="1.3" y="-3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="8:LED5" x="-1.95" y="-3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="14:LED10" x="1.95" y="-3" dx="0.38" dy="1.2" layer="1" roundness="60"/>
+<smd name="18:LED14" x="3" y="0" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="17:LED13" x="3" y="-0.65" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="19:LED15" x="3" y="0.65" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="16:LED12" x="3" y="-1.3" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="20:OE" x="3" y="1.3" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="15:LED11" x="3" y="-1.95" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="21:A5" x="3" y="1.95" dx="0.38" dy="1.2" layer="1" roundness="60" rot="R90"/>
+<smd name="29" x="0" y="0" dx="4.25" dy="4.25" layer="1" roundness="5" cream="no"/>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.127" layer="48"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.127" layer="48"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.127" layer="48"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.127" layer="48"/>
+<rectangle x1="-1.8" y1="0.2" x2="-0.2" y2="1.8" layer="31"/>
+<rectangle x1="0.25" y1="0.2" x2="1.85" y2="1.8" layer="31"/>
+<rectangle x1="-1.8" y1="-1.8" x2="-0.2" y2="-0.2" layer="31"/>
+<rectangle x1="0.25" y1="-1.8" x2="1.85" y2="-0.2" layer="31"/>
+<circle x="-3.3" y="3.25" radius="0.21213125" width="0.127" layer="22"/>
 </package>
 </packages>
 <symbols>
@@ -913,6 +950,83 @@
 <connect gate="G$1" pin="VCC" pad="11"/>
 <connect gate="G$1" pin="VREF" pad="5"/>
 <connect gate="G$1" pin="VS" pad="15"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PCA9685BS" prefix="IC" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="PCA9685" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="PCA9685">
+<connects>
+<connect gate="G$1" pin="A0" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="A3" pad="4"/>
+<connect gate="G$1" pin="A4" pad="5"/>
+<connect gate="G$1" pin="A5" pad="24"/>
+<connect gate="G$1" pin="EXTCLK" pad="25"/>
+<connect gate="G$1" pin="LED0" pad="6"/>
+<connect gate="G$1" pin="LED1" pad="7"/>
+<connect gate="G$1" pin="LED10" pad="17"/>
+<connect gate="G$1" pin="LED11" pad="18"/>
+<connect gate="G$1" pin="LED12" pad="19"/>
+<connect gate="G$1" pin="LED13" pad="20"/>
+<connect gate="G$1" pin="LED14" pad="21"/>
+<connect gate="G$1" pin="LED15" pad="22"/>
+<connect gate="G$1" pin="LED2" pad="8"/>
+<connect gate="G$1" pin="LED3" pad="9"/>
+<connect gate="G$1" pin="LED4" pad="10"/>
+<connect gate="G$1" pin="LED5" pad="11"/>
+<connect gate="G$1" pin="LED6" pad="12"/>
+<connect gate="G$1" pin="LED7" pad="13"/>
+<connect gate="G$1" pin="LED8" pad="15"/>
+<connect gate="G$1" pin="LED9" pad="16"/>
+<connect gate="G$1" pin="OE" pad="23"/>
+<connect gate="G$1" pin="SCL" pad="26"/>
+<connect gate="G$1" pin="SDA" pad="27"/>
+<connect gate="G$1" pin="VDD" pad="28"/>
+<connect gate="G$1" pin="VSS" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PCA9685BS" package="HVQFN28">
+<connects>
+<connect gate="G$1" pin="A0" pad="26:A0"/>
+<connect gate="G$1" pin="A1" pad="27:A1"/>
+<connect gate="G$1" pin="A2" pad="28:A2"/>
+<connect gate="G$1" pin="A3" pad="1:A3"/>
+<connect gate="G$1" pin="A4" pad="2:A4"/>
+<connect gate="G$1" pin="A5" pad="21:A5"/>
+<connect gate="G$1" pin="EXTCLK" pad="22:EXTCLK"/>
+<connect gate="G$1" pin="LED0" pad="3:LED0"/>
+<connect gate="G$1" pin="LED1" pad="4:LED1"/>
+<connect gate="G$1" pin="LED10" pad="14:LED10"/>
+<connect gate="G$1" pin="LED11" pad="15:LED11"/>
+<connect gate="G$1" pin="LED12" pad="16:LED12"/>
+<connect gate="G$1" pin="LED13" pad="17:LED13"/>
+<connect gate="G$1" pin="LED14" pad="18:LED14"/>
+<connect gate="G$1" pin="LED15" pad="19:LED15"/>
+<connect gate="G$1" pin="LED2" pad="5:LED2"/>
+<connect gate="G$1" pin="LED3" pad="6:LED3"/>
+<connect gate="G$1" pin="LED4" pad="7:LED4"/>
+<connect gate="G$1" pin="LED5" pad="8:LED5"/>
+<connect gate="G$1" pin="LED6" pad="9:LED6"/>
+<connect gate="G$1" pin="LED7" pad="10:LED7"/>
+<connect gate="G$1" pin="LED8" pad="12:LED8"/>
+<connect gate="G$1" pin="LED9" pad="13:LED9"/>
+<connect gate="G$1" pin="OE" pad="20:OE"/>
+<connect gate="G$1" pin="SCL" pad="23:SCL"/>
+<connect gate="G$1" pin="SDA" pad="24:SDA"/>
+<connect gate="G$1" pin="VDD" pad="25:VDD"/>
+<connect gate="G$1" pin="VSS" pad="11:VSS 29"/>
 </connects>
 <technologies>
 <technology name=""/>
