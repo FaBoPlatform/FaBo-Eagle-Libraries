@@ -2941,6 +2941,61 @@
 <circle x="51.4" y="-6.5" radius="0.848528125" width="0.127" layer="51"/>
 <circle x="54.2" y="-6.5" radius="0.848528125" width="0.127" layer="51"/>
 </package>
+<package name="RASPBERRY_PI_PICO_HEADER">
+<wire x1="-10.5" y1="25.5" x2="10.5" y2="25.5" width="0.1524" layer="21"/>
+<pad name="1" x="-8.89" y="24.13" drill="1"/>
+<pad name="2" x="-8.89" y="21.59" drill="1"/>
+<pad name="7" x="-8.89" y="8.89" drill="1"/>
+<pad name="8" x="-8.89" y="6.35" drill="1"/>
+<pad name="3" x="-8.89" y="19.05" drill="1"/>
+<pad name="4" x="-8.89" y="16.51" drill="1"/>
+<pad name="6" x="-8.89" y="11.43" drill="1"/>
+<pad name="5" x="-8.89" y="13.97" drill="1"/>
+<pad name="9" x="-8.89" y="3.81" drill="1"/>
+<pad name="10" x="-8.89" y="1.27" drill="1"/>
+<pad name="11" x="-8.89" y="-1.27" drill="1"/>
+<pad name="12" x="-8.89" y="-3.81" drill="1"/>
+<pad name="13" x="-8.89" y="-6.35" drill="1"/>
+<pad name="14" x="-8.89" y="-8.89" drill="1"/>
+<pad name="15" x="-8.89" y="-11.43" drill="1"/>
+<pad name="16" x="-8.89" y="-13.97" drill="1"/>
+<pad name="17" x="-8.89" y="-16.51" drill="1"/>
+<pad name="18" x="-8.89" y="-19.05" drill="1"/>
+<pad name="19" x="-8.89" y="-21.59" drill="1"/>
+<pad name="20" x="-8.89" y="-24.13" drill="1"/>
+<pad name="21" x="8.89" y="-24.13" drill="1"/>
+<pad name="22" x="8.89" y="-21.59" drill="1"/>
+<pad name="23" x="8.89" y="-19.05" drill="1"/>
+<pad name="24" x="8.89" y="-16.51" drill="1"/>
+<pad name="25" x="8.89" y="-13.97" drill="1"/>
+<pad name="26" x="8.89" y="-11.43" drill="1"/>
+<pad name="27" x="8.89" y="-8.89" drill="1"/>
+<pad name="28" x="8.89" y="-6.35" drill="1"/>
+<pad name="29" x="8.89" y="-3.81" drill="1"/>
+<pad name="30" x="8.89" y="-1.27" drill="1"/>
+<pad name="31" x="8.89" y="1.27" drill="1"/>
+<pad name="32" x="8.89" y="3.81" drill="1"/>
+<pad name="33" x="8.89" y="6.35" drill="1"/>
+<pad name="34" x="8.89" y="8.89" drill="1"/>
+<pad name="35" x="8.89" y="11.43" drill="1"/>
+<pad name="36" x="8.89" y="13.97" drill="1"/>
+<pad name="37" x="8.89" y="16.51" drill="1"/>
+<pad name="38" x="8.89" y="19.05" drill="1"/>
+<pad name="39" x="8.89" y="21.59" drill="1"/>
+<pad name="40" x="8.89" y="24.13" drill="1"/>
+<pad name="41" x="-2.54" y="-23.9" drill="1"/>
+<pad name="42" x="0" y="-23.9" drill="1"/>
+<pad name="43" x="2.54" y="-23.9" drill="1"/>
+<wire x1="-4" y1="26.8" x2="4" y2="26.8" width="0.127" layer="21"/>
+<wire x1="10.5" y1="-25.5" x2="10.5" y2="25.5" width="0.1524" layer="21"/>
+<wire x1="-10.5" y1="25.5" x2="-10.5" y2="-24.9" width="0.1524" layer="21"/>
+<wire x1="-10.5" y1="-24.63" x2="-10.5" y2="-25.5" width="0.1524" layer="21"/>
+<wire x1="10.5" y1="-25.5" x2="-10.5" y2="-25.5" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="26.67" x2="-3.81" y2="21.59" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="21.59" x2="3.81" y2="21.59" width="0.127" layer="21"/>
+<wire x1="3.81" y1="21.59" x2="3.81" y2="26.67" width="0.127" layer="21"/>
+<pad name="TP4" x="-2.54" y="17.4625" drill="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_UNO_R3">
@@ -3666,6 +3721,7 @@
 <pin name="GND@23" x="20.32" y="-17.78" length="middle" rot="R180"/>
 <text x="0" y="0" size="1.778" layer="94" rot="R90" align="bottom-center">Raspberry Pi Pico</text>
 <text x="-14.986" y="28.194" size="1.27" layer="95">&gt;NAME</text>
+<pin name="TP4" x="-2.54" y="33.02" length="middle" rot="R270"/>
 </symbol>
 <symbol name="BLE-BREAKOUT-BLUEGIGA">
 <pin name="GND" x="-15.24" y="17.78" length="middle"/>
@@ -5202,6 +5258,57 @@
 <connect gate="G$1" pin="RUN" pad="30"/>
 <connect gate="G$1" pin="SWCLK" pad="D1"/>
 <connect gate="G$1" pin="SWDIO" pad="D3"/>
+<connect gate="G$1" pin="VBUS" pad="40"/>
+<connect gate="G$1" pin="VSYS" pad="39"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PDM" package="RASPBERRY_PI_PICO_HEADER">
+<connects>
+<connect gate="G$1" pin="3V3" pad="36"/>
+<connect gate="G$1" pin="3V3_EN" pad="37"/>
+<connect gate="G$1" pin="ADC_VREF" pad="35"/>
+<connect gate="G$1" pin="AGND@33" pad="33"/>
+<connect gate="G$1" pin="GND@13" pad="13"/>
+<connect gate="G$1" pin="GND@18" pad="18"/>
+<connect gate="G$1" pin="GND@23" pad="23"/>
+<connect gate="G$1" pin="GND@28" pad="28"/>
+<connect gate="G$1" pin="GND@3" pad="3"/>
+<connect gate="G$1" pin="GND@38" pad="38"/>
+<connect gate="G$1" pin="GND@8" pad="8"/>
+<connect gate="G$1" pin="GND@D2" pad="42"/>
+<connect gate="G$1" pin="GP0" pad="1"/>
+<connect gate="G$1" pin="GP1" pad="2"/>
+<connect gate="G$1" pin="GP10" pad="14"/>
+<connect gate="G$1" pin="GP11" pad="15"/>
+<connect gate="G$1" pin="GP12" pad="16"/>
+<connect gate="G$1" pin="GP13" pad="17"/>
+<connect gate="G$1" pin="GP14" pad="19"/>
+<connect gate="G$1" pin="GP15" pad="20"/>
+<connect gate="G$1" pin="GP16" pad="21"/>
+<connect gate="G$1" pin="GP17" pad="22"/>
+<connect gate="G$1" pin="GP18" pad="24"/>
+<connect gate="G$1" pin="GP19" pad="25"/>
+<connect gate="G$1" pin="GP2" pad="4"/>
+<connect gate="G$1" pin="GP20" pad="26"/>
+<connect gate="G$1" pin="GP21" pad="27"/>
+<connect gate="G$1" pin="GP22" pad="29"/>
+<connect gate="G$1" pin="GP26" pad="31"/>
+<connect gate="G$1" pin="GP27" pad="32"/>
+<connect gate="G$1" pin="GP28" pad="34"/>
+<connect gate="G$1" pin="GP3" pad="5"/>
+<connect gate="G$1" pin="GP4" pad="6"/>
+<connect gate="G$1" pin="GP5" pad="7"/>
+<connect gate="G$1" pin="GP6" pad="9"/>
+<connect gate="G$1" pin="GP7" pad="10"/>
+<connect gate="G$1" pin="GP8" pad="11"/>
+<connect gate="G$1" pin="GP9" pad="12"/>
+<connect gate="G$1" pin="RUN" pad="30"/>
+<connect gate="G$1" pin="SWCLK" pad="41"/>
+<connect gate="G$1" pin="SWDIO" pad="43"/>
+<connect gate="G$1" pin="TP4" pad="TP4"/>
 <connect gate="G$1" pin="VBUS" pad="40"/>
 <connect gate="G$1" pin="VSYS" pad="39"/>
 </connects>
