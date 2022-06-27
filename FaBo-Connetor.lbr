@@ -1860,7 +1860,7 @@ Voltage 50V
 <wire x1="6" y1="-6" x2="6" y2="9" width="0.127" layer="21"/>
 <wire x1="6" y1="9" x2="-6" y2="9" width="0.127" layer="21"/>
 <wire x1="-6" y1="9" x2="-6" y2="-6" width="0.127" layer="21"/>
-<text x="-5.98" y="9.16" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.71" y="7.89" size="0.635" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -2626,6 +2626,128 @@ Voltage 50V
 <pin name="VCC" x="10.16" y="-2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="GND" x="10.16" y="-7.62" visible="pin" length="middle" rot="R180"/>
 <text x="-5.08" y="10.668" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="FABO-RJ11-6">
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<pin name="4:NC" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<pin name="5:PIN-A" x="7.62" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="6:PIN-B" x="12.7" y="-17.78" visible="pin" rot="R90"/>
+<text x="-2.54" y="5.08" size="1.778" layer="94">GPIO</text>
+<circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FABO-RJ11-6-GPIO">
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<pin name="4:NC" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<pin name="5:PIN-A" x="7.62" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="6:PIN-B" x="12.7" y="-17.78" visible="pin" rot="R90"/>
+<text x="-2.54" y="5.08" size="1.778" layer="94">GPIO</text>
+<circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FABO-RJ11-6-ANALOG3">
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<pin name="4:A2" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<pin name="5:A0" x="7.62" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="6:A1" x="12.7" y="-17.78" visible="pin" rot="R90"/>
+<text x="-5.08" y="2.54" size="1.778" layer="94">ANALOG
+INPUT</text>
+<circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FABO-RJ11-6-I2C">
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<pin name="4:SCL" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<pin name="5:SDA" x="7.62" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="6:NC" x="12.7" y="-17.78" visible="pin" rot="R90"/>
+<text x="-2.54" y="5.08" size="1.778" layer="94">I2C</text>
+<circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FABO-RJ11-6-SPI">
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<pin name="4:MISO" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="2:SCK" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<pin name="5:CS" x="7.62" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="6:MOSI" x="12.7" y="-17.78" visible="pin" rot="R90"/>
+<text x="-2.54" y="5.08" size="1.778" layer="94">SPI</text>
+<circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FABO-RJ11-6-SERIAL_MASTER">
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<pin name="4:NC" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<pin name="5:TX" x="7.62" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="6:RX" x="12.7" y="-17.78" visible="pin" rot="R90"/>
+<text x="-5.08" y="5.08" size="1.778" layer="94">SERIAL
+MASTER</text>
+<circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="-9.525" radius="0.635" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3486,7 +3608,113 @@ Voltage 50V
 </device>
 </devices>
 </deviceset>
+<deviceset name="MODULAR-JACK-6P-RJ11_GPIO">
+<gates>
+<gate name="G$1" symbol="FABO-RJ11-6-GPIO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7002-6PXC-X">
+<connects>
+<connect gate="G$1" pin="1:GND" pad="1"/>
+<connect gate="G$1" pin="2:NC" pad="2"/>
+<connect gate="G$1" pin="3:VCC" pad="3"/>
+<connect gate="G$1" pin="4:NC" pad="4"/>
+<connect gate="G$1" pin="5:PIN-A" pad="5"/>
+<connect gate="G$1" pin="6:PIN-B" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MODULAR-JACK-6P-RJ11_ANALOG3">
+<gates>
+<gate name="G$1" symbol="FABO-RJ11-6-ANALOG3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7002-6PXC-X">
+<connects>
+<connect gate="G$1" pin="1:GND" pad="1"/>
+<connect gate="G$1" pin="2:NC" pad="2"/>
+<connect gate="G$1" pin="3:VCC" pad="3"/>
+<connect gate="G$1" pin="4:A2" pad="4"/>
+<connect gate="G$1" pin="5:A0" pad="5"/>
+<connect gate="G$1" pin="6:A1" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MODULAR-JACK-6P-RJ11_I2C">
+<gates>
+<gate name="G$1" symbol="FABO-RJ11-6-I2C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7002-6PXC-X">
+<connects>
+<connect gate="G$1" pin="1:GND" pad="1"/>
+<connect gate="G$1" pin="2:NC" pad="2"/>
+<connect gate="G$1" pin="3:VCC" pad="3"/>
+<connect gate="G$1" pin="4:SCL" pad="4"/>
+<connect gate="G$1" pin="5:SDA" pad="5"/>
+<connect gate="G$1" pin="6:NC" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MODULAR-JACK-6P-RJ11_SPI">
+<gates>
+<gate name="G$1" symbol="FABO-RJ11-6-SPI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7002-6PXC-X">
+<connects>
+<connect gate="G$1" pin="1:GND" pad="1"/>
+<connect gate="G$1" pin="2:SCK" pad="2"/>
+<connect gate="G$1" pin="3:VCC" pad="3"/>
+<connect gate="G$1" pin="4:MISO" pad="4"/>
+<connect gate="G$1" pin="5:CS" pad="5"/>
+<connect gate="G$1" pin="6:MOSI" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MODULAR-JACK-6P-RJ11_SERIAL_M">
+<gates>
+<gate name="G$1" symbol="FABO-RJ11-6-SERIAL_MASTER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7002-6PXC-X">
+<connects>
+<connect gate="G$1" pin="1:GND" pad="1"/>
+<connect gate="G$1" pin="2:NC" pad="2"/>
+<connect gate="G$1" pin="3:VCC" pad="3"/>
+<connect gate="G$1" pin="4:NC" pad="4"/>
+<connect gate="G$1" pin="5:TX" pad="5"/>
+<connect gate="G$1" pin="6:RX" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
