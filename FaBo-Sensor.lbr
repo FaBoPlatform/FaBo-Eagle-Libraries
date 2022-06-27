@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -852,6 +852,20 @@
 <circle x="-1" y="1" radius="0.15" width="0.3" layer="21"/>
 <text x="0" y="-1" size="0.8128" layer="25" font="vector" ratio="15" rot="R180" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="SPM4050">
+<smd name="2:LEFT/RIGHT" x="-1.1685" y="0" dx="1" dy="1" layer="1" roundness="100"/>
+<smd name="5:DATA" x="1.1685" y="0" dx="1" dy="1" layer="1" roundness="100"/>
+<smd name="1:GND" x="-1.1685" y="1.651" dx="1" dy="1" layer="1" roundness="100"/>
+<smd name="6:VDD" x="1.1685" y="1.651" dx="1.15" dy="1" layer="1" roundness="100" rot="R45"/>
+<smd name="3:GND" x="-1.1685" y="-1.651" dx="1" dy="1" layer="1" roundness="100"/>
+<smd name="4:CLOCK" x="1.1685" y="-1.651" dx="1" dy="1" layer="1" roundness="100"/>
+<wire x1="-1.88" y1="2.36" x2="1.88" y2="2.36" width="0.127" layer="51"/>
+<wire x1="-1.88" y1="-2.36" x2="1.88" y2="-2.36" width="0.127" layer="51"/>
+<wire x1="-1.88" y1="2.36" x2="-1.88" y2="-2.36" width="0.127" layer="51"/>
+<wire x1="1.88" y1="2.36" x2="1.88" y2="-2.36" width="0.127" layer="51"/>
+<circle x="0" y="1" radius="0.42" width="0.0762" layer="51"/>
+<circle x="-2.6" y="2.4" radius="0.22360625" width="0.0762" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FREESCALE-MMA8451Q">
@@ -1365,6 +1379,19 @@
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <text x="0" y="5.08" size="1.778" layer="94" align="bottom-center">ISL29034</text>
 <text x="-7.366" y="7.874" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="SPM04050H">
+<pin name="1:GND" x="-20.32" y="5.08" length="middle"/>
+<pin name="2:LEFT/RIGHT" x="-20.32" y="0" length="middle"/>
+<pin name="3:GND" x="-20.32" y="-5.08" length="middle"/>
+<pin name="6:VDD" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="5:DATA" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="4:CLOCK" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<text x="-5.08" y="-12.7" size="1.27" layer="94">SPM0405HD4</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2078,6 +2105,26 @@
 <connect gate="G$1" pin="SCL" pad="3"/>
 <connect gate="G$1" pin="SDA" pad="4"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPM0405H">
+<gates>
+<gate name="G$1" symbol="SPM04050H" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPM4050">
+<connects>
+<connect gate="G$1" pin="1:GND" pad="1:GND"/>
+<connect gate="G$1" pin="2:LEFT/RIGHT" pad="2:LEFT/RIGHT"/>
+<connect gate="G$1" pin="3:GND" pad="3:GND"/>
+<connect gate="G$1" pin="4:CLOCK" pad="4:CLOCK"/>
+<connect gate="G$1" pin="5:DATA" pad="5:DATA"/>
+<connect gate="G$1" pin="6:VDD" pad="6:VDD"/>
 </connects>
 <technologies>
 <technology name=""/>
