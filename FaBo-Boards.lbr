@@ -2996,6 +2996,129 @@
 <wire x1="3.81" y1="21.59" x2="3.81" y2="26.67" width="0.127" layer="21"/>
 <pad name="TP4" x="-2.54" y="17.4625" drill="1"/>
 </package>
+<package name="RASPBERRY_PI_PICO_SMD_PDM">
+<wire x1="-10.5" y1="26.77" x2="-4" y2="26.77" width="0.1" layer="51"/>
+<wire x1="-4" y1="26.77" x2="4" y2="26.77" width="0.1" layer="51"/>
+<wire x1="4" y1="26.77" x2="10.5" y2="26.77" width="0.1" layer="51"/>
+<wire x1="10.5" y1="26.77" x2="10.5" y2="-24.23" width="0.1" layer="51"/>
+<wire x1="10.5" y1="-24.23" x2="-10.5" y2="-24.23" width="0.1" layer="51"/>
+<wire x1="-10.5" y1="-24.23" x2="-10.5" y2="26.77" width="0.1" layer="51"/>
+<smd name="1" x="-9.69" y="25.4" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="2" x="-9.69" y="22.86" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="3" x="-9.69" y="20.32" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="4" x="-9.69" y="17.78" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="5" x="-9.69" y="15.24" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="6" x="-9.69" y="12.7" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="7" x="-9.69" y="10.16" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="8" x="-9.69" y="7.62" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="9" x="-9.69" y="5.08" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="10" x="-9.69" y="2.54" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="11" x="-9.69" y="0" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="12" x="-9.69" y="-2.54" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="13" x="-9.69" y="-5.08" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="14" x="-9.69" y="-7.62" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="15" x="-9.69" y="-10.16" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="16" x="-9.69" y="-12.7" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="17" x="-9.69" y="-15.24" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="18" x="-9.69" y="-17.78" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="19" x="-9.69" y="-20.32" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="20" x="-9.69" y="-22.86" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="21" x="9.69" y="-22.86" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="22" x="9.69" y="-20.32" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="23" x="9.69" y="-17.78" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="24" x="9.69" y="-15.24" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="25" x="9.69" y="-12.7" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="26" x="9.69" y="-10.16" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="27" x="9.69" y="-7.62" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="28" x="9.69" y="-5.08" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="29" x="9.69" y="-2.54" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="30" x="9.69" y="0" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="31" x="9.69" y="2.54" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="32" x="9.69" y="5.08" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="33" x="9.69" y="7.62" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="34" x="9.69" y="10.16" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="35" x="9.69" y="12.7" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="36" x="9.69" y="15.24" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="37" x="9.69" y="17.78" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="38" x="9.69" y="20.32" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="39" x="9.69" y="22.86" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<smd name="40" x="9.69" y="25.4" dx="3.2" dy="1.6" layer="1" roundness="30"/>
+<wire x1="-4" y1="28.07" x2="4" y2="28.07" width="0.1" layer="51"/>
+<wire x1="4" y1="28.07" x2="4" y2="26.77" width="0.1" layer="51"/>
+<wire x1="-4" y1="28.07" x2="-4" y2="26.77" width="0.1" layer="51"/>
+<smd name="D1" x="-2.54" y="-23.43" dx="1.6" dy="3.2" layer="1" roundness="30"/>
+<smd name="D2" x="0" y="-23.43" dx="1.6" dy="3.2" layer="1" roundness="30"/>
+<smd name="D3" x="2.54" y="-23.43" dx="1.6" dy="3.2" layer="1" roundness="30"/>
+<hole x="2.725" y="25.27" drill="1.9"/>
+<hole x="-2.725" y="25.27" drill="1.9"/>
+<hole x="2.425" y="22.24" drill="1.6"/>
+<hole x="-2.425" y="22.24" drill="1.6"/>
+<polygon width="0.1" layer="41">
+<vertex x="-4" y="24.77"/>
+<vertex x="-4" y="26.77"/>
+<vertex x="4" y="26.77"/>
+<vertex x="4" y="24.77"/>
+<vertex x="3.5" y="24.27"/>
+<vertex x="3.5" y="21.77"/>
+<vertex x="2.75" y="21.02"/>
+<vertex x="-2.75" y="21.02"/>
+<vertex x="-3.5" y="21.77"/>
+<vertex x="-3.5" y="24.27"/>
+</polygon>
+<polygon width="0.1" layer="39">
+<vertex x="-4" y="24.77"/>
+<vertex x="-4" y="26.77"/>
+<vertex x="4" y="26.77"/>
+<vertex x="4" y="24.77"/>
+<vertex x="3.5" y="24.27"/>
+<vertex x="3.5" y="21.77"/>
+<vertex x="2.75" y="21.02"/>
+<vertex x="-2.75" y="21.02"/>
+<vertex x="-3.5" y="21.77"/>
+<vertex x="-3.5" y="24.27"/>
+</polygon>
+<polygon width="0.1" layer="39">
+<vertex x="-3" y="17.27"/>
+<vertex x="-2" y="17.27"/>
+<vertex x="-1.5" y="16.77"/>
+<vertex x="-1.5" y="15.77"/>
+<vertex x="-2" y="15.27"/>
+<vertex x="-3" y="15.27"/>
+<vertex x="-3.5" y="15.77"/>
+<vertex x="-3.5" y="16.77"/>
+</polygon>
+<polygon width="0.1" layer="39">
+<vertex x="-3" y="14.77"/>
+<vertex x="-2" y="14.77"/>
+<vertex x="-1.5" y="14.27"/>
+<vertex x="-1.5" y="13.27"/>
+<vertex x="-2" y="12.77"/>
+<vertex x="-3" y="12.77"/>
+<vertex x="-3.5" y="13.27"/>
+<vertex x="-3.5" y="14.27"/>
+</polygon>
+<polygon width="0.1" layer="41">
+<vertex x="-3" y="17.27"/>
+<vertex x="-2" y="17.27"/>
+<vertex x="-1.5" y="16.77"/>
+<vertex x="-1.5" y="15.77"/>
+<vertex x="-2" y="15.27"/>
+<vertex x="-3" y="15.27"/>
+<vertex x="-3.5" y="15.77"/>
+<vertex x="-3.5" y="16.77"/>
+</polygon>
+<polygon width="0.1" layer="41">
+<vertex x="-3" y="14.77"/>
+<vertex x="-2" y="14.77"/>
+<vertex x="-1.5" y="14.27"/>
+<vertex x="-1.5" y="13.27"/>
+<vertex x="-2" y="12.77"/>
+<vertex x="-3" y="12.77"/>
+<vertex x="-3.5" y="13.27"/>
+<vertex x="-3.5" y="14.27"/>
+</polygon>
+<pad name="P$1" x="-2.54" y="18.7325" drill="1.27" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_UNO_R3">
@@ -5309,6 +5432,57 @@
 <connect gate="G$1" pin="SWCLK" pad="41"/>
 <connect gate="G$1" pin="SWDIO" pad="43"/>
 <connect gate="G$1" pin="TP4" pad="TP4"/>
+<connect gate="G$1" pin="VBUS" pad="40"/>
+<connect gate="G$1" pin="VSYS" pad="39"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RASPBERRY_PI_PICO_SMD_PDM" package="RASPBERRY_PI_PICO_SMD_PDM">
+<connects>
+<connect gate="G$1" pin="3V3" pad="36"/>
+<connect gate="G$1" pin="3V3_EN" pad="37"/>
+<connect gate="G$1" pin="ADC_VREF" pad="35"/>
+<connect gate="G$1" pin="AGND@33" pad="33"/>
+<connect gate="G$1" pin="GND@13" pad="13"/>
+<connect gate="G$1" pin="GND@18" pad="18"/>
+<connect gate="G$1" pin="GND@23" pad="23"/>
+<connect gate="G$1" pin="GND@28" pad="28"/>
+<connect gate="G$1" pin="GND@3" pad="3"/>
+<connect gate="G$1" pin="GND@38" pad="38"/>
+<connect gate="G$1" pin="GND@8" pad="8"/>
+<connect gate="G$1" pin="GND@D2" pad="D2"/>
+<connect gate="G$1" pin="GP0" pad="1"/>
+<connect gate="G$1" pin="GP1" pad="2"/>
+<connect gate="G$1" pin="GP10" pad="14"/>
+<connect gate="G$1" pin="GP11" pad="15"/>
+<connect gate="G$1" pin="GP12" pad="16"/>
+<connect gate="G$1" pin="GP13" pad="17"/>
+<connect gate="G$1" pin="GP14" pad="19"/>
+<connect gate="G$1" pin="GP15" pad="20"/>
+<connect gate="G$1" pin="GP16" pad="21"/>
+<connect gate="G$1" pin="GP17" pad="22"/>
+<connect gate="G$1" pin="GP18" pad="24"/>
+<connect gate="G$1" pin="GP19" pad="25"/>
+<connect gate="G$1" pin="GP2" pad="4"/>
+<connect gate="G$1" pin="GP20" pad="26"/>
+<connect gate="G$1" pin="GP21" pad="27"/>
+<connect gate="G$1" pin="GP22" pad="29"/>
+<connect gate="G$1" pin="GP26" pad="31"/>
+<connect gate="G$1" pin="GP27" pad="32"/>
+<connect gate="G$1" pin="GP28" pad="34"/>
+<connect gate="G$1" pin="GP3" pad="5"/>
+<connect gate="G$1" pin="GP4" pad="6"/>
+<connect gate="G$1" pin="GP5" pad="7"/>
+<connect gate="G$1" pin="GP6" pad="9"/>
+<connect gate="G$1" pin="GP7" pad="10"/>
+<connect gate="G$1" pin="GP8" pad="11"/>
+<connect gate="G$1" pin="GP9" pad="12"/>
+<connect gate="G$1" pin="RUN" pad="30"/>
+<connect gate="G$1" pin="SWCLK" pad="D1"/>
+<connect gate="G$1" pin="SWDIO" pad="D3"/>
+<connect gate="G$1" pin="TP4" pad="P$1"/>
 <connect gate="G$1" pin="VBUS" pad="40"/>
 <connect gate="G$1" pin="VSYS" pad="39"/>
 </connects>
