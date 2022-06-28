@@ -1856,11 +1856,17 @@ Voltage 50V
 <pad name="5" x="-1.53" y="5.08" drill="1"/>
 <pad name="4" x="-0.51" y="2.54" drill="1"/>
 <pad name="2" x="1.53" y="2.54" drill="1"/>
-<wire x1="-6" y1="-6" x2="6" y2="-6" width="0.127" layer="21"/>
-<wire x1="6" y1="-6" x2="6" y2="9" width="0.127" layer="21"/>
-<wire x1="6" y1="9" x2="-6" y2="9" width="0.127" layer="21"/>
-<wire x1="-6" y1="9" x2="-6" y2="-6" width="0.127" layer="21"/>
-<text x="-4.71" y="7.89" size="0.635" layer="25">&gt;NAME</text>
+<wire x1="-6" y1="-6" x2="6" y2="-6" width="0.127" layer="51"/>
+<wire x1="6" y1="-6" x2="6" y2="9" width="0.127" layer="51"/>
+<wire x1="6" y1="9" x2="-6" y2="9" width="0.127" layer="51"/>
+<wire x1="-6" y1="9" x2="-6" y2="-6" width="0.127" layer="51"/>
+<text x="-5.01" y="7.49" size="1" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<wire x1="-5" y1="2" x2="-5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="6.5" x2="5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="5" y1="6.5" x2="5" y2="2" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="-5.8" x2="-4.3" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="4.3" y1="-5.8" x2="4.3" y2="-0.8" width="0.127" layer="21"/>
+<text x="3.1" y="-5.5" size="1" layer="51" font="vector" ratio="12">1</text>
 </package>
 </packages>
 <symbols>
@@ -2652,10 +2658,10 @@ Voltage 50V
 <wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
-<pin name="4:NC" x="2.54" y="-17.78" visible="pin" rot="R90"/>
-<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" rot="R90"/>
-<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
-<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="4:NC" x="2.54" y="-17.78" visible="pin" direction="nc" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" direction="nc" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
 <text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
 <pin name="5:PIN-A" x="7.62" y="-17.78" visible="pin" length="middle" rot="R90"/>
 <pin name="6:PIN-B" x="12.7" y="-17.78" visible="pin" rot="R90"/>
@@ -2673,9 +2679,9 @@ Voltage 50V
 <wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
 <pin name="4:A2" x="2.54" y="-17.78" visible="pin" rot="R90"/>
-<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" rot="R90"/>
-<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
-<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" direction="nc" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
 <text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
 <pin name="5:A0" x="7.62" y="-17.78" visible="pin" length="middle" rot="R90"/>
 <pin name="6:A1" x="12.7" y="-17.78" visible="pin" rot="R90"/>
@@ -2693,13 +2699,13 @@ INPUT</text>
 <wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
-<pin name="4:SCL" x="2.54" y="-17.78" visible="pin" rot="R90"/>
-<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" rot="R90"/>
-<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
-<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="4:SCL" x="2.54" y="-17.78" visible="pin" direction="oc" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" direction="nc" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
 <text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
-<pin name="5:SDA" x="7.62" y="-17.78" visible="pin" length="middle" rot="R90"/>
-<pin name="6:NC" x="12.7" y="-17.78" visible="pin" rot="R90"/>
+<pin name="5:SDA" x="7.62" y="-17.78" visible="pin" length="middle" direction="oc" rot="R90"/>
+<pin name="6:NC" x="12.7" y="-17.78" visible="pin" direction="nc" rot="R90"/>
 <text x="-2.54" y="5.08" size="1.778" layer="94">I2C</text>
 <circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
 <circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
@@ -2713,13 +2719,13 @@ INPUT</text>
 <wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
-<pin name="4:MISO" x="2.54" y="-17.78" visible="pin" rot="R90"/>
-<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" rot="R90"/>
-<pin name="2:SCK" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
-<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="4:MISO" x="2.54" y="-17.78" visible="pin" direction="oc" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="2:SCK" x="-7.62" y="-17.78" visible="pin" direction="oc" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
 <text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
-<pin name="5:CS" x="7.62" y="-17.78" visible="pin" length="middle" rot="R90"/>
-<pin name="6:MOSI" x="12.7" y="-17.78" visible="pin" rot="R90"/>
+<pin name="5:CS" x="7.62" y="-17.78" visible="pin" length="middle" direction="oc" rot="R90"/>
+<pin name="6:MOSI" x="12.7" y="-17.78" visible="pin" direction="oc" rot="R90"/>
 <text x="-2.54" y="5.08" size="1.778" layer="94">SPI</text>
 <circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
 <circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
@@ -2733,15 +2739,35 @@ INPUT</text>
 <wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
-<pin name="4:NC" x="2.54" y="-17.78" visible="pin" rot="R90"/>
-<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" rot="R90"/>
-<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
-<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="4:NC" x="2.54" y="-17.78" visible="pin" direction="nc" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" direction="nc" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
 <text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
-<pin name="5:TX" x="7.62" y="-17.78" visible="pin" length="middle" rot="R90"/>
-<pin name="6:RX" x="12.7" y="-17.78" visible="pin" rot="R90"/>
+<pin name="5:TX" x="7.62" y="-17.78" visible="pin" length="middle" direction="out" rot="R90"/>
+<pin name="6:RX" x="12.7" y="-17.78" visible="pin" direction="in" rot="R90"/>
 <text x="-5.08" y="5.08" size="1.778" layer="94">SERIAL
 MASTER</text>
+<circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FABO-RJ11-6-GPIO3">
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<pin name="4:PIN-C" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="2:NC" x="-7.62" y="-17.78" visible="pin" direction="nc" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<pin name="5:PIN-A" x="7.62" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="6:PIN-B" x="12.7" y="-17.78" visible="pin" rot="R90"/>
+<text x="-7.62" y="5.08" size="1.778" layer="94">GPIO IN/OUT 3</text>
 <circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
 <circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
 <circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
@@ -3701,6 +3727,26 @@ MASTER</text>
 <connect gate="G$1" pin="4:NC" pad="4"/>
 <connect gate="G$1" pin="5:TX" pad="5"/>
 <connect gate="G$1" pin="6:RX" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MODULAR-JACK-6P-RJ11_GPIO3">
+<gates>
+<gate name="G$1" symbol="FABO-RJ11-6-GPIO3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7002-6PXC-X">
+<connects>
+<connect gate="G$1" pin="1:GND" pad="1"/>
+<connect gate="G$1" pin="2:NC" pad="2"/>
+<connect gate="G$1" pin="3:VCC" pad="3"/>
+<connect gate="G$1" pin="4:PIN-C" pad="4"/>
+<connect gate="G$1" pin="5:PIN-A" pad="5"/>
+<connect gate="G$1" pin="6:PIN-B" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>

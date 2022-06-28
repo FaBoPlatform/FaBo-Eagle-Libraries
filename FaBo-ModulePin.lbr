@@ -33,23 +33,23 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
@@ -134,101 +134,72 @@
 &lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
 <packages>
-<package name="0603">
-<wire x1="-1.175" y1="0.5" x2="1.175" y2="0.5" width="0.1" layer="39"/>
-<wire x1="1.175" y1="0.5" x2="1.175" y2="-0.5" width="0.1" layer="39"/>
-<wire x1="1.175" y1="-0.5" x2="-1.175" y2="-0.5" width="0.1" layer="39"/>
-<wire x1="-1.175" y1="-0.5" x2="-1.175" y2="0.5" width="0.1" layer="39"/>
-<smd name="1" x="-0.8" y="0" dx="0.65" dy="0.9" layer="1" roundness="30"/>
-<smd name="2" x="0.8" y="0" dx="0.65" dy="0.9" layer="1" roundness="30"/>
-<text x="0" y="0.75" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
-<text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-</package>
-<package name="SMDC110S">
-<smd name="1" x="-0.9" y="0.1" dx="0.9" dy="1.8" layer="1" roundness="9"/>
-<smd name="2" x="0.8" y="0.1" dx="0.9" dy="1.8" layer="1" roundness="9"/>
-<wire x1="-1.5" y1="1.1" x2="1.4" y2="1.1" width="0.127" layer="39"/>
-<wire x1="1.4" y1="1.1" x2="1.4" y2="-0.9" width="0.127" layer="39"/>
-<wire x1="1.4" y1="-0.9" x2="-1.5" y2="-0.9" width="0.127" layer="39"/>
-<wire x1="-1.5" y1="-0.9" x2="-1.5" y2="1.1" width="0.127" layer="39"/>
+<package name="MICROPHONE8PINMODULE">
+<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+Source: Samtec TSW.pdf</description>
+<wire x1="-4.965" y1="-5.209" x2="-4.965" y2="5.209" width="0.2032" layer="21"/>
+<wire x1="-4.965" y1="5.209" x2="-2.655" y2="5.209" width="0.2032" layer="21"/>
+<wire x1="-2.655" y1="-5.209" x2="-4.965" y2="-5.209" width="0.2032" layer="21"/>
+<pad name="1:GND" x="-3.81" y="3.81" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="2:LEFT/RIGHT" x="-3.81" y="1.27" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="3:GND" x="-3.81" y="-1.27" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="4:CLOCK" x="-3.81" y="-3.81" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<text x="-2.312" y="3.552" size="1.27" layer="21" font="vector" ratio="12" rot="SR0">1</text>
+<text x="1.46" y="1.985" size="0.7" layer="27" rot="R180">&gt;VALUE</text>
+<rectangle x1="-4.16" y1="-4.16" x2="-3.46" y2="-3.46" layer="51" rot="R90"/>
+<rectangle x1="-4.16" y1="-1.62" x2="-3.46" y2="-0.92" layer="51" rot="R90"/>
+<rectangle x1="-4.16" y1="0.92" x2="-3.46" y2="1.62" layer="51" rot="R90"/>
+<rectangle x1="-4.16" y1="3.46" x2="-3.46" y2="4.16" layer="51" rot="R90"/>
+<wire x1="2.655" y1="5.209" x2="4.965" y2="5.209" width="0.2032" layer="21"/>
+<wire x1="4.965" y1="5.209" x2="4.965" y2="-5.209" width="0.2032" layer="21"/>
+<wire x1="4.965" y1="-5.209" x2="2.655" y2="-5.209" width="0.2032" layer="21"/>
+<pad name="8:VCC" x="3.81" y="3.81" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="7:GND" x="3.81" y="1.27" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="6:GND" x="3.81" y="-1.27" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="5:DATA" x="3.81" y="-3.81" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<rectangle x1="3.46" y1="-4.16" x2="4.16" y2="-3.46" layer="51" rot="R90"/>
+<rectangle x1="3.46" y1="-1.62" x2="4.16" y2="-0.92" layer="51" rot="R90"/>
+<rectangle x1="3.46" y1="0.92" x2="4.16" y2="1.62" layer="51" rot="R90"/>
+<rectangle x1="3.46" y1="3.46" x2="4.16" y2="4.16" layer="51" rot="R90"/>
+<text x="1.498" y="3.552" size="1.27" layer="21" font="vector" ratio="12" rot="SR0">8</text>
 </package>
 </packages>
 <symbols>
-<symbol name="TERMISTOR">
-<pin name="1" x="-5.08" y="0" visible="off" length="point"/>
-<pin name="2" x="5.08" y="0" visible="off" length="point" rot="R180"/>
-<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.032" x2="-1.27" y2="-2.032" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-2.032" x2="2.032" y2="1.778" width="0.254" layer="94"/>
-<text x="0" y="2.032" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
-</symbol>
-<symbol name="POLYSWITCH">
-<pin name="1" x="-5.08" y="0" visible="off" length="point"/>
-<pin name="2" x="5.08" y="0" visible="off" length="point" rot="R180"/>
-<wire x1="-2.54" y1="1.016" x2="2.54" y2="1.016" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.016" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.016" x2="-2.54" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-1.016" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="1.016" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.032" x2="1.778" y2="2.032" width="0.254" layer="94"/>
-<wire x1="1.778" y1="2.032" x2="-2.286" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<text x="0" y="2.54" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
+<symbol name="SPM0405HD4H">
+<pin name="1:GND" x="-22.86" y="7.62" length="middle"/>
+<pin name="2:LEFT/RIGHT" x="-22.86" y="2.54" length="middle"/>
+<pin name="3:GND" x="-22.86" y="-2.54" length="middle"/>
+<pin name="4:CLOCK" x="-22.86" y="-7.62" length="middle"/>
+<pin name="5:DATA" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="6:GND" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="7:GND" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="8:VCC" x="22.86" y="7.62" length="middle" rot="R180"/>
+<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="10.16" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="15.24" x2="17.78" y2="10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="12.7" size="1.27" layer="94">SPM0405HD4H_MODULE</text>
+<wire x1="-17.78" y1="10.16" x2="17.78" y2="10.16" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TERMISTOR" prefix="T" uservalue="yes">
+<deviceset name="SPM0405HD4HMODULE">
 <gates>
-<gate name="G$1" symbol="TERMISTOR" x="0" y="0"/>
+<gate name="G$1" symbol="SPM0405HD4H" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0603">
+<device name="" package="MICROPHONE8PINMODULE">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="POLYSWITCH" prefix="F" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="POLYSWITCH" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PICOSMDC110S">
-<gates>
-<gate name="G$1" symbol="POLYSWITCH" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SMDC110S">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="1:GND" pad="1:GND"/>
+<connect gate="G$1" pin="2:LEFT/RIGHT" pad="2:LEFT/RIGHT"/>
+<connect gate="G$1" pin="3:GND" pad="3:GND"/>
+<connect gate="G$1" pin="4:CLOCK" pad="4:CLOCK"/>
+<connect gate="G$1" pin="5:DATA" pad="5:DATA"/>
+<connect gate="G$1" pin="6:GND" pad="6:GND"/>
+<connect gate="G$1" pin="7:GND" pad="7:GND"/>
+<connect gate="G$1" pin="8:VCC" pad="8:VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
