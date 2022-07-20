@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -740,6 +740,20 @@
 <package name="TP-5">
 <smd name="1" x="0" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" thermals="no" cream="no"/>
 </package>
+<package name="SOT563">
+<smd name="5:EN" x="0" y="0.7" dx="0.25" dy="0.6" layer="1" roundness="12"/>
+<smd name="6:FB" x="-0.5" y="0.7" dx="0.25" dy="0.6" layer="1" roundness="12"/>
+<smd name="4:BST" x="0.5" y="0.7" dx="0.25" dy="0.6" layer="1" roundness="12"/>
+<smd name="3:GND" x="0.5" y="-0.7" dx="0.25" dy="0.6" layer="1" roundness="12"/>
+<smd name="2:SW" x="0" y="-0.7" dx="0.25" dy="0.6" layer="1" roundness="12"/>
+<smd name="1:IN" x="-0.5" y="-0.7" dx="0.25" dy="0.6" layer="1" roundness="12"/>
+<wire x1="-0.75" y1="0.65" x2="0.75" y2="0.65" width="0.127" layer="51"/>
+<wire x1="0.75" y1="0.65" x2="0.75" y2="-0.65" width="0.127" layer="51"/>
+<wire x1="0.75" y1="-0.65" x2="-0.75" y2="-0.65" width="0.127" layer="51"/>
+<wire x1="-0.75" y1="-0.65" x2="-0.75" y2="0.65" width="0.127" layer="51"/>
+<rectangle x1="-0.7" y1="-0.3" x2="0" y2="0.1" layer="21"/>
+<text x="-0.4" y="0.2" size="0.2" layer="51" font="vector">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TI-TPS62730">
@@ -1433,6 +1447,19 @@
 <wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
 <text x="0" y="-3.048" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 <pin name="AGND" x="0" y="0" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="MP1476L">
+<pin name="1:VIN" x="-15.24" y="5.08" length="middle"/>
+<pin name="2:SW" x="-15.24" y="0" length="middle"/>
+<pin name="3:GND" x="-15.24" y="-5.08" length="middle"/>
+<pin name="4:BST" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="5:EN" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="6:FB" x="15.24" y="5.08" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="12.7" size="3.2258" layer="94" font="vector" ratio="12">MP1476L</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2643,6 +2670,26 @@
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MP1476L">
+<gates>
+<gate name="G$1" symbol="MP1476L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT563">
+<connects>
+<connect gate="G$1" pin="1:VIN" pad="1:IN"/>
+<connect gate="G$1" pin="2:SW" pad="2:SW"/>
+<connect gate="G$1" pin="3:GND" pad="3:GND"/>
+<connect gate="G$1" pin="4:BST" pad="4:BST"/>
+<connect gate="G$1" pin="5:EN" pad="5:EN"/>
+<connect gate="G$1" pin="6:FB" pad="6:FB"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

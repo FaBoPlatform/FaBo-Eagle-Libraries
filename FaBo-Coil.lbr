@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -260,6 +260,17 @@
 <wire x1="0.3" y1="0.15" x2="0.3" y2="-0.15" width="0.0762" layer="51"/>
 <wire x1="0.3" y1="-0.15" x2="-0.3" y2="-0.15" width="0.0762" layer="51"/>
 </package>
+<package name="744316470">
+<smd name="1" x="0" y="-2.05" dx="1.6" dy="1.9" layer="1" roundness="12"/>
+<smd name="2" x="0" y="2.05" dx="1.6" dy="1.9" layer="1" roundness="12"/>
+<wire x1="-2.65" y1="-2.8" x2="-2.65" y2="2.8" width="0.127" layer="51"/>
+<wire x1="-2.65" y1="2.8" x2="2.65" y2="2.8" width="0.127" layer="51"/>
+<wire x1="2.65" y1="2.8" x2="2.65" y2="-2.8" width="0.127" layer="51"/>
+<wire x1="2.65" y1="-2.8" x2="-2.65" y2="-2.8" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="0" x2="0.6" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0.6" x2="0" y2="-0.6" width="0.127" layer="51"/>
+<text x="-2.4" y="3.3" size="0.6" layer="51" font="vector" ratio="12">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="COIL">
@@ -425,6 +436,32 @@
 <wire x1="-15.24" y1="-8.128" x2="-1.016" y2="-8.128" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-8.128" x2="1.016" y2="-8.128" width="0.254" layer="94"/>
 </symbol>
+<symbol name="INDUCTOR-2">
+<pin name="1" x="-5.08" y="0" visible="off" length="point"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" rot="R180"/>
+<wire x1="2.54" y1="0" x2="0.96" y2="0" width="0.1524" layer="94"/>
+<text x="-4.826" y="2.794" size="1.4224" layer="95">&gt;NAME</text>
+<text x="-4.826" y="-1.524" size="1.4224" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="-3.44" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.44" y1="0" x2="-3.159684375" y2="0.77086875" width="0.16" layer="94"/>
+<wire x1="-3.159684375" y1="0.77086875" x2="-2.6897875" y2="1.1" width="0.16" layer="94" curve="-70.016863"/>
+<wire x1="-2.6897875" y1="1.1" x2="-2.361009375" y2="0.863028125" width="0.16" layer="94" curve="-71.565378"/>
+<wire x1="-2.361009375" y1="0.863028125" x2="-2.24" y2="0.5" width="0.16" layer="94"/>
+<wire x1="-2.24" y1="0.5" x2="-2.1539625" y2="0.7581125" width="0.16" layer="94"/>
+<wire x1="-2.1539625" y1="0.7581125" x2="-1.679621875" y2="1.1" width="0.16" layer="94" curve="-71.565164"/>
+<wire x1="-1.679621875" y1="1.1" x2="-1.364225" y2="0.872675" width="0.16" layer="94" curve="-71.565221"/>
+<wire x1="-1.364225" y1="0.872675" x2="-1.24" y2="0.5" width="0.16" layer="94"/>
+<wire x1="-1.24" y1="0.5" x2="-1.1539625" y2="0.7581125" width="0.16" layer="94"/>
+<wire x1="-1.1539625" y1="0.7581125" x2="-0.679621875" y2="1.1" width="0.16" layer="94" curve="-71.565164"/>
+<wire x1="-0.679621875" y1="1.1" x2="-0.364225" y2="0.872675" width="0.16" layer="94" curve="-71.565221"/>
+<wire x1="-0.364225" y1="0.872675" x2="-0.24" y2="0.5" width="0.16" layer="94"/>
+<wire x1="-0.24" y1="0.5" x2="-0.1539625" y2="0.7581125" width="0.16" layer="94"/>
+<wire x1="-0.1539625" y1="0.7581125" x2="0.320378125" y2="1.1" width="0.16" layer="94" curve="-71.565164"/>
+<wire x1="0.320378125" y1="1.1" x2="0.641890625" y2="0.8748" width="0.16" layer="94" curve="-70.017564"/>
+<wire x1="0.641890625" y1="0.8748" x2="0.96" y2="0" width="0.16" layer="94"/>
+<wire x1="-3.175" y1="1.905" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.635" y1="1.905" x2="-0.635" y2="1.905" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="COIL" prefix="L" uservalue="yes">
@@ -582,6 +619,22 @@ ESD protection and noise protechtion.</description>
 </gates>
 <devices>
 <device name="" package="AVRF0X0X100LT_0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="744316470">
+<gates>
+<gate name="G$1" symbol="INDUCTOR-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="744316470">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
