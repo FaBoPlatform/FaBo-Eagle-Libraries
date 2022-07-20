@@ -271,6 +271,18 @@
 <wire x1="0" y1="0.6" x2="0" y2="-0.6" width="0.127" layer="51"/>
 <text x="-2.4" y="3.3" size="0.6" layer="51" font="vector" ratio="12">&gt;NAME</text>
 </package>
+<package name="SLF7032T-470MR67-2PF">
+<smd name="1" x="-3.15" y="0" dx="1.5" dy="2.2" layer="1" roundness="12"/>
+<smd name="2" x="3.15" y="0" dx="1.5" dy="2.2" layer="1" roundness="12"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.1524" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.1524" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="-2.45" y2="-3.5" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="3.5" width="0.1524" layer="51"/>
+<wire x1="-3.5" y1="-2.45" x2="-3.5" y2="3.5" width="0.1524" layer="51"/>
+<wire x1="-2.45" y1="-2.45" x2="-2.45" y2="-3.5" width="0.1524" layer="51"/>
+<wire x1="-2.45" y1="-2.45" x2="-3.5" y2="-2.45" width="0.1524" layer="51"/>
+<circle x="-2.1" y="-2" radius="0.22360625" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="COIL">
@@ -635,6 +647,25 @@ ESD protection and noise protechtion.</description>
 </gates>
 <devices>
 <device name="" package="744316470">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SLF7032T-470MR67-2PF">
+<description>TDK SLF7032
+Inductors for power circuits
+7.0-7.0-3.2</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SLF7032T-470MR67-2PF">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
