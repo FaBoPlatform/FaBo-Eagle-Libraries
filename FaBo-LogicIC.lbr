@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -138,6 +138,31 @@ R-PDSO-N5</description>
 <wire x1="-0.2" y1="0" x2="0.2" y2="0" width="0.1524" layer="21"/>
 <wire x1="0" y1="0.2" x2="0" y2="-0.2" width="0.1524" layer="21"/>
 <text x="-0.6" y="0.1" size="0.254" layer="21">&gt;NAME</text>
+</package>
+<package name="SO16">
+<smd name="13" x="-0.635" y="2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="4" x="-0.635" y="-2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="12" x="0.635" y="2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="5" x="0.635" y="-2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="6" x="1.905" y="-2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="11" x="1.905" y="2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="10" x="3.175" y="2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="9" x="4.445" y="2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="7" x="3.175" y="-2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="8" x="4.445" y="-2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="3" x="-1.905" y="-2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="2" x="-3.175" y="-2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="1" x="-4.445" y="-2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="14" x="-1.905" y="2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="15" x="-3.175" y="2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<smd name="16" x="-4.445" y="2.5" dx="0.55" dy="1.3" layer="1" roundness="9"/>
+<wire x1="-5" y1="2" x2="5" y2="2" width="0.1524" layer="51"/>
+<wire x1="5" y1="2" x2="5" y2="-2" width="0.1524" layer="51"/>
+<wire x1="5" y1="-2" x2="-5" y2="-2" width="0.1524" layer="51"/>
+<wire x1="-5" y1="-2" x2="-5" y2="2" width="0.1524" layer="51"/>
+<rectangle x1="-5" y1="-2" x2="-3" y2="0" layer="21"/>
+<wire x1="-1" y1="0" x2="1" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="-1" width="0.1524" layer="21"/>
 </package>
 </packages>
 <packages3d>
@@ -279,6 +304,29 @@ R-PDSO-N5</description>
 <wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.1524" layer="94"/>
 <text x="-8.89" y="10.16" size="1.778" layer="94">SN74LVC1G125</text>
 </symbol>
+<symbol name="74HC165">
+<pin name="1:~PL" x="-20.32" y="-10.16" length="middle"/>
+<pin name="2:CP" x="-7.62" y="-25.4" length="middle" rot="R90"/>
+<pin name="6:D7" x="-20.32" y="-7.62" length="middle"/>
+<pin name="5:D6" x="-20.32" y="-5.08" length="middle"/>
+<pin name="4:D5" x="-20.32" y="-2.54" length="middle"/>
+<pin name="3:D4" x="-20.32" y="0" length="middle"/>
+<pin name="14:D3" x="-20.32" y="2.54" length="middle"/>
+<pin name="13:D2" x="-20.32" y="5.08" length="middle"/>
+<pin name="12:D1" x="-20.32" y="7.62" length="middle"/>
+<pin name="11:D0" x="-20.32" y="10.16" length="middle"/>
+<pin name="10:DS" x="0" y="20.32" length="middle" rot="R270"/>
+<pin name="9:Q7" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="7:~Q7" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="15:~CE" x="0" y="-25.4" length="middle" rot="R90"/>
+<wire x1="-15.24" y1="15.24" x2="12.7" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-15.24" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="-15.24" y1="-20.32" x2="-15.24" y2="15.24" width="0.1524" layer="94"/>
+<text x="-5.08" y="0" size="1.778" layer="94">74HC165</text>
+<pin name="8:GND" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="16:VCC" x="17.78" y="2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TC7WH74FU">
@@ -380,6 +428,41 @@ Suppoer 5V operation.
 <connect gate="G$1" pin="3:GND" pad="3"/>
 <connect gate="G$1" pin="4:Y" pad="4"/>
 <connect gate="G$1" pin="5:VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74HC165">
+<description>NXP semiconductors
+
+8-bit parallel-in/serial out shift register
+
+high-spped Si-gate CMOS device</description>
+<gates>
+<gate name="G$1" symbol="74HC165" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO16">
+<connects>
+<connect gate="G$1" pin="10:DS" pad="10"/>
+<connect gate="G$1" pin="11:D0" pad="11"/>
+<connect gate="G$1" pin="12:D1" pad="12"/>
+<connect gate="G$1" pin="13:D2" pad="13"/>
+<connect gate="G$1" pin="14:D3" pad="14"/>
+<connect gate="G$1" pin="15:~CE" pad="15"/>
+<connect gate="G$1" pin="16:VCC" pad="16"/>
+<connect gate="G$1" pin="1:~PL" pad="1"/>
+<connect gate="G$1" pin="2:CP" pad="2"/>
+<connect gate="G$1" pin="3:D4" pad="3"/>
+<connect gate="G$1" pin="4:D5" pad="4"/>
+<connect gate="G$1" pin="5:D6" pad="5"/>
+<connect gate="G$1" pin="6:D7" pad="6"/>
+<connect gate="G$1" pin="7:~Q7" pad="7"/>
+<connect gate="G$1" pin="8:GND" pad="8"/>
+<connect gate="G$1" pin="9:Q7" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
