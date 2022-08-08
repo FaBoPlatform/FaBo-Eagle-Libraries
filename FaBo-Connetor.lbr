@@ -2801,14 +2801,14 @@ SLAVE</text>
 <wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
-<pin name="4:I2S_SCLK" x="2.54" y="-17.78" visible="pin" direction="oc" rot="R90"/>
-<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
-<pin name="2:I2S_FS" x="-7.62" y="-17.78" visible="pin" direction="out" rot="R90"/>
-<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="4:I2S_SCLK" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="sup" rot="R90"/>
+<pin name="2:I2S_FS" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="sup" rot="R90"/>
 <text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
 <pin name="5:NC" x="7.62" y="-17.78" visible="pin" length="middle" direction="nc" rot="R90"/>
 <pin name="6:I2S_DOUT" x="12.7" y="-17.78" visible="pin" direction="out" rot="R90"/>
-<text x="-7.62" y="5.08" size="1.778" layer="94">I2S_OUTPUT</text>
+<text x="-12.7" y="7.62" size="1.778" layer="94">I2S_MASTER_OUTPUT</text>
 <circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
 <circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
 <circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
@@ -2821,14 +2821,14 @@ SLAVE</text>
 <wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
-<pin name="4:I2S_SCLK" x="2.54" y="-17.78" visible="pin" direction="oc" rot="R90"/>
-<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
-<pin name="2:I2S_FS" x="-7.62" y="-17.78" visible="pin" direction="in" rot="R90"/>
-<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="4:I2S_SCLK" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="sup" rot="R90"/>
+<pin name="2:I2S_FS" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="sup" rot="R90"/>
 <text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
 <pin name="5:I2S_DIN" x="7.62" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
 <pin name="6:NC" x="12.7" y="-17.78" visible="pin" direction="nc" rot="R90"/>
-<text x="-5.08" y="5.08" size="1.778" layer="94">I2S_INPUT</text>
+<text x="-10.16" y="5.08" size="1.778" layer="94">I2S_MASTER_INPUT</text>
 <circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
 <circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
 <circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
@@ -2841,14 +2841,14 @@ SLAVE</text>
 <wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
-<pin name="4:I2S_SCLK" x="2.54" y="-17.78" visible="pin" direction="oc" rot="R90"/>
-<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
-<pin name="2:I2S_FS" x="-7.62" y="-17.78" visible="pin" direction="in" rot="R90"/>
-<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="4:I2S_SCLK" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="sup" rot="R90"/>
+<pin name="2:I2S_FS" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="sup" rot="R90"/>
 <text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
 <pin name="5:I2S_DIN" x="7.62" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
-<pin name="6:I2S_OUT" x="12.7" y="-17.78" visible="pin" direction="out" rot="R90"/>
-<text x="-5.08" y="5.08" size="1.778" layer="94">I2S IN/OUT</text>
+<pin name="6:I2S_DOUT" x="12.7" y="-17.78" visible="pin" direction="out" rot="R90"/>
+<text x="-7.62" y="5.08" size="1.778" layer="94">I2S MASTER</text>
 <circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
 <circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
 <circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
@@ -2871,6 +2871,66 @@ SLAVE</text>
 <text x="-7.62" y="2.54" size="1.778" layer="94">SERIAL
 MASTER
 UART/USART</text>
+<circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FABO-RJ11-6-I2S_SLAVE">
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<pin name="4:I2S_SCLK" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="2:I2S_FS" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<pin name="5:I2S_DOUT" x="7.62" y="-17.78" visible="pin" length="middle" direction="out" rot="R90"/>
+<pin name="6:I2S_DIN" x="12.7" y="-17.78" visible="pin" direction="in" rot="R90"/>
+<text x="-5.08" y="7.62" size="1.778" layer="94">I2S SLAVE</text>
+<circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FABO-RJ11-6-I2S_SLAVE_INPUT">
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<pin name="4:I2S_SCLK" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="2:I2S_FS" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<pin name="5:I2S_DOUT" x="7.62" y="-17.78" visible="pin" length="middle" direction="nc" rot="R90"/>
+<pin name="6:I2S_DIN" x="12.7" y="-17.78" visible="pin" direction="in" rot="R90"/>
+<text x="-10.16" y="7.62" size="1.778" layer="94">I2S SLAVE INPUT</text>
+<circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FABO-RJ11-6-I2S_SLAVE_OUTPUT">
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<pin name="4:I2S_SCLK" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="2:I2S_FS" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<pin name="5:I2S_DOUT" x="7.62" y="-17.78" visible="pin" length="middle" direction="out" rot="R90"/>
+<pin name="6:I2S_DIN" x="12.7" y="-17.78" visible="pin" direction="nc" rot="R90"/>
+<text x="-10.16" y="7.62" size="1.778" layer="94">I2S SLAVE OUTPUT</text>
 <circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
 <circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
 <circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
@@ -3929,7 +3989,7 @@ UART/USART</text>
 <connect gate="G$1" pin="3:VCC" pad="3"/>
 <connect gate="G$1" pin="4:I2S_SCLK" pad="4"/>
 <connect gate="G$1" pin="5:I2S_DIN" pad="5"/>
-<connect gate="G$1" pin="6:I2S_OUT" pad="6"/>
+<connect gate="G$1" pin="6:I2S_DOUT" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3950,6 +4010,66 @@ UART/USART</text>
 <connect gate="G$1" pin="4:RTS" pad="4"/>
 <connect gate="G$1" pin="5:TX" pad="5"/>
 <connect gate="G$1" pin="6:RX" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MODULAR-JACK-6P-RJ11_I2S_SLAVE">
+<gates>
+<gate name="G$1" symbol="FABO-RJ11-6-I2S_SLAVE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7002-6PXC-X">
+<connects>
+<connect gate="G$1" pin="1:GND" pad="1"/>
+<connect gate="G$1" pin="2:I2S_FS" pad="2"/>
+<connect gate="G$1" pin="3:VCC" pad="3"/>
+<connect gate="G$1" pin="4:I2S_SCLK" pad="4"/>
+<connect gate="G$1" pin="5:I2S_DOUT" pad="5"/>
+<connect gate="G$1" pin="6:I2S_DIN" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MODULAR-JACK-6P-RJ11_I2S_SLAVE_INPUT">
+<gates>
+<gate name="G$1" symbol="FABO-RJ11-6-I2S_SLAVE_INPUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7002-6PXC-X">
+<connects>
+<connect gate="G$1" pin="1:GND" pad="1"/>
+<connect gate="G$1" pin="2:I2S_FS" pad="2"/>
+<connect gate="G$1" pin="3:VCC" pad="3"/>
+<connect gate="G$1" pin="4:I2S_SCLK" pad="4"/>
+<connect gate="G$1" pin="5:I2S_DOUT" pad="5"/>
+<connect gate="G$1" pin="6:I2S_DIN" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MODULAR-JACK-6P-RJ11_I2S_SLAVE_OUTPUT">
+<gates>
+<gate name="G$1" symbol="FABO-RJ11-6-I2S_SLAVE_OUTPUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7002-6PXC-X">
+<connects>
+<connect gate="G$1" pin="1:GND" pad="1"/>
+<connect gate="G$1" pin="2:I2S_FS" pad="2"/>
+<connect gate="G$1" pin="3:VCC" pad="3"/>
+<connect gate="G$1" pin="4:I2S_SCLK" pad="4"/>
+<connect gate="G$1" pin="5:I2S_DOUT" pad="5"/>
+<connect gate="G$1" pin="6:I2S_DIN" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
