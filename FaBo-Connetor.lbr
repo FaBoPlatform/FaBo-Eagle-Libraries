@@ -2938,6 +2938,28 @@ UART/USART</text>
 <circle x="7.62" y="-12.065" radius="0.635" width="0.254" layer="94"/>
 <circle x="12.7" y="-9.525" radius="0.635" width="0.254" layer="94"/>
 </symbol>
+<symbol name="FABO-RJ11-6-SERIAL_SLAVE_USART">
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<pin name="4:CTS" x="2.54" y="-17.78" visible="pin" rot="R90"/>
+<pin name="3:VCC" x="-2.54" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="2:RTS" x="-7.62" y="-17.78" visible="pin" rot="R90"/>
+<pin name="1:GND" x="-12.7" y="-17.78" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<text x="2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<pin name="5:RX" x="7.62" y="-17.78" visible="pin" length="middle" direction="out" rot="R90"/>
+<pin name="6:TX" x="12.7" y="-17.78" visible="pin" direction="in" rot="R90"/>
+<text x="-7.62" y="2.54" size="1.778" layer="94">SERIAL
+SLAVE
+UART/USART</text>
+<circle x="-12.7" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="-7.62" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="-2.54" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="-12.065" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="-9.525" radius="0.635" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PCC-SMP-J" prefix="CN" uservalue="yes">
@@ -4070,6 +4092,26 @@ UART/USART</text>
 <connect gate="G$1" pin="4:I2S_SCLK" pad="4"/>
 <connect gate="G$1" pin="5:I2S_DOUT" pad="5"/>
 <connect gate="G$1" pin="6:I2S_DIN" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MODULAR-JACK-6P-RJ11_SERIAL_S_USART">
+<gates>
+<gate name="G$1" symbol="FABO-RJ11-6-SERIAL_SLAVE_USART" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7002-6PXC-X">
+<connects>
+<connect gate="G$1" pin="1:GND" pad="1"/>
+<connect gate="G$1" pin="2:RTS" pad="2"/>
+<connect gate="G$1" pin="3:VCC" pad="3"/>
+<connect gate="G$1" pin="4:CTS" pad="4"/>
+<connect gate="G$1" pin="5:RX" pad="5"/>
+<connect gate="G$1" pin="6:TX" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
