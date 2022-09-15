@@ -1868,6 +1868,44 @@ Voltage 50V
 <wire x1="4.3" y1="-5.8" x2="4.3" y2="-0.8" width="0.127" layer="21"/>
 <text x="3.1" y="-5.5" size="1" layer="51" font="vector" ratio="12">1</text>
 </package>
+<package name="BM05B-PASS-1">
+<description>JST SMT type Top Entry Type
+BM05B-PASS-1-TFT</description>
+<smd name="3" x="0" y="0" dx="1" dy="2.9" layer="1" roundness="14"/>
+<smd name="2" x="-2" y="0" dx="1" dy="2.9" layer="1" roundness="14"/>
+<smd name="4" x="2" y="0" dx="1" dy="2.9" layer="1" roundness="14"/>
+<smd name="1" x="-4" y="0" dx="1" dy="2.9" layer="1" roundness="14"/>
+<smd name="5" x="4" y="0" dx="1" dy="2.9" layer="1" roundness="14"/>
+<smd name="6" x="6.22" y="-4.65" dx="1.8" dy="3.6" layer="1" roundness="15"/>
+<smd name="7" x="-6.22" y="-4.65" dx="1.8" dy="3.6" layer="1" roundness="15"/>
+<hole x="6.25" y="-1.25" drill="0.85"/>
+<wire x1="-7" y1="-0.35" x2="-7" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-7" y1="-0.95" x2="-7" y2="-6.15" width="0.127" layer="51"/>
+<wire x1="-7" y1="-6.15" x2="-2.8" y2="-6.15" width="0.127" layer="51"/>
+<wire x1="-1" y1="-6.15" x2="1" y2="-6.15" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-6.15" x2="7" y2="-6.15" width="0.127" layer="51"/>
+<wire x1="7" y1="-6.15" x2="7" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="7" y1="-0.95" x2="7" y2="-0.35" width="0.127" layer="51"/>
+<wire x1="7" y1="-0.35" x2="4.8" y2="-0.35" width="0.127" layer="51"/>
+<wire x1="-4.8" y1="-0.35" x2="-7" y2="-0.35" width="0.127" layer="51"/>
+<wire x1="4.8" y1="-0.95" x2="2.8" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-0.95" x2="-2.8" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-0.95" x2="-4.8" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="7" y1="-6.15" x2="7" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="4.8" y1="-0.95" x2="4.8" y2="-0.35" width="0.127" layer="51"/>
+<wire x1="-4.8" y1="-0.35" x2="-4.8" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-5.45" x2="-2.8" y2="-6.15" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-6.15" x2="2.8" y2="-5.45" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-5.45" x2="-1" y2="-5.45" width="0.127" layer="51"/>
+<wire x1="1" y1="-5.45" x2="2.8" y2="-5.45" width="0.127" layer="51"/>
+<wire x1="-1" y1="-5.45" x2="-1" y2="-6.15" width="0.127" layer="51"/>
+<wire x1="1" y1="-6.15" x2="1" y2="-5.45" width="0.127" layer="51"/>
+<wire x1="-6.75" y1="-1.25" x2="-5.75" y2="-1.25" width="0.8" layer="46"/>
+<wire x1="-6.75" y1="-1.25" x2="-5.75" y2="-1.25" width="1.1" layer="41"/>
+<wire x1="-6.75" y1="-1.25" x2="-5.75" y2="-1.25" width="1.1" layer="42"/>
+<wire x1="-6.75" y1="-1.25" x2="-5.75" y2="-1.25" width="1.1" layer="29"/>
+<wire x1="-5.75" y1="-1.25" x2="-6.75" y2="-1.25" width="1.1" layer="30"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PCC-SMP-J">
@@ -4112,6 +4150,25 @@ UART/USART</text>
 <connect gate="G$1" pin="4:CTS" pad="4"/>
 <connect gate="G$1" pin="5:RX" pad="5"/>
 <connect gate="G$1" pin="6:TX" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FABO-SERIAL5PIN">
+<gates>
+<gate name="G$1" symbol="PIN_1X5" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="BM05B-PASS-1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
