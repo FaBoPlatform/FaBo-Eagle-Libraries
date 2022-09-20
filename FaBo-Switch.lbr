@@ -635,6 +635,21 @@ DC 12V 0.05A</description>
 <wire x1="0" y1="0.4" x2="0" y2="-0.4" width="0.127" layer="21"/>
 <text x="-0.845" y="1.8" size="0.6" layer="51" font="vector" ratio="15" align="center">OTAX</text>
 </package>
+<package name="VSON8">
+<smd name="2" x="-1.4" y="0.325" dx="0.6" dy="0.3" layer="1" roundness="12"/>
+<smd name="3" x="-1.4" y="-0.325" dx="0.6" dy="0.3" layer="1" roundness="12"/>
+<smd name="1" x="-1.4" y="0.975" dx="0.6" dy="0.3" layer="1" roundness="12"/>
+<smd name="4" x="-1.4" y="-0.975" dx="0.6" dy="0.3" layer="1" roundness="12"/>
+<smd name="8" x="1.4" y="0.975" dx="0.6" dy="0.3" layer="1" roundness="12"/>
+<smd name="7" x="1.4" y="0.325" dx="0.6" dy="0.3" layer="1" roundness="12"/>
+<smd name="6" x="1.4" y="-0.325" dx="0.6" dy="0.3" layer="1" roundness="12"/>
+<smd name="5" x="1.4" y="-0.975" dx="0.6" dy="0.3" layer="1" roundness="12"/>
+<pad name="P$1" x="0" y="0.95" drill="0.2" diameter="0.254"/>
+<pad name="P$2" x="0" y="-0.95" drill="0.2" diameter="0.254"/>
+<pad name="P$3" x="-0.575" y="0" drill="0.2" diameter="0.254"/>
+<pad name="P$4" x="0.575" y="0" drill="0.2" diameter="0.254"/>
+<smd name="9" x="0" y="0" dx="1.65" dy="2.4" layer="1" roundness="14"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LIMIT-SWITCH">
@@ -931,6 +946,21 @@ DC 12V 0.05A</description>
 <pin name="5" x="7.62" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="6" x="10.16" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 <pin name="4" x="5.08" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
+<symbol name="TPS2113A">
+<pin name="2:EN" x="-15.24" y="2.54" length="middle"/>
+<pin name="3:VSNS" x="-15.24" y="-2.54" length="middle"/>
+<pin name="1:STAT" x="-15.24" y="7.62" length="middle"/>
+<pin name="4:ILIM" x="-15.24" y="-7.62" length="middle"/>
+<pin name="8:IN1" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="7:OUT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="6:IN2" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="5:GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="-6.35" y="11.43" size="1.778" layer="94" font="vector" ratio="15">TPS2113A</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1570,6 +1600,28 @@ TRAVEL 0.25mm</description>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS2113A">
+<gates>
+<gate name="G$1" symbol="TPS2113A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VSON8">
+<connects>
+<connect gate="G$1" pin="1:STAT" pad="1"/>
+<connect gate="G$1" pin="2:EN" pad="2"/>
+<connect gate="G$1" pin="3:VSNS" pad="3"/>
+<connect gate="G$1" pin="4:ILIM" pad="4"/>
+<connect gate="G$1" pin="5:GND" pad="5 9 P$1 P$2 P$3 P$4"/>
+<connect gate="G$1" pin="6:IN2" pad="6"/>
+<connect gate="G$1" pin="7:OUT" pad="7"/>
+<connect gate="G$1" pin="8:IN1" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
