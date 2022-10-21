@@ -360,6 +360,12 @@
 </devices>
 </deviceset>
 <deviceset name="TLP2362">
+<description>TLP2362
+
+Inverter logic Open Collector
+10Mbps
+
+6-soic</description>
 <gates>
 <gate name="G$1" symbol="TLP2362" x="0" y="0"/>
 </gates>
