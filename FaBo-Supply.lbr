@@ -772,6 +772,26 @@
 <wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.127" layer="21"/>
 <wire x1="0" y1="-2.54" x2="0" y2="-7.62" width="0.127" layer="21"/>
 </package>
+<package name="MSOP12">
+<smd name="3" x="-0.325" y="-2.1445" dx="0.42" dy="0.889" layer="1" roundness="12"/>
+<smd name="4" x="0.325" y="-2.1445" dx="0.42" dy="0.889" layer="1" roundness="12"/>
+<smd name="2" x="-0.975" y="-2.1445" dx="0.42" dy="0.889" layer="1" roundness="12"/>
+<smd name="5" x="0.975" y="-2.1445" dx="0.42" dy="0.889" layer="1" roundness="12"/>
+<smd name="1" x="-1.625" y="-2.1445" dx="0.42" dy="0.889" layer="1" roundness="12"/>
+<smd name="6" x="1.625" y="-2.1445" dx="0.42" dy="0.889" layer="1" roundness="12"/>
+<smd name="10" x="-0.325" y="2.1445" dx="0.42" dy="0.889" layer="1" roundness="12"/>
+<smd name="9" x="0.325" y="2.1445" dx="0.42" dy="0.889" layer="1" roundness="12"/>
+<smd name="11" x="-0.975" y="2.1445" dx="0.42" dy="0.889" layer="1" roundness="12"/>
+<smd name="8" x="0.975" y="2.1445" dx="0.42" dy="0.889" layer="1" roundness="12"/>
+<smd name="12" x="-1.625" y="2.1445" dx="0.42" dy="0.889" layer="1" roundness="12"/>
+<smd name="7" x="1.625" y="2.1445" dx="0.42" dy="0.889" layer="1" roundness="12"/>
+<smd name="13" x="0" y="0" dx="2.845" dy="1.651" layer="1" roundness="10"/>
+<wire x1="-2.0195" y1="1.5" x2="2.0195" y2="1.5" width="0.127" layer="51"/>
+<wire x1="2.0195" y1="1.5" x2="2.0195" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="2.0195" y1="-1.5" x2="-2.0195" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-2.0195" y1="-1.5" x2="-2.0195" y2="1.5" width="0.127" layer="51"/>
+<circle x="-1.6" y="-1.4" radius="0.22360625" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TI-TPS62730">
@@ -1520,6 +1540,26 @@
 <text x="-9.906" y="7.874" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="5.08" size="1.778" layer="94" align="bottom-center">LP2985-50</text>
 <text x="-9.906" y="-7.874" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="LTC3245">
+<pin name="3:VIN" x="-22.86" y="2.54" length="middle"/>
+<pin name="4:BURST" x="-22.86" y="-2.54" length="middle"/>
+<pin name="2:VIN" x="-22.86" y="7.62" length="middle"/>
+<pin name="5:SEL1" x="-22.86" y="-7.62" length="middle"/>
+<pin name="1:VIN" x="-22.86" y="12.7" length="middle"/>
+<pin name="6:SEL2" x="-22.86" y="-12.7" length="middle"/>
+<pin name="7:OUT/ADJ" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="8:PGOOD" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="9:CPLUS" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="10:VOUT" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="11:CMINUS" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="12:GND" x="25.4" y="12.7" length="middle" rot="R180"/>
+<wire x1="-17.78" y1="17.78" x2="20.32" y2="17.78" width="0.254" layer="94"/>
+<wire x1="20.32" y1="17.78" x2="20.32" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-17.78" x2="-17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
+<pin name="13:GND" x="2.54" y="-22.86" length="middle" rot="R90"/>
+<text x="-2.54" y="15.24" size="1.27" layer="94">LTC3245</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2809,6 +2849,33 @@
 <connect gate="G$1" pin="ON/OFF" pad="3"/>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC3245">
+<gates>
+<gate name="G$1" symbol="LTC3245" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSOP12">
+<connects>
+<connect gate="G$1" pin="10:VOUT" pad="10"/>
+<connect gate="G$1" pin="11:CMINUS" pad="11"/>
+<connect gate="G$1" pin="12:GND" pad="12"/>
+<connect gate="G$1" pin="13:GND" pad="13"/>
+<connect gate="G$1" pin="1:VIN" pad="1"/>
+<connect gate="G$1" pin="2:VIN" pad="2"/>
+<connect gate="G$1" pin="3:VIN" pad="3"/>
+<connect gate="G$1" pin="4:BURST" pad="4"/>
+<connect gate="G$1" pin="5:SEL1" pad="5"/>
+<connect gate="G$1" pin="6:SEL2" pad="6"/>
+<connect gate="G$1" pin="7:OUT/ADJ" pad="7"/>
+<connect gate="G$1" pin="8:PGOOD" pad="8"/>
+<connect gate="G$1" pin="9:CPLUS" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
