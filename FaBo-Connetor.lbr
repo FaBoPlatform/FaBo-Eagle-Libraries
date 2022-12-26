@@ -1906,6 +1906,35 @@ BM05B-PASS-1-TFT</description>
 <wire x1="-6.75" y1="-1.25" x2="-5.75" y2="-1.25" width="1.1" layer="29"/>
 <wire x1="-5.75" y1="-1.25" x2="-6.75" y2="-1.25" width="1.1" layer="30"/>
 </package>
+<package name="801-87-004-20-002101">
+<pad name="1" x="-3.81" y="0" drill="0.87" diameter="1.8"/>
+<pad name="2" x="-1.27" y="0" drill="0.87" diameter="1.8"/>
+<pad name="3" x="1.27" y="0" drill="0.87" diameter="1.8"/>
+<pad name="4" x="3.81" y="0" drill="0.87" diameter="1.8"/>
+<wire x1="-5.08" y1="-1.3" x2="-2.54" y2="-1.3" width="0.127" layer="48"/>
+<wire x1="-2.54" y1="-1.3" x2="0" y2="-1.3" width="0.127" layer="48"/>
+<wire x1="0" y1="-1.3" x2="2.54" y2="-1.3" width="0.127" layer="48"/>
+<wire x1="2.54" y1="-1.3" x2="5.08" y2="-1.3" width="0.127" layer="48"/>
+<wire x1="-5.08" y1="-8.3" x2="-2.54" y2="-8.3" width="0.127" layer="48"/>
+<wire x1="-2.54" y1="-8.3" x2="0" y2="-8.3" width="0.127" layer="48"/>
+<wire x1="0" y1="-8.3" x2="2.54" y2="-8.3" width="0.127" layer="48"/>
+<wire x1="2.54" y1="-8.3" x2="5.08" y2="-8.3" width="0.127" layer="48"/>
+<wire x1="-5.08" y1="-1.3" x2="-5.08" y2="-8.3" width="0.127" layer="48"/>
+<wire x1="-2.54" y1="-1.3" x2="-2.54" y2="-8.3" width="0.03" layer="48"/>
+<wire x1="5.08" y1="-1.3" x2="5.08" y2="-8.3" width="0.127" layer="48"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="-1.27" width="0.127" layer="48"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.127" layer="48"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.127" layer="48"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-1.27" width="0.127" layer="48"/>
+<text x="-3.81" y="-6.35" size="1.27" layer="48" font="vector" align="center">LM</text>
+<text x="-1.27" y="-6.35" size="1.27" layer="48" font="vector" align="center">LP</text>
+<text x="1.27" y="-6.35" size="1.27" layer="48" font="vector" align="center">RM</text>
+<text x="3.81" y="-6.35" size="1.27" layer="48" font="vector" align="center">RP</text>
+<text x="0" y="-3.81" size="0.5" layer="48" font="vector" align="center">801-87-004-20-001101</text>
+<wire x1="0" y1="-1.3" x2="0" y2="-8.3" width="0.03" layer="48"/>
+<wire x1="2.54" y1="-1.3" x2="2.54" y2="-8.3" width="0.03" layer="48"/>
+<text x="-3.81" y="-8.89" size="0.762" layer="48" font="vector" align="center">1</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PCC-SMP-J">
@@ -4218,6 +4247,24 @@ UART/USART</text>
 <connect gate="G$1" pin="MOSI" pad="6"/>
 <connect gate="G$1" pin="NC" pad="4"/>
 <connect gate="G$1" pin="SCK" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="801-87-004-20-001101">
+<gates>
+<gate name="G$1" symbol="PIN_1X4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="801-87-004-20-002101">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
