@@ -2998,6 +2998,34 @@ UART/USART</text>
 <circle x="7.62" y="-12.065" radius="0.635" width="0.254" layer="94"/>
 <circle x="12.7" y="-9.525" radius="0.635" width="0.254" layer="94"/>
 </symbol>
+<symbol name="FABO-7PINMULTI2">
+<wire x1="5.08" y1="17.78" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-17.78" x2="-5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-17.78" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="17.78" x2="5.08" y2="17.78" width="0.254" layer="94"/>
+<pin name="GND" x="10.16" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="5V" x="10.16" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="MISO" x="10.16" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="MOSI" x="10.16" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<text x="-5.08" y="18.288" size="1.778" layer="95">&gt;NAME</text>
+<pin name="SCK" x="10.16" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="CS" x="10.16" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="NC" x="10.16" y="0" visible="pin" length="middle" rot="R180"/>
+</symbol>
+<symbol name="FABO-7PINMULTI_SPI">
+<wire x1="5.08" y1="17.78" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-17.78" x2="-5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-17.78" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="17.78" x2="5.08" y2="17.78" width="0.254" layer="94"/>
+<pin name="GND" x="10.16" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="5V" x="10.16" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="MISO" x="10.16" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="MOSI" x="10.16" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<text x="-5.08" y="18.288" size="1.778" layer="95">&gt;NAME</text>
+<pin name="SCK" x="10.16" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="CS" x="10.16" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="NC" x="10.16" y="0" visible="pin" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PCC-SMP-J" prefix="CN" uservalue="yes">
@@ -4169,6 +4197,27 @@ UART/USART</text>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FABO-7PINMULTI_SPI">
+<gates>
+<gate name="G$1" symbol="FABO-7PINMULTI2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BM07B-PASS-1">
+<connects>
+<connect gate="G$1" pin="5V" pad="2"/>
+<connect gate="G$1" pin="CS" pad="3"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="MISO" pad="7"/>
+<connect gate="G$1" pin="MOSI" pad="6"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="SCK" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
