@@ -1561,6 +1561,20 @@
 <pin name="13:GND" x="2.54" y="-22.86" length="middle" rot="R90"/>
 <text x="-2.54" y="15.24" size="1.27" layer="94">LTC3245</text>
 </symbol>
+<symbol name="NJM2866F33">
+<pin name="VIN" x="-15.24" y="2.54" visible="pin" length="middle" direction="in"/>
+<pin name="GND" x="-15.24" y="0" visible="pin" length="middle" direction="pwr"/>
+<pin name="CONTROL" x="-15.24" y="-5.08" visible="pin" length="middle" direction="in"/>
+<pin name="VOUT" x="15.24" y="2.54" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="NC" x="15.24" y="-2.54" visible="pin" length="middle" direction="nc" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-9.906" y="7.874" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="5.08" size="1.778" layer="94" align="bottom-center">NJM2866F33</text>
+<text x="-9.906" y="-7.874" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TI-TPS62730" prefix="IC" uservalue="yes">
@@ -2876,6 +2890,34 @@
 <connect gate="G$1" pin="7:OUT/ADJ" pad="7"/>
 <connect gate="G$1" pin="8:PGOOD" pad="8"/>
 <connect gate="G$1" pin="9:CPLUS" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NJM2866F33">
+<description>LDO Voltage Regulator	
+Output Voltage 3.3 V	
+Output Current 130 mA		
+Quiescent Current 180 uA	
+Input Voltage2.3 V ~ 14V			
+Dropout 100 mV
+- 40 C~+ 85 C
+RoHS
+SOT-23-5</description>
+<gates>
+<gate name="G$1" symbol="NJM2866F33" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="CONTROL" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
