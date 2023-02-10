@@ -1286,7 +1286,7 @@
 <text x="0" y="2.75" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
 <circle x="-3.8" y="-2.6" radius="0.15" width="0.3" layer="21"/>
 </package>
-<package name="I2C-BM04B-PASS-1">
+<package name="I2C-SM04B-PASS-1">
 <smd name="SDA" x="1" y="0" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
 <smd name="5V" x="-1" y="0" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
 <smd name="GND" x="-3" y="0" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
@@ -1313,7 +1313,7 @@
 <text x="-1" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">5V</text>
 <text x="-3" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
 </package>
-<package name="SPI-BM04B-PASS-1">
+<package name="SPI-SM04B-PASS-1">
 <smd name="CI" x="1" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
 <smd name="5V" x="-1" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
 <smd name="GND" x="-3" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
@@ -1948,6 +1948,74 @@ BM05B-PASS-1-TFT</description>
 <wire x1="6.125" y1="2.65" x2="6.125" y2="-5.15" width="0.127" layer="51"/>
 <wire x1="6.125" y1="-5.15" x2="-6.125" y2="-5.15" width="0.127" layer="51"/>
 <wire x1="-6.125" y1="2.65" x2="6.125" y2="2.65" width="0.127" layer="51"/>
+</package>
+<package name="I2C-SM04B-PASS-1-FL">
+<smd name="SDA" x="1" y="0" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="5V" x="-1" y="0" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="GND" x="-3" y="0" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="SCL" x="3" y="0" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="P$5" x="-5.4" y="4.6" dx="3.8" dy="1.8" layer="1" roundness="20" rot="R90"/>
+<smd name="P$6" x="5.4" y="4.5" dx="3.8" dy="1.8" layer="1" roundness="20" rot="R90"/>
+<wire x1="-6" y1="8.8" x2="-4" y2="8.8" width="0.1" layer="21"/>
+<wire x1="-4" y1="8.8" x2="-4" y2="8" width="0.1" layer="21"/>
+<wire x1="-4" y1="8" x2="4" y2="8" width="0.1" layer="21"/>
+<wire x1="4" y1="8" x2="4" y2="8.8" width="0.1" layer="21"/>
+<wire x1="4" y1="8.8" x2="6" y2="8.8" width="0.1" layer="21"/>
+<wire x1="-6" y1="8.8" x2="-6" y2="0.3" width="0.1" layer="21"/>
+<wire x1="-6" y1="0.3" x2="-5" y2="0.3" width="0.1" layer="21"/>
+<wire x1="-5" y1="0.3" x2="-5" y2="0.5" width="0.1" layer="21"/>
+<wire x1="-5" y1="0.5" x2="5" y2="0.5" width="0.1" layer="21"/>
+<wire x1="5" y1="0.5" x2="5" y2="0.3" width="0.1" layer="21"/>
+<wire x1="5" y1="0.3" x2="6" y2="0.3" width="0.1" layer="21"/>
+<wire x1="6" y1="0.3" x2="6" y2="8.8" width="0.1" layer="21"/>
+<hole x="5.2" y="1.25" drill="0.8"/>
+<text x="0" y="9" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<text x="3" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">SCL</text>
+<text x="1" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">SDA</text>
+<text x="-1" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">5V</text>
+<text x="-3" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
+<hole x="-4.7" y="1.25" drill="0.8"/>
+<hole x="-5.7" y="1.25" drill="0.8"/>
+<hole x="-5.6" y="1.25" drill="0.8"/>
+<hole x="-5.4" y="1.25" drill="0.8"/>
+<hole x="-5.2" y="1.25" drill="0.8"/>
+<hole x="-5.1" y="1.25" drill="0.8"/>
+<hole x="-5" y="1.25" drill="0.8"/>
+<hole x="-4.9" y="1.25" drill="0.8"/>
+</package>
+<package name="SPI-SM04B-PASS-1-FL">
+<smd name="CI" x="1" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="5V" x="-1" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="GND" x="-3" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="DI" x="3" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="P$5" x="-5.4" y="4.5" dx="3.8" dy="1.8" layer="1" roundness="20" rot="R90"/>
+<smd name="P$6" x="5.4" y="4.4" dx="3.8" dy="1.8" layer="1" roundness="20" rot="R90"/>
+<wire x1="-6" y1="8.7" x2="-4" y2="8.7" width="0.1" layer="21"/>
+<wire x1="-4" y1="8.7" x2="-4" y2="7.9" width="0.1" layer="21"/>
+<wire x1="-4" y1="7.9" x2="4" y2="7.9" width="0.1" layer="21"/>
+<wire x1="4" y1="7.9" x2="4" y2="8.7" width="0.1" layer="21"/>
+<wire x1="4" y1="8.7" x2="6" y2="8.7" width="0.1" layer="21"/>
+<wire x1="-6" y1="8.7" x2="-6" y2="0.2" width="0.1" layer="21"/>
+<wire x1="-6" y1="0.2" x2="-5" y2="0.2" width="0.1" layer="21"/>
+<wire x1="-5" y1="0.2" x2="-5" y2="0.4" width="0.1" layer="21"/>
+<wire x1="-5" y1="0.4" x2="5" y2="0.4" width="0.1" layer="21"/>
+<wire x1="5" y1="0.4" x2="5" y2="0.2" width="0.1" layer="21"/>
+<wire x1="5" y1="0.2" x2="6" y2="0.2" width="0.1" layer="21"/>
+<wire x1="6" y1="0.2" x2="6" y2="8.7" width="0.1" layer="21"/>
+<hole x="5.2" y="1.15" drill="0.8"/>
+<text x="0" y="8.75" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<text x="3" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">DI</text>
+<text x="1" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">CI</text>
+<text x="-1" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">5V</text>
+<text x="-3" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
+<hole x="-4.7" y="1.15" drill="0.8"/>
+<hole x="-5.7" y="1.15" drill="0.8"/>
+<hole x="-4.8" y="1.15" drill="0.8"/>
+<hole x="-4.9" y="1.15" drill="0.8"/>
+<hole x="-5.1" y="1.15" drill="0.8"/>
+<hole x="-5.3" y="1.15" drill="0.8"/>
+<hole x="-5.5" y="1.15" drill="0.8"/>
+<hole x="-5.6" y="1.15" drill="0.8"/>
 </package>
 </packages>
 <symbols>
@@ -3578,7 +3646,18 @@ UART/USART</text>
 <gate name="G$1" symbol="FABO-I2C" x="0" y="0"/>
 </gates>
 <devices>
-<device name="_BM04B" package="I2C-BM04B-PASS-1">
+<device name="_BM04B" package="I2C-SM04B-PASS-1">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="5V"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="I2C-SM04B-PASS-1-FL">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
@@ -3596,7 +3675,7 @@ UART/USART</text>
 <gate name="G$1" symbol="FABO-SPI-LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-BM04B" package="SPI-BM04B-PASS-1">
+<device name="-BM04B" package="SPI-SM04B-PASS-1">
 <connects>
 <connect gate="G$1" pin="CI" pad="CI"/>
 <connect gate="G$1" pin="DI" pad="DI"/>
@@ -3624,6 +3703,17 @@ UART/USART</text>
 <connect gate="G$1" pin="DI" pad="DI"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="SPI-SM04B-PASS-1-FL">
+<connects>
+<connect gate="G$1" pin="CI" pad="CI"/>
+<connect gate="G$1" pin="DI" pad="DI"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="5V"/>
 </connects>
 <technologies>
 <technology name=""/>
