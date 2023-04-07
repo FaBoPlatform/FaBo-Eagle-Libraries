@@ -4344,6 +4344,41 @@ IO3.3V(TTL)
 <wire x1="-15.24" y1="17.78" x2="-15.24" y2="38.1" width="0.1016" layer="94"/>
 <wire x1="-15.24" y1="17.78" x2="20.32" y2="17.78" width="0.1016" layer="94"/>
 </symbol>
+<symbol name="SPI_LCD_SPI_240X320_SDCARD">
+<pin name="1:VCC" x="-20.32" y="15.24" length="middle"/>
+<pin name="2:GND" x="-20.32" y="12.7" length="middle"/>
+<pin name="3:CS" x="-20.32" y="10.16" length="middle"/>
+<pin name="4:RESET" x="-20.32" y="7.62" length="middle"/>
+<pin name="5:DC/RS" x="-20.32" y="5.08" length="middle"/>
+<pin name="6:SDI(MOSI)" x="-20.32" y="2.54" length="middle"/>
+<pin name="7:SCK" x="-20.32" y="0" length="middle"/>
+<pin name="8:LED" x="-20.32" y="-2.54" length="middle"/>
+<pin name="9:SDO(MISO)" x="-20.32" y="-5.08" length="middle"/>
+<pin name="10:T_CLK" x="-20.32" y="-7.62" length="middle"/>
+<pin name="11:T_CS" x="-20.32" y="-10.16" length="middle"/>
+<pin name="12:T_DIN" x="-20.32" y="-12.7" length="middle"/>
+<pin name="13:T_DO" x="-20.32" y="-15.24" length="middle"/>
+<pin name="14:T_IRQ" x="-20.32" y="-17.78" length="middle"/>
+<pin name="SD_CS" x="25.4" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="SD_MOSI" x="25.4" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="SD_MISO" x="25.4" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="SD_SCK" x="25.4" y="-2.54" length="middle" direction="in" rot="R180"/>
+<wire x1="-15.24" y1="38.1" x2="20.32" y2="38.1" width="0.1016" layer="94"/>
+<wire x1="20.32" y1="38.1" x2="20.32" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="20.32" y1="17.78" x2="20.32" y2="-20.32" width="0.1016" layer="94"/>
+<wire x1="20.32" y1="-20.32" x2="-15.24" y2="-20.32" width="0.1016" layer="94"/>
+<wire x1="-15.24" y1="-20.32" x2="-15.24" y2="17.78" width="0.1016" layer="94"/>
+<text x="-7.62" y="17.78" size="1.524" layer="94" font="vector" ratio="18">MSP2807
+2.8inch TFT ILI9341
+320X240
+SPI
+RGB 65K CLOR
+VCC 3.3V-5V
+IO3.3V(TTL)
+</text>
+<wire x1="-15.24" y1="17.78" x2="-15.24" y2="38.1" width="0.1016" layer="94"/>
+<wire x1="-15.24" y1="17.78" x2="20.32" y2="17.78" width="0.1016" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ARDUINO_UNO_R3_SHIELD" prefix="U" uservalue="yes">
@@ -5957,6 +5992,38 @@ IO3.3V(TTL)
 <deviceset name="MSP2807(LCD_SPI)">
 <gates>
 <gate name="G$1" symbol="SPI_LCD_SPI_240X320" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPI_LCD_MSP2807">
+<connects>
+<connect gate="G$1" pin="10:T_CLK" pad="10:T_CLK"/>
+<connect gate="G$1" pin="11:T_CS" pad="11:T_CS"/>
+<connect gate="G$1" pin="12:T_DIN" pad="12:T_DIN"/>
+<connect gate="G$1" pin="13:T_DO" pad="13:T_DO"/>
+<connect gate="G$1" pin="14:T_IRQ" pad="14:T_IRQ"/>
+<connect gate="G$1" pin="1:VCC" pad="1:VCC"/>
+<connect gate="G$1" pin="2:GND" pad="2:GND"/>
+<connect gate="G$1" pin="3:CS" pad="3:CS"/>
+<connect gate="G$1" pin="4:RESET" pad="4:RESET"/>
+<connect gate="G$1" pin="5:DC/RS" pad="5:DC/RS"/>
+<connect gate="G$1" pin="6:SDI(MOSI)" pad="6:SDI(MOSI)"/>
+<connect gate="G$1" pin="7:SCK" pad="7:SCK"/>
+<connect gate="G$1" pin="8:LED" pad="8:LED"/>
+<connect gate="G$1" pin="9:SDO(MISO)" pad="9:SDO(MISO)"/>
+<connect gate="G$1" pin="SD_CS" pad="SD_CS"/>
+<connect gate="G$1" pin="SD_MISO" pad="SD_MISO"/>
+<connect gate="G$1" pin="SD_MOSI" pad="SD_MOSI"/>
+<connect gate="G$1" pin="SD_SCK" pad="SD_SCK"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MSP2807(LCD_SPI_WITH_SDCARD">
+<gates>
+<gate name="G$1" symbol="SPI_LCD_SPI_240X320_SDCARD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SPI_LCD_MSP2807">
