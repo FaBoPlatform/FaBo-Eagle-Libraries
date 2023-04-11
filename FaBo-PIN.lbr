@@ -3201,6 +3201,15 @@ RTL8720DN 802.11 a/b/g/n BLE5.0 AES/DES/SHA</text>
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 </symbol>
+<symbol name="RC_PIN3_SERVOOUT_SMT">
+<pin name="3:GND" x="-15.24" y="5.08" length="middle"/>
+<pin name="2:VCC" x="-15.24" y="0" length="middle"/>
+<pin name="1:SIGNAL" x="-15.24" y="-5.08" length="middle" direction="out"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FABO-PIN-HEADER-2X3-SMD" prefix="CN" uservalue="yes">
@@ -4773,6 +4782,23 @@ RTL8720DN 802.11 a/b/g/n BLE5.0 AES/DES/SHA</text>
 <device name="" package="PNHEADER_2.54_SMT_3PIN_RC_TT01_02">
 <connects>
 <connect gate="G$1" pin="1:NC" pad="1:SIGNAL3"/>
+<connect gate="G$1" pin="2:VCC" pad="2:VCC3"/>
+<connect gate="G$1" pin="3:GND" pad="3:GND3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RC_3PIN_SERVO">
+<gates>
+<gate name="G$1" symbol="RC_PIN3_SERVOOUT_SMT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PNHEADER_2.54_SMT_3PIN_RC_TT01_02">
+<connects>
+<connect gate="G$1" pin="1:SIGNAL" pad="1:SIGNAL3"/>
 <connect gate="G$1" pin="2:VCC" pad="2:VCC3"/>
 <connect gate="G$1" pin="3:GND" pad="3:GND3"/>
 </connects>
