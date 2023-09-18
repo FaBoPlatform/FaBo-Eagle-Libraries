@@ -527,28 +527,28 @@
 <text x="-5.08" y="0" size="1.778" layer="94">BMI160</text>
 </symbol>
 <symbol name="ICM-20948">
-<pin name="1:NC" x="-30.48" y="10.16" length="middle"/>
-<pin name="2:NC" x="-30.48" y="5.08" length="middle"/>
-<pin name="3:NC" x="-30.48" y="0" length="middle"/>
-<pin name="4:NC" x="-30.48" y="-5.08" length="middle"/>
-<pin name="5:NC" x="-30.48" y="-10.16" length="middle"/>
-<pin name="6:NC" x="-30.48" y="-15.24" length="middle"/>
+<pin name="1:NC" x="-30.48" y="10.16" length="middle" direction="nc"/>
+<pin name="2:NC" x="-30.48" y="5.08" length="middle" direction="nc"/>
+<pin name="3:NC" x="-30.48" y="0" length="middle" direction="nc"/>
+<pin name="4:NC" x="-30.48" y="-5.08" length="middle" direction="nc"/>
+<pin name="5:NC" x="-30.48" y="-10.16" length="middle" direction="nc"/>
+<pin name="6:NC" x="-30.48" y="-15.24" length="middle" direction="nc"/>
 <pin name="7:AUX_CL" x="-12.7" y="-27.94" length="middle" rot="R90"/>
-<pin name="8:VDDIO" x="-7.62" y="-27.94" length="middle" rot="R90"/>
-<pin name="9:SDO/AD0" x="-2.54" y="-27.94" length="middle" rot="R90"/>
+<pin name="8:VDDIO" x="-7.62" y="-27.94" length="middle" direction="pwr" rot="R90"/>
+<pin name="9:SDO/AD0" x="-2.54" y="-27.94" length="middle" direction="out" rot="R90"/>
 <pin name="10:REGOUT" x="2.54" y="-27.94" length="middle" rot="R90"/>
 <pin name="11:FSYNC" x="7.62" y="-27.94" length="middle" rot="R90"/>
-<pin name="12:INT1" x="12.7" y="-27.94" length="middle" rot="R90"/>
-<pin name="13:VDD" x="30.48" y="-15.24" length="middle" rot="R180"/>
-<pin name="14:NC" x="30.48" y="-10.16" length="middle" rot="R180"/>
-<pin name="15:NC" x="30.48" y="-5.08" length="middle" rot="R180"/>
-<pin name="16:NC" x="30.48" y="0" length="middle" rot="R180"/>
-<pin name="17:NC" x="30.48" y="5.08" length="middle" rot="R180"/>
-<pin name="18:GND" x="30.48" y="10.16" length="middle" rot="R180"/>
+<pin name="12:INT1" x="12.7" y="-27.94" length="middle" direction="out" rot="R90"/>
+<pin name="13:VDD" x="30.48" y="-15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="14:NC" x="30.48" y="-10.16" length="middle" direction="nc" rot="R180"/>
+<pin name="15:NC" x="30.48" y="-5.08" length="middle" direction="nc" rot="R180"/>
+<pin name="16:NC" x="30.48" y="0" length="middle" direction="nc" rot="R180"/>
+<pin name="17:NC" x="30.48" y="5.08" length="middle" direction="nc" rot="R180"/>
+<pin name="18:GND" x="30.48" y="10.16" length="middle" direction="pwr" rot="R180"/>
 <pin name="19:RESV" x="12.7" y="25.4" length="middle" rot="R270"/>
 <pin name="20:RESV" x="7.62" y="25.4" length="middle" rot="R270"/>
 <pin name="21:AUX_DA" x="2.54" y="25.4" length="middle" rot="R270"/>
-<pin name="22:NCS" x="-2.54" y="25.4" length="middle" rot="R270"/>
+<pin name="22:NCS" x="-2.54" y="25.4" length="middle" direction="in" rot="R270"/>
 <pin name="23:SCL/SCLK" x="-7.62" y="25.4" length="middle" rot="R270"/>
 <pin name="24:SDA/SDI" x="-12.7" y="25.4" length="middle" rot="R270"/>
 <wire x1="-25.4" y1="20.32" x2="25.4" y2="20.32" width="0.254" layer="94"/>
