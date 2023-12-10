@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -846,6 +846,47 @@ Thin Auad Flatpack(TQFP)
 <wire x1="15.3" y1="19.39" x2="20.3" y2="19.39" width="0.127" layer="51"/>
 <wire x1="20.3" y1="1.61" x2="15.3" y2="1.61" width="0.127" layer="51"/>
 </package>
+<package name="LQFP-32">
+<smd name="4:NRST" x="-0.4" y="-4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="5:VDDA" x="0.4" y="-4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="3:PA15-OSC32_OUT" x="-1.2" y="-4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="6:PA0-CK_IN" x="1.2" y="-4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="2:PC14-OSC_IN" x="-2" y="-4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="7:PA1" x="2" y="-4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="1:VDD" x="-2.8" y="-4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="8:PA2" x="2.8" y="-4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="21:PA11" x="-0.4" y="4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="20:PA10" x="0.4" y="4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="22:PA12" x="-1.2" y="4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="19:PA9" x="1.2" y="4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="23:PA13" x="-2" y="4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="18:PA8" x="2" y="4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="24:PA14" x="-2.8" y="4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="17:VDD" x="2.8" y="4.25" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R180"/>
+<smd name="29:PB6" x="-4.25" y="-0.4" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="28:PB5" x="-4.25" y="0.4" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="30:PB7" x="-4.25" y="-1.2" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="27:PB4" x="-4.25" y="1.2" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="31:BOOT0" x="-4.25" y="-2" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="26:PB3" x="-4.25" y="2" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="32:VSS" x="-4.25" y="-2.8" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="25:PA15" x="-4.25" y="2.8" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="12:PA6" x="4.25" y="-0.4" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="13:PA7" x="4.25" y="0.4" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="11:PA5" x="4.25" y="-1.2" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="14:PB0" x="4.25" y="1.2" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="10:PA4" x="4.25" y="-2" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="15:PB1" x="4.25" y="2" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="9:PA3" x="4.25" y="-2.8" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<smd name="16:VSS" x="4.25" y="2.8" dx="0.5" dy="1.2" layer="1" roundness="8" rot="R270"/>
+<rectangle x1="-3" y1="-3.2" x2="-1.4" y2="-1.8" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.127" layer="51"/>
+<text x="-2.9" y="0.7" size="0.6096" layer="51" font="vector" ratio="12">STM32L031K6</text>
+<text x="-1.5" y="-1.1" size="0.6096" layer="51" font="vector" ratio="12">LQFP32</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEL-MEGA328P">
@@ -1474,6 +1515,45 @@ Thin Auad Flatpack(TQFP)
 <wire x1="21.59" y1="11.43" x2="20.32" y2="11.43" width="0.1524" layer="94"/>
 <text x="-21.59" y="15.24" size="1.27" layer="95" ratio="12">&gt;NAME</text>
 <text x="-21.59" y="13.97" size="1.27" layer="96" ratio="12">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32L031K6">
+<pin name="28:PB5" x="2.54" y="38.1" length="middle" rot="R270"/>
+<pin name="29:PB6" x="-2.54" y="38.1" length="middle" rot="R270"/>
+<pin name="27:PB4" x="7.62" y="38.1" length="middle" rot="R270"/>
+<pin name="26:PB3" x="12.7" y="38.1" length="middle" rot="R270"/>
+<pin name="30:PB7" x="-7.62" y="38.1" length="middle" rot="R270"/>
+<pin name="31:BOOT0" x="-12.7" y="38.1" length="middle" rot="R270"/>
+<pin name="25:PA15" x="17.78" y="38.1" length="middle" rot="R270"/>
+<pin name="32:VSS" x="-17.78" y="38.1" length="middle" rot="R270"/>
+<pin name="20:PA10" x="40.64" y="-2.54" length="middle" rot="R180"/>
+<pin name="21:PA11" x="40.64" y="2.54" length="middle" rot="R180"/>
+<pin name="19:PA9" x="40.64" y="-7.62" length="middle" rot="R180"/>
+<pin name="18:PA8" x="40.64" y="-12.7" length="middle" rot="R180"/>
+<pin name="22:PA12" x="40.64" y="7.62" length="middle" rot="R180"/>
+<pin name="23:PA13" x="40.64" y="12.7" length="middle" rot="R180"/>
+<pin name="17:VDD" x="40.64" y="-17.78" length="middle" rot="R180"/>
+<pin name="24:PA14" x="40.64" y="17.78" length="middle" rot="R180"/>
+<pin name="12:PA6" x="-2.54" y="-38.1" length="middle" rot="R90"/>
+<pin name="13:PA7" x="2.54" y="-38.1" length="middle" rot="R90"/>
+<pin name="11:PA5" x="-7.62" y="-38.1" length="middle" rot="R90"/>
+<pin name="10:PA4" x="-12.7" y="-38.1" length="middle" rot="R90"/>
+<pin name="14:PB0" x="7.62" y="-38.1" length="middle" rot="R90"/>
+<pin name="15:PB1" x="12.7" y="-38.1" length="middle" rot="R90"/>
+<pin name="9:PA3" x="-17.78" y="-38.1" length="middle" rot="R90"/>
+<pin name="16:VSS" x="17.78" y="-38.1" length="middle" rot="R90"/>
+<pin name="4:NRST" x="-40.64" y="2.54" length="middle"/>
+<pin name="5:VDDA" x="-40.64" y="-2.54" length="middle"/>
+<pin name="3:PA15-OSC_OUT" x="-40.64" y="7.62" length="middle"/>
+<pin name="2:PC14-OSC_IN" x="-40.64" y="12.7" length="middle"/>
+<pin name="6:PA0-CK_IN" x="-40.64" y="-7.62" length="middle"/>
+<pin name="7:PA1" x="-40.64" y="-12.7" length="middle"/>
+<pin name="1:VDD" x="-40.64" y="17.78" length="middle"/>
+<pin name="8:PA2" x="-40.64" y="-17.78" length="middle"/>
+<wire x1="-35.56" y1="33.02" x2="35.56" y2="33.02" width="0.254" layer="94"/>
+<wire x1="35.56" y1="33.02" x2="35.56" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-33.02" x2="-35.56" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-35.56" y1="33.02" x2="-35.56" y2="-33.02" width="0.254" layer="94"/>
+<text x="0" y="15.24" size="2.54" layer="94" font="vector" ratio="12" align="center">STM32L031K6T6</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2168,6 +2248,52 @@ A=TQFP</description>
 <connect gate="G$1" pin="PA9_A5_D5_SCL" pad="P$6 P$20"/>
 <connect gate="G$1" pin="PB08_A6_D6_TX" pad="P$7 P$21"/>
 <connect gate="G$1" pin="PB09_A7_D7_RX" pad="P$8 P$22"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STM32L031K6">
+<gates>
+<gate name="G$1" symbol="STM32L031K6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LQFP-32">
+<connects>
+<connect gate="G$1" pin="10:PA4" pad="10:PA4"/>
+<connect gate="G$1" pin="11:PA5" pad="11:PA5"/>
+<connect gate="G$1" pin="12:PA6" pad="12:PA6"/>
+<connect gate="G$1" pin="13:PA7" pad="13:PA7"/>
+<connect gate="G$1" pin="14:PB0" pad="14:PB0"/>
+<connect gate="G$1" pin="15:PB1" pad="15:PB1"/>
+<connect gate="G$1" pin="16:VSS" pad="16:VSS"/>
+<connect gate="G$1" pin="17:VDD" pad="17:VDD"/>
+<connect gate="G$1" pin="18:PA8" pad="18:PA8"/>
+<connect gate="G$1" pin="19:PA9" pad="19:PA9"/>
+<connect gate="G$1" pin="1:VDD" pad="1:VDD"/>
+<connect gate="G$1" pin="20:PA10" pad="20:PA10"/>
+<connect gate="G$1" pin="21:PA11" pad="21:PA11"/>
+<connect gate="G$1" pin="22:PA12" pad="22:PA12"/>
+<connect gate="G$1" pin="23:PA13" pad="23:PA13"/>
+<connect gate="G$1" pin="24:PA14" pad="24:PA14"/>
+<connect gate="G$1" pin="25:PA15" pad="25:PA15"/>
+<connect gate="G$1" pin="26:PB3" pad="26:PB3"/>
+<connect gate="G$1" pin="27:PB4" pad="27:PB4"/>
+<connect gate="G$1" pin="28:PB5" pad="28:PB5"/>
+<connect gate="G$1" pin="29:PB6" pad="29:PB6"/>
+<connect gate="G$1" pin="2:PC14-OSC_IN" pad="2:PC14-OSC_IN"/>
+<connect gate="G$1" pin="30:PB7" pad="30:PB7"/>
+<connect gate="G$1" pin="31:BOOT0" pad="31:BOOT0"/>
+<connect gate="G$1" pin="32:VSS" pad="32:VSS"/>
+<connect gate="G$1" pin="3:PA15-OSC_OUT" pad="3:PA15-OSC32_OUT"/>
+<connect gate="G$1" pin="4:NRST" pad="4:NRST"/>
+<connect gate="G$1" pin="5:VDDA" pad="5:VDDA"/>
+<connect gate="G$1" pin="6:PA0-CK_IN" pad="6:PA0-CK_IN"/>
+<connect gate="G$1" pin="7:PA1" pad="7:PA1"/>
+<connect gate="G$1" pin="8:PA2" pad="8:PA2"/>
+<connect gate="G$1" pin="9:PA3" pad="9:PA3"/>
 </connects>
 <technologies>
 <technology name=""/>
