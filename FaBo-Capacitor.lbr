@@ -389,6 +389,19 @@
 <wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.127" layer="48"/>
 <wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="48"/>
 </package>
+<package name="FE0H224ZF">
+<pad name="P$1" x="-3.8" y="0" drill="1.6" diameter="3.81"/>
+<pad name="P$2" x="3.8" y="0" drill="1.6" diameter="3.81"/>
+<wire x1="-10.75" y1="0" x2="10.75" y2="0" width="0.127" layer="21" curve="-180"/>
+<wire x1="10.75" y1="0" x2="-10.75" y2="0" width="0.127" layer="21" curve="-180"/>
+<polygon width="0.127" layer="21">
+<vertex x="0" y="0"/>
+<vertex x="0" y="10.75"/>
+<vertex x="0" y="-10.75" curve="-90"/>
+<vertex x="-10.75" y="0" curve="-90"/>
+<vertex x="0" y="10.75"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -414,6 +427,22 @@
 <wire x1="5.1816" y1="0" x2="0.3556" y2="0" width="0.254" layer="94"/>
 <text x="1.8796" y="1.778" size="1.4224" layer="94" rot="R180">+</text>
 <wire x1="-1.1684" y1="1.524" x2="-1.1684" y2="-1.524" width="0.254" layer="94" curve="-116.565051"/>
+</symbol>
+<symbol name="CAPACITOR-POLARITY">
+<pin name="-" x="-4.9784" y="0" visible="off" length="point" direction="pas"/>
+<pin name="+" x="5.1816" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<text x="2.1336" y="3.048" size="1.4224" layer="95" rot="R180">&gt;NAME</text>
+<text x="2.6416" y="-1.778" size="1.4224" layer="96" rot="R180">&gt;VALUE</text>
+<wire x1="0.3556" y1="1.524" x2="0.3556" y2="0" width="0.254" layer="94"/>
+<wire x1="0.3556" y1="0" x2="0.3556" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-4.9784" y1="0" x2="-0.3048" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.3048" y1="0" x2="-0.4064" y2="0" width="0.254" layer="94"/>
+<wire x1="5.1816" y1="0" x2="0.3556" y2="0" width="0.254" layer="94"/>
+<text x="1.8796" y="1.778" size="1.4224" layer="94" rot="R180">+</text>
+<wire x1="0.3556" y1="1.524" x2="0.3556" y2="0" width="0.254" layer="94"/>
+<wire x1="0.3556" y1="1.524" x2="0.3556" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.3048" y1="1.524" x2="-0.3048" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.3048" y1="0" x2="-0.3048" y2="-1.524" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -608,6 +637,22 @@ Size F13</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FE0H224ZF">
+<gates>
+<gate name="G$1" symbol="CAPACITOR-POLARITY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FE0H224ZF">
+<connects>
+<connect gate="G$1" pin="+" pad="P$2"/>
+<connect gate="G$1" pin="-" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
