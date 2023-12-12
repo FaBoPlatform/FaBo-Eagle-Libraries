@@ -375,6 +375,23 @@
 <text x="-1.61" y="2.72" size="0.6096" layer="51" font="vector" ratio="13">&gt;NAME</text>
 <text x="-1.61" y="-3.22" size="0.6096" layer="51" font="vector" ratio="13">VALUE</text>
 </package>
+<package name="744029100">
+<smd name="1" x="0" y="1.1" dx="3.2" dy="1" layer="1" roundness="11"/>
+<smd name="2" x="0" y="-1.1" dx="3.2" dy="1" layer="1" roundness="11"/>
+<wire x1="-1.39" y1="-0.45" x2="-1.39" y2="0.45" width="0.127" layer="51"/>
+<wire x1="-1.39" y1="0.45" x2="-0.45" y2="1.39" width="0.127" layer="51"/>
+<wire x1="-0.45" y1="1.39" x2="0.45" y2="1.39" width="0.127" layer="51"/>
+<wire x1="0.45" y1="1.39" x2="1.39" y2="0.45" width="0.127" layer="51"/>
+<wire x1="1.39" y1="0.45" x2="1.39" y2="-0.45" width="0.127" layer="51"/>
+<wire x1="1.39" y1="-0.45" x2="0.45" y2="-1.39" width="0.127" layer="51"/>
+<wire x1="0.45" y1="-1.39" x2="-0.45" y2="-1.39" width="0.127" layer="51"/>
+<wire x1="-0.45" y1="-1.39" x2="-1.39" y2="-0.45" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="0.86023125" width="0.127" layer="51"/>
+<wire x1="0" y1="-0.8" x2="0" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="0" y1="0.6" x2="0" y2="0.8" width="0.127" layer="51"/>
+<text x="-1.8" y="2.1" size="0.8128" layer="51" font="vector" ratio="13">&gt;NAME</text>
+<text x="-1.6" y="-2.7" size="0.8128" layer="51" font="vector" ratio="13">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="COIL">
@@ -816,6 +833,27 @@ Inductors for power circuits
 </gates>
 <devices>
 <device name="" package="1515">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="744029100">
+<description>Power Inductor,Shielded
+800 mA
+470 mOhms
+Wurth Elektronik
+Wirewound</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="744029100">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

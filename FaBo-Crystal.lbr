@@ -271,6 +271,28 @@
 <wire x1="1.6" y1="-0.65" x2="-1.6" y2="-0.65" width="0.127" layer="21"/>
 <wire x1="-1.6" y1="-0.65" x2="-1.6" y2="0.65" width="0.127" layer="21"/>
 </package>
+<package name="FC1610AN">
+<smd name="1" x="-0.55" y="0" dx="0.5" dy="1" layer="1" roundness="12"/>
+<smd name="2" x="0.55" y="0" dx="0.5" dy="1" layer="1" roundness="12"/>
+<wire x1="-0.825" y1="0.525" x2="0.825" y2="0.525" width="0.127" layer="51"/>
+<wire x1="0.825" y1="0.525" x2="0.825" y2="-0.525" width="0.127" layer="51"/>
+<wire x1="0.825" y1="-0.525" x2="-0.825" y2="-0.525" width="0.127" layer="51"/>
+<wire x1="-0.825" y1="-0.525" x2="-0.825" y2="0.525" width="0.127" layer="51"/>
+<text x="-1.65" y="0.825" size="0.8128" layer="51" font="vector" ratio="13">&gt;NAME</text>
+<text x="-1.65" y="-1.65" size="0.8128" layer="51" font="vector" ratio="13">&gt;VALUE</text>
+</package>
+<package name="SG-210STF">
+<smd name="4" x="-0.85" y="0.65" dx="1.1" dy="0.9" layer="1" roundness="10"/>
+<smd name="3" x="0.85" y="0.65" dx="1.1" dy="0.9" layer="1" roundness="10"/>
+<smd name="1" x="-0.85" y="-0.65" dx="1.1" dy="0.9" layer="1" roundness="10"/>
+<smd name="2" x="0.85" y="-0.65" dx="1.1" dy="0.9" layer="1" roundness="10"/>
+<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="51"/>
+<rectangle x1="-1.1" y1="-0.8" x2="-0.2" y2="-0.1" layer="51"/>
+<circle x="-0.9" y="-1.5" radius="0.14141875" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -408,6 +430,18 @@
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.0635" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="-5.08" y2="-7.62" width="0.0635" layer="94"/>
 <wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.0635" layer="94"/>
+</symbol>
+<symbol name="CRYSTALOSCILLATOR">
+<pin name="1:ST" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="4:VCC" x="-20.32" y="-5.08" length="middle"/>
+<pin name="3:OUT" x="-20.32" y="5.08" length="middle"/>
+<pin name="2:GND" x="20.32" y="5.08" length="middle" rot="R180"/>
+<wire x1="15.24" y1="-12.7" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-12.7" x2="-15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="12.7" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<text x="10.16" y="2.54" size="2.1844" layer="94" font="vector" ratio="16" rot="R180">SG-210STF</text>
+<text x="5.08" y="-2.54" size="2.1844" layer="94" font="vector" ratio="16" rot="R180">8MHz</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -573,6 +607,44 @@
 <connect gate="G$1" pin="1" pad="1:INPUT"/>
 <connect gate="G$1" pin="2" pad="2:GND"/>
 <connect gate="G$1" pin="3" pad="3:OUTPUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FC1610AN">
+<description>FC1610AN
+Frequency 32.768 kHz
+1.65 × 1.05 × 0.5 mm
+Load capacitance 9pF</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="FC1610AN-9" package="FC1610AN">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SG-210STF">
+<gates>
+<gate name="G$1" symbol="CRYSTALOSCILLATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SG-210STF">
+<connects>
+<connect gate="G$1" pin="1:ST" pad="1"/>
+<connect gate="G$1" pin="2:GND" pad="2"/>
+<connect gate="G$1" pin="3:OUT" pad="3"/>
+<connect gate="G$1" pin="4:VCC" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
