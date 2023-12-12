@@ -645,6 +645,16 @@ Size F13</description>
 </devices>
 </deviceset>
 <deviceset name="FE0H224ZF">
+<description>KEMET,Supercapacitors / Ultracapacitors
+Electric Double Layer Capacitors
+220000 uF
+5.5 VDC
+- 20 %, + 80 %
+3.5 Ohms
+- 40 C~+ 70 C
+Horizontal
+15.5 mm
+21.5 mm</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR-POLARITY" x="0" y="0"/>
 </gates>
