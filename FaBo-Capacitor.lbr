@@ -415,6 +415,17 @@
 <vertex x="0" y="14.25"/>
 </polygon>
 </package>
+<package name="KW-5R5C224-R">
+<pad name="1:MINUS" x="-2.5" y="0" drill="1.6" diameter="3"/>
+<pad name="2:PLUS" x="2.5" y="0" drill="1.6" diameter="3"/>
+<circle x="0" y="0" radius="6.75" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="0" y="0"/>
+<vertex x="0" y="6.7" curve="90"/>
+<vertex x="-6.7" y="0" curve="90"/>
+<vertex x="0" y="-6.7"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -689,6 +700,22 @@ Horizontal
 </gates>
 <devices>
 <device name="" package="FE0H474ZF">
+<connects>
+<connect gate="G$1" pin="+" pad="2:PLUS"/>
+<connect gate="G$1" pin="-" pad="1:MINUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KW-5R5C224-R">
+<gates>
+<gate name="G$1" symbol="CAPACITOR-POLARITY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KW-5R5C224-R">
 <connects>
 <connect gate="G$1" pin="+" pad="2:PLUS"/>
 <connect gate="G$1" pin="-" pad="1:MINUS"/>
