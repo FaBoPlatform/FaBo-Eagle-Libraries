@@ -402,6 +402,19 @@
 <vertex x="0" y="10.75"/>
 </polygon>
 </package>
+<package name="FE0H474ZF">
+<pad name="1:MINUS" x="-5.25" y="0" drill="1.8" diameter="6.4516"/>
+<pad name="2:PLUS" x="5.25" y="0" drill="1.8" diameter="6.4516"/>
+<wire x1="-14.25" y1="0" x2="14.25" y2="0" width="0.127" layer="21" curve="-180"/>
+<wire x1="14.25" y1="0" x2="-14.25" y2="0" width="0.127" layer="21" curve="-180"/>
+<polygon width="0.127" layer="21">
+<vertex x="0" y="0"/>
+<vertex x="0" y="14.25"/>
+<vertex x="0" y="-14.25" curve="-90"/>
+<vertex x="-14.25" y="0" curve="-90"/>
+<vertex x="0" y="14.25"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -663,6 +676,22 @@ Horizontal
 <connects>
 <connect gate="G$1" pin="+" pad="P$2"/>
 <connect gate="G$1" pin="-" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FE0H474ZF">
+<gates>
+<gate name="G$1" symbol="CAPACITOR-POLARITY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FE0H474ZF">
+<connects>
+<connect gate="G$1" pin="+" pad="2:PLUS"/>
+<connect gate="G$1" pin="-" pad="1:MINUS"/>
 </connects>
 <technologies>
 <technology name=""/>
