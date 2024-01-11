@@ -426,6 +426,25 @@
 <vertex x="0" y="-6.7"/>
 </polygon>
 </package>
+<package name="FC0H474ZFTBR32-SS">
+<smd name="POSITIVE" x="7.5" y="0" dx="10" dy="2.5" layer="1" roundness="9"/>
+<smd name="NEGATIVE" x="-7.5" y="0" dx="10" dy="2.5" layer="1" roundness="9"/>
+<wire x1="-8.15" y1="8.15" x2="3.8" y2="8.15" width="0.127" layer="51"/>
+<wire x1="8.15" y1="3.8" x2="8.15" y2="-3.8" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-8.15" x2="-8.15" y2="-8.15" width="0.127" layer="51"/>
+<wire x1="-8.15" y1="-8.15" x2="-8.15" y2="8.15" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-8.15" x2="8.15" y2="-3.8" width="0.127" layer="51"/>
+<wire x1="3.8" y1="8.15" x2="8.15" y2="3.8" width="0.127" layer="51"/>
+<wire x1="-1" y1="1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="8" width="0.127" layer="51"/>
+<wire x1="-9.5" y1="0" x2="-2.5" y2="0" width="1.2" layer="51"/>
+<wire x1="2.5" y1="0" x2="9.3" y2="0" width="1.2" layer="51"/>
+<text x="-7.5" y="-4" size="1" layer="51" font="vector">FC0H474ZFTBR32-SS</text>
+<rectangle x1="-5.4" y1="3.5" x2="-2.8" y2="8.5" layer="21"/>
+<rectangle x1="-5.3" y1="-8.6" x2="-2.7" y2="-3.6" layer="21"/>
+<text x="-4.4" y="2.5" size="1" layer="51" font="vector">N</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -719,6 +738,22 @@ Horizontal
 <connects>
 <connect gate="G$1" pin="+" pad="2:PLUS"/>
 <connect gate="G$1" pin="-" pad="1:MINUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FC0H474ZFTBR32-SS">
+<gates>
+<gate name="G$1" symbol="CAPACITOR-POLARITY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FC0H474ZFTBR32-SS">
+<connects>
+<connect gate="G$1" pin="+" pad="POSITIVE"/>
+<connect gate="G$1" pin="-" pad="NEGATIVE"/>
 </connects>
 <technologies>
 <technology name=""/>
