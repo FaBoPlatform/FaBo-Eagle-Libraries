@@ -360,6 +360,17 @@
 <wire x1="0" y1="0.25" x2="0" y2="-0.25" width="0.1524" layer="51"/>
 <text x="-0.7" y="0.15" size="0.3" layer="51" font="vector" ratio="13">&gt;NAME</text>
 </package>
+<package name="SOT-23(TO-236)">
+<smd name="1" x="-0.95" y="-0.975" dx="0.56" dy="0.95" layer="1" roundness="11"/>
+<smd name="2" x="0.95" y="-0.975" dx="0.56" dy="0.95" layer="1" roundness="11"/>
+<smd name="3" x="-0.025" y="0.975" dx="0.56" dy="0.95" layer="1" roundness="11"/>
+<wire x1="-1.45" y1="-0.65" x2="-1.45" y2="0.65" width="0.127" layer="51"/>
+<wire x1="-1.45" y1="0.65" x2="1.45" y2="0.65" width="0.127" layer="51"/>
+<wire x1="1.45" y1="0.65" x2="1.45" y2="-0.65" width="0.127" layer="51"/>
+<wire x1="1.45" y1="-0.65" x2="-1.45" y2="-0.65" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0" x2="0.3" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0.3" x2="0" y2="-0.3" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOSFET(P-CHANNEL)">
@@ -1704,6 +1715,25 @@ P-CHANNEL ENHANCEMENT MODE MOSFET</description>
 <connect gate="G$1" pin="D" pad="D"/>
 <connect gate="G$1" pin="G" pad="G"/>
 <connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2N7002">
+<description>Onsemi MOS-FET
+N-Channel Enhancement</description>
+<gates>
+<gate name="G$1" symbol="MOSFET(N-CHANNEL)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23(TO-236)">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
