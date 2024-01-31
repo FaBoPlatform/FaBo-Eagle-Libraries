@@ -429,6 +429,23 @@
 <wire x1="-0.625" y1="-0.35" x2="-0.625" y2="0.35" width="0.127" layer="51"/>
 <rectangle x1="0" y1="-0.5" x2="0.3" y2="0.5" layer="21"/>
 </package>
+<package name="US2H">
+<smd name="K" x="-0.65" y="0" dx="2" dy="1.1" layer="1" roundness="14"/>
+<smd name="A" x="1.25" y="0" dx="0.8" dy="1.1" layer="1" roundness="14"/>
+<wire x1="-1" y1="-0.7" x2="-1" y2="0.7" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.7" x2="-0.6" y2="0.7" width="0.127" layer="51"/>
+<wire x1="-0.4" y1="0.7" x2="1" y2="0.7" width="0.127" layer="51"/>
+<wire x1="1" y1="0.7" x2="1" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.7" x2="-0.6" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="-0.7" x2="-0.5" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-0.4" y1="-0.7" x2="1" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="-0.7" x2="-0.6" y2="0.7" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="0.7" x2="-0.5" y2="0.7" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="0.7" x2="-0.4" y2="0.7" width="0.127" layer="51"/>
+<wire x1="-0.4" y1="0.7" x2="-0.4" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-0.4" y1="-0.7" x2="-0.5" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-0.7" x2="-0.5" y2="0.7" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE">
@@ -476,8 +493,8 @@
 <text x="-3.81" y="-2.54" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="SCHOTTYKY_DIODE">
-<pin name="ANODE" x="-5.08" y="0" visible="off" length="point"/>
-<pin name="CATHODE" x="2.54" y="0" visible="off" length="point" rot="R180"/>
+<pin name="ANODE" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
+<pin name="CATHODE" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <wire x1="-0.254" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="-0.254" y1="0" x2="-2.2352" y2="-1.5494" width="0.254" layer="94"/>
 <wire x1="-2.2352" y1="-1.5494" x2="-2.2352" y2="1.2446" width="0.254" layer="94"/>
@@ -1137,6 +1154,23 @@ On Semiconductor
 <connects>
 <connect gate="G$1" pin="ANODE" pad="ANODE"/>
 <connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CUHS20S30">
+<description>30V,2A,temp-50~150,if 0.25V(0.5A),rev 170uA(10V)</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTYKY_DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="US2H">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="A"/>
+<connect gate="G$1" pin="CATHODE" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
