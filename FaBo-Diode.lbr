@@ -1528,6 +1528,22 @@ On Semiconductor
 </device>
 </devices>
 </deviceset>
+<deviceset name="SMAJ12CA">
+<gates>
+<gate name="G$1" symbol="TVS-DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO-214AC">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
