@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -104,6 +104,19 @@
 <wire x1="-1.85" y1="-2.275" x2="-1.85" y2="2.275" width="0.1524" layer="51"/>
 <circle x="-1.2" y="-1.5" radius="0.360553125" width="0.1524" layer="51"/>
 <text x="-1.6" y="-0.4" size="0.8" layer="51">P2362</text>
+</package>
+<package name="PC817XI">
+<smd name="2" x="-4.1" y="-1.27" dx="2.2" dy="1.7" layer="1" roundness="10"/>
+<smd name="3" x="4.1" y="-1.27" dx="2.2" dy="1.7" layer="1" roundness="10"/>
+<smd name="1" x="-4.1" y="1.27" dx="2.2" dy="1.7" layer="1" roundness="10"/>
+<smd name="4" x="4.1" y="1.27" dx="2.2" dy="1.7" layer="1" roundness="10"/>
+<wire x1="-3.25" y1="2.29" x2="3.25" y2="2.29" width="0.127" layer="51"/>
+<wire x1="3.25" y1="2.29" x2="3.25" y2="-2.29" width="0.127" layer="51"/>
+<wire x1="3.25" y1="-2.29" x2="-3.25" y2="-2.29" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="-2.29" x2="-3.25" y2="2.29" width="0.127" layer="51"/>
+<circle x="-1.8" y="1.2" radius="0.360553125" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="0" x2="0.6" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0.6" x2="0" y2="-0.6" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -317,6 +330,44 @@
 <vertex x="0" y="1.27"/>
 </polygon>
 </symbol>
+<symbol name="PC817X3">
+<text x="3.4925" y="11.7475" size="2.54" layer="94" font="vector" ratio="13" align="center">PC817XI3</text>
+<pin name="1:ANODE" x="-17.78" y="7.62" visible="pin" length="middle" direction="in"/>
+<pin name="2:CATHODE" x="-17.78" y="-7.62" visible="pin" length="middle" direction="out"/>
+<pin name="3:EMITTER" x="22.86" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="-7.62" width="0.3048" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.3048" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="10.16" width="0.3048" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="17.78" y2="10.16" width="0.3048" layer="94"/>
+<wire x1="17.78" y1="10.16" x2="17.78" y2="7.62" width="0.3048" layer="94"/>
+<wire x1="17.78" y1="7.62" x2="17.78" y2="-7.62" width="0.3048" layer="94"/>
+<wire x1="17.78" y1="-7.62" x2="17.78" y2="-10.16" width="0.3048" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="-12.7" y2="-10.16" width="0.3048" layer="94"/>
+<pin name="4:COLLECTOR" x="22.86" y="7.62" visible="pin" length="middle" rot="R180"/>
+<wire x1="-1.27" y1="-7.62" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="-12.7" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-7.62" x2="-12.7" y2="-7.62" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-1.27" y="-1.27"/>
+<vertex x="-2.54" y="1.27"/>
+<vertex x="0" y="1.27"/>
+</polygon>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="10.16" y="-7.62"/>
+<vertex x="8.89" y="-3.81"/>
+<vertex x="6.35" y="-6.35"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TLP222A" prefix="U" uservalue="yes">
@@ -377,6 +428,24 @@ Inverter logic Open Collector
 <connect gate="G$1" pin="4:GND" pad="4"/>
 <connect gate="G$1" pin="5:VO" pad="5"/>
 <connect gate="G$1" pin="6:VCC" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PC817XI3">
+<gates>
+<gate name="G$1" symbol="PC817X3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PC817XI">
+<connects>
+<connect gate="G$1" pin="1:ANODE" pad="1"/>
+<connect gate="G$1" pin="2:CATHODE" pad="2"/>
+<connect gate="G$1" pin="3:EMITTER" pad="3"/>
+<connect gate="G$1" pin="4:COLLECTOR" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
