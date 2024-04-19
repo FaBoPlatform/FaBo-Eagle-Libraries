@@ -293,6 +293,16 @@
 <rectangle x1="-1.1" y1="-0.8" x2="-0.2" y2="-0.1" layer="51"/>
 <circle x="-0.9" y="-1.5" radius="0.14141875" width="0.127" layer="21"/>
 </package>
+<package name="ABM3B">
+<smd name="1" x="-2" y="-1.2" dx="1.8" dy="1.2" layer="1" roundness="12"/>
+<smd name="2" x="2" y="-1.2" dx="1.8" dy="1.2" layer="1" roundness="12"/>
+<smd name="4" x="-2" y="1.2" dx="1.8" dy="1.2" layer="1" roundness="12"/>
+<smd name="3" x="2" y="1.2" dx="1.8" dy="1.2" layer="1" roundness="12"/>
+<wire x1="-2.5" y1="1.6" x2="2.5" y2="1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="1.6" x2="2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-1.6" x2="-2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-1.6" x2="-2.5" y2="1.6" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -645,6 +655,24 @@ Load capacitance 9pF</description>
 <connect gate="G$1" pin="2:GND" pad="2"/>
 <connect gate="G$1" pin="3:OUT" pad="3"/>
 <connect gate="G$1" pin="4:VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ABM3B">
+<gates>
+<gate name="G$1" symbol="CRYSTAL-FA-238" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="ABM3B">
+<connects>
+<connect gate="G$1" pin="#1" pad="1"/>
+<connect gate="G$1" pin="#2" pad="2"/>
+<connect gate="G$1" pin="#3" pad="3"/>
+<connect gate="G$1" pin="#4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
