@@ -2066,8 +2066,6 @@ BM05B-PASS-1-TFT</description>
 <text x="4.572" y="1.524" size="1.27" layer="51" font="vector" ratio="12" align="center">X</text>
 <text x="6.4516" y="-3.3528" size="1.27" layer="51" font="vector" ratio="12" align="center">Y</text>
 <text x="0.6096" y="-1.0668" size="1.27" layer="125" font="vector" ratio="12" align="center">AE-BNO055</text>
-<wire x1="8.2296" y1="0.5588" x2="7.0104" y2="-0.5588" width="0.127" layer="51"/>
-<wire x1="7.112" y1="0.6096" x2="8.2296" y2="-0.6604" width="0.127" layer="51"/>
 <wire x1="6.2992" y1="-0.9144" x2="6.2992" y2="0.9144" width="0.127" layer="51" curve="-202.007082"/>
 <wire x1="6.858" y1="-1.6764" x2="8.382" y2="-1.7272" width="0.127" layer="51" curve="206.24135"/>
 <wire x1="6.5532" y1="0.8128" x2="8.6868" y2="0.762" width="0.127" layer="51" curve="-156.829872"/>
@@ -2086,14 +2084,8 @@ BM05B-PASS-1-TFT</description>
 <pad name="2-1" x="-1.27" y="-6.35" drill="1.02"/>
 <pad name="3-1" x="1.27" y="-6.35" drill="1.02"/>
 <pad name="4-1" x="3.81" y="-6.35" drill="1.02"/>
-<wire x1="-3.81" y1="3.81" x2="-3.81" y2="6.35" width="1.27" layer="1"/>
-<wire x1="-1.27" y1="6.35" x2="-1.27" y2="3.81" width="1.27" layer="1"/>
-<wire x1="1.27" y1="6.35" x2="1.27" y2="3.81" width="1.27" layer="1"/>
-<wire x1="3.81" y1="6.35" x2="3.81" y2="3.81" width="1.27" layer="1"/>
-<wire x1="-3.81" y1="-3.81" x2="-3.81" y2="-6.35" width="1.27" layer="1"/>
-<wire x1="-1.27" y1="-3.81" x2="-1.27" y2="-6.35" width="1.27" layer="1"/>
-<wire x1="1.27" y1="-3.81" x2="1.27" y2="-6.35" width="1.27" layer="1"/>
-<wire x1="3.81" y1="-3.81" x2="3.81" y2="-6.35" width="1.27" layer="1"/>
+<circle x="7.62" y="0" radius="0.127" width="0.254" layer="51"/>
+<text x="-6.35" y="-4.445" size="1.27" layer="51">1</text>
 </package>
 <package name="HC-SR04CON-SPEACE">
 <pad name="1" x="-6.35" y="0" drill="0.87" diameter="1.8"/>
@@ -4626,14 +4618,14 @@ Signal</description>
 <devices>
 <device name="" package="DIP_8">
 <connects>
-<connect gate="G$1" pin="1:VIN" pad="1"/>
-<connect gate="G$1" pin="2:GND" pad="2"/>
-<connect gate="G$1" pin="3:SDA/T" pad="3"/>
-<connect gate="G$1" pin="4:SCL/R" pad="4"/>
-<connect gate="G$1" pin="5:RESET" pad="5"/>
-<connect gate="G$1" pin="6:INT" pad="6"/>
-<connect gate="G$1" pin="7:GND" pad="7"/>
-<connect gate="G$1" pin="8:VOUT" pad="8"/>
+<connect gate="G$1" pin="1:VIN" pad="1 1-1"/>
+<connect gate="G$1" pin="2:GND" pad="2 2-1"/>
+<connect gate="G$1" pin="3:SDA/T" pad="3 3-1"/>
+<connect gate="G$1" pin="4:SCL/R" pad="4 4-1"/>
+<connect gate="G$1" pin="5:RESET" pad="5 5-1"/>
+<connect gate="G$1" pin="6:INT" pad="6 6-1"/>
+<connect gate="G$1" pin="7:GND" pad="7 7-1"/>
+<connect gate="G$1" pin="8:VOUT" pad="8 8-1"/>
 </connects>
 <technologies>
 <technology name=""/>
