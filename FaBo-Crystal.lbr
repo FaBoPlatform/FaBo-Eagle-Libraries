@@ -303,6 +303,12 @@
 <wire x1="2.5" y1="-1.6" x2="-2.5" y2="-1.6" width="0.127" layer="51"/>
 <wire x1="-2.5" y1="-1.6" x2="-2.5" y2="1.6" width="0.127" layer="51"/>
 </package>
+<package name="FC-135">
+<smd name="1" x="-1.25" y="0" dx="1" dy="1.8" layer="1" roundness="12"/>
+<smd name="2" x="1.25" y="0" dx="1" dy="1.8" layer="1" roundness="12"/>
+<rectangle x1="-0.7" y1="-0.8" x2="0.7" y2="0.8" layer="39"/>
+<rectangle x1="-0.7" y1="-0.8" x2="0.7" y2="0.8" layer="40"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -673,6 +679,22 @@ Load capacitance 9pF</description>
 <connect gate="G$1" pin="#2" pad="2"/>
 <connect gate="G$1" pin="#3" pad="3"/>
 <connect gate="G$1" pin="#4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FC-135">
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="FC-135">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
