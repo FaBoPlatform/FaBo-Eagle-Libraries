@@ -206,6 +206,16 @@
 <text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="SOT-323FL/SC-85(UMT3F)">
+<smd name="1" x="0.65" y="-0.8" dx="0.8" dy="0.9" layer="1" roundness="10"/>
+<smd name="2" x="-0.65" y="-0.8" dx="0.8" dy="0.9" layer="1" roundness="10"/>
+<smd name="3" x="0" y="0.8" dx="0.8" dy="0.9" layer="1" roundness="10"/>
+<wire x1="-1" y1="-0.6" x2="-1" y2="0.6" width="0.127" layer="27"/>
+<wire x1="-1" y1="0.6" x2="1" y2="0.6" width="0.127" layer="27"/>
+<wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="27"/>
+<wire x1="1" y1="-0.6" x2="-1" y2="-0.6" width="0.127" layer="27"/>
+<text x="-1.6" y="1.6" size="0.6096" layer="25" font="vector" ratio="15">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TRANSISTOR">
@@ -328,6 +338,21 @@
 <text x="-15.24" y="2.54" size="1.27" layer="94">4.7K</text>
 <text x="-5.08" y="-7.62" size="1.27" layer="94">4.7K</text>
 </symbol>
+<symbol name="DTC114EE3/EU3/EKA">
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<circle x="10.16" y="0" radius="2.54" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="25.4" y2="0" width="0.254" layer="94"/>
+<pin name="2:IN(BASE)" x="-22.86" y="0" length="middle" direction="in"/>
+<pin name="3:OUT(COLLECTOR)" x="30.48" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="1:GND(EMITTER)" x="0" y="-27.94" length="middle" direction="pas" rot="R90"/>
+<wire x1="0" y1="-22.86" x2="0" y2="-3.302" width="0.254" layer="94"/>
+<text x="-15.24" y="7.62" size="2.54" layer="95" font="vector" ratio="15">&gt;NAME</text>
+<text x="0" y="5.08" size="2.54" layer="94" font="vector" ratio="15">DTC114</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TRANSISTOR" prefix="T" uservalue="yes">
@@ -404,6 +429,30 @@
 <connect gate="G$1" pin="B" pad="B"/>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DTC114EU3">
+<description>DTC114E temp 25C
+Absolute maximum ratings
+supply voltage 50V
+input voltage 40V
+output current 50mA
+collector current 100mA
+range of storage temprature -55 ~ 150</description>
+<gates>
+<gate name="G$1" symbol="DTC114EE3/EU3/EKA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-323FL/SC-85(UMT3F)">
+<connects>
+<connect gate="G$1" pin="1:GND(EMITTER)" pad="1"/>
+<connect gate="G$1" pin="2:IN(BASE)" pad="2"/>
+<connect gate="G$1" pin="3:OUT(COLLECTOR)" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
