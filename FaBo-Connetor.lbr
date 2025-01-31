@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -3513,7 +3513,7 @@ UART/USART</text>
 <text x="0" y="-27.94" size="1.778" layer="94" align="center">KH-FG0.5-H2.0-30PIN</text>
 </symbol>
 <symbol name="68713014022">
-<pin name="NC(GND)@1" x="25.4" y="20.32" length="middle" direction="pwr" rot="R180"/>
+<pin name="NC(GND)@1" x="25.4" y="20.32" length="middle" direction="nc" rot="R180"/>
 <pin name="C2P@2" x="-22.86" y="20.32" length="middle" direction="in"/>
 <pin name="C2N@3" x="-22.86" y="17.78" length="middle" direction="in"/>
 <pin name="C1P@4" x="-22.86" y="15.24" length="middle" direction="in"/>
@@ -3542,7 +3542,7 @@ UART/USART</text>
 <pin name="VCOMH@27" x="25.4" y="-20.32" length="middle" direction="out" rot="R180"/>
 <pin name="VCC@28" x="25.4" y="-22.86" length="middle" direction="pwr" rot="R180"/>
 <pin name="VLSS@29" x="25.4" y="-15.24" length="middle" direction="pwr" rot="R180"/>
-<pin name="NC(GND)@30" x="25.4" y="15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="NC(GND)@30" x="25.4" y="15.24" length="middle" direction="nc" rot="R180"/>
 <wire x1="-17.78" y1="25.4" x2="-17.78" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="-25.4" x2="20.32" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-25.4" x2="20.32" y2="25.4" width="0.254" layer="94"/>
