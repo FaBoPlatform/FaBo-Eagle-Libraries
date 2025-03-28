@@ -1544,6 +1544,22 @@ On Semiconductor
 </device>
 </devices>
 </deviceset>
+<deviceset name="PMEG6010ELR-Q">
+<gates>
+<gate name="G$1" symbol="SCHOTTYKY_DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD123W">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="1"/>
+<connect gate="G$1" pin="CATHODE" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
