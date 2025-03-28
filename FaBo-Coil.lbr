@@ -405,6 +405,17 @@
 <wire x1="0.8" y1="0" x2="-0.7" y2="0" width="0.127" layer="51"/>
 <wire x1="-0.7" y1="0" x2="-0.4" y2="0.2" width="0.127" layer="51"/>
 <wire x1="-0.7" y1="0" x2="-0.4" y2="-0.2" width="0.127" layer="51"/>
+<text x="0.035" y="-1.14" size="0.7" layer="27" font="vector" ratio="14" align="center">&gt;VALUE</text>
+</package>
+<package name="1008(2520MM)">
+<smd name="1" x="-1.05" y="0" dx="0.7" dy="2" layer="1" roundness="12"/>
+<smd name="2" x="1.05" y="0" dx="0.7" dy="2" layer="1" roundness="12"/>
+<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="51"/>
+<text x="0" y="1.75" size="0.6096" layer="25" font="vector" ratio="14" align="center">&gt;NAME</text>
+<text x="0" y="-1.75" size="0.6096" layer="27" font="vector" ratio="14" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -887,6 +898,22 @@ Wirewound</description>
 <connects>
 <connect gate="G$1" pin="1" pad="2"/>
 <connect gate="G$1" pin="2" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MLP2520S2R2MT0S1">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1008(2520MM)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
