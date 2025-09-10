@@ -138,6 +138,21 @@
 <wire x1="-0.8" y1="-1.2" x2="-1.6" y2="-1.2" width="0.127" layer="51" curve="180"/>
 <text x="0" y="0.8" size="0.8128" layer="51" font="vector" ratio="11" align="center">TLP152</text>
 </package>
+<package name="SO4(11-3C1)">
+<smd name="4" x="-0.635" y="3.15" dx="0.8" dy="1.2" layer="1" roundness="12"/>
+<smd name="3" x="0.635" y="3.15" dx="0.8" dy="1.2" layer="1" roundness="12"/>
+<smd name="1" x="-0.635" y="-3.15" dx="0.8" dy="1.2" layer="1" roundness="12"/>
+<smd name="2" x="0.635" y="-3.15" dx="0.8" dy="1.2" layer="1" roundness="12"/>
+<wire x1="-1.25" y1="2.275" x2="1.25" y2="2.275" width="0.127" layer="51"/>
+<wire x1="1.25" y1="2.275" x2="1.25" y2="-2.275" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-2.275" x2="-1.25" y2="-2.275" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-2.275" x2="-1.25" y2="2.275" width="0.127" layer="51"/>
+<circle x="-0.6" y="-1.6" radius="0.360553125" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0.5" x2="0" y2="-0.6" width="0.127" layer="21"/>
+<circle x="-0.6" y="-1.6" radius="0.22360625" width="0.127" layer="21"/>
+<circle x="-1.6" y="-3.1" radius="0.14141875" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TLP222A">
@@ -491,6 +506,44 @@
 <circle x="17.760821875" y="-5.145659375" radius="0.165990625" width="0.762" layer="94"/>
 <circle x="17.760821875" y="-3.153790625" radius="0.165990625" width="0.762" layer="94"/>
 </symbol>
+<symbol name="TLP291(SE">
+<text x="3.4925" y="11.7475" size="2.54" layer="94" font="vector" ratio="13" align="center">TLP291(SE</text>
+<pin name="1:ANODE" x="-17.78" y="7.62" visible="pin" length="middle" direction="in"/>
+<pin name="2:CATHODE" x="-17.78" y="-7.62" visible="pin" length="middle" direction="out"/>
+<pin name="3:EMITTER" x="22.86" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="-7.62" width="0.3048" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.3048" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="10.16" width="0.3048" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="17.78" y2="10.16" width="0.3048" layer="94"/>
+<wire x1="17.78" y1="10.16" x2="17.78" y2="7.62" width="0.3048" layer="94"/>
+<wire x1="17.78" y1="7.62" x2="17.78" y2="-7.62" width="0.3048" layer="94"/>
+<wire x1="17.78" y1="-7.62" x2="17.78" y2="-10.16" width="0.3048" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="-12.7" y2="-10.16" width="0.3048" layer="94"/>
+<pin name="4:COLLECTOR" x="22.86" y="7.62" visible="pin" length="middle" rot="R180"/>
+<wire x1="-1.27" y1="-7.62" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="-12.7" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-7.62" x2="-12.7" y2="-7.62" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-1.27" y="-1.27"/>
+<vertex x="-2.54" y="1.27"/>
+<vertex x="0" y="1.27"/>
+</polygon>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="10.16" y="-7.62"/>
+<vertex x="8.89" y="-3.81"/>
+<vertex x="6.35" y="-6.35"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TLP222A" prefix="U" uservalue="yes">
@@ -588,6 +641,24 @@ Inverter logic Open Collector
 <connect gate="G$1" pin="4:GND" pad="4"/>
 <connect gate="G$1" pin="5:VO" pad="5"/>
 <connect gate="G$1" pin="6:VCC" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLP291(SE">
+<gates>
+<gate name="G$1" symbol="TLP291(SE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO4(11-3C1)">
+<connects>
+<connect gate="G$1" pin="1:ANODE" pad="1"/>
+<connect gate="G$1" pin="2:CATHODE" pad="2"/>
+<connect gate="G$1" pin="3:EMITTER" pad="3"/>
+<connect gate="G$1" pin="4:COLLECTOR" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

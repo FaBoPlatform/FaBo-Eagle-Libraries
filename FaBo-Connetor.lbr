@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.2" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2095,9 +2095,9 @@ BM05B-PASS-1-TFT</description>
 <text x="-7.62" y="1.27" size="0.762" layer="48" font="vector" align="center">1</text>
 </package>
 <package name="3P-SCN">
-<pad name="2" x="0" y="0" drill="1.4"/>
-<pad name="3" x="-2.5" y="0" drill="1.4"/>
-<pad name="1" x="2.5" y="0" drill="1.4"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="3" x="-2.5" y="0" drill="1"/>
+<pad name="1" x="2.5" y="0" drill="1"/>
 <wire x1="-4.5" y1="-1.85" x2="-4.5" y2="1.85" width="0.127" layer="51"/>
 <wire x1="-4.5" y1="1.85" x2="4.5" y2="1.85" width="0.127" layer="51"/>
 <wire x1="4.5" y1="1.85" x2="4.5" y2="-1.8" width="0.127" layer="51"/>
