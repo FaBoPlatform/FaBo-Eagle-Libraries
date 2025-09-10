@@ -19,41 +19,41 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="yes"/>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="14" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="6" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="no"/>
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="no"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
@@ -3459,6 +3459,70 @@
 <wire x1="-0.635" y1="0.635" x2="0.635" y2="-0.635" width="0.127" layer="48"/>
 <wire x1="0.635" y1="0.635" x2="-0.635" y2="-0.635" width="0.127" layer="48"/>
 </package>
+<package name="RASPBERRY_PI_SHILED_NONDEMETION">
+<wire x1="25.4" y1="-2.54" x2="-25.4" y2="-2.54" width="0.1" layer="51"/>
+<wire x1="-25.4" y1="-2.54" x2="-25.4" y2="2.54" width="0.1" layer="51"/>
+<wire x1="25.4" y1="2.54" x2="-25.4" y2="2.54" width="0.1" layer="51"/>
+<wire x1="25.4" y1="2.54" x2="25.4" y2="-2.54" width="0.1" layer="51"/>
+<pad name="1" x="-24.13" y="-1.27" drill="1" diameter="1.778" shape="square"/>
+<pad name="2" x="-24.13" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="3" x="-21.59" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="4" x="-21.59" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="5" x="-19.05" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="6" x="-19.05" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="7" x="-16.51" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="8" x="-16.51" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="9" x="-13.97" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="10" x="-13.97" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="11" x="-11.43" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="12" x="-11.43" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="13" x="-8.89" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="14" x="-8.89" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="15" x="-6.35" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="16" x="-6.35" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="17" x="-3.81" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="18" x="-3.81" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="19" x="-1.27" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="20" x="-1.27" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="21" x="1.27" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="22" x="1.27" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="23" x="3.81" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="24" x="3.81" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="25" x="6.35" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="26" x="6.35" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="27" x="8.89" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="28" x="8.89" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="29" x="11.43" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="30" x="11.43" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="31" x="13.97" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="32" x="13.97" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="33" x="16.51" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="34" x="16.51" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="35" x="19.05" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="36" x="19.05" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="37" x="21.59" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="38" x="21.59" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="39" x="24.13" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="40" x="24.13" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<circle x="-29" y="0" radius="2.15" width="0.05" layer="51"/>
+<circle x="29" y="0" radius="2.15" width="0.05" layer="51"/>
+<circle x="-29" y="0" radius="1.4" width="0.01" layer="20"/>
+<circle x="29" y="0" radius="1.4" width="0.01" layer="20"/>
+<circle x="-29" y="-49" radius="2.15" width="0.05" layer="51"/>
+<circle x="29" y="-49" radius="2.15" width="0.05" layer="51"/>
+<circle x="-29" y="-49" radius="1.4" width="0.01" layer="48"/>
+<circle x="29" y="-49" radius="1.4" width="0.01" layer="20"/>
+<wire x1="-32.5" y1="1" x2="-32.5" y2="-49.5" width="0" layer="48"/>
+<wire x1="-29.5" y1="-52.5" x2="29.5" y2="-52.5" width="0" layer="48"/>
+<wire x1="32.5" y1="-49.5" x2="32.5" y2="1" width="0" layer="48"/>
+<wire x1="29.5" y1="4" x2="-29.5" y2="4" width="0" layer="48"/>
+<wire x1="-29.5" y1="-52.5" x2="-32.5" y2="-49.5" width="0" layer="48" curve="-90"/>
+<wire x1="32.5" y1="-49.5" x2="29.5" y2="-52.5" width="0" layer="48" curve="-90"/>
+<wire x1="29.5" y1="4" x2="32.5" y2="1" width="0" layer="48" curve="-90"/>
+<wire x1="-29.5" y1="4" x2="-32.5" y2="1" width="0" layer="48" curve="90"/>
+<wire x1="-0.635" y1="0.635" x2="0.635" y2="-0.635" width="0.127" layer="48"/>
+<wire x1="0.635" y1="0.635" x2="-0.635" y2="-0.635" width="0.127" layer="48"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_UNO_R3">
@@ -4586,10 +4650,10 @@ IO3.3V(TTL)
 <wire x1="33.02" y1="30.48" x2="33.02" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="33.02" y1="-25.4" x2="-33.02" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-25.4" x2="-33.02" y2="30.48" width="0.254" layer="94"/>
-<pin name="1:3V3_POWER" x="-38.1" y="25.4" length="middle" direction="sup"/>
-<pin name="2:5V_POWER" x="38.1" y="25.4" length="middle" direction="sup" rot="R180"/>
+<pin name="1:3V3_POWER" x="-38.1" y="25.4" length="middle" direction="pwr"/>
+<pin name="2:5V_POWER" x="38.1" y="25.4" length="middle" direction="pwr" rot="R180"/>
 <pin name="3:GPIO2(I2C1_SDA)" x="-38.1" y="22.86" length="middle"/>
-<pin name="4:5V_POWER" x="38.1" y="22.86" length="middle" direction="sup" rot="R180"/>
+<pin name="4:5V_POWER" x="38.1" y="22.86" length="middle" direction="pwr" rot="R180"/>
 <pin name="5:GPIO3(I2C1_SCL)" x="-38.1" y="20.32" length="middle"/>
 <pin name="6:GND" x="38.1" y="20.32" length="middle" direction="pwr" rot="R180"/>
 <pin name="7:GPIO4(GPCLK0)" x="-38.1" y="17.78" length="middle"/>
@@ -4602,7 +4666,7 @@ IO3.3V(TTL)
 <pin name="14:GND" x="38.1" y="10.16" length="middle" direction="pwr" rot="R180"/>
 <pin name="15:GPIO22(GPIO_GEN3)" x="-38.1" y="7.62" length="middle"/>
 <pin name="16:GPIO23(GPIO_GEN4)" x="38.1" y="7.62" length="middle" rot="R180"/>
-<pin name="17:3V3_POWER" x="-38.1" y="5.08" length="middle" direction="sup"/>
+<pin name="17:3V3_POWER" x="-38.1" y="5.08" length="middle" direction="pwr"/>
 <pin name="18:GPIO24(GPIO_GEN5)" x="38.1" y="5.08" length="middle" rot="R180"/>
 <pin name="19:GPIO10(SPI_MOSI)" x="-38.1" y="2.54" length="middle"/>
 <pin name="20:GND" x="38.1" y="2.54" length="middle" direction="pwr" rot="R180"/>
@@ -5794,8 +5858,8 @@ IO3.3V(TTL)
 <connect gate="G$1" pin="GPIO4" pad="7"/>
 <connect gate="G$1" pin="GPIO5" pad="29"/>
 <connect gate="G$1" pin="GPIO6" pad="31"/>
-<connect gate="G$1" pin="ID_SC" pad="27"/>
-<connect gate="G$1" pin="ID_SD" pad="28"/>
+<connect gate="G$1" pin="ID_SC" pad="28"/>
+<connect gate="G$1" pin="ID_SD" pad="27"/>
 <connect gate="G$1" pin="MISO" pad="21"/>
 <connect gate="G$1" pin="MOSI" pad="19"/>
 <connect gate="G$1" pin="RX" pad="10"/>
@@ -6356,6 +6420,53 @@ IO3.3V(TTL)
 </gates>
 <devices>
 <device name="" package="RASPBERRY_PI_SHILED">
+<connects>
+<connect gate="G$1" pin="10:GPIO15(UART_RX)" pad="10"/>
+<connect gate="G$1" pin="11:GPIO17(GPIO_GEN0)" pad="11"/>
+<connect gate="G$1" pin="12:GPIO18(GPIO_GEN1,PCM_CLK)" pad="12"/>
+<connect gate="G$1" pin="13:GPIO27(GPIO_GEN2)" pad="13"/>
+<connect gate="G$1" pin="14:GND" pad="14"/>
+<connect gate="G$1" pin="15:GPIO22(GPIO_GEN3)" pad="15"/>
+<connect gate="G$1" pin="16:GPIO23(GPIO_GEN4)" pad="16"/>
+<connect gate="G$1" pin="17:3V3_POWER" pad="17"/>
+<connect gate="G$1" pin="18:GPIO24(GPIO_GEN5)" pad="18"/>
+<connect gate="G$1" pin="19:GPIO10(SPI_MOSI)" pad="19"/>
+<connect gate="G$1" pin="1:3V3_POWER" pad="1"/>
+<connect gate="G$1" pin="20:GND" pad="20"/>
+<connect gate="G$1" pin="21:GPIO9(SPI_MISO)" pad="21"/>
+<connect gate="G$1" pin="22:GPIO25(GPIO_GEN6)" pad="22"/>
+<connect gate="G$1" pin="23:GPIO11(SPI_CLK)" pad="23"/>
+<connect gate="G$1" pin="24:GPIO8(SPI_CE0_N)" pad="24"/>
+<connect gate="G$1" pin="25:GND" pad="25"/>
+<connect gate="G$1" pin="26:GPIO7(SPI_CE1_N)" pad="26"/>
+<connect gate="G$1" pin="27:GPIO0(I2C,EEPROM_SDA)" pad="27"/>
+<connect gate="G$1" pin="28:GPIO1(I2C,EEPROM_SCL)" pad="28"/>
+<connect gate="G$1" pin="29:GPIO5" pad="29"/>
+<connect gate="G$1" pin="2:5V_POWER" pad="2"/>
+<connect gate="G$1" pin="30:GND" pad="30"/>
+<connect gate="G$1" pin="31:GPIO6" pad="31"/>
+<connect gate="G$1" pin="32:GPIO12(PWM0)" pad="32"/>
+<connect gate="G$1" pin="33:GPIO13(PWM1)" pad="33"/>
+<connect gate="G$1" pin="34:GND" pad="34"/>
+<connect gate="G$1" pin="35:GPIO19(PCM_FS)" pad="35"/>
+<connect gate="G$1" pin="36:GPIO16" pad="36"/>
+<connect gate="G$1" pin="37:GPIO26" pad="37"/>
+<connect gate="G$1" pin="38:GPIO20(PCM_DIN)" pad="38"/>
+<connect gate="G$1" pin="39:GND" pad="39"/>
+<connect gate="G$1" pin="3:GPIO2(I2C1_SDA)" pad="3"/>
+<connect gate="G$1" pin="40:GPIO21(PCM_DOUT)" pad="40"/>
+<connect gate="G$1" pin="4:5V_POWER" pad="4"/>
+<connect gate="G$1" pin="5:GPIO3(I2C1_SCL)" pad="5"/>
+<connect gate="G$1" pin="6:GND" pad="6"/>
+<connect gate="G$1" pin="7:GPIO4(GPCLK0)" pad="7"/>
+<connect gate="G$1" pin="8:GPIO14(UART_TX)" pad="8"/>
+<connect gate="G$1" pin="9:GND" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UPPERBOARD" package="RASPBERRY_PI_SHILED_NONDEMETION">
 <connects>
 <connect gate="G$1" pin="10:GPIO15(UART_RX)" pad="10"/>
 <connect gate="G$1" pin="11:GPIO17(GPIO_GEN0)" pad="11"/>
